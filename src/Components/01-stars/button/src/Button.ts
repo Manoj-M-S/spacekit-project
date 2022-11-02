@@ -7,26 +7,28 @@ export type ButtonVariant = 'primary' | 'secondary';
 
 @customElement('space-button')
 export class Button extends LitElement {
+  /** @attr is-disabled */
   @property({ type: Boolean, attribute: 'is-disabled' })
   isDisabled = false;
 
+  /** @attr button-size */
   @property({ type: String, attribute: 'button-size' })
   buttonSize: ButtonSize = 'md';
 
+  /** @attr button-variant */
   @property({ type: String, attribute: 'button-variant' })
   buttonVariant!: ButtonVariant;
 
   @property()
   onClick!: () => void;
 
+  /** @attr button-url */
   @property({ type: String, attribute: 'button-url' })
   buttonUrl!: string;
 
   static styles = [componentStyles];
 
   render() {
-    console.log(this.isDisabled);
-
     return this.buttonUrl
       ? html`
           <a
