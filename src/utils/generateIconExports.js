@@ -11,8 +11,10 @@ const path = require('path');
 
 const assetsPath = resolve(__dirname, '../', 'assets');
 const filePath = resolve(__dirname, '../', 'icons.ts');
+const jsonFilePath = resolve(__dirname, '../', 'tokens/icons.json');
 
 const file = createWriteStream(filePath);
+const jsonFile = createWriteStream(jsonFilePath);
 
 const writeData = data => file.write(data);
 
@@ -41,6 +43,7 @@ open(filePath, (err, fd) => {
 
     file.on('drain', () => {
       writeData(`export const icons: any = {${fileNames}};\n\n`);
+      jsonFile.write(`{"icons": ${JSON.stringify(fileNames)}}`);
       console.log(`Total Icons written: ${totalIcons}`);
       file.close();
     });
