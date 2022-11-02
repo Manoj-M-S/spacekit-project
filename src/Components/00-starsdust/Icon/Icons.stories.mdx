@@ -1,0 +1,22 @@
+import { Meta, IconGallery, IconItem, Subtitle } from '@storybook/addon-docs';
+import { icons } from '../../../tokens/icons.json';
+import '../../01-stars/Icon';
+
+<Meta
+  title="Stardust/Icons"
+  parameters={{ viewMode: 'docs', previewTabs: { canvas: { hidden: true } } }}
+/>
+
+# Icons
+
+<Subtitle>A collection of simply beautiful icons</Subtitle>
+
+#
+
+<IconGallery>
+  {icons.map(icon => (
+    <IconItem name={icon} key={icon}>
+      <space-icon icon-name={icon}></space-icon>
+    </IconItem>
+  ))}
+</IconGallery>

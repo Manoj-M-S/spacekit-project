@@ -5,7 +5,7 @@ module.exports = {
     },
   },
   features: { storyStoreV7: true },
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx|md)',],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
