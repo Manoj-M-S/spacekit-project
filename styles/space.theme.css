@@ -27,4 +27,8 @@
   --btn-lh-sm: 1.125rem;
   --btn-lh-base: 1.5rem;
   --btn-lh-lg: 1.75rem;
+
+  /** icon styles */
+  --icon-size: 1.75rem;
+  --icon-color: grey;
 }

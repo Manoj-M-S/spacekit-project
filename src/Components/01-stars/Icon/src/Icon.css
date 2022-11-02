@@ -1,0 +1,10 @@
+svg {
+  width: var(--icon-size, 16px);
+  height: var(--icon-size, 16px);
+}
+
+path,
+rect {
+  stroke: var(--icon-color, grey);
+  fill: var(--icon-fill);
+}
