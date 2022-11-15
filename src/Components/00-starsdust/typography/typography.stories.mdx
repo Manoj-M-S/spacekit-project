@@ -1,0 +1,35 @@
+import { Meta, Typeset, Subtitle } from '@storybook/addon-docs';
+const fontsFile = require('../../../tokens/typography/typography');
+const fontFamilies = fontsFile.fontFamily;
+const fontWeight = fontsFile.fontWeight;
+const intFontSizes = fontsFile.fontSizes;
+const fontSizesIn4Xl = fontsFile.fontSizesIn4Xl;
+const fontWeightInXl = fontsFile.fontWeightInXl;
+const fontSizesIn3Xl = fontsFile.fontSizesIn3Xl;
+
+<Meta
+  title="Stardust/Typography"
+  parameters={{ viewMode: 'docs', previewTabs: { canvas: { hidden: true } } }}
+/>
+
+# Typography
+
+<Subtitle>Choosed font sizes</Subtitle>
+
+### Regular
+
+<Typeset
+  fontSizes={Object.values(intFontSizes).map(value => Number(value))}
+  fontWeight={fontWeight.displayRegular}
+  sampleText="spacekit"
+  fontFamily="Space Grotesk"
+/>
+
+### Bold
+
+<Typeset
+  fontSizes={Object.values(intFontSizes).map(value => Number(value))}
+  fontWeight={fontWeight.displayBold}
+  sampleText="spacekit"
+  fontFamily={fontFamilies.HelveticaNowDisplay}
+/>
