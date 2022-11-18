@@ -1,0 +1,124 @@
+@define-mixin defaultSecondaryIconColor {
+  --icon-color: var(--text-button-link-default-active);
+}
+
+@define-mixin disabledSecondaryIconColor {
+  --icon-color: var(--text-button-secondary-disabled);
+}
+
+@define-mixin hoverSecondaryIconColor {
+  --icon-color: var(--text-button-link-hover);
+}
+
+.btn {
+  @apply cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center;
+
+  & .btn-icon {
+    --icon-size: 1.25rem;
+    @apply mr-2 leading-0;
+    &.right {
+      @apply mr-0 ml-2;
+    }
+    &.icon-size-2xl {
+      --icon-size: 1.5rem;
+    }
+    &.icon-size-3xl {
+      --icon-size: 2rem;
+    }
+  }
+
+  &.primary {
+    --icon-color: var(--white);
+    @apply text-white
+      bg-backgroundButtonPrimary-buttonPrimaryActive border-0;
+  }
+
+  &.primary:hover {
+    --icon-color: var(--text-button-primary-default-hover-active-disabled);
+    @apply bg-backgroundButtonPrimary-buttonPrimaryHover;
+  }
+
+  &.primary:focus {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryActive;
+  }
+
+  &.primary:disabled {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryDisabled;
+  }
+
+
+
+  &.secondary {
+    @apply text-textButtonSecondary-buttonSecondaryDefault bg-backgroundButtonSecondary-buttonSecondaryDefault shadow-xs border-strokeButton-buttonSecondaryGreyActive;
+    @mixin defaultSecondaryIconColor;
+  }
+
+  &.secondary:hover {
+    @apply bg-backgroundButtonSecondary-buttonSecondaryHover;
+    @mixin hoverSecondaryIconColor;
+  }
+
+  &.secondary:focus {
+    @apply bg-backgroundButtonSecondary-buttonSecondaryDefault;
+  }
+
+  &.secondary:disabled {
+    @apply text-textButtonSecondary-buttonSecondaryDisabled bg-backgroundButtonSecondary-buttonSecondaryDisabled border-strokeButton-buttonSecondaryGreyDisabled;
+    @mixin disabledSecondaryIconColor;
+  }
+
+  &.link {
+    @mixin defaultSecondaryIconColor;
+    @apply no-underline border-0 p-0 text-textButtonLink-buttonLinkDefault bg-transparent hover:bg-transparent focus:bg-transparent;
+    &:disabled {
+      @mixin disabledSecondaryIconColor;
+    }
+    &:hover {
+      @mixin hoverSecondaryIconColor;
+    }
+    &:active {
+      @mixin disabledSecondaryIconColor;
+    }
+  }
+
+  &.btn-size-md {
+    @apply px-4 py-2.5;
+  }
+
+  &.btn-size-lg {
+    @apply text-16 leading-6 px-4.5 py-2.5;
+  }
+
+  &.btn-size-xl {
+    @apply text-16 leading-6 px-5 py-3;
+  }
+
+  &.btn-size-2xl {
+    @apply text-18 leading-7 px-7 py-4;
+  }
+
+  &.btn-size-3xl {
+    @apply text-20 leading-8 px-8 py-4;
+  }
+
+  &.link-size-lg {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-xl {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-2xl {
+    @apply text-18 leading-7 p-0;
+  }
+
+  &.link-size-3xl {
+    @apply text-20 leading-8 p-0;
+  }
+
+  &.disable-link {
+    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled;
+    --icon-color: var(--text-button-link-disabled);
+  }
+}
