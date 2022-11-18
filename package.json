@@ -65,6 +65,7 @@
     "postcss-discard-comments": "^5.1.2",
     "postcss-import": "^15.0.0",
     "postcss-loader": "^7.0.1",
+    "postcss-mixins": "^9.0.4",
     "postcss-nested": "^6.0.0",
     "prettier": "latest",
     "rimraf": "^3.0.2",
