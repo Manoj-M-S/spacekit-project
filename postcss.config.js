@@ -6,5 +6,6 @@ module.exports = {
     require('postcss-custom-properties'),
     require('autoprefixer'),
     require('postcss-discard-comments'),
+    require('cssnano'),
   ],
 };
