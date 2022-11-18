@@ -283,6 +283,10 @@ module.exports = {
       margin: {
         2.5: '0.625rem',
       },
+      padding: {
+        3.5: '0.875rem',
+        4.5: '1.125rem',
+      },
     },
     fontFamily: {
       serif: ['Helvetica-Now-Display', 'Roboto', 'sans-serif'],
