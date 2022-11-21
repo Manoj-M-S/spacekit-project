@@ -1,0 +1,50 @@
+.link {
+  --icon-color: var(--text-button-link-default-active);
+  @apply flex items-center text-14 leading-5 no-underline border-0 p-0 text-textButtonLink-buttonLinkDefault bg-transparent hover:bg-transparent focus:bg-transparent;
+  
+
+  & .link-icon {
+    --icon-size: 1.25rem;
+    @apply mr-2 leading-0;
+    &.right {
+      @apply mr-0 ml-2;
+    }
+    &.icon-size-2xl {
+      --icon-size: 1.5rem;
+    }
+    &.icon-size-3xl {
+      --icon-size: 2rem;
+    }
+  }
+
+  &:disabled {
+    --icon-color: var(--text-button-secondary-disabled);
+  }
+  &:hover {
+    --icon-color: var(--text-button-link-hover);
+  }
+  &:active {
+    --icon-color: var(--text-button-secondary-disabled);
+  }
+
+  &.link-size-lg {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-xl {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-2xl {
+    @apply text-18 leading-7 p-0;
+  }
+
+  &.link-size-3xl {
+    @apply text-20 leading-8 p-0;
+  }
+
+  &.disable-link {
+    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled;
+    --icon-color: var(--text-button-link-disabled);
+  }
+}
