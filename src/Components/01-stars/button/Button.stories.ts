@@ -37,9 +37,8 @@ const Template = ({
       iconname=${iconName}
       ?iconaftertext=${iconAfterText}
       button-variant=${buttonVariant}
-      ?is-disabled=${disabled}
+      ?disabled=${disabled}
       button-size="${size}"
-      button-url=${buttonUrl}
       >${label}</space-button
     >
   `;
@@ -65,14 +64,4 @@ export const Secondary: any = Template.bind({});
 Secondary.args = {
   size: 'sm',
   buttonVariant: 'secondary',
-};
-
-export const Link: any = Template.bind({});
-Link.args = {
-  size: 'md',
-  buttonUrl: '#',
-};
-
-Link.argTypes = {
-  buttonVariant: { table: { disable: true } },
 };

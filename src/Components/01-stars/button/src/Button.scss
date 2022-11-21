@@ -1,15 +1,3 @@
-@define-mixin defaultSecondaryIconColor {
-  --icon-color: var(--text-button-link-default-active);
-}
-
-@define-mixin disabledSecondaryIconColor {
-  --icon-color: var(--text-button-secondary-disabled);
-}
-
-@define-mixin hoverSecondaryIconColor {
-  --icon-color: var(--text-button-link-hover);
-}
-
 .btn {
   @apply cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center;
 
@@ -46,16 +34,14 @@
     @apply bg-backgroundButtonPrimary-buttonPrimaryDisabled;
   }
 
-
-
   &.secondary {
     @apply text-textButtonSecondary-buttonSecondaryDefault bg-backgroundButtonSecondary-buttonSecondaryDefault shadow-xs border-strokeButton-buttonSecondaryGreyActive;
-    @mixin defaultSecondaryIconColor;
+    --icon-color: var(--text-button-link-default-active);
   }
 
   &.secondary:hover {
     @apply bg-backgroundButtonSecondary-buttonSecondaryHover;
-    @mixin hoverSecondaryIconColor;
+    --icon-color: var(--text-button-link-hover);
   }
 
   &.secondary:focus {
@@ -64,21 +50,7 @@
 
   &.secondary:disabled {
     @apply text-textButtonSecondary-buttonSecondaryDisabled bg-backgroundButtonSecondary-buttonSecondaryDisabled border-strokeButton-buttonSecondaryGreyDisabled;
-    @mixin disabledSecondaryIconColor;
-  }
-
-  &.link {
-    @mixin defaultSecondaryIconColor;
-    @apply no-underline border-0 p-0 text-textButtonLink-buttonLinkDefault bg-transparent hover:bg-transparent focus:bg-transparent;
-    &:disabled {
-      @mixin disabledSecondaryIconColor;
-    }
-    &:hover {
-      @mixin hoverSecondaryIconColor;
-    }
-    &:active {
-      @mixin disabledSecondaryIconColor;
-    }
+    --icon-color: var(--text-button-secondary-disabled);
   }
 
   &.btn-size-md {
@@ -99,26 +71,5 @@
 
   &.btn-size-3xl {
     @apply text-20 leading-8 px-8 py-4;
-  }
-
-  &.link-size-lg {
-    @apply text-16 leading-6 p-0;
-  }
-
-  &.link-size-xl {
-    @apply text-16 leading-6 p-0;
-  }
-
-  &.link-size-2xl {
-    @apply text-18 leading-7 p-0;
-  }
-
-  &.link-size-3xl {
-    @apply text-20 leading-8 p-0;
-  }
-
-  &.disable-link {
-    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled;
-    --icon-color: var(--text-button-link-disabled);
   }
 }
