@@ -61,14 +61,14 @@ ${result.css}\`;`,
 
 // watch css file changes
 if (options.watch) {
-  gaze('src/**/*.css', (err, watcher) => {
+  gaze('src/**/*.{css,scss,sass}', (err, watcher) => {
     if (err) throw err;
     watcher.on('added', createCssLiterals);
     watcher.on('changed', createCssLiterals);
   });
 } else {
   // Run the component style generation.
-  glob('src/**/*.css', (err, files) => {
+  glob('src/**/*.{css,scss,sass}', (err, files) => {
     if (err) throw err;
     files.forEach(createCssLiterals);
   });
