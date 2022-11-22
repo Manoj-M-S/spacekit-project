@@ -1,6 +1,7 @@
 import { Meta, IconGallery, IconItem, Subtitle } from '@storybook/addon-docs';
 import { icons } from '../../../tokens/icons.json';
 import '../../01-stars/Icon';
+import './icon.css';
 
 <Meta
   title="Stardust/Icons"
@@ -16,7 +17,7 @@ import '../../01-stars/Icon';
 <IconGallery>
   {icons.map(icon => (
     <IconItem name={icon} key={icon}>
-      <space-icon icon-name={icon}></space-icon>
+      <space-icon class="icon" icon-name={icon}></space-icon>
     </IconItem>
   ))}
 </IconGallery>
