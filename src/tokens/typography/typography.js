@@ -1,4 +1,4 @@
-let tokens = require('../../../token.json');
+let tokens = require('../../../tokens.json');
 const fonts = {
   fontFamily: {
     HelveticaNowDisplay: tokens.fontFamilies['helvetica-now-display'].value,

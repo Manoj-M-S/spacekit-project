@@ -1,10 +1,10 @@
 svg {
-  width: var(--icon-size, 16px);
-  height: var(--icon-size, 16px);
+  width: inherit;
+  height: inherit;
 }
 
 path,
 rect {
-  stroke: var(--icon-color, grey);
-  fill: var(--icon-fill);
+  stroke: inherit;
+  fill: inherit;
 }
