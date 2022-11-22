@@ -4,7 +4,7 @@
     @apply w-6 h-6;
 
     & .icon {
-      --icon-size: var(--avatar-icon-size, 16px);
+      @apply w-4 h-4;
     }
 
     & .initials {
@@ -14,7 +14,7 @@
   &.avatar-sm {
     @apply w-8 h-8;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 20px);
+      @apply w-5 h-5;
     }
     & .initials {
       @apply text-14;
@@ -24,7 +24,7 @@
   &.avatar-md {
     @apply w-10 h-10;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 24px);
+      @apply w-6 h-6;
     }
     & .initials {
       @apply text-16 leading-6;
@@ -33,7 +33,7 @@
   &.avatar-lg {
     @apply w-12 h-12;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 28px);
+      @apply w-7 h-7;
     }
     & .initials {
       @apply text-18 leading-28;
@@ -42,7 +42,7 @@
   &.avatar-xl {
     @apply w-14 h-14;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 32px);
+      @apply w-8 h-8;
     }
     & .initials {
       @apply text-20 leading-32;
@@ -51,7 +51,7 @@
   &.avatar-2xl {
     @apply w-16 h-16;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 32px);
+      @apply w-8 h-8;
     }
     & .initials {
       @apply text-24 leading-32;
@@ -60,7 +60,7 @@
   &.avatar-3xl {
     @apply w-24 h-24;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 48px);
+      @apply w-12 h-12;
     }
     & .initials {
       @apply text-36 leading-44;
@@ -69,7 +69,7 @@
   &.avatar-4xl {
     @apply w-40 h-40;
     & .icon {
-      --icon-size: var(--avatar-icon-size, 80px);
+      @apply w-20 h-20;
     }
     & .initials {
       @apply text-60 leading-72;
@@ -88,6 +88,5 @@
 }
 
 .icon {
-  @apply leading-0;
-  --icon-color: var(--text-primary-dark);
+  @apply leading-0 stroke-text-primaryDark;
 }
