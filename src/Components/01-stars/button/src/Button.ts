@@ -1,14 +1,17 @@
 import { html, LitElement } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import componentStyles from './Button.css.lit';
+import { customElement, property, state } from 'lit/decorators.js';
+import { classMap } from 'lit/directives/class-map.js';
+import '../../Icon/src/Icon';
+import componentStyles from './Button.scss.lit';
 
-export type ButtonSize = 'sm' | 'md' | 'lg';
+export const buttonSize = ['sm', 'md', 'lg', 'xl', '2xl', '3xl'] as const;
+export type ButtonSize = typeof buttonSize[number];
 export type ButtonVariant = 'primary' | 'secondary';
 
 @customElement('space-button')
 export class Button extends LitElement {
-  /** @attr is-disabled */
-  @property({ type: Boolean, attribute: 'is-disabled' })
+  /** @attr disabled */
+  @property({ type: Boolean, attribute: 'disabled' })
   isDisabled = false;
 
   /** @attr button-size */
@@ -19,34 +22,48 @@ export class Button extends LitElement {
   @property({ type: String, attribute: 'button-variant' })
   buttonVariant!: ButtonVariant;
 
-  @property()
-  onClick!: () => void;
+  /** @attr iconname */
+  @property({ type: String })
+  iconName?: string = '';
 
-  /** @attr button-url */
-  @property({ type: String, attribute: 'button-url' })
-  buttonUrl!: string;
+  /** @attr iconaftertext */
+  @property({ type: Boolean })
+  iconAfterText!: boolean;
+
+  @state()
+  onClick!: () => void;
 
   static styles = [componentStyles];
 
+  renderIcon() {
+    const iconClass = {
+      'btn-icon': true,
+      'right': this.iconAfterText,
+      [`icon-size-${this.buttonSize}`]: this.buttonSize ?? '',
+    };
+    return this.iconName
+      ? html` <space-icon
+          class=${classMap(iconClass)}
+          icon-name=${this.iconName}
+        ></space-icon>`
+      : '';
+  }
+
   render() {
-    return this.buttonUrl
-      ? html`
-          <a
-            aria-disabled=${this.isDisabled}
-            class="btn ${this.buttonVariant} ${this.buttonSize}"
-            @click=${this.onClick}
-            href=${this.buttonUrl}
-          >
-            <slot></slot>
-          </a>
-        `
-      : html`<button
-          ?disabled=${this.isDisabled}
-          class="btn ${this.buttonVariant} ${this.buttonSize}"
-          @click=${this.onClick}
-        >
-          <slot></slot>
-        </button>`;
+    const buttonClass = {
+      btn: true,
+      [`btn-size-${this.buttonSize}`]: this.buttonSize ?? '',
+      [`${this.buttonVariant}`]: this.buttonVariant ?? '',
+    };
+    return html`<button
+      ?disabled=${this.isDisabled}
+      class=${classMap(buttonClass)}
+      @click=${this.onClick}
+    >
+      ${!this.iconAfterText ? this.renderIcon() : ''}
+      <slot></slot>
+      ${this.iconAfterText ? this.renderIcon() : ''}
+    </button>`;
   }
 }
 

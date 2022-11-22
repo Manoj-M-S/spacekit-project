@@ -1,0 +1,82 @@
+.btn {
+  @apply cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center;
+
+  & .btn-icon {
+    @apply mr-2 leading-0 w-5 h-5;
+
+    &.right {
+      @apply mr-0 ml-2;
+    }
+    &.icon-size-2xl {
+      @apply w-6 h-6;
+    }
+    &.icon-size-3xl {
+      @apply w-8 h-8;
+    }
+  }
+
+  &.primary {
+    @apply text-white
+      bg-backgroundButtonPrimary-buttonPrimaryActive border-0;
+    & .btn-icon {
+      @apply stroke-white;
+    }
+  }
+
+  &.primary:hover {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryHover;
+  }
+
+  &.primary:focus {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryActive;
+  }
+
+  &.primary:disabled {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryDisabled;
+  }
+
+  &.secondary {
+    @apply text-textButtonSecondary-buttonSecondaryDefault bg-backgroundButtonSecondary-buttonSecondaryDefault shadow-xs border-strokeButton-buttonSecondaryGreyActive;
+    & .btn-icon {
+      @apply stroke-textButtonLink-buttonLinkDefault;
+    }
+  }
+
+  &.secondary:hover {
+    @apply bg-backgroundButtonSecondary-buttonSecondaryHover;
+    & .btn-icon {
+      @apply stroke-textButtonLink-buttonLinkHover;
+    }
+  }
+
+  &.secondary:focus {
+    @apply bg-backgroundButtonSecondary-buttonSecondaryDefault;
+  }
+
+  &.secondary:disabled {
+    @apply text-textButtonSecondary-buttonSecondaryDisabled bg-backgroundButtonSecondary-buttonSecondaryDisabled border-strokeButton-buttonSecondaryGreyDisabled;
+    & .btn-icon {
+      @apply stroke-textButtonSecondary-buttonSecondaryDisabled;
+    }
+  }
+
+  &.btn-size-md {
+    @apply px-4 py-2.5;
+  }
+
+  &.btn-size-lg {
+    @apply text-16 leading-6 px-4.5 py-2.5;
+  }
+
+  &.btn-size-xl {
+    @apply text-16 leading-6 px-5 py-3;
+  }
+
+  &.btn-size-2xl {
+    @apply text-18 leading-7 px-7 py-4;
+  }
+
+  &.btn-size-3xl {
+    @apply text-20 leading-8 px-8 py-4;
+  }
+}
