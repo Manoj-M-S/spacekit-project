@@ -137,6 +137,8 @@ module.exports = {
         icon: stroke.icon.value,
         borderDefault: stroke.border.default.value,
         borderLight: stroke.border.light.value,
+        primary: stroke.border.focused.value,
+        secondary: primary[800].value,
       },
       strokeButton: {
         buttonSecondaryGreyDisabled: stroke.button.secondaryGrey.disabled.value,
@@ -231,6 +233,8 @@ module.exports = {
         '0px 0px 0px 4px rgba(245, 252, 252, 1), 0px 1px 2px rgba(16, 24, 40, 0.05)',
       'xs-focused4px-grey':
         '0px 0px 0px 4px rgba(248, 249, 249, 1), 0px 1px 2px rgba(16, 24, 40, 0.05)',
+      'xsFocused4pxError':
+        '0px 1px 2px rgba(16, 24, 40, 0.05),0px 0px 0px 4px rgba(254, 228, 226, 1)',
       'sm': '0px 0px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px rgba(16, 24, 40, 0.1)',
       'sm-focused4px-primary': '0px 0px 0pxrgba(245, 252, 252, 1)',
       'sm-focused4px-grey': '0px 0px 0px 4px rgba(242, 244, 247, 1)',
@@ -246,10 +250,6 @@ module.exports = {
       closed: letterSpacing.closed.value,
       extraSpaced: letterSpacing.extraWide.value,
       mediumSpaced: letterSpacing.wide.value,
-    },
-    stroke: {
-      primary: stroke.border.focused.value,
-      secondary: primary[800].value,
     },
     extend: {
       fontSize: {
@@ -281,11 +281,19 @@ module.exports = {
         96: lineHeights[96].value,
       },
       margin: {
+        1.5: '0.375rem',
         2.5: '0.625rem',
       },
       padding: {
         3.5: '0.875rem',
         4.5: '1.125rem',
+        10.5: '2.625rem',
+      },
+      width: {
+        80: '20rem',
+      },
+      spacing: {
+        3.5: '0.875rem',
       },
     },
     fontFamily: {
