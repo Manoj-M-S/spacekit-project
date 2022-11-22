@@ -1,0 +1,54 @@
+h5,
+p {
+  @apply m-0;
+}
+.avatar-label-container {
+  @apply flex items-center;
+
+  & .avatar {
+    &.avatar-size-sm {
+      @apply mr-2.5;
+    }
+
+    &.avatar-size-md {
+      @apply mr-3;
+    }
+
+    &.avatar-size-lg {
+      @apply mr-3;
+    }
+    &.avatar-size-xl {
+      @apply mr-4;
+    }
+  }
+
+  & .text-container {
+    & .heading {
+      @apply text-text-heading font-medium text-14 leading-5;
+    }
+
+    & .sub-heading {
+      @apply text-text-body font-normal text-12 leading-5;
+    }
+
+    &.text-size-lg {
+      & .heading {
+        @apply text-16 leading-6;
+      }
+
+      & .sub-heading {
+        @apply text-14;
+      }
+    }
+
+    &.text-size-xl {
+      & .heading {
+        @apply text-18 leading-7;
+      }
+
+      & .sub-heading {
+        @apply text-14;
+      }
+    }
+  }
+}
