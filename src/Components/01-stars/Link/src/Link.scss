@@ -1,30 +1,30 @@
 .link {
-  --icon-color: var(--text-button-link-default-active);
   @apply flex items-center text-14 leading-5 no-underline border-0 p-0 text-textButtonLink-buttonLinkDefault bg-transparent hover:bg-transparent focus:bg-transparent;
-  
+  .link-icon {
+    @apply stroke-textButtonLink-buttonLinkDefault;
+  }
 
   & .link-icon {
-    --icon-size: 1.25rem;
-    @apply mr-2 leading-0;
+    @apply mr-2 leading-0 w-5 h-5;
     &.right {
       @apply mr-0 ml-2;
     }
     &.icon-size-2xl {
-      --icon-size: 1.5rem;
+      @apply w-6 h-6;
     }
     &.icon-size-3xl {
-      --icon-size: 2rem;
+      @apply w-8 h-8;
     }
   }
 
   &:disabled {
-    --icon-color: var(--text-button-secondary-disabled);
+    @apply stroke-textButtonSecondary-buttonSecondaryDisabled;
   }
   &:hover {
-    --icon-color: var(--text-button-link-hover);
+    @apply stroke-textButtonLink-buttonLinkHover;
   }
   &:active {
-    --icon-color: var(--text-button-secondary-disabled);
+    @apply stroke-textButtonSecondary-buttonSecondaryDisabled;
   }
 
   &.link-size-lg {
@@ -44,7 +44,6 @@
   }
 
   &.disable-link {
-    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled;
-    --icon-color: var(--text-button-link-disabled);
+    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled stroke-textButtonLink-buttonLinkDisabled;
   }
 }
