@@ -1,0 +1,49 @@
+.link {
+  @apply flex items-center text-14 leading-5 no-underline border-0 p-0 text-textButtonLink-buttonLinkDefault bg-transparent hover:bg-transparent focus:bg-transparent;
+  .link-icon {
+    @apply stroke-textButtonLink-buttonLinkDefault;
+  }
+
+  & .link-icon {
+    @apply mr-2 leading-0 w-5 h-5;
+    &.right {
+      @apply mr-0 ml-2;
+    }
+    &.icon-size-2xl {
+      @apply w-6 h-6;
+    }
+    &.icon-size-3xl {
+      @apply w-8 h-8;
+    }
+  }
+
+  &:disabled {
+    @apply stroke-textButtonSecondary-buttonSecondaryDisabled;
+  }
+  &:hover {
+    @apply stroke-textButtonLink-buttonLinkHover;
+  }
+  &:active {
+    @apply stroke-textButtonSecondary-buttonSecondaryDisabled;
+  }
+
+  &.link-size-lg {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-xl {
+    @apply text-16 leading-6 p-0;
+  }
+
+  &.link-size-2xl {
+    @apply text-18 leading-7 p-0;
+  }
+
+  &.link-size-3xl {
+    @apply text-20 leading-8 p-0;
+  }
+
+  &.disable-link {
+    @apply pointer-events-none text-textButtonLink-buttonLinkDisabled stroke-textButtonLink-buttonLinkDisabled;
+  }
+}
