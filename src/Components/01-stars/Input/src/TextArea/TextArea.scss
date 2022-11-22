@@ -1,0 +1,43 @@
+.label {
+  @apply w-80 inline-block;
+
+  & .label-text {
+    @apply p-0 m-0 mb-1.5 text-text-heading text-14 leading-5 font-medium;
+  }
+
+  & .hint {
+    @apply text-text-body text-14 leading-5 p-0 m-0;
+  }
+
+  & .text-area {
+    @apply w-full h-32 border border-solid border-stroke-borderDefault bg-white shadow-xs px-3.5 py-2.5 text-text-body outline-none rounded-lg text-16 leading-6;
+    &::placeholder {
+      @apply text-16 leading-6 tracking-closed;
+    }
+
+    &:hover {
+      @apply text-text-heading;
+    }
+
+    &:active,
+    &:focus {
+      @apply text-text-heading border-stroke-focused shadow-xs-focused4px-primary;
+    }
+
+    &:disabled {
+      @apply bg-backgroundNeutral-neutralLight;
+    }
+
+    &.error {
+      @apply border-stroke-borderDanger;
+      &:focus,
+      &:active {
+        @apply shadow-xsFocused4pxError border-stroke-borderDanger;
+      }
+
+      & + .hint {
+        @apply text-text-danger;
+      }
+    }
+  }
+}

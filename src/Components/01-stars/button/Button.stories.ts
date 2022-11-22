@@ -1,32 +1,44 @@
 import { html } from 'lit';
-import './src/Button';
+import { buttonSize } from './src/Button';
 
 export default {
   title: 'Stars/Button',
   component: 'space-button',
   args: {
-    label: 'Button',
+    label: 'Button CTA',
     disabled: false,
+    iconName: 'user',
+    iconAfterText: false,
   },
   argTypes: {
     size: {
       control: { type: 'radio' },
-      options: ['sm', 'md', 'lg'],
+      options: buttonSize,
     },
     buttonVariant: {
+      defaultValue: 'primary',
       control: { type: 'radio' },
       options: ['primary', 'secondary'],
     },
   },
 };
 
-const Template = ({ label, size, buttonVariant, disabled, buttonUrl }: any) => {
+const Template = ({
+  label,
+  size,
+  buttonVariant,
+  disabled,
+  buttonUrl,
+  iconName,
+  iconAfterText,
+}: any) => {
   return html`
     <space-button
+      iconname=${iconName}
+      ?iconaftertext=${iconAfterText}
       button-variant=${buttonVariant}
-      ?is-disabled=${disabled}
+      ?disabled=${disabled}
       button-size="${size}"
-      button-url=${buttonUrl}
       >${label}</space-button
     >
   `;
@@ -52,11 +64,4 @@ export const Secondary: any = Template.bind({});
 Secondary.args = {
   size: 'sm',
   buttonVariant: 'secondary',
-};
-
-export const Link: any = Template.bind({});
-Link.args = {
-  label: 'Link',
-  size: 'md',
-  buttonUrl: '#',
 };
