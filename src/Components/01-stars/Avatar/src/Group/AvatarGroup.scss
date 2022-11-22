@@ -1,0 +1,43 @@
+.list {
+  @apply list-none flex m-0 p-0;
+
+  & .list-item {
+    @apply bg-backgroundPrimary-primaryExtraLight flex justify-center items-center border-2 border-white border-solid rounded-full;
+    &.avatar-xs {
+      @apply w-6 h-6;
+      & .counter {
+        @apply text-12 leading-5;
+      }
+    }
+    &.avatar-sm {
+      @apply w-8 h-8;
+      & .counter {
+        @apply text-14 leading-5;
+      }
+    }
+    &.avatar-md {
+      @apply w-10 h-10;
+      & .counter {
+        @apply text-16 leading-6;
+      }
+    }
+  }
+  & .counter {
+    @apply text-text-primaryDark leading-0;
+  }
+  &.avatar-xs {
+    & .list-item {
+      @apply first:ml-0 -ml-2;
+    }
+  }
+  &.avatar-sm {
+    & .list-item {
+      @apply first:ml-0 -ml-3;
+    }
+  }
+  &.avatar-md {
+    & .list-item {
+      @apply first:ml-0 -ml-3;
+    }
+  }
+}
