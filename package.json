@@ -15,7 +15,7 @@
     "clean": "npm-run-all -s clean:*",
     "clean:dist": "rimraf dist",
     "clean:storybook": "rimraf storybook-static",
-    "clean:css": "rimraf ./**/*css.lit.ts",
+    "clean:css": "rimraf ./**/*.lit.ts",
     "clean:cache": "rimraf ./.rollup.cache",
     "clean:tsbuildinfo": "rimraf ./**/*.tsbuildinfo",
     "css:watch": "node src/utils/styles.js --watch",
