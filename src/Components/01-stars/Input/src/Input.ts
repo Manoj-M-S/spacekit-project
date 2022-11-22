@@ -6,31 +6,19 @@ import '../../Icon/src/Icon';
 import styles from './Input.scss.lit';
 
 export const inputTypes = [
-  'button',
-  'checkbox',
-  'color',
-  'date',
-  'datetime-local',
-  'email',
-  'file',
-  'hidden',
-  'image',
-  'month',
-  'number',
-  'password',
-  'radio',
-  'range',
-  'reset',
-  'search',
-  'submit',
-  'tel',
   'text',
-  'time',
-  'url',
-  'week',
+  'textarea',
+  'password',
+  'datetime',
+  'datetime-local',
+  'number',
+  'email',
+  'search',
+  'tel',
+  'file',
 ] as const;
 
-export type InputTypes = typeof inputTypes[number];
+export type InputTypes = typeof inputTypes[number] | any;
 
 @customElement('space-input')
 export default class Input extends LitElement {
@@ -125,7 +113,7 @@ export default class Input extends LitElement {
           ?disabled=${this.disabled}
           placeholder=${ifDefined(this.placeholder)}
           value=${ifDefined(this.value)}
-          type=${ifDefined(this.type)}
+          type=${this.type}
         />
         ${this.hintText && !this.isError ? this.renderHint(this.hintText) : ''}
         ${this.isError ? this.renderHint(this.errorHint) : ''}
