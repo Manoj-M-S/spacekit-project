@@ -15,11 +15,12 @@ export default {
   },
 } as Meta;
 
-const Template = ({ size, text, checked, disabled }: any) => {
+const Template = ({ size, text, checked, disabled, name }: any) => {
   return html`
     <space-checkbox
       size=${size}
       text=${text}
+      name=${name}
       ?checked=${checked}
       ?disabled=${disabled}
     >
@@ -30,6 +31,7 @@ const Template = ({ size, text, checked, disabled }: any) => {
 export const Checkbox = Template.bind({});
 
 Checkbox.args = {
+  name: 'checkbox',
   size: 'md',
   checked: false,
   text: 'Remember me',
