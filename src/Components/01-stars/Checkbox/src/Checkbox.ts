@@ -22,16 +22,20 @@ export default class Checkbox extends LitElement {
   checked: boolean = false;
 
   /** @attr value */
-  @property({ type: Boolean })
-  value: boolean = false;
+  @property({ type: String })
+  value!: string;
+
+  /** @attr name */
+  @property({ type: String })
+  name!: string;
 
   /** @attr disabled */
   @property({ type: Boolean })
   disabled: boolean = false;
 
   onChangeHandler(event: Event) {
-    const checked = (event.target as HTMLInputElement).checked;
-    const eventData = { detail: { value: this.value, checked } };
+    const target = event.target as HTMLInputElement;
+    const eventData = { detail: target };
     const customEvent = new CustomEvent('onchange', eventData);
     this.dispatchEvent(customEvent);
   }
@@ -60,10 +64,12 @@ export default class Checkbox extends LitElement {
         <input
           class="input"
           type="checkbox"
-          @change=${this.onChangeHandler}
+          name=${this.name}
+          value=${this.value}
           ?checked=${this.checked}
           ?disabled=${this.disabled}
           aria-disabled=${this.disabled}
+          @change=${this.onChangeHandler}
         />
         <span class="checkbox">${this.renderCheckLine()} </span>
         <span class="label-text">${this.text}</span>
