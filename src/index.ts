@@ -6,3 +6,5 @@ export * from './Components/01-stars/Link';
 export * from './Components/01-stars/Avatar';
 export * from './Components/01-stars/Input';
 export * from './Components/01-stars/ProgressBase';
+export * from './Components/01-stars/Radio';
+export * from './Components/01-stars/Checkbox';
