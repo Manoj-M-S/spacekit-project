@@ -10,8 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn clean:dist && yarn prep:css && rollup --compact -c rollup.config.js",
-    "build-storybook": "yarn prep:css && build-storybook",
+    "build": "yarn clean:dist && NODE_ENV=production yarn prep:css && rollup --compact -c rollup.config.js",
+    "build-storybook": "NODE_ENV=production yarn prep:css && build-storybook",
     "clean": "npm-run-all -s clean:*",
     "clean:dist": "rimraf dist",
     "clean:storybook": "rimraf storybook-static",

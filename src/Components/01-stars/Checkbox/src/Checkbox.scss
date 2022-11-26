@@ -1,0 +1,54 @@
+.label {
+  @apply inline-flex items-center;
+
+  & .checkbox {
+    @apply w-4 h-4 border border-solid inline-block rounded border-stroke-borderDefault bg-white;
+
+    &:hover {
+      @apply border-stroke-focused bg-backgroundPrimary-primaryExtraLight;
+    }
+  }
+
+  & .label-text {
+    @apply text-neutral-700 p-0 m-0 pl-2 text-14 leading-5 font-medium;
+  }
+
+  &.label-md {
+    & .checkbox {
+      @apply w-5 h-5;
+    }
+    & .label-text {
+      @apply text-16 leading-6;
+    }
+  }
+
+  & .svg {
+    @apply fill-none stroke-1 stroke-stroke-borderFocused rounded-sm hidden;
+  }
+
+  & .input {
+    @apply hidden;
+
+    &:checked {
+      & ~ .checkbox {
+        @apply border-stroke-borderFocused;
+
+        & .svg {
+          @apply inline-block;
+        }
+      }
+    }
+
+    &:disabled {
+      & ~ .checkbox {
+        @apply border-stroke-borderLight bg-white;
+        & .svg {
+          @apply stroke-stroke-borderLight;
+        }
+      }
+      & ~ .label-text {
+        @apply text-text-neutralMedium;
+      }
+    }
+  }
+}
