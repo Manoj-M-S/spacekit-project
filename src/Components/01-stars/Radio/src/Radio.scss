@@ -1,0 +1,42 @@
+.label {
+  & .radio {
+    @apply inline-flex justify-center items-center w-4 h-4 border border-solid rounded-full border-stroke-borderDefault bg-white;
+
+    &:hover {
+      @apply border-stroke-focused bg-backgroundPrimary-primaryExtraLight;
+    }
+
+    & .radio-dot {
+      @apply w-1.5 h-1.5 rounded-full bg-stroke-borderFocused hidden;
+    }
+  }
+
+  &.label-md {
+    & .radio {
+      @apply w-5 h-5;
+      & .radio-dot {
+        @apply w-2 h-2;
+      }
+    }
+  }
+
+  & .input {
+    &:checked {
+      & ~ .radio {
+        @apply border-stroke-borderFocused;
+        & .radio-dot {
+          @apply inline-block;
+        }
+      }
+    }
+
+    &:disabled {
+      & ~ .radio {
+        @apply border-stroke-borderLight bg-white;
+		& .radio-dot {
+			@apply bg-stroke-borderLight;
+		  }
+      }
+    }
+  }
+}
