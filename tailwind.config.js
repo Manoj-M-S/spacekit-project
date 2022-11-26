@@ -243,6 +243,11 @@ module.exports = {
       'xl': '0px 8px 8px -4px rgba(16, 24, 40, 0.04), 0px 20px 24px -4px rgba(16, 24, 40, 0.1)',
       '2xl': '0px 24px 48px -12px rgba(16, 24, 40, 0.25)',
       '3xl': '0px 32px 64px -12px rgba(16, 24, 40, 0.2)',
+      '4pxPrimary100': '0px 0px 0px 4px rgba(245, 252, 252, 1)',
+      '4pxGrey100': '0px 0px 0px 4px rgba(248, 249, 249, 1)',
+      '4pxError100': '0px 0px 0px 4px rgba(255, 240, 241, 1)',
+      "4pxGrey600": "0px 0px 0px 4px rgba(71, 84, 103, 1)",
+      "4pxPrimary200":"0px 0px 0px 4px rgba(218, 237, 237, 1)"
     },
     letterSpacing: {
       widest: '0.125rem',
