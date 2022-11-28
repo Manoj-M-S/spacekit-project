@@ -12,7 +12,7 @@ export default class ProgressBase extends LitElement {
 
   /** @attr orientation */
   @property({ type: String })
-  orientation: ProgressOrientation = 'horizontal';
+  orientation!: ProgressOrientation;
 
   /** @attr stage */
   @property({ type: String })
