@@ -246,8 +246,8 @@ module.exports = {
       '4pxPrimary100': '0px 0px 0px 4px rgba(245, 252, 252, 1)',
       '4pxGrey100': '0px 0px 0px 4px rgba(248, 249, 249, 1)',
       '4pxError100': '0px 0px 0px 4px rgba(255, 240, 241, 1)',
-      "4pxGrey600": "0px 0px 0px 4px rgba(71, 84, 103, 1)",
-      "4pxPrimary200":"0px 0px 0px 4px rgba(218, 237, 237, 1)"
+      '4pxGrey600': '0px 0px 0px 4px rgba(71, 84, 103, 1)',
+      '4pxPrimary200': '0px 0px 0px 4px rgba(218, 237, 237, 1)',
     },
     letterSpacing: {
       widest: '0.125rem',
@@ -296,8 +296,10 @@ module.exports = {
         10.5: '2.625rem',
       },
       width: {
+        50: '12.5rem',
         80: '20rem',
       },
+      height: { 50: '12.5rem' },
       spacing: {
         3.5: '0.875rem',
       },
