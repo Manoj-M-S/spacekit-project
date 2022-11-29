@@ -1,0 +1,17 @@
+.list {
+  @apply flex flex-col md:flex-row list-none p-0 m-0;
+}
+
+.list-items {
+  @apply first:before:content-none last:after:content-none px-2 relative first:mt-0 mt-8 after:border-stroke-borderDefault;
+  @apply px-0 md:mt-0 md:first:pl-0 md:last:pr-0;
+
+  &.completed {
+    @apply after:border-backgroundPrimary-primaryDark;
+  }
+}
+
+.list-items::after {
+  @apply border-0 border-l-2 h-full top-7 left-2.75 content-[''] absolute -z-1 block border-solid;
+  @apply md:border-t-2 md:w-full md:left-1/2 md:border-l-0 md:top-2.75;
+}

@@ -228,6 +228,7 @@ module.exports = {
       },
     },
     boxShadow: {
+      'none': '0 0 0 rgb(0,0,0)',
       'xs': '0px 1px 4px rgba(16, 24, 40, 0.05)',
       'xs-focused4px-primary':
         '0px 0px 0px 4px rgba(245, 252, 252, 1), 0px 1px 2px rgba(16, 24, 40, 0.05)',
@@ -246,8 +247,8 @@ module.exports = {
       '4pxPrimary100': '0px 0px 0px 4px rgba(245, 252, 252, 1)',
       '4pxGrey100': '0px 0px 0px 4px rgba(248, 249, 249, 1)',
       '4pxError100': '0px 0px 0px 4px rgba(255, 240, 241, 1)',
-      "4pxGrey600": "0px 0px 0px 4px rgba(71, 84, 103, 1)",
-      "4pxPrimary200":"0px 0px 0px 4px rgba(218, 237, 237, 1)"
+      '4pxGrey600': '0px 0px 0px 4px rgba(71, 84, 103, 1)',
+      '4pxPrimary200': '0px 0px 0px 4px rgba(218, 237, 237, 1)',
     },
     letterSpacing: {
       widest: '0.125rem',
@@ -299,7 +300,12 @@ module.exports = {
         80: '20rem',
       },
       spacing: {
+        2.75: '0.6875rem',
         3.5: '0.875rem',
+        4.75: '1.1875rem',
+      },
+      zIndex: {
+        1: '1',
       },
     },
     fontFamily: {
