@@ -5,7 +5,7 @@
     @apply pt-0.5 pb-1 p-0 cursor-pointer select-none text-center box-border flex items-center justify-center;
 
     & .tab-content {
-      @apply m-0 p-0 text-14 leading-5 text-text-body font-normal;
+      @apply m-0 p-0 text-14 leading-5 text-text-body font-normal no-underline;
     }
 
     & .tab-icon {

@@ -24,6 +24,7 @@ export type TabOrientation = 'horizontal' | 'vertical';
 export interface TabOptions {
   name: string;
   iconName?: string;
+  href?: string;
 }
 
 @customElement('space-tab')
@@ -68,7 +69,7 @@ export default class Tab extends LitElement {
     };
     return html`
       <ul role="tablist" class=${classMap(tabClass)}>
-        ${map(this.options, ({ name, iconName }, index) => {
+        ${map(this.options, ({ name, iconName, href = '#' }, index) => {
           const tabItemClass = {
             'tab-item': true,
             [`active-tab`]: index === this.selectedTab,
@@ -87,7 +88,9 @@ export default class Tab extends LitElement {
                     icon-name=${iconName}
                   ></space-icon>`
                 : null}
-              ${name ? html`<p class="tab-content">${name}</p>` : null}
+              ${name
+                ? html`<a href=${href} class="tab-content">${name}</a>`
+                : null}
             </li>
           `;
         })}
