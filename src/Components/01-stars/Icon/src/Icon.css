@@ -5,6 +5,7 @@ svg {
 
 path,
 rect {
-  stroke: inherit;
   fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
 }
