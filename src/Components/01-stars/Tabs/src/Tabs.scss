@@ -1,0 +1,228 @@
+.tab {
+  @apply list-none p-0 m-0 flex;
+
+  & .tab-item {
+    @apply pt-0.5 pb-1 p-0 cursor-pointer select-none text-center box-border flex items-center justify-center;
+
+    & .tab-content {
+      @apply m-0 p-0 text-14 leading-5 text-text-body font-normal no-underline;
+    }
+
+    & .tab-icon {
+      @apply stroke-stroke-icon stroke-2 w-5 h-5 pr-2.5;
+    }
+  }
+
+  &.size-default {
+    @apply flex-row;
+
+    &.tab-horizontal {
+      & .tab-item {
+        @apply px-3 h-7;
+      }
+    }
+
+    &.tab-vertical {
+      @apply flex-col w-max;
+      & .tab-item {
+        @apply px-5 w-50 justify-start h-8;
+      }
+    }
+  }
+
+  &.size-large {
+    & .tab-item {
+      & .tab-content {
+        @apply text-16 leading-6;
+      }
+      & .tab-icon {
+        @apply w-6 h-6;
+      }
+    }
+
+    &.tab-horizontal {
+      & .tab-item {
+        @apply w-40 h-8 px-5;
+      }
+    }
+
+    &.tab-vertical {
+      @apply flex-col;
+      & .tab-item {
+        @apply px-5 w-50 justify-start h-10;
+      }
+    }
+  }
+
+  @define-mixin underlineBase {
+    & .tab-item {
+      & .tab-icon {
+        @apply hidden;
+      }
+      @apply border-0 border-b-2 border-solid border-stroke-borderLight;
+      &.active-tab {
+        @apply border-backgroundPrimary-primaryDark;
+        & .tab-content {
+          @apply text-text-primaryDark font-bold;
+        }
+      }
+    }
+  }
+
+  @define-mixin containerBase {
+
+    &.tab-horizontal {
+      & .tab-item {
+        @apply px-5;
+      }
+    }
+
+    & .tab-item {
+      & .tab-icon {
+        @apply block;
+      }
+      &.active-tab {
+        & .tab-icon {
+          @apply stroke-white;
+        }
+      }
+    }
+
+    @define-mixin borderMixin {
+      & .tab-item {
+        @apply border border-solid border-stroke-borderLight;
+      }
+
+      &.tab-horizontal {
+        & .tab-item {
+          @apply border-r-0 last:border-r;
+        }
+      }
+
+      &.tab-vertical {
+        & .tab-item {
+          @apply border-b-0 last:border-b;
+        }
+      }
+    }
+
+    &.size-default {
+      @mixin borderMixin;
+
+      & .tab-item {
+        @apply w-50 h-10 justify-start;
+
+        &.active-tab {
+          @apply border-0;
+        }
+      }
+    }
+
+    &.size-large {
+      @mixin borderMixin;
+
+      & .tab-item {
+        @apply w-50 h-11 justify-start;
+      }
+    }
+  }
+
+  &.variant-underline {
+    @mixin underlineBase;
+  }
+
+  &.variant-underlineFilled {
+    @mixin underlineBase;
+
+    & .tab-item {
+      &.active-tab {
+        @apply bg-backgroundPrimary-primaryLight;
+      }
+    }
+  }
+
+  &.variant-filledLight {
+    @mixin underlineBase {
+    }
+
+    & .tab-item {
+      @apply border-0;
+      &.active-tab {
+        @apply bg-backgroundPrimary-primaryLight rounded;
+      }
+    }
+  }
+
+  &.variant-filledDark {
+    @mixin underlineBase {
+    }
+
+    & .tab-item {
+      @apply border-0;
+      &.active-tab {
+        @apply bg-backgroundPrimary-primaryDark rounded;
+        & .tab-content {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  &.variant-container1Light {
+    @mixin underlineBase;
+    @mixin containerBase;
+
+    & .tab-item {
+      &.active-tab {
+        @apply bg-backgroundPrimary-primaryLight;
+        & .tab-content {
+          @apply text-text-primaryDark;
+        }
+        & .tab-icon {
+          @apply stroke-text-primaryDark;
+        }
+      }
+    }
+  }
+
+  &.variant-container1Dark {
+    @mixin underlineBase;
+    @mixin containerBase;
+
+    & .tab-item {
+      &.active-tab {
+        @apply bg-backgroundPrimary-primaryDark;
+        & .tab-content {
+          @apply text-white;
+        }
+      }
+    }
+  }
+
+  &.variant-container2 {
+    @apply flex-col;
+
+    & .tab-item {
+      @apply w-60 h-10 px-5 justify-start border border-solid border-b-0 last:border-b border-stroke-borderLight;
+
+      &.active-tab {
+        @apply border-l-2 border-l-backgroundPrimary-primaryDark;
+
+        & .tab-content {
+          @apply text-text-primaryDark font-bold;
+        }
+        & .tab-icon {
+          @apply stroke-text-primaryDark;
+        }
+      }
+    }
+    &.size-large {
+      & .tab-item {
+        @apply h-11;
+        & .tab-icon {
+          @apply w-6 h-6;
+        }
+      }
+    }
+  }
+}
