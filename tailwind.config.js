@@ -228,6 +228,7 @@ module.exports = {
       },
     },
     boxShadow: {
+      'none': '0 0 0 rgb(0,0,0)',
       'xs': '0px 1px 4px rgba(16, 24, 40, 0.05)',
       'xs-focused4px-primary':
         '0px 0px 0px 4px rgba(245, 252, 252, 1), 0px 1px 2px rgba(16, 24, 40, 0.05)',
@@ -301,7 +302,12 @@ module.exports = {
       },
       height: { 50: '12.5rem' },
       spacing: {
+        2.75: '0.6875rem',
         3.5: '0.875rem',
+        4.75: '1.1875rem',
+      },
+      zIndex: {
+        1: '1',
       },
     },
     fontFamily: {
