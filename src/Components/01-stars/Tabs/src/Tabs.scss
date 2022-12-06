@@ -70,7 +70,6 @@
   }
 
   @define-mixin containerBase {
-
     &.tab-horizontal {
       & .tab-item {
         @apply px-5;
