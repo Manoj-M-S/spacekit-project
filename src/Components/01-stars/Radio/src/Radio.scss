@@ -33,9 +33,9 @@
     &:disabled {
       & ~ .radio {
         @apply border-stroke-borderLight bg-white;
-		& .radio-dot {
-			@apply bg-stroke-borderLight;
-		  }
+        & .radio-dot {
+          @apply bg-stroke-borderLight;
+        }
       }
     }
   }
