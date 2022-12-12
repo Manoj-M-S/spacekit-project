@@ -1,0 +1,110 @@
+p,
+h1,
+h5 {
+  @apply m-0;
+}
+.media-card {
+  @apply flex;
+
+  &:hover {
+    & .media-card-heading-text {
+      @apply text-text-primaryDark;
+    }
+    &.media-card-container {
+      @apply p-4 shadow-lg
+    }
+  }
+
+  &.media-card-container {
+    @apply p-4 shadow-md rounded-lg;
+  }
+
+  & .media-card-image {
+    @apply w-full h-auto object-cover;
+  }
+
+  &.media-card-position-swap {
+    & .media-card-image {
+      @apply order-1;
+    }
+  }
+
+  &.media-card-orientation-vertical {
+    @apply flex-col;
+    & .media-card-image {
+      @apply mb-6;
+    }
+
+    &.media-card-position-swap {
+      & .media-card-image {
+        @apply mb-0 mt-6;
+      }
+    }
+  }
+
+  &.media-card-orientation-horizontal {
+    & .media-card-image {
+      @apply mr-6;
+    }
+
+    &.media-card-position-swap {
+      & .media-card-image {
+        @apply mr-0 ml-6;
+      }
+    }
+    & .media-card-text-container {
+      @apply max-w-148;
+    }
+  }
+
+  & .media-card-subheading-text {
+    @apply text-14 text-backgroundButtonPrimary-buttonPrimaryDefault leading-5 font-bold tracking-[0.1em] uppercase;
+  }
+
+  & .media-card-heading-text {
+    @apply text-24 text-text-heading leading-8 font-bold mt-3;
+  }
+
+  & .media-card-support-text {
+    @apply text-16 text-text-body leading-6 mt-5;
+  }
+
+  &.media-card-size-sm {
+    @apply max-w-70;
+    &.media-card-orientation-horizontal {
+      @apply max-w-max;
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-70 flex-shrink;
+      }
+    }
+  }
+  &.media-card-size-md {
+    @apply max-w-96;
+    &.media-card-orientation-horizontal {
+      @apply max-w-max;
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-96 flex-shrink;
+      }
+    }
+  }
+  &.media-card-size-lg {
+    @apply items-center max-w-148;
+    & .media-card-heading-text {
+      @apply text-30 leading-10;
+    }
+
+    & .media-card-support-text {
+      @apply mt-6;
+    }
+
+    &.media-card-orientation-horizontal {
+      @apply max-w-max;
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-148 flex-shrink;
+      }
+    }
+  }
+}
