@@ -1,13 +1,10 @@
 import { html, LitElement } from 'lit';
-import { property, state, customElement } from 'lit/decorators.js';
-import styles from './AnchorTab.scss.lit';
+import { customElement, property } from 'lit/decorators.js';
 import '../../Tabs/src/Tab';
 import { TabOptions, TabOrientation } from '../../Tabs/src/Tab';
 
 @customElement('space-anchortab')
 export default class AnchorTab extends LitElement {
-  static styles = [styles];
-
   /** @attr options */
   @property()
   options!: TabOptions[];
