@@ -1,6 +1,8 @@
 import { html } from 'lit';
 import './src/MediaCard/MediaCard';
+import './src/IconCard/IconCard';
 import { Meta } from '@storybook/web-components';
+import '../../01-stars/Link';
 
 export default {
   title: 'Constellations/Cards',
@@ -10,30 +12,54 @@ const mediaCard = ({
   src,
   alt,
   size,
+  addon,
   container,
   mediaFirst,
   headingText,
   supportText,
   orientation,
   subHeadingText,
-}: any) => {
-  return html`
-    <space-media-card
-      src=${src}
-      alt=${alt}
-      size=${size}
+}: any) => html`
+  <space-media-card
+    src=${src}
+    alt=${alt}
+    size=${size}
+    ?container=${container}
+    ?media-first=${mediaFirst}
+    head-text=${headingText}
+    support-text=${supportText}
+    sub-heading=${subHeadingText}
+    orientation=${orientation}
+  >
+    ${addon}
+  </space-media-card>
+`;
+
+const iconCard = ({
+  ctaText,
+  ctaHref,
+  headText,
+  iconName,
+  container,
+  alignment,
+  supportText,
+}) =>
+  html`
+    <space-icon-card
+      cta-href=${ctaHref}
+      cta-text=${ctaText}
+      head-text=${headText}
+      icon-name=${iconName}
+      alignment=${alignment}
       ?container=${container}
-      ?media-first=${mediaFirst}
-      head-text=${headingText}
       support-text=${supportText}
-      sub-heading=${subHeadingText}
-      orientation=${orientation}
     >
-    </space-media-card>
+    </space-icon-card>
   `;
-};
 
 export const MediaCard = mediaCard.bind({});
+export const MediaCardAddon = mediaCard.bind({});
+export const IconCard = iconCard.bind({});
 
 MediaCard.args = {
   mediaFirst: true,
@@ -56,6 +82,38 @@ MediaCard.argTypes = {
   size: {
     defaultValue: 'md',
     options: ['sm', 'md', 'lg'],
+    control: { type: 'radio' },
+  },
+};
+
+MediaCardAddon.args = {
+  ...MediaCard.args,
+  addon: html`
+    <space-link class="media_card_addon" iconname="circle" iconaftertext>
+      <span>Learn More</span>
+    </space-link>
+  `,
+};
+MediaCardAddon.argTypes = {
+  ...MediaCard.argTypes,
+  addon: {
+    table: { disable: true },
+  },
+};
+
+IconCard.args = {
+  iconName: 'zap',
+  container: false,
+  headText: 'Deliver instant answers',
+  ctaHref: '#',
+  ctaText: 'Learn More',
+  supportText:
+    'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
+};
+IconCard.argTypes = {
+  alignment: {
+    options: ['left', 'center'],
+    defaultValue: 'center',
     control: { type: 'radio' },
   },
 };

@@ -303,6 +303,7 @@ module.exports = {
       height: { 50: '12.5rem' },
       maxWidth: {
         70: '17.5rem',
+        85.75:'21.4375rem',
         96:'24rem',
         148: '37rem',
       },
