@@ -1,0 +1,98 @@
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.featured-card {
+  @apply relative overflow-hidden max-w-85.75 h-64.5 w-full  bg-black rounded-2xl;
+
+  & .featured-card-image {
+    @apply block w-full h-full object-cover transition duration-200 ease-linear;
+  }
+
+  &:hover {
+    & .featured-card-image {
+      @apply scale-110;
+    }
+  }
+
+  & .featured-card-text-container {
+    @apply absolute inset-0 bg-transparent px-4 py-5 flex flex-col justify-end;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25) -17.98%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+
+    & .featured-card-title-text {
+      @apply text-24 leading-8 font-bold text-white mt-2;
+    }
+
+    & .featured-card-label-text {
+      @apply text-12 leading-5 font-bold text-white;
+    }
+
+    & .featured-card-cta {
+      @apply mt-5 block stroke-textButtonSecondary-buttonSecondaryDefault;
+    }
+  }
+
+  &.featured-card-orientation-vertical {
+    @apply h-114.5;
+  }
+
+  &.featured-card-size-sm {
+    @apply lg:max-w-70 lg:h-52;
+
+    &.featured-card-orientation-vertical {
+      @apply lg:h-94;
+    }
+
+    & .featured-card-text-container {
+      @apply lg:px-4 lg:py-5;
+    }
+  }
+
+  &.featured-card-size-md {
+    @apply lg:max-w-sm lg:h-72 lg:rounded-[20px];
+
+    &.featured-card-orientation-vertical {
+      @apply lg:h-128;
+    }
+
+    & .featured-card-text-container {
+      @apply lg:px-6 lg:py-8;
+
+      & .featured-card-title-text {
+        @apply text-30 leading-10;
+      }
+
+      & .featured-card-label-text {
+        @apply text-14;
+      }
+    }
+  }
+
+  &.featured-card-size-lg {
+    @apply lg:max-w-148 lg:h-110 lg:rounded-3xl;
+
+    &.featured-card-orientation-vertical {
+      @apply lg:h-148;
+    }
+
+    & .featured-card-text-container {
+      @apply lg:p-10;
+
+      & .featured-card-cta {
+        @apply mt-6;
+      }
+
+      & .featured-card-title-text {
+        @apply text-48 leading-60;
+      }
+
+      & .featured-card-label-text {
+        @apply text-16 leading-6;
+      }
+    }
+  }
+}

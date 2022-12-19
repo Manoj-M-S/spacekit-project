@@ -4,6 +4,7 @@ import '../../01-stars/Link';
 import './src/IconCard/IconCard';
 import './src/MediaCard/MediaCard';
 import './src/QuickLinkCard/QuickLinkCard';
+import './src/FeaturedCard/FeaturedCard';
 
 export default {
   title: 'Constellations/Cards',
@@ -81,10 +82,33 @@ const quickLinkCard = ({
   </space-quicklink-card>
 `;
 
+const featuredCard = ({
+  src,
+  alt,
+  size,
+  label,
+  title,
+  iconName,
+  buttonText,
+  orientation,
+}) => html`
+  <space-featured-card
+    src=${src}
+    alt=${alt}
+    size=${size}
+    label=${label}
+    title=${title}
+    icon-name=${iconName}
+    orientation=${orientation}
+    button-text=${buttonText}
+  ></space-featured-card>
+`;
+
 export const MediaCard = mediaCard.bind({});
 export const MediaCardAddon = mediaCard.bind({});
 export const IconCard = iconCard.bind({});
 export const QuickLinkCard = quickLinkCard.bind({});
+export const FeaturedCard = featuredCard.bind({});
 
 MediaCard.args = {
   mediaFirst: true,
@@ -165,5 +189,27 @@ QuickLinkCard.argTypes = {
     control: { type: 'radio' },
     options: ['light', 'dark'],
     defaultValue: 'light',
+  },
+};
+
+FeaturedCard.args = {
+  size: 'md',
+  label: 'Our Mission',
+  buttonText: 'Learn More',
+  orientation: 'horizontal',
+  iconName: 'arrowUpRight',
+  alt: 'Improve Outreach to Maximise Conversion',
+  title: 'Improve Outreach to Maximise Conversion',
+  src: 'https://s3-alpha-sig.figma.com/img/1e32/2632/69a3b29d9c4e33d19b2af6b1d8272aae?Expires=1672617600&Signature=bVOU7hwalAn6lFa0KnF2S0qeP2VmV5y4AeI9AamBawbsk9DAHMaiLTi5LNhARcXjCc~cEzyCemAC8PcTyPm9j9y972sPOj4i7lvNU5ZO-G-uikiS7h1NmmOad2SlebCkZgIZtHnU8QaD-BU3TUvhA-Gq3HEhPl7QqdmEZFyOMFkb2pFKlTUKPVomLD6nz8HzX18P1Gk7u-K1ucf54vRhJZINA-IdGK3CNTbX45-9EqwiJck21HTx4DwMqaT5wyFFpkGuChRu~6pCCF1RhiH-3jWmcAnUErZ2~QFMefEIlCaIivL8SlX0VAeSVYxSCT6vVnQolaM1WbuQRbuyEpatjw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+};
+
+FeaturedCard.argTypes = {
+  size: {
+    control: { type: 'radio' },
+    options: ['sm', 'md', 'lg'],
+  },
+  orientation: {
+    control: { type: 'radio' },
+    options: ['horizontal', 'vertical'],
   },
 };
