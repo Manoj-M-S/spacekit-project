@@ -1,4 +1,5 @@
 .image {
+  scale: inherit;
   width: inherit;
   height: inherit;
   border: inherit;
@@ -6,6 +7,15 @@
   display: inherit;
   padding: inherit;
   position: inherit;
+  max-width: inherit;
+  max-height: inherit;
+  transition: inherit;
+  object-fit: inherit;
+  transition: inherit;
   border-radius: inherit;
   background-color: inherit;
+  transition-delay: inherit;
+  transition-property: inherit;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
 }

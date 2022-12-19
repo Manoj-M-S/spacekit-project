@@ -1,8 +1,9 @@
-import { html } from 'lit';
-import './src/MediaCard/MediaCard';
-import './src/IconCard/IconCard';
 import { Meta } from '@storybook/web-components';
+import { html } from 'lit';
 import '../../01-stars/Link';
+import './src/IconCard/IconCard';
+import './src/MediaCard/MediaCard';
+import './src/QuickLinkCard/QuickLinkCard';
 
 export default {
   title: 'Constellations/Cards',
@@ -57,9 +58,33 @@ const iconCard = ({
     </space-icon-card>
   `;
 
+const quickLinkCard = ({
+  src,
+  alt,
+  size,
+  color,
+  ctaText,
+  headingText,
+  supportText,
+  ctaIconName,
+}: any) => html`
+  <space-quicklink-card
+    src=${src}
+    alt=${alt}
+    size=${size}
+    color=${color}
+    cta-text=${ctaText}
+    cta-icon-name=${ctaIconName}
+    head-text=${headingText}
+    support-text=${supportText}
+  >
+  </space-quicklink-card>
+`;
+
 export const MediaCard = mediaCard.bind({});
 export const MediaCardAddon = mediaCard.bind({});
 export const IconCard = iconCard.bind({});
+export const QuickLinkCard = quickLinkCard.bind({});
 
 MediaCard.args = {
   mediaFirst: true,
@@ -94,6 +119,7 @@ MediaCardAddon.args = {
     </space-link>
   `,
 };
+
 MediaCardAddon.argTypes = {
   ...MediaCard.argTypes,
   addon: {
@@ -110,10 +136,34 @@ IconCard.args = {
   supportText:
     'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
 };
+
 IconCard.argTypes = {
   alignment: {
     options: ['left', 'center'],
     defaultValue: 'center',
     control: { type: 'radio' },
+  },
+};
+
+QuickLinkCard.args = {
+  src: 'https://s3-alpha-sig.figma.com/img/2212/efbe/668a2bb364a834fb4e810d31a8ea7d8a?Expires=1672012800&Signature=TsBygF8moiRS7B45AGzr3l1HTd2vzs1S0kkGZRvGyjYxAuN3WxwEjbdzuOp1tFqTMCd8EbDDtYTUKO4dQ7kcjhC4Tz1yfajYr3HSc7Ks4iADgPz9rNbXpOY9psQdWA3uOYaVAgCmSIkgCw5hBSFMd2PlckQG17Ah5Qji8zpshGGCkgqKPUgXFgdOVsBEw7NSxSFKmvuPyfH5vx5mIWpotlsn2xvat3FMVh9g0sz4Dk0815tosb5oOuDj3Ng2TjXeMlAEHCczzYsBpZvmxZXAXAMo~Sl0pwsN8KjnNdeMqQD4go5XxAQYZlDAevSkL1MUX3KeXpZvqXt5NJl7-2~fWA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'Improve Outreach to Maximise Conversion',
+  ctaText: 'Learn More',
+  ctaIconName: 'arrowRight',
+  headingText: 'Improve Outreach to Maximise Conversion',
+  supportText:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem ultrices quam id sit aliquam.',
+};
+
+QuickLinkCard.argTypes = {
+  size: {
+    control: { type: 'radio' },
+    options: ['sm', 'md', 'lg'],
+    defaultValue: 'md',
+  },
+  color: {
+    control: { type: 'radio' },
+    options: ['light', 'dark'],
+    defaultValue: 'light',
   },
 };
