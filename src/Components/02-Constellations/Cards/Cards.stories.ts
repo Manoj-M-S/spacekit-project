@@ -5,6 +5,7 @@ import './src/IconCard/IconCard';
 import './src/MediaCard/MediaCard';
 import './src/QuickLinkCard/QuickLinkCard';
 import './src/FeaturedCard/FeaturedCard';
+import './src/PricingCard/PricingCard';
 
 export default {
   title: 'Constellations/Cards',
@@ -104,11 +105,43 @@ const featuredCard = ({
   ></space-featured-card>
 `;
 
+const pricingCard = ({
+  price,
+  label,
+  colour,
+  cardType,
+  iconName,
+  planName,
+  headingOne,
+  headingTwo,
+  buttonText,
+  priceOptions,
+  priceDescription,
+}) =>
+  html`
+    <space-pricing-card
+      label=${label}
+      price=${price}
+      colour=${colour}
+      plan-name=${planName}
+      card-type=${cardType}
+      icon-name=${iconName}
+      button-text=${buttonText}
+      heading-one=${headingOne}
+      heading-two=${headingTwo}
+      .featuresList=${priceOptions}
+      price-description=${priceDescription}
+    >
+    </space-pricing-card>
+  `;
+
 export const MediaCard = mediaCard.bind({});
 export const MediaCardAddon = mediaCard.bind({});
 export const IconCard = iconCard.bind({});
 export const QuickLinkCard = quickLinkCard.bind({});
 export const FeaturedCard = featuredCard.bind({});
+export const PricingCard = pricingCard.bind({});
+export const PricingCardLongList = pricingCard.bind({});
 
 MediaCard.args = {
   mediaFirst: true,
@@ -212,4 +245,56 @@ FeaturedCard.argTypes = {
     control: { type: 'radio' },
     options: ['horizontal', 'vertical'],
   },
+};
+
+const priceOptions = [
+  { features: 'Access to basic features' },
+  { features: 'Basic reporting and analytics' },
+  { features: 'Up to 10 individual users' },
+  { features: '20GB individual data each user' },
+  { features: 'Basic chat and email support' },
+  { features: 'Attend events' },
+  { features: 'Automatic updates' },
+  { features: 'Backup your account' },
+  { features: 'Audit log and notes' },
+  { features: 'Feature requests' },
+];
+
+PricingCard.args = {
+  price: '$10/mth',
+  colour: 'light',
+  iconName: 'zap',
+  cardType: 'icon',
+  planName: 'Basic plan',
+  buttonText: 'Get Started',
+  priceDescription: 'Our most popular plan.',
+  priceOptions,
+};
+
+PricingCard.argTypes = {
+  cardType: {
+    options: ['icon', 'withoutIcon', 'longFeatureList'],
+    control: { type: 'radio' },
+  },
+  colour: {
+    options: ['light', 'primary'],
+    control: { type: 'radio' },
+  },
+};
+PricingCardLongList.args = {
+  price: '$10',
+  label: 'Label',
+  colour: 'light',
+  iconName: 'zap',
+  planName: 'Basic plan',
+  headingOne: 'FEATURES',
+  buttonText: 'Get Started',
+  cardType: 'longFeatureList',
+  headingTwo: 'Everything in our free plan plus....',
+  priceDescription: 'Our most popular plan for small teams.',
+  priceOptions,
+};
+
+PricingCardLongList.argTypes = {
+  ...PricingCard.argTypes,
 };

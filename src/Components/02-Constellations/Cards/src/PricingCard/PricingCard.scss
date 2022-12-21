@@ -1,0 +1,106 @@
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.pricing-card {
+  @apply flex flex-col items-center max-w-85.75 lg:max-w-90 overflow-hidden shadow-md hover:shadow-xl rounded-2xl border border-solid;
+
+  & .pricing-card-text-container {
+    @apply px-6 pt-6 lg:px-8 lg:pt-8 items-stretch text-center;
+
+    & .pricing-card-icon {
+      @apply w-10 h-10 stroke-backgroundButtonPrimary-buttonPrimaryActive;
+    }
+    & .pricing-card-plan-text {
+      @apply text-20 leading-6 font-medium text-text-primaryDark;
+    }
+
+    & .pricing-card-price-text {
+      @apply text-36 leading-44 tracking-closed lg:text-48 lg:leading-44 font-bold text-text-heading mt-2;
+    }
+
+    & .pricing-card-price-description-text {
+      @apply text-16 leading-6 font-normal text-text-body mt-2;
+    }
+
+    & .pricing-card-long-features-label {
+      @apply hidden;
+    }
+  }
+
+  &.pricing-card-color-light {
+    @apply border-stroke-borderLight bg-white;
+  }
+
+  &.pricing-card-color-primary {
+    @apply border-stroke-borderFocused bg-backgroundPrimary-primaryExtraLight;
+
+    & .pricing-card-cta-container {
+      @apply bg-backgroundPrimary-primaryExtraLight;
+    }
+  }
+
+  & .pricing-card-features-container {
+    @apply mt-8 px-6 lg:px-8 mb-6 lg:mb-8 w-full box-border list-none;
+
+    & .pricing-card-features-inner-container {
+      @apply flex items-center mb-4 last:mb-0;
+
+      & .pricing-card-features-icon {
+        @apply w-6 h-6 mr-3 flex justify-center items-center bg-backgroundPrimary-primaryLight rounded-full flex-shrink-0;
+      }
+      & .pricing-card-features-text {
+        @apply text-text-body text-16 leading-6;
+      }
+    }
+  }
+
+  & .pricing-card-cta-container {
+    @apply bg-backgroundNeutral-neutralLight px-6 lg:px-8 self-stretch;
+    & .pricing-card-cta {
+      @apply block py-6 lg:py-8 w-full justify-center;
+    }
+  }
+
+  &.pricing-card-longFeatureList {
+    @apply max-w-85.75 lg:max-w-148;
+
+    & .pricing-card-text-container {
+      @apply border-0 border-b border-solid border-stroke-dividerLight flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 justify-between items-start box-border w-full;
+      & .pricing-card-text-inner-container {
+        @apply text-left;
+
+        & .pricing-card-long-features-text-container {
+          @apply flex gap-x-2;
+          & .pricing-card-long-features-label {
+            @apply inline;
+          }
+        }
+      }
+      .pricing-card-price-text {
+        @apply text-60 leading-none mt-0 mb-8;
+      }
+      & .pricing-card-price-text-sub {
+        @apply text-16 leading-24 font-medium text-text-body;
+      }
+    }
+    & .pricing-card-price-description-text {
+      @apply mt-1;
+    }
+
+    & .pricing-card-long-features-heading-text-container {
+      @apply mt-8 self-start px-6 lg:px-8 w-full box-border;
+
+      & .pricing-card-long-features-head-text-one {
+        @apply text-16 leading-6 text-text-heading font-bold;
+      }
+      & .pricing-card-long-features-head-text-two {
+        @apply text-16 leading-6 text-text-body font-normal mt-1;
+      }
+    }
+
+    & .pricing-card-features-container {
+      @apply grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4;
+    }
+  }
+}
