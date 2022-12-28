@@ -1,11 +1,13 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import '../../01-stars/Link';
+import './src/FeaturedCard/FeaturedCard';
 import './src/IconCard/IconCard';
 import './src/MediaCard/MediaCard';
-import './src/QuickLinkCard/QuickLinkCard';
-import './src/FeaturedCard/FeaturedCard';
+import './src/PeopleCard/PeopleCard';
+import { peopleCardTypeList } from './src/PeopleCard/PeopleCard';
 import './src/PricingCard/PricingCard';
+import './src/QuickLinkCard/QuickLinkCard';
 
 export default {
   title: 'Constellations/Cards',
@@ -135,6 +137,33 @@ const pricingCard = ({
     </space-pricing-card>
   `;
 
+const peopleCard = ({
+  name,
+  size,
+  type,
+  imageSrc,
+  imageAlt,
+  avatarSrc,
+  avatarAlt,
+  socialLinks,
+  destination,
+  description,
+}) =>
+  html`
+    <space-people-card
+      size=${size}
+      type=${type}
+      name=${name}
+      image-src=${imageSrc}
+      image-alt=${imageAlt}
+      avatar-src=${avatarSrc}
+      avatar-alt=${avatarAlt}
+      destination=${destination}
+      description=${description}
+      .socialLinks=${socialLinks}
+    ></space-people-card>
+  `;
+
 export const MediaCard = mediaCard.bind({});
 export const MediaCardAddon = mediaCard.bind({});
 export const IconCard = iconCard.bind({});
@@ -142,6 +171,12 @@ export const QuickLinkCard = quickLinkCard.bind({});
 export const FeaturedCard = featuredCard.bind({});
 export const PricingCard = pricingCard.bind({});
 export const PricingCardLongList = pricingCard.bind({});
+export const TestimonyWithAvatar = peopleCard.bind({});
+export const TestimonyWithImage = peopleCard.bind({});
+export const PeopleWithAvatar = peopleCard.bind({});
+export const PeopleWithAvatarAndBio = peopleCard.bind({});
+export const PeopleWithImage = peopleCard.bind({});
+export const PeopleWithImageAndBio = peopleCard.bind({});
 
 MediaCard.args = {
   mediaFirst: true,
@@ -297,4 +332,106 @@ PricingCardLongList.args = {
 
 PricingCardLongList.argTypes = {
   ...PricingCard.argTypes,
+};
+
+TestimonyWithAvatar.args = {
+  name: 'Alicia King',
+  destination: 'Sales Manager',
+  type: 'testimonyAvatar',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ante est, est nibh eget. Eget massa mauris morbi tellus vel.',
+  avatarSrc:
+    'https://s3-alpha-sig.figma.com/img/4cec/8417/db9985eb5457bd0fd5b5df6068f1ef28?Expires=1673222400&Signature=o0fvEEJB-YblYoU8Rrkwh4zJatHfJvexaXim84c4I0w~y0OA8vMVqp7COs9UdpIkqYMh950v-7Z28XF~PegxStbhVpVnO6T8Tn6gVPl2KORj8U4T-7s0GqUu3x2jpQrpjvPK2dCd4Xj5BLSiY70hZIwsqIwXh-Nkb-K31WlpkJuhoTfFD~MAB08jphwm9WuONCDsy12MDDrNta6GoJIQJhoXvDF89YSgnxr5xuMo6pVk5MlF0lslYKNK71nUdrp133Zcu5dVlWhANv001GCpLviu67YGVj0JkOBysMl0653gwTrfNQibqHLX-LGE4Ri-8UObwpl5k0z7nAEp~Zl-2Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  avatarAlt: 'Alicia King',
+};
+
+TestimonyWithAvatar.argTypes = {
+  type: {
+    control: { type: 'radio' },
+    options: peopleCardTypeList,
+  },
+  size: {
+    control: { type: 'radio' },
+    options: ['sm', 'md'],
+    defaultValue: 'md',
+  },
+};
+
+TestimonyWithImage.args = {
+  name: 'Alicia King',
+  destination: 'Sales Manager',
+  avatarAlt: 'Alicia King',
+  type: 'testimonyImage',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique ante est, est nibh eget. Eget massa mauris morbi tellus vel.',
+  imageSrc:
+    'https://s3-alpha-sig.figma.com/img/14c7/63d3/cdab95c954de551145b8a964e4ebb73c?Expires=1673222400&Signature=pZTCzNFFJN9bCsLm5libz6BoldC5WiiXtuRHGVB3XTvCtlTqzjRA0BZIZcKG39UBGrYnDWLps4P6sP1udodMAIzaL40ZMEI~0S2ajcoOTXpxGIUmqGr1t8ZXuywLgTaulseujPYZDYW89uozw~XpjcogcTVf6zvCKOBQYpjs~g88Z7cZzlW8it9vtNRgrP3RtImFf-JKGWT6jH~0TzzeuBsO~kblbCowzRrIENP83~W80n~o4p6vcM-kTTYtgS4RyDNT4Cu5cg3YuyKGuhFYXgu-9Oj4iaThVWY6JGSHLyudRSU-esBPsCkp1zskw3685qPArKi86ratPFXnVYX5mw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  imageAlt: 'Alicia King',
+};
+
+TestimonyWithImage.argTypes = {
+  ...TestimonyWithAvatar.argTypes,
+};
+
+PeopleWithAvatar.args = {
+  type: 'peopleAvatar',
+  name: 'Alicia King',
+  destination: 'Founder & CEO',
+  avatarSrc:
+    'https://s3-alpha-sig.figma.com/img/4cec/8417/db9985eb5457bd0fd5b5df6068f1ef28?Expires=1673222400&Signature=o0fvEEJB-YblYoU8Rrkwh4zJatHfJvexaXim84c4I0w~y0OA8vMVqp7COs9UdpIkqYMh950v-7Z28XF~PegxStbhVpVnO6T8Tn6gVPl2KORj8U4T-7s0GqUu3x2jpQrpjvPK2dCd4Xj5BLSiY70hZIwsqIwXh-Nkb-K31WlpkJuhoTfFD~MAB08jphwm9WuONCDsy12MDDrNta6GoJIQJhoXvDF89YSgnxr5xuMo6pVk5MlF0lslYKNK71nUdrp133Zcu5dVlWhANv001GCpLviu67YGVj0JkOBysMl0653gwTrfNQibqHLX-LGE4Ri-8UObwpl5k0z7nAEp~Zl-2Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  avatarAlt: 'Alicia King',
+};
+PeopleWithAvatar.argTypes = {
+  ...TestimonyWithAvatar.argTypes,
+};
+
+const socialLinks = [
+  {
+    href: '',
+    iconName: 'activity',
+  },
+  {
+    href: '',
+    iconName: 'activity',
+  },
+  {
+    href: '',
+    iconName: 'activity',
+  },
+];
+
+PeopleWithAvatarAndBio.args = {
+  ...PeopleWithAvatar.args,
+  type: 'peopleAvatarBio',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  socialLinks,
+};
+
+PeopleWithAvatarAndBio.argTypes = {
+  ...PeopleWithAvatar.argTypes,
+};
+
+PeopleWithImage.args = {
+  imageSrc:
+    'https://s3-alpha-sig.figma.com/img/b5ef/29b0/ec4d295ee05a8c97a453f7f33e1f3da1?Expires=1673222400&Signature=JD-28JPBy9RROKcRDj0WBinkNld1uFnTcBr0Ik4LOXwf-lkHArMlKNWoDFQLLSzy85mD-FRDnu5sYd81hpG-iibjWHRAyvNUiw4p4AyPw52VRrDIplwt5siffrbKtx9GLn0RyXS-MUpQcht8wCbLIPSA16Dr-2bTs4U7CLMYREL8VNhfdATln8YxJWQEUNVjmCnBQxWYRW5QFxdqvJK6CAhK5s9wTew435XraF9pcRy8ve~l3hx9QZJIKl0jnL-faAGZR92dSrMFo3nYOx9tpX4ySnL70~O54wy0ox8avm8RDfDMUOZDPnpg8EaNCbP3zktQiDvVE74R5SgeYJO~vA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  imageAlt: 'Alicia King',
+  name: 'Alicia King',
+  destination: 'Founder & CEO',
+  type: 'peopleImage',
+  size: 'sm',
+};
+
+PeopleWithImage.argTypes = {
+  ...PeopleWithAvatar.argTypes,
+};
+
+PeopleWithImageAndBio.args = {
+  ...PeopleWithImage.args,
+  type: 'peopleImageBio',
+  description:
+    'Ac dignissim nunc quam turpis varius nulla. Id etiam consectetur tellus ac.',
+  socialLinks,
+};
+PeopleWithImageAndBio.argTypes = {
+  ...PeopleWithImage.argTypes,
 };
