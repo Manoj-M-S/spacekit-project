@@ -9,7 +9,19 @@ export default {
 } as Meta;
 
 const Modal: Story<any> = ({ featuredIcon, alignment, checkboxText, iconName, title, horizontal, supportiveText, primaryBtnText, secondaryBtnText }: any) => {
-  return html` <space-modal ?featured-icon=${featuredIcon} checkbox-text=${checkboxText} icon-name=${iconName} ?horizontal=${horizontal} alignment=${alignment} title=${title} supportive-text=${supportiveText} primary-btn-text=${primaryBtnText} secondary-btn-text=${secondaryBtnText}> </space-modal> `;
+  return html`
+    <space-modal 
+      ?featured-icon=${featuredIcon} 
+      checkbox-text=${checkboxText} 
+      icon-name=${iconName} 
+      ?horizontal=${horizontal} 
+      alignment=${alignment} 
+      title=${title} 
+      supportive-text=${supportiveText} 
+      primary-btn-text=${primaryBtnText} 
+      secondary-btn-text=${secondaryBtnText}
+    > 
+    </space-modal> `;
 };
 
 const modalPasswordPrompt: Story<any> = ({ primaryBtnText, secondaryBtnText, title, supportiveText, emailLabel, passwordLabel }) => {
