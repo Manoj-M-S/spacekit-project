@@ -9,7 +9,7 @@
     @apply px-6 pt-6 lg:px-8 lg:pt-8 items-stretch text-center;
 
     & .pricing-card-icon {
-      @apply w-10 h-10 stroke-backgroundButtonPrimary-buttonPrimaryActive;
+      @apply w-10 h-10 stroke-backgroundButtonPrimary-buttonPrimaryActive pb-5;
     }
     & .pricing-card-plan-text {
       @apply text-20 leading-6 font-medium text-text-primaryDark;
