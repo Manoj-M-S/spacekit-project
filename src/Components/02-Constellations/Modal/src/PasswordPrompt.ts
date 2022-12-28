@@ -8,7 +8,7 @@ import './Modal';
 import '../../../01-stars/Input/src/Input';
 
 @customElement('password-prompt-modal')
-export default class PasswordPromptModal extends LitElement {
+export default class PasswordPrompt extends LitElement {
   static styles = [styles];
 
   /** @attr featured-icon */
@@ -66,6 +66,6 @@ export default class PasswordPromptModal extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'password-prompt-modal': PasswordPromptModal;
+    'password-prompt-modal': PasswordPrompt;
   }
 }
