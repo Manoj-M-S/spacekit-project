@@ -300,9 +300,6 @@ module.exports = {
         50: '12.5rem',
         80: '20rem',
       },
-      maxWidth: {
-        200: '50rem',
-      },
       height: { 50: '12.5rem' },
       spacing: {
         2.75: '0.6875rem',
