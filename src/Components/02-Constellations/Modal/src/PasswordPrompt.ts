@@ -2,10 +2,10 @@ import { html, LitElement } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import styles from './PasswordPrompt.scss.lit';
-import "../../../01-stars/Icon/src/Icon";
-import "../../../01-stars/button/src/Button"
-import "./Modal"
-import "../../../01-stars/Input/src/Input";
+import '../../../01-stars/Icon/src/Icon';
+import '../../../01-stars/button/src/Button';
+import './Modal';
+import '../../../01-stars/Input/src/Input';
 
 @customElement('password-prompt-modal')
 export default class PasswordPromptModal extends LitElement {
@@ -38,7 +38,6 @@ export default class PasswordPromptModal extends LitElement {
   /** @attr password-label */
   @property({ type: String, attribute: 'password-label' })
   passwordLabel: string = '';
-  
 
   render() {
     const modalClass = {
@@ -46,7 +45,7 @@ export default class PasswordPromptModal extends LitElement {
     };
     return html`
       <div class="password-prompt">
-        <space-modal 
+        <space-modal
           featured-icon
           icon-name="successTick"
           title=${this.title}
@@ -59,7 +58,7 @@ export default class PasswordPromptModal extends LitElement {
             <space-input label=${this.emailLabel}></space-input>
             <space-input label=${this.passwordLabel}></space-input>
           </div>
-        </space-modal>   
+        </space-modal>
       </div>
     `;
   }

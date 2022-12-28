@@ -2,9 +2,9 @@ import { html, LitElement, _$LE } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import styles from './Modal.scss.lit';
-import "../../../01-stars/Icon/src/Icon";
-import "../../../01-stars/button/src/Button";
-import "../../../01-stars/Checkbox/src/Checkbox";
+import '../../../01-stars/Icon/src/Icon';
+import '../../../01-stars/button/src/Button';
+import '../../../01-stars/Checkbox/src/Checkbox';
 
 export type ModalAlignment = 'left' | 'center';
 
@@ -49,11 +49,14 @@ export default class Modal extends LitElement {
   checkboxText: string = '';
 
   renderIcon() {
-    return html `<space-icon class="icon-class" icon-name=${this.iconName}></space-icon>`;
+    return html`<space-icon
+      class="icon-class"
+      icon-name=${this.iconName}
+    ></space-icon>`;
   }
 
   renderOnHorizontal() {
-    return html `
+    return html`
       <div class="horizontal-container">
         ${this.featuredIcon ? this.renderIcon() : null}
         <div class="horizontal-content">
@@ -62,17 +65,31 @@ export default class Modal extends LitElement {
             <div class="horizontal-supportive-text">${this.supportiveText}</div>
           </div>
           <div class="horizontal-actions">
-            <space-checkbox class="checkbox-class" size="sm" text=${this.checkboxText}></space-checkbox>
+            <space-checkbox
+              class="checkbox-class"
+              size="sm"
+              text=${this.checkboxText}
+            ></space-checkbox>
             <div class="horizontal-btn-container">
-                <space-button class="full" button-variant="primary" button-size="lg">${this.primaryBtnText}</space-button>
-                <space-button class="full" button-variant="secondary" button-size="lg">${this.secondaryBtnText}</space-button>
+              <space-button
+                class="full"
+                button-variant="primary"
+                button-size="lg"
+                >${this.primaryBtnText}</space-button
+              >
+              <space-button
+                class="full"
+                button-variant="secondary"
+                button-size="lg"
+                >${this.secondaryBtnText}</space-button
+              >
             </div>
           </div>
         </div>
       </div>
     `;
   }
-  
+
   render() {
     const modalClass = {
       modal: true,
@@ -80,31 +97,39 @@ export default class Modal extends LitElement {
     const modalAlignment = {
       content: true,
       [`content-${this.alignment}`]: this.alignment,
-    }
+    };
     const textContent = {
       'text-content': true,
       [`content-${this.alignment}`]: this.alignment,
-    }
+    };
     return html`
       <div class=${classMap(modalClass)}>
-      ${this.horizontal ? this.renderOnHorizontal() : 
-      html `
-        <div class="modal-container">
-          <div class=${classMap(modalAlignment)}>
-              ${this.featuredIcon ? this.renderIcon() : null}
-              <div class=${classMap(textContent)}>
+        ${this.horizontal
+          ? this.renderOnHorizontal()
+          : html` <div class="modal-container">
+              <div class=${classMap(modalAlignment)}>
+                ${this.featuredIcon ? this.renderIcon() : null}
+                <div class=${classMap(textContent)}>
                   <div class="title">${this.title}</div>
                   <div class="supportive-text">${this.supportiveText}</div>
+                </div>
               </div>
-          </div>
-          <slot></slot>
-          <div class="action-buttons">
-              <space-button class="full" button-variant="primary" button-size="lg">${this.primaryBtnText}</space-button>
-              <space-button class="full" button-variant="secondary" button-size="lg">${this.secondaryBtnText}</space-button>
-          </div>
-        </div>`
-      }
-      
+              <slot></slot>
+              <div class="action-buttons">
+                <space-button
+                  class="full"
+                  button-variant="primary"
+                  button-size="lg"
+                  >${this.primaryBtnText}</space-button
+                >
+                <space-button
+                  class="full"
+                  button-variant="secondary"
+                  button-size="lg"
+                  >${this.secondaryBtnText}</space-button
+                >
+              </div>
+            </div>`}
       </div>
     `;
   }
