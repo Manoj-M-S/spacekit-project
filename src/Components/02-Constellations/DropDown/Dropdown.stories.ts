@@ -1,7 +1,7 @@
 import { html, TemplateResult } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import './src/Dropdown';
-import { ButtonVariant } from '../button/src/Button';
+import { ButtonVariant } from '../../01-stars/button';
 import '../../01-stars/Link/src/Link';
 
 const triggerVariants: ButtonVariant[] = ['primary', 'secondary'];
