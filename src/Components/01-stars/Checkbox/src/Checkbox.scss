@@ -1,8 +1,11 @@
+:host {
+  @apply inline-flex;
+}
 .label {
   @apply inline-flex items-center;
 
   & .checkbox {
-    @apply w-4 h-4 border border-solid inline-block rounded border-stroke-borderDefault bg-white;
+    @apply box-border w-4 h-4 border border-solid inline-block rounded border-stroke-borderDefault bg-white;
 
     &:hover {
       @apply border-stroke-focused bg-backgroundPrimary-primaryExtraLight;
