@@ -3,7 +3,7 @@
 }
 
 .dropdown-list-base {
-  @apply min-w-60 w-fit list-none shadow-lg rounded-lg;
+  @apply min-w-60 w-fit list-none shadow-lg rounded-lg bg-white;
 
   & .dropdown-list-base-header,
   & .dropdown-list-base-name {
