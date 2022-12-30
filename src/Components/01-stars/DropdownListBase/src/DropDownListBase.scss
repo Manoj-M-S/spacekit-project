@@ -38,7 +38,7 @@
     }
 
     & .dropdown-list-base-name {
-      @apply font-normal;
+      @apply font-normal no-underline;
     }
 
     &:hover {

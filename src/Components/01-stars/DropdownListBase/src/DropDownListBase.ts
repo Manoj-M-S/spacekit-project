@@ -14,6 +14,7 @@ export type DropDownListBaseType = {
   showBorder?: boolean;
   disabled?: boolean;
   checkBoxChecked?: boolean;
+  href?: string;
 };
 
 @customElement('space-dropdown-list-base')
@@ -52,6 +53,15 @@ export default class DropDownListBase extends LitElement {
   @property({ type: String, attribute: 'checkbox-size' })
   checkBoxSize: CheckBoxSize = 'sm';
 
+  dispatchSelectEvent = (data: { name?: string; href?: string }) => () => {
+    const customEvent = new CustomEvent('onClick', {
+      detail: data,
+      bubbles: true,
+    });
+
+    this.dispatchEvent(customEvent);
+  };
+
   render() {
     return html`
       <ul class="dropdown-list-base">
@@ -79,6 +89,7 @@ export default class DropDownListBase extends LitElement {
             name,
             checkbox,
             iconName,
+            href,
             disabled = false,
             checkBoxChecked,
             showBorder = false,
@@ -90,7 +101,11 @@ export default class DropDownListBase extends LitElement {
             };
 
             return html`
-              <li aria-disabled=${disabled} class=${classMap(listClass)}>
+              <li
+                aria-disabled=${disabled}
+                class=${classMap(listClass)}
+                @click=${this.dispatchSelectEvent({ name, href })}
+              >
                 ${checkbox
                   ? html`
                       <space-checkbox
@@ -111,9 +126,13 @@ export default class DropDownListBase extends LitElement {
                           `
                         : null}
                     `}
-                ${name
-                  ? html` <h6 class="dropdown-list-base-name">${name}</h6> `
-                  : null}
+                ${href
+                  ? html`
+                      <a href=${href} class="dropdown-list-base-name"
+                        >${name}</a
+                      >
+                    `
+                  : html`<h6 class="dropdown-list-base-name">${name}</h6>`}
               </li>
             `;
           }
