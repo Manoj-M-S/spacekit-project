@@ -26,11 +26,12 @@ const Template = ({
       button-text=${buttonText}
     >
       <space-dropdown-list-base
+        show-header
         avatar-alt=${avatarAlt}
         avatar-src=${avatarSrc}
         avatar-heading=${avatarHeading}
-        .dropDownOptions=${dropDownList}
         avatar-subheading=${avatarSubHeading}
+        .dropDownOptions=${dropDownList}
       ></space-dropdown-list-base>
     </space-dropdown>
   `;
