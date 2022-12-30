@@ -1,119 +1,70 @@
-import { html, LitElement, TemplateResult, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import '../../button/src/Button';
-import '../../Avatar/src/Avatar';
-import componentStyles from './Dropdown.scss.lit';
-import '../../Icon/src/Icon';
-import { ButtonVariant } from '../../button/src/Button';
+import { html, LitElement } from 'lit';
+import { customElement, property, state } from 'lit/decorators.js';
+import { classMap } from 'lit/directives/class-map.js';
+import '../../../01-stars/button/src/Button';
+import styles from './Dropdown.scss.lit';
+import { AvatarSize } from '../../../01-stars/Avatar/src/Avatar';
 
+export type DropDownType = 'button' | 'avatar';
 @customElement('space-dropdown')
-export class Dropdown extends LitElement {
-  @property({ type: Boolean, attribute: 'is-disabled' })
-  isDisabled = false;
+export default class Dropdown extends LitElement {
+  static styles = [styles];
 
-  @property({ type: Boolean, attribute: 'is-open' })
-  isOpen = false;
+  /** @attr type */
+  @property({ type: String, attribute: 'type' })
+  type: DropDownType = 'button';
 
-  /** @attr trigger-text */
-  @property({ type: String, attribute: 'trigger-text' })
-  triggerText: string | undefined;
+  /** @attr button-text */
+  @property({ type: String, attribute: 'button-text' })
+  buttonText!: string;
 
-  /** @attr trigger-varaint */
-  @property({ type: String, attribute: 'trigger-variant' })
-  triggerVariant: ButtonVariant | undefined;
+  @state()
+  isOpen: boolean = false;
 
-  /** @attr iconname */
-  @property({ type: String, attribute: 'icon-name' })
-  iconName: string = 'chevronUp';
+  /** @attr avatar-src */
+  @property({ type: String, attribute: 'avatar-src' })
+  avatarSrc!: string;
 
-  static styles = [componentStyles];
+  /** @attr avatar-alt */
+  @property({ type: String, attribute: 'avatar-alt' })
+  avatarAlt!: string;
 
-  /** @attr button-url */
-  @property({ type: String, attribute: 'button-url' })
-  buttonUrl!: string;
-  onClick() {
-    //.log(this.isOpen);
-    this.isOpen = !this.isOpen;
-    if (this.isDisabled) {
-      this.isOpen = true;
-    }
-  }
+  /** @attr avatar-size */
+  @property({ type: String, attribute: 'avatar-size' })
+  avatarSize: AvatarSize = 'md';
 
-  render(): TemplateResult {
+  toggleDropDown = () => (this.isOpen = !this.isOpen);
+
+  render() {
+    const dropDownClass = {
+      'dropdown': true,
+      'dropdown-open': this.isOpen,
+    };
     return html`
-      <div class="dropdown">
-        ${this.buttonTemplate()} ${this.dropdownTemplate()}
-      </div>
-    `;
-  }
-
-  buttonTemplate(): TemplateResult | null {
-    return html`
-      <space-button
-        ?is-disabled=${this.isDisabled}
-        @click=${this.onClick}
-        iconname=${this.isOpen ? 'chevronUp' : 'chevronDown'}
-        button-variant="secondary"
-        ?iconaftertext=${true}
-      >
-        <span>${this.triggerText} </span>
-      </space-button>
-    `;
-  }
-
-  dropdownTemplate(): TemplateResult | null {
-    return html`
-      <div class="action">
-        <div class=${this.isOpen ? 'menu active' : 'menu'}>
-          <space-avatar-label
-            size="md"
-            heading="Diana Prince"
-            sub-heading="diana@space.com"
-            src="https://unsplash.com/photos/WNoLnJo7tS8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY4NTE1MDg0&force=true&w=1920"
-            alt="user"
-          >
-          </space-avatar-label>
-          <ul>
-            <li>
-              <space-link iconname="user" href="#">View profile</space-link>
-            </li>
-            <li>
-              <space-link iconname="settings" href="#">Setting</space-link>
-            </li>
-            <li>
-              <space-link iconname="zap" href="#"
-                >Keyboard shortcuts</space-link
-              >
-            </li>
-            <li>
-              <space-link iconname="home" href="#">Company profile</space-link>
-            </li>
-
-            <li>
-              <space-link iconname="users" href="#">Team</space-link>
-            </li>
-            <li>
-              <space-link iconname="userPlus" href="#"
-                >Invite colleagues</space-link
-              >
-            </li>
-            <li>
-              <space-link iconname="twoLayers" href="#">Changelog</space-link>
-            </li>
-            <li>
-              <space-link iconname="slack" href="#">Slack Community</space-link>
-            </li>
-            <li>
-              <space-link iconname="helpCircle" href="#">Support</space-link>
-            </li>
-            <li>
-              <space-link iconname="code" href="#">API</space-link>
-            </li>
-            <li>
-              <space-link iconname="logout" href="#">Logout</space-link>
-            </li>
-          </ul>
-        </div>
+      <div class=${classMap(dropDownClass)}>
+        ${this.type === 'button' && this.buttonText
+          ? html`<space-button
+              iconaftertext
+              button-size="md"
+              class="dropdown-button"
+              button-variant="secondary"
+              @click=${this.toggleDropDown}
+              iconname=${this.isOpen ? 'chevronUp' : 'chevronDown'}
+            >
+              ${this.buttonText}
+            </space-button>`
+          : null}
+        ${this.type === 'avatar' && this.avatarSrc && this.avatarAlt
+          ? html`<space-avatar
+              src=${this.avatarSrc}
+              alt=${this.avatarAlt}
+              size=${this.avatarSize}
+              @click=${this.toggleDropDown}
+            >
+              ${this.buttonText}
+            </space-avatar>`
+          : null}
+        <slot></slot>
       </div>
     `;
   }
