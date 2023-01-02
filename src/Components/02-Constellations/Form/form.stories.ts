@@ -132,10 +132,6 @@ UploadButton.args = {
   fileErrorHint: 'Please select file',
 };
 
-const checkboxLabel = [
-  'You agree to receive our monthly newsletters',
-  'You agree to receive our monthly newsletters',
-];
 SelectionCheckbox.args = {
   ...Default.args,
   selectionHeading: 'Services',
