@@ -40,7 +40,7 @@ export default class Tab extends LitElement {
   size: TabSize = 'default';
 
   /** @attr options */
-  @property({ type: String })
+  @property({ type: Array<TabOptions> })
   options: TabOptions[] = [];
 
   /** @attr orientation */
