@@ -93,6 +93,3 @@ declare global {
     'space-navigation': Navigation;
   }
 }
-function remderIcon(): unknown {
-  throw new Error('Function not implemented.');
-}
