@@ -1,0 +1,30 @@
+.nav-menu-item {
+  @apply flex flex-row items-center py-3 px-4 gap-4 w-93.7 md:w-80;
+  & .nav-data {
+    @apply flex flex-col items-start gap-1;
+  }
+  & .nav-title-small {
+    @apply text-lg font-medium;
+  }
+  & .nav-title-large {
+    @apply text-2xl font-bold;
+  }
+  & .nav-desc {
+    @apply text-sm font-normal text-text-body;
+  }
+  & .nav-icon-class {
+    @apply flex items-center stroke-text-heading;
+  }
+  &.nav-hover {
+    @apply bg-backgroundNeutral-neutralLight;
+  }
+  & .nav-title-default {
+    @apply text-text-heading;
+  }
+  & .nav-title-hover {
+    @apply text-textButtonLink-buttonLinkHover;
+  }
+  & .nav-title-active {
+    @apply text-textButtonLink-buttonLinkDefault;
+  }
+}

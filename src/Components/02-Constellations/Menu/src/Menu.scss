@@ -1,0 +1,9 @@
+.menu {
+  @apply flex flex-row items-start py-3 px-4 justify-between no-underline w-85.7 md:w-50;
+  & .menu-icon-class {
+    @apply stroke-text-heading hover:stroke-textButtonLink-buttonLinkHover;
+  }
+  &.menu-name {
+    @apply text-20 leading-32 font-medium text-text-heading hover:text-textButtonLink-buttonLinkHover md:text-base;
+  }
+}
