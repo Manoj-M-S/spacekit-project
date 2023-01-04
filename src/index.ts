@@ -14,3 +14,4 @@ export * from './Components/01-stars/AnchorTabs';
 export * from './Components/02-Constellations/Progress';
 export * from './Components/02-Constellations/Accordion';
 export * from './Components/02-Constellations/Cards';
+export * from './Components/02-Constellations/Pagination';

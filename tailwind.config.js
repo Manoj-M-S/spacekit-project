@@ -331,6 +331,9 @@ module.exports = {
       zIndex: {
         1: '1',
       },
+      strokeWidth: {
+        0.4175: '0.104375rem',
+      },
     },
     fontFamily: {
       serif: ['Helvetica-Now-Display', 'Roboto', 'sans-serif'],
