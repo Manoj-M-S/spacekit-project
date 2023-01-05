@@ -1,0 +1,95 @@
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.quick-link-card {
+  @apply w-full max-w-85.75 rounded-2xl overflow-hidden;
+
+  & .quick-link-card-image-container {
+    @apply overflow-hidden;
+  }
+
+  & .quick-link-card-image {
+    @apply w-full h-auto max-h-57 object-cover transition duration-200 ease-linear block;
+  }
+
+  &.quick-link-card-cta {
+    @apply w-full lg:w-max mt-6;
+  }
+
+  &:hover {
+    & .quick-link-card-image {
+      @apply scale-110;
+    }
+  }
+
+  & .quick-link-card-head-text {
+    @apply text-24 leading-8 text-text-heading;
+  }
+
+  & .quick-link-card-support-text {
+    @apply text-16 leading-6 text-text-body mt-2;
+  }
+
+  & .quick-link-card-text-container {
+    @apply p-6;
+  }
+
+  &.quick-link-card-size-sm {
+    @apply lg:max-w-70;
+
+    & .quick-link-card-image-container,
+    & .quick-link-card-image {
+      @apply lg:max-h-47;
+    }
+
+    & .quick-link-card-text-container {
+      @apply lg:p-5;
+    }
+  }
+
+  &.quick-link-card-size-md {
+    @apply lg:max-w-96;
+
+    & .quick-link-card-image-container,
+    & .quick-link-card-image {
+      @apply lg:max-h-64;
+    }
+
+    & .quick-link-card-text-container {
+      @apply lg:p-6;
+    }
+  }
+
+  &.quick-link-card-size-lg {
+    @apply lg:max-w-148;
+
+    & .quick-link-card-image-container,
+    & .quick-link-card-image {
+      @apply lg:max-h-98;
+    }
+
+    & .quick-link-card-text-container {
+      @apply lg:p-7;
+    }
+  }
+
+  &.quick-link-card-color-dark {
+    @apply bg-backgroundPrimary-primaryExtraDark;
+    & .quick-link-card-head-text {
+      @apply text-white;
+    }
+
+    & .quick-link-card-cta {
+      @apply text-text-primaryLight;
+    }
+
+    & .quick-link-card-support-text {
+      @apply text-text-primaryLight;
+    }
+  }
+
+  & .space-quicklink-card-button {
+    @apply w-full lg:w-max justify-center mt-6 block;
+  }
+}
