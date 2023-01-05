@@ -1,0 +1,20 @@
+.video-container {
+  & .video {
+    @apply w-full;
+  }
+  & .video-xs {
+    @apply max-w-[176px];
+  }
+  & .video-sm {
+    @apply max-w-[240px];
+  }
+  & .video-md {
+    @apply max-w-[343px];
+  }
+  & .video-lg {
+    @apply max-w-[592px];
+  }
+  & .video-xl {
+    @apply max-w-[800px];
+  }
+}
