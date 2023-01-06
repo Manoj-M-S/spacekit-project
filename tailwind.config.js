@@ -299,6 +299,9 @@ module.exports = {
       width: {
         50: '12.5rem',
         80: '20rem',
+        85.7: '21.4375rem',
+        50: '12.5rem',
+        93.7: '23.4375rem',
       },
       minWidth: {
         60: '15rem',
