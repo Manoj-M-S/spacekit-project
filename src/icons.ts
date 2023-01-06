@@ -5,6 +5,11 @@ const activity = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
+const alertCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const airplay = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5 17H4C3.46957 17 2.96086 16.7893 2.58579 16.4142C2.21071 16.0391 2 15.5304 2 15V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H20C20.5304 3 21.0391 3.21071 21.4142 3.58579C21.7893 3.96086 22 4.46957 22 5V15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17H19M12 15L17 21H7L12 15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -20,16 +25,6 @@ const alertTriangle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="
 </svg>
 `;
 
-const alertCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8V12M12 16H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const alignCenter = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 10H6M21 6H3M21 14H3M18 18H6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const alignJustify = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 10H3M21 6H3M21 14H3M21 18H3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -40,13 +35,8 @@ const alignLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const aperture = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.31 8L20.05 17.94M9.69 8H21.17M7.38 12L13.12 2.06M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12L10.88 21.94M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const anchor = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 8V22M12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12H5M12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12H19" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const alignCenter = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 10H6M21 6H3M21 14H3M18 18H6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -55,13 +45,13 @@ const alignRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
-const archive = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 8V21H3V8M10 12H14M1 3H23V8H1V3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const aperture = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.31 8L20.05 17.94M9.69 8H21.17M7.38 12L13.12 2.06M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12L10.88 21.94M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const arrowDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const archive = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 8V21H3V8M10 12H14M1 3H23V8H1V3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -70,8 +60,8 @@ const arrowDownCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill
 </svg>
 `;
 
-const arrowDownLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 7L7 17M7 17H17M7 17V7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const arrowDownRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 7L17 17M17 17V7M17 17H7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -80,8 +70,13 @@ const arrowLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const arrowDownRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 7L17 17M17 17V7M17 17H7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const anchor = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8C13.6569 8 15 6.65685 15 5C15 3.34315 13.6569 2 12 2C10.3431 2 9 3.34315 9 5C9 6.65685 10.3431 8 12 8ZM12 8V22M12 22C9.34784 22 6.8043 20.9464 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12H5M12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12H19" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const arrowDownLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 7L7 17M7 17H17M7 17V7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -90,8 +85,8 @@ const arrowLeftCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill
 </svg>
 `;
 
-const arrowUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const arrowDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -100,8 +95,8 @@ const arrowRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
-const arrowUpLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 17L7 7M7 7V17M7 7H17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const arrowUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -110,8 +105,8 @@ const arrowUpCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="
 </svg>
 `;
 
-const arrowUpRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 17L17 7M17 7H7M17 7V17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const arrowUpLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 17L7 7M7 7V17M7 7H17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -120,13 +115,18 @@ const arrowRightCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fil
 </svg>
 `;
 
-const award = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88M19 8C19 11.866 15.866 15 12 15C8.13401 15 5 11.866 5 8C5 4.13401 8.13401 1 12 1C15.866 1 19 4.13401 19 8Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const arrowUpRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 17L17 7M17 7H7M17 7V17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const atSign = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 7.99999V13C16 13.7956 16.3161 14.5587 16.8787 15.1213C17.4413 15.6839 18.2044 16 19 16C19.7957 16 20.5587 15.6839 21.1213 15.1213C21.6839 14.5587 22 13.7956 22 13V12C21.9999 9.74302 21.2362 7.55247 19.8333 5.78452C18.4303 4.01658 16.4706 2.77521 14.2726 2.26229C12.0747 1.74936 9.76794 1.99503 7.72736 2.95936C5.68677 3.92368 4.03241 5.54995 3.03327 7.57371C2.03413 9.59748 1.74898 11.8997 2.22418 14.1061C2.69938 16.3125 3.90699 18.2932 5.65064 19.7263C7.39429 21.1593 9.57144 21.9603 11.8281 21.9991C14.0847 22.0379 16.2881 21.3122 18.08 19.94M16 12C16 14.2091 14.2092 16 12 16C9.79087 16 8.00001 14.2091 8.00001 12C8.00001 9.79085 9.79087 7.99999 12 7.99999C14.2092 7.99999 16 9.79085 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const barChart = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 20V10M18 20V4M6 20V16" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const award = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88M19 8C19 11.866 15.866 15 12 15C8.13401 15 5 11.866 5 8C5 4.13401 8.13401 1 12 1C15.866 1 19 4.13401 19 8Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -135,8 +135,8 @@ const barChart2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const barChart = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 20V10M18 20V4M6 20V16" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const atSign = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 7.99999V13C16 13.7956 16.3161 14.5587 16.8787 15.1213C17.4413 15.6839 18.2044 16 19 16C19.7957 16 20.5587 15.6839 21.1213 15.1213C21.6839 14.5587 22 13.7956 22 13V12C21.9999 9.74302 21.2362 7.55247 19.8333 5.78452C18.4303 4.01658 16.4706 2.77521 14.2726 2.26229C12.0747 1.74936 9.76794 1.99503 7.72736 2.95936C5.68677 3.92368 4.03241 5.54995 3.03327 7.57371C2.03413 9.59748 1.74898 11.8997 2.22418 14.1061C2.69938 16.3125 3.90699 18.2932 5.65064 19.7263C7.39429 21.1593 9.57144 21.9603 11.8281 21.9991C14.0847 22.0379 16.2881 21.3122 18.08 19.94M16 12C16 14.2091 14.2092 16 12 16C9.79087 16 8.00001 14.2091 8.00001 12C8.00001 9.79085 9.79087 7.99999 12 7.99999C14.2092 7.99999 16 9.79085 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -155,8 +155,8 @@ const bell = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
-const bellOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21M18.63 13C18.1851 11.3714 17.973 9.68804 18 8C18.0016 6.91306 17.7079 5.84611 17.1503 4.91309C16.5927 3.98008 15.7922 3.21606 14.8341 2.70264C13.8761 2.18922 12.7966 1.94569 11.7109 1.99807C10.6252 2.05044 9.57417 2.39675 8.67 3M6.26 6.26C6.08627 6.82361 5.99861 7.41022 6 8C6 15 3 17 3 17H17M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const bold = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12H14C15.0609 12 16.0783 11.5786 16.8284 10.8284C17.5786 10.0783 18 9.06087 18 8C18 6.93913 17.5786 5.92172 16.8284 5.17157C16.0783 4.42143 15.0609 4 14 4H6V12ZM6 12H15C16.0609 12 17.0783 12.4214 17.8284 13.1716C18.5786 13.9217 19 14.9391 19 16C19 17.0609 18.5786 18.0783 17.8284 18.8284C17.0783 19.5786 16.0609 20 15 20H6V12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -165,8 +165,8 @@ const bluetooth = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const bold = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 12H14C15.0609 12 16.0783 11.5786 16.8284 10.8284C17.5786 10.0783 18 9.06087 18 8C18 6.93913 17.5786 5.92172 16.8284 5.17157C16.0783 4.42143 15.0609 4 14 4H6V12ZM6 12H15C16.0609 12 17.0783 12.4214 17.8284 13.1716C18.5786 13.9217 19 14.9391 19 16C19 17.0609 18.5786 18.0783 17.8284 18.8284C17.0783 19.5786 16.0609 20 15 20H6V12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const bellOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21M18.63 13C18.1851 11.3714 17.973 9.68804 18 8C18.0016 6.91306 17.7079 5.84611 17.1503 4.91309C16.5927 3.98008 15.7922 3.21606 14.8341 2.70264C13.8761 2.18922 12.7966 1.94569 11.7109 1.99807C10.6252 2.05044 9.57417 2.39675 8.67 3M6.26 6.26C6.08627 6.82361 5.99861 7.41022 6 8C6 15 3 17 3 17H17M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -185,8 +185,23 @@ const bookmark = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
+const calendar = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 2V6M8 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const box = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.27 6.96002L12 12.01L20.73 6.96002M12 22.08V12M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const cameraOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L23 23M9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V17.34M15.28 15.28C14.9481 15.765 14.5134 16.171 14.0068 16.469C13.5002 16.7669 12.9342 16.9496 12.3489 17.004C11.7637 17.0584 11.1737 16.9831 10.6209 16.7836C10.0681 16.5841 9.56601 16.2652 9.15042 15.8496C8.73483 15.434 8.41593 14.9319 8.2164 14.3791C8.01688 13.8263 7.94163 13.2363 7.99601 12.6511C8.05039 12.0658 8.23306 11.4998 8.53103 10.9932C8.829 10.4866 9.23495 10.0519 9.72 9.72M21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H6L21 21Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const check = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 6L9 17L4 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -201,28 +216,13 @@ const briefcase = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const calendar = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 2V6M8 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const cameraOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L23 23M9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V17.34M15.28 15.28C14.9481 15.765 14.5134 16.171 14.0068 16.469C13.5002 16.7669 12.9342 16.9496 12.3489 17.004C11.7637 17.0584 11.1737 16.9831 10.6209 16.7836C10.0681 16.5841 9.56601 16.2652 9.15042 15.8496C8.73483 15.434 8.41593 14.9319 8.2164 14.3791C8.01688 13.8263 7.94163 13.2363 7.99601 12.6511C8.05039 12.0658 8.23306 11.4998 8.53103 10.9932C8.829 10.4866 9.23495 10.0519 9.72 9.72M21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H6L21 21Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const checkCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999M22 3.99999L12 14.01L9.00001 11.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
 const cast = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 16.1C2.96089 16.296 3.84294 16.7702 4.53638 17.4636C5.22982 18.1571 5.70403 19.0391 5.9 20M2 12.05C4.03079 12.2759 5.92428 13.186 7.36911 14.6309C8.81395 16.0757 9.72414 17.9692 9.95 20M2 8V6C2 5.46957 2.21071 4.96086 2.58579 4.58579C2.96086 4.21071 3.46957 4 4 4H20C20.5304 4 21.0391 4.21071 21.4142 4.58579C21.7893 4.96086 22 5.46957 22 6V18C22 18.5304 21.7893 19.0391 21.4142 19.4142C21.0391 19.7893 20.5304 20 20 20H14M2 20H2.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const check = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 6L9 17L4 12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const checkCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999M22 3.99999L12 14.01L9.00001 11.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -241,18 +241,13 @@ const checkSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 </svg>
 `;
 
-const chevronRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 18L15 12L9 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const chevronUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18 15L12 9L6 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const chevronsDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 13L12 18L17 13M7 6L12 11L17 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const chevronRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18L15 12L9 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -261,28 +256,23 @@ const chevronsLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="n
 </svg>
 `;
 
-const chevronsRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 17L18 12L13 7M6 17L11 12L6 7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const chevronsUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 11L12 6L7 11M17 18L12 13L7 18" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
+const chevronsDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 13L12 18L17 13M7 6L12 11L17 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const chevronsRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 17L18 12L13 7M6 17L11 12L6 7" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const circle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const chrome = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM12 8H21.17M3.95 6.06L8.54 14M10.88 21.94L15.46 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const clipboard = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8M9 2H15C15.5523 2 16 2.44772 16 3V5C16 5.55228 15.5523 6 15 6H9C8.44772 6 8 5.55228 8 5V3C8 2.44772 8.44772 2 9 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -298,14 +288,36 @@ const cloud = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
+const cloudDrizzle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M7.99997 19V21M7.99997 13V15M16 19V21M16 13V15M12 21V23M12 15V17M20 16.58C21.0512 16.1196 21.9121 15.3116 22.4381 14.2916C22.964 13.2715 23.1231 12.1016 22.8886 10.9782C22.654 9.85478 22.0402 8.84623 21.15 8.12185C20.2599 7.39748 19.1476 7.00137 18 7.00002H16.74C16.423 5.77254 15.8188 4.63797 14.9773 3.68982C14.1357 2.74167 13.0809 2.00709 11.8997 1.54664C10.7186 1.08619 9.44488 0.913035 8.18365 1.04146C6.92243 1.16989 5.70978 1.59622 4.64567 2.2853C3.58155 2.97439 2.69644 3.9065 2.06328 5.00482C1.43012 6.10313 1.06704 7.33619 1.00398 8.60237C0.940923 9.86855 1.17968 11.1316 1.70058 12.2874C2.22147 13.4432 3.00959 14.4586 3.99997 15.25" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+`;
+
 const clock = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 6V12L16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const cloudDrizzle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+const chrome = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8ZM12 8H21.17M3.95 6.06L8.54 14M10.88 21.94L15.46 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const clipboard = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4H18C18.5304 4 19.0391 4.21071 19.4142 4.58579C19.7893 4.96086 20 5.46957 20 6V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V6C4 5.46957 4.21071 4.96086 4.58579 4.58579C4.96086 4.21071 5.46957 4 6 4H8M9 2H15C15.5523 2 16 2.44772 16 3V5C16 5.55228 15.5523 6 15 6H9C8.44772 6 8 5.55228 8 5V3C8 2.44772 8.44772 2 9 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const cloudOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<path d="M7.99997 19V21M7.99997 13V15M16 19V21M16 13V15M12 21V23M12 15V17M20 16.58C21.0512 16.1196 21.9121 15.3116 22.4381 14.2916C22.964 13.2715 23.1231 12.1016 22.8886 10.9782C22.654 9.85478 22.0402 8.84623 21.15 8.12185C20.2599 7.39748 19.1476 7.00137 18 7.00002H16.74C16.423 5.77254 15.8188 4.63797 14.9773 3.68982C14.1357 2.74167 13.0809 2.00709 11.8997 1.54664C10.7186 1.08619 9.44488 0.913035 8.18365 1.04146C6.92243 1.16989 5.70978 1.59622 4.64567 2.2853C3.58155 2.97439 2.69644 3.9065 2.06328 5.00482C1.43012 6.10313 1.06704 7.33619 1.00398 8.60237C0.940923 9.86855 1.17968 11.1316 1.70058 12.2874C2.22147 13.4432 3.00959 14.4586 3.99997 15.25" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.61 16.95C22.9322 16.1893 23.0609 15.3606 22.9845 14.5381C22.9082 13.7155 22.6293 12.9246 22.1726 12.2362C21.716 11.5478 21.0959 10.9832 20.3677 10.593C19.6396 10.2027 18.8261 9.99902 18 10H16.74C16.3318 8.39249 15.4341 6.95158 14.171 5.87666C12.908 4.80173 11.3421 4.14593 9.69 4M5 5C3.43808 5.86364 2.20981 7.22478 1.51059 8.86691C0.811366 10.509 0.681351 12.3378 1.14123 14.0623C1.6011 15.7869 2.62445 17.3081 4.04848 18.384C5.47251 19.4599 7.21544 20.0288 9 20H18C18.5798 19.9993 19.155 19.8978 19.7 19.7M0.999999 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0">
@@ -327,27 +339,13 @@ const cloudLightning = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill=
 </svg>
 `;
 
-const cloudOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M22.61 16.95C22.9322 16.1893 23.0609 15.3606 22.9845 14.5381C22.9082 13.7155 22.6293 12.9246 22.1726 12.2362C21.716 11.5478 21.0959 10.9832 20.3677 10.593C19.6396 10.2027 18.8261 9.99902 18 10H16.74C16.3318 8.39249 15.4341 6.95158 14.171 5.87666C12.908 4.80173 11.3421 4.14593 9.69 4M5 5C3.43808 5.86364 2.20981 7.22478 1.51059 8.86691C0.811366 10.509 0.681351 12.3378 1.14123 14.0623C1.6011 15.7869 2.62445 17.3081 4.04848 18.384C5.47251 19.4599 7.21544 20.0288 9 20H18C18.5798 19.9993 19.155 19.8978 19.7 19.7M0.999999 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
+const code = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 18L22 12L16 6M8 6L2 12L8 18" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const cloudRain = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M16 13V21M8 13V21M12 15V23M20 16.58C21.0512 16.1195 21.9121 15.3115 22.4381 14.2915C22.9641 13.2715 23.1231 12.1016 22.8886 10.9781C22.6541 9.85472 22.0402 8.84617 21.15 8.12179C20.2599 7.39742 19.1476 7.00131 18 6.99996H16.74C16.423 5.77248 15.8189 4.63791 14.9773 3.68976C14.1358 2.74161 13.0809 2.00703 11.8998 1.54658C10.7186 1.08612 9.44491 0.912974 8.18368 1.0414C6.92246 1.16983 5.70981 1.59615 4.6457 2.28524C3.58158 2.97433 2.69647 3.90644 2.06331 5.00475C1.43015 6.10307 1.06708 7.33613 1.00401 8.60231C0.940954 9.86849 1.17971 11.1315 1.70061 12.2873C2.2215 13.4431 3.00962 14.4585 4 15.25" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
+const codepen = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L22 8.5M12 2L2 8.5M12 2V8.5M22 8.5V15.5M22 8.5L12 15.5M22 15.5L12 22M22 15.5L12 8.5M12 22L2 15.5M12 22V15.5M2 15.5V8.5M2 15.5L12 8.5M2 8.5L12 15.5" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -363,18 +361,13 @@ const cloudSnow = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const code = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 18L22 12L16 6M8 6L2 12L8 18" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const codepen = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2L22 8.5M12 2L2 8.5M12 2V8.5M22 8.5V15.5M22 8.5L12 15.5M22 15.5L12 22M22 15.5L12 8.5M12 22L2 15.5M12 22V15.5M2 15.5V8.5M2 15.5L12 8.5M2 8.5L12 15.5" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const codesandbox = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 4.21002L12 6.81002L16.5 4.21002M7.5 19.79V14.6L3 12M21 12L16.5 14.6V19.79M3.27 6.96002L12 12.01L20.73 6.96002M12 22.08V12M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const coffee = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18M18 8H2V17C2 18.0609 2.42143 19.0783 3.17157 19.8284C3.92172 20.5786 4.93913 21 6 21H14C15.0609 21 16.0783 20.5786 16.8284 19.8284C17.5786 19.0783 18 18.0609 18 17V8ZM6 1V4M10 1V4M14 1V4" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -383,8 +376,9 @@ const coinStack = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const coffee = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 8H19C20.0609 8 21.0783 8.42143 21.8284 9.17157C22.5786 9.92172 23 10.9391 23 12C23 13.0609 22.5786 14.0783 21.8284 14.8284C21.0783 15.5786 20.0609 16 19 16H18M18 8H2V17C2 18.0609 2.42143 19.0783 3.17157 19.8284C3.92172 20.5786 4.93913 21 6 21H14C15.0609 21 16.0783 20.5786 16.8284 19.8284C17.5786 19.0783 18 18.0609 18 17V8ZM6 1V4M10 1V4M14 1V4" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const compass = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.24 7.76L14.12 14.12L7.76 16.24L9.88 9.88L16.24 7.76Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -398,19 +392,8 @@ const command = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
 </svg>
 `;
 
-const compass = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16.24 7.76L14.12 14.12L7.76 16.24L9.88 9.88L16.24 7.76Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const columns = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 3V21M12 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H12V3ZM12 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H12V3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const copy = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5M11 9H20C21.1046 9 22 9.89543 22 11V20C22 21.1046 21.1046 22 20 22H11C9.89543 22 9 21.1046 9 20V11C9 9.89543 9.89543 9 11 9Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const cornerDownLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 10L4 15M4 15L9 20M4 15H16C17.0609 15 18.0783 14.5786 18.8284 13.8284C19.5786 13.0783 20 12.0609 20 11V4" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -419,8 +402,13 @@ const cornerDownRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill
 </svg>
 `;
 
-const cornerDownLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 10L4 15M4 15L9 20M4 15H16C17.0609 15 18.0783 14.5786 18.8284 13.8284C19.5786 13.0783 20 12.0609 20 11V4" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const copy = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5M11 9H20C21.1046 9 22 9.89543 22 11V20C22 21.1046 21.1046 22 20 22H11C9.89543 22 9 21.1046 9 20V11C9 9.89543 9.89543 9 11 9Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const columns = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V21M12 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H12V3ZM12 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H12V3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -449,18 +437,35 @@ const cornerUpLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="n
 </svg>
 `;
 
-const cpu = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 1V4M15 1V4M9 20V23M15 20V23M20 9H23M20 14H23M1 9H4M1 14H4M6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4ZM9 9H15V15H9V9Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const cornerUpRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 14L20 9M20 9L15 4M20 9H8C6.93913 9 5.92172 9.42143 5.17157 10.1716C4.42143 10.9217 4 11.9391 4 13V20" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
+const cpu = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 1V4M15 1V4M9 20V23M15 20V23M20 9H23M20 14H23M1 9H4M1 14H4M6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6C4 4.89543 4.89543 4 6 4ZM9 9H15V15H9V9Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const cloudRain = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M16 13V21M8 13V21M12 15V23M20 16.58C21.0512 16.1195 21.9121 15.3115 22.4381 14.2915C22.9641 13.2715 23.1231 12.1016 22.8886 10.9781C22.6541 9.85472 22.0402 8.84617 21.15 8.12179C20.2599 7.39742 19.1476 7.00131 18 6.99996H16.74C16.423 5.77248 15.8189 4.63791 14.9773 3.68976C14.1358 2.74161 13.0809 2.00703 11.8998 1.54658C10.7186 1.08612 9.44491 0.912974 8.18368 1.0414C6.92246 1.16983 5.70981 1.59615 4.6457 2.28524C3.58158 2.97433 2.69647 3.90644 2.06331 5.00475C1.43015 6.10307 1.06708 7.33613 1.00401 8.60231C0.940954 9.86849 1.17971 11.1315 1.70061 12.2873C2.2215 13.4431 3.00962 14.4585 4 15.25" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+`;
+
 const creditCard = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 10H23M3 4H21C22.1046 4 23 4.89543 23 6V18C23 19.1046 22.1046 20 21 20H3C1.89543 20 1 19.1046 1 18V6C1 4.89543 1.89543 4 3 4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const crosshair = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H18M12 22C6.47715 22 2 17.5228 2 12M12 22V18M2 12C2 6.47715 6.47715 2 12 2M2 12H6M12 2V6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -474,13 +479,8 @@ const database = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const divide = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 12H19M14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6ZM14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const crosshair = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H18M12 22C6.47715 22 2 17.5228 2 12M12 22V18M2 12C2 6.47715 6.47715 2 12 2M2 12H6M12 2V6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const delete1 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 9L12 15M12 9L18 15M21 4H8L1 12L8 20H21C21.5304 20 22.0391 19.7893 22.4142 19.4142C22.7893 19.0391 23 18.5304 23 18V6C23 5.46957 22.7893 4.96086 22.4142 4.58579C22.0391 4.21071 21.5304 4 21 4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -489,14 +489,14 @@ const divideCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="n
 </svg>
 `;
 
-const disc = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const divide = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 12H19M14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6ZM14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const divideSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 12H16M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const disc = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -507,16 +507,6 @@ const dollarSign = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 
 const download = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const delete1 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 9L12 15M12 9L18 15M21 4H8L1 12L8 20H21C21.5304 20 22.0391 19.7893 22.4142 19.4142C22.7893 19.0391 23 18.5304 23 18V6C23 5.46957 22.7893 4.96086 22.4142 4.58579C22.0391 4.21071 21.5304 4 21 4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const droplet = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2.68994L17.66 8.34994C18.7794 9.46855 19.5418 10.894 19.8509 12.446C20.16 13.998 20.0019 15.6068 19.3965 17.0689C18.7912 18.531 17.7658 19.7808 16.4501 20.66C15.1344 21.5393 13.5875 22.0086 12.005 22.0086C10.4225 22.0086 8.87561 21.5393 7.5599 20.66C6.24419 19.7808 5.21882 18.531 4.61347 17.0689C4.00812 15.6068 3.85 13.998 4.15911 12.446C4.46822 10.894 5.23066 9.46855 6.35001 8.34994L12 2.68994Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -532,13 +522,13 @@ const downloadCloud = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="
 </svg>
 `;
 
-const dribbble = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8.56 2.75C12.93 8.78 14.58 12.17 16.59 20.47M19.13 5.09C15.41 9.44 10.19 10.75 2.25 10.94M21.75 12.84C18.25 11.91 15.12 12.02 12.81 12.84C10.23 13.76 7.8 15.7 5.37 19.16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const divideSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12H16M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const edit2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 3.00006C17.2626 2.73741 17.5744 2.52907 17.9176 2.38693C18.2608 2.24479 18.6286 2.17163 19 2.17163C19.3714 2.17163 19.7392 2.24479 20.0824 2.38693C20.4256 2.52907 20.7374 2.73741 21 3.00006C21.2626 3.2627 21.471 3.57451 21.6131 3.91767C21.7553 4.26083 21.8284 4.62862 21.8284 5.00006C21.8284 5.37149 21.7553 5.73929 21.6131 6.08245C21.471 6.42561 21.2626 6.73741 21 7.00006L7.5 20.5001L2 22.0001L3.5 16.5001L17 3.00006Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const dribbble = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.56 2.75C12.93 8.78 14.58 12.17 16.59 20.47M19.13 5.09C15.41 9.44 10.19 10.75 2.25 10.94M21.75 12.84C18.25 11.91 15.12 12.02 12.81 12.84C10.23 13.76 7.8 15.7 5.37 19.16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -547,8 +537,28 @@ const edit = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
+const edit2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 3.00006C17.2626 2.73741 17.5744 2.52907 17.9176 2.38693C18.2608 2.24479 18.6286 2.17163 19 2.17163C19.3714 2.17163 19.7392 2.24479 20.0824 2.38693C20.4256 2.52907 20.7374 2.73741 21 3.00006C21.2626 3.2627 21.471 3.57451 21.6131 3.91767C21.7553 4.26083 21.8284 4.62862 21.8284 5.00006C21.8284 5.37149 21.7553 5.73929 21.6131 6.08245C21.471 6.42561 21.2626 6.73741 21 7.00006L7.5 20.5001L2 22.0001L3.5 16.5001L17 3.00006Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const droplet = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2.68994L17.66 8.34994C18.7794 9.46855 19.5418 10.894 19.8509 12.446C20.16 13.998 20.0019 15.6068 19.3965 17.0689C18.7912 18.531 17.7658 19.7808 16.4501 20.66C15.1344 21.5393 13.5875 22.0086 12.005 22.0086C10.4225 22.0086 8.87561 21.5393 7.5599 20.66C6.24419 19.7808 5.21882 18.531 4.61347 17.0689C4.00812 15.6068 3.85 13.998 4.15911 12.446C4.46822 10.894 5.23066 9.46855 6.35001 8.34994L12 2.68994Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const edit3 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 20H21M16.5 3.49998C16.8978 3.10216 17.4374 2.87866 18 2.87866C18.2786 2.87866 18.5544 2.93353 18.8118 3.04014C19.0692 3.14674 19.303 3.303 19.5 3.49998C19.697 3.69697 19.8532 3.93082 19.9598 4.18819C20.0665 4.44556 20.1213 4.72141 20.1213 4.99998C20.1213 5.27856 20.0665 5.55441 19.9598 5.81178C19.8532 6.06915 19.697 6.303 19.5 6.49998L7 19L3 20L4 16L16.5 3.49998Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const externalLink = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11M15 3H21M21 3V9M21 3L10 14" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const facebook = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -563,16 +573,6 @@ const eyeOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const externalLink = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11M15 3H21M21 3V9M21 3L10 14" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const facebook = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const fastForward = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13 19L22 12L13 5V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M2 19L11 12L2 5V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -581,16 +581,6 @@ const fastForward = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 
 const feather = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 8.00004L2 22M17.5 15H9M20.24 12.24C21.3658 11.1142 21.9983 9.58722 21.9983 7.99504C21.9983 6.40285 21.3658 4.87588 20.24 3.75004C19.1142 2.62419 17.5872 1.9917 15.995 1.9917C14.4028 1.9917 12.8758 2.62419 11.75 3.75004L5 10.5V19H13.5L20.24 12.24Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const fileMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8M14 2L20 8M14 2V8H20M9 15H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const figma = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2H8.5C7.57174 2 6.6815 2.36875 6.02513 3.02513C5.36875 3.6815 5 4.57174 5 5.5C5 6.42826 5.36875 7.3185 6.02513 7.97487C6.6815 8.63125 7.57174 9 8.5 9M12 2V9M12 2H15.5C15.9596 2 16.4148 2.09053 16.8394 2.26642C17.264 2.44231 17.6499 2.70012 17.9749 3.02513C18.2999 3.35013 18.5577 3.73597 18.7336 4.16061C18.9095 4.58525 19 5.04037 19 5.5C19 5.95963 18.9095 6.41475 18.7336 6.83939C18.5577 7.26403 18.2999 7.64987 17.9749 7.97487C17.6499 8.29988 17.264 8.55769 16.8394 8.73358C16.4148 8.90947 15.9596 9 15.5 9M12 9H8.5M12 9H15.5M12 9V16M8.5 9C7.57174 9 6.6815 9.36875 6.02513 10.0251C5.36875 10.6815 5 11.5717 5 12.5C5 13.4283 5.36875 14.3185 6.02513 14.9749C6.6815 15.6313 7.57174 16 8.5 16M15.5 9C15.0404 9 14.5852 9.09053 14.1606 9.26642C13.736 9.44231 13.3501 9.70012 13.0251 10.0251C12.7001 10.3501 12.4423 10.736 12.2664 11.1606C12.0905 11.5852 12 12.0404 12 12.5C12 12.9596 12.0905 13.4148 12.2664 13.8394C12.4423 14.264 12.7001 14.6499 13.0251 14.9749C13.3501 15.2999 13.736 15.5577 14.1606 15.7336C14.5852 15.9095 15.0404 16 15.5 16C15.9596 16 16.4148 15.9095 16.8394 15.7336C17.264 15.5577 17.6499 15.2999 17.9749 14.9749C18.2999 14.6499 18.5577 14.264 18.7336 13.8394C18.9095 13.4148 19 12.9596 19 12.5C19 12.0404 18.9095 11.5852 18.7336 11.1606C18.5577 10.736 18.2999 10.3501 17.9749 10.0251C17.6499 9.70012 17.264 9.44231 16.8394 9.26642C16.4148 9.09053 15.9596 9 15.5 9ZM8.5 16C7.57174 16 6.6815 16.3687 6.02513 17.0251C5.36875 17.6815 5 18.5717 5 19.5C5 20.4283 5.36875 21.3185 6.02513 21.9749C6.6815 22.6313 7.57174 23 8.5 23C9.42826 23 10.3185 22.6313 10.9749 21.9749C11.6313 21.3185 12 20.4283 12 19.5V16M8.5 16H12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -604,18 +594,28 @@ const fileText = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const filePlus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8M14 2L20 8M14 2V8H20M12 18V12M9 15H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const figma = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2H8.5C7.57174 2 6.6815 2.36875 6.02513 3.02513C5.36875 3.6815 5 4.57174 5 5.5C5 6.42826 5.36875 7.3185 6.02513 7.97487C6.6815 8.63125 7.57174 9 8.5 9M12 2V9M12 2H15.5C15.9596 2 16.4148 2.09053 16.8394 2.26642C17.264 2.44231 17.6499 2.70012 17.9749 3.02513C18.2999 3.35013 18.5577 3.73597 18.7336 4.16061C18.9095 4.58525 19 5.04037 19 5.5C19 5.95963 18.9095 6.41475 18.7336 6.83939C18.5577 7.26403 18.2999 7.64987 17.9749 7.97487C17.6499 8.29988 17.264 8.55769 16.8394 8.73358C16.4148 8.90947 15.9596 9 15.5 9M12 9H8.5M12 9H15.5M12 9V16M8.5 9C7.57174 9 6.6815 9.36875 6.02513 10.0251C5.36875 10.6815 5 11.5717 5 12.5C5 13.4283 5.36875 14.3185 6.02513 14.9749C6.6815 15.6313 7.57174 16 8.5 16M15.5 9C15.0404 9 14.5852 9.09053 14.1606 9.26642C13.736 9.44231 13.3501 9.70012 13.0251 10.0251C12.7001 10.3501 12.4423 10.736 12.2664 11.1606C12.0905 11.5852 12 12.0404 12 12.5C12 12.9596 12.0905 13.4148 12.2664 13.8394C12.4423 14.264 12.7001 14.6499 13.0251 14.9749C13.3501 15.2999 13.736 15.5577 14.1606 15.7336C14.5852 15.9095 15.0404 16 15.5 16C15.9596 16 16.4148 15.9095 16.8394 15.7336C17.264 15.5577 17.6499 15.2999 17.9749 14.9749C18.2999 14.6499 18.5577 14.264 18.7336 13.8394C18.9095 13.4148 19 12.9596 19 12.5C19 12.0404 18.9095 11.5852 18.7336 11.1606C18.5577 10.736 18.2999 10.3501 17.9749 10.0251C17.6499 9.70012 17.264 9.44231 16.8394 9.26642C16.4148 9.09053 15.9596 9 15.5 9ZM8.5 16C7.57174 16 6.6815 16.3687 6.02513 17.0251C5.36875 17.6815 5 18.5717 5 19.5C5 20.4283 5.36875 21.3185 6.02513 21.9749C6.6815 22.6313 7.57174 23 8.5 23C9.42826 23 10.3185 22.6313 10.9749 21.9749C11.6313 21.3185 12 20.4283 12 19.5V16M8.5 16H12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const filtersLines = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 12H18M3 6H21M9 18H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const fileMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8M14 2L20 8M14 2V8H20M9 15H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
 const film = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 2V22M17 2V22M2 12H22M2 7H7M2 17H7M17 17H22M17 7H22M4.18 2H19.82C21.024 2 22 2.97602 22 4.18V19.82C22 21.024 21.024 22 19.82 22H4.18C2.97602 22 2 21.024 2 19.82V4.18C2 2.97602 2.97602 2 4.18 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const filter = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const filtersLines = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 12H18M3 6H21M9 18H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -629,23 +629,13 @@ const folder = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const filter = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const folderMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 14H15M22 19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H9L11 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const gift = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 12V22H4V12M12 22V7M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7ZM12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7ZM2 7H22V12H2V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const framer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5 16H12M5 16V9H19V2H5L19 16H12H5ZM5 16L12 23V16H5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const filePlus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8M14 2L20 8M14 2V8H20M12 18V12M9 15H15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -654,8 +644,18 @@ const folderPlus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
+const folderMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 14H15M22 19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H9L11 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const frown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 16C16 16 14.5 14 12 14C9.5 14 8 16 8 16M9 9H9.01M15 9H15.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const gift = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 12V22H4V12M12 22V7M12 7H7.5C6.83696 7 6.20107 6.73661 5.73223 6.26777C5.26339 5.79893 5 5.16304 5 4.5C5 3.83696 5.26339 3.20107 5.73223 2.73223C6.20107 2.26339 6.83696 2 7.5 2C11 2 12 7 12 7ZM12 7H16.5C17.163 7 17.7989 6.73661 18.2678 6.26777C18.7366 5.79893 19 5.16304 19 4.5C19 3.83696 18.7366 3.20107 18.2678 2.73223C17.7989 2.26339 17.163 2 16.5 2C13 2 12 7 12 7ZM2 7H22V12H2V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -664,24 +664,9 @@ const gitBranch = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const gitMerge = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18ZM15 18C12.6131 18 10.3239 17.0518 8.63604 15.364C6.94821 13.6761 6 11.3869 6 9M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const gitCommit = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.04999 12H6.99999M17.01 12H22.96M16 12C16 14.2091 14.2091 16 12 16C9.79085 16 7.99999 14.2091 7.99999 12C7.99999 9.79086 9.79085 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const gitPullRequest = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const gitlab = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+const github = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<path d="M22.65 14.39L12 22.13L1.34999 14.39C1.20722 14.285 1.10131 14.1375 1.04743 13.9687C0.993542 13.7998 0.99444 13.6183 1.04999 13.45L2.26999 9.66996L4.70999 2.15996C4.73366 2.09877 4.77133 2.04397 4.81999 1.99996C4.89923 1.92758 5.00267 1.88745 5.10999 1.88745C5.21731 1.88745 5.32075 1.92758 5.39999 1.99996C5.45137 2.04963 5.48924 2.11158 5.50999 2.17996L7.94999 9.66996H16.05L18.49 2.15996C18.5137 2.09877 18.5513 2.04397 18.6 1.99996C18.6792 1.92758 18.7827 1.88745 18.89 1.88745C18.9973 1.88745 19.1008 1.92758 19.18 1.99996C19.2314 2.04963 19.2692 2.11158 19.29 2.17996L21.73 9.68996L23 13.45C23.0505 13.6234 23.0437 13.8086 22.9807 13.9779C22.9176 14.1473 22.8017 14.2918 22.65 14.39V14.39Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 19.0001C4 20.5001 4 16.5001 2 16.0001M16 22.0001V18.1301C16.0375 17.6532 15.9731 17.1739 15.811 16.7239C15.6489 16.2738 15.3929 15.8635 15.06 15.5201C18.2 15.1701 21.5 13.9801 21.5 8.52006C21.4997 7.12389 20.9627 5.78126 20 4.77006C20.4559 3.54857 20.4236 2.19841 19.91 1.00006C19.91 1.00006 18.73 0.65006 16 2.48006C13.708 1.85888 11.292 1.85888 9 2.48006C6.27 0.65006 5.09 1.00006 5.09 1.00006C4.57638 2.19841 4.54414 3.54857 5 4.77006C4.03013 5.78876 3.49252 7.14352 3.5 8.55006C3.5 13.9701 6.8 15.1601 9.94 15.5501C9.611 15.89 9.35726 16.2955 9.19531 16.74C9.03335 17.1845 8.96681 17.6581 9 18.1301V22.0001" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0">
@@ -691,9 +676,29 @@ const gitlab = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const github = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+const gitMerge = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15C16.3431 15 15 16.3431 15 18ZM15 18C12.6131 18 10.3239 17.0518 8.63604 15.364C6.94821 13.6761 6 11.3869 6 9M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const gitPullRequest = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 15C16.3431 15 15 16.3431 15 18C15 19.6569 16.3431 21 18 21C19.6569 21 21 19.6569 21 18C21 16.3431 19.6569 15 18 15ZM18 15V8C18 7.46957 17.7893 6.96086 17.4142 6.58579C17.0391 6.21071 16.5304 6 16 6H13M6 9C7.65685 9 9 7.65685 9 6C9 4.34315 7.65685 3 6 3C4.34315 3 3 4.34315 3 6C3 7.65685 4.34315 9 6 9ZM6 9V21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const gitCommit = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.04999 12H6.99999M17.01 12H22.96M16 12C16 14.2091 14.2091 16 12 16C9.79085 16 7.99999 14.2091 7.99999 12C7.99999 9.79086 9.79085 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const globe = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const gitlab = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
-<path d="M9 19.0001C4 20.5001 4 16.5001 2 16.0001M16 22.0001V18.1301C16.0375 17.6532 15.9731 17.1739 15.811 16.7239C15.6489 16.2738 15.3929 15.8635 15.06 15.5201C18.2 15.1701 21.5 13.9801 21.5 8.52006C21.4997 7.12389 20.9627 5.78126 20 4.77006C20.4559 3.54857 20.4236 2.19841 19.91 1.00006C19.91 1.00006 18.73 0.65006 16 2.48006C13.708 1.85888 11.292 1.85888 9 2.48006C6.27 0.65006 5.09 1.00006 5.09 1.00006C4.57638 2.19841 4.54414 3.54857 5 4.77006C4.03013 5.78876 3.49252 7.14352 3.5 8.55006C3.5 13.9701 6.8 15.1601 9.94 15.5501C9.611 15.89 9.35726 16.2955 9.19531 16.74C9.03335 17.1845 8.96681 17.6581 9 18.1301V22.0001" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22.65 14.39L12 22.13L1.34999 14.39C1.20722 14.285 1.10131 14.1375 1.04743 13.9687C0.993542 13.7998 0.99444 13.6183 1.04999 13.45L2.26999 9.66996L4.70999 2.15996C4.73366 2.09877 4.77133 2.04397 4.81999 1.99996C4.89923 1.92758 5.00267 1.88745 5.10999 1.88745C5.21731 1.88745 5.32075 1.92758 5.39999 1.99996C5.45137 2.04963 5.48924 2.11158 5.50999 2.17996L7.94999 9.66996H16.05L18.49 2.15996C18.5137 2.09877 18.5513 2.04397 18.6 1.99996C18.6792 1.92758 18.7827 1.88745 18.89 1.88745C18.9973 1.88745 19.1008 1.92758 19.18 1.99996C19.2314 2.04963 19.2692 2.11158 19.29 2.17996L21.73 9.68996L23 13.45C23.0505 13.6234 23.0437 13.8086 22.9807 13.9779C22.9176 14.1473 22.8017 14.2918 22.65 14.39V14.39Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <clipPath id="clip0">
@@ -716,18 +721,13 @@ const hardDrive = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const globe = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const hash = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 9H20M4 15H20M10 3L8 21M16 3L14 21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const hexagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const headphones = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18M21 19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H18C17.4696 21 16.9609 20.7893 16.5858 20.4142C16.2107 20.0391 16 19.5304 16 19V16C16 15.4696 16.2107 14.9609 16.5858 14.5858C16.9609 14.2107 17.4696 14 18 14H21V19ZM3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H6C6.53043 21 7.03914 20.7893 7.41421 20.4142C7.78929 20.0391 8 19.5304 8 19V16C8 15.4696 7.78929 14.9609 7.41421 14.5858C7.03914 14.2107 6.53043 14 6 14H3V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -736,13 +736,8 @@ const heart = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
-const helpCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13M12 17H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const headphones = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18M21 19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H18C17.4696 21 16.9609 20.7893 16.5858 20.4142C16.2107 20.0391 16 19.5304 16 19V16C16 15.4696 16.2107 14.9609 16.5858 14.5858C16.9609 14.2107 17.4696 14 18 14H21V19ZM3 19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H6C6.53043 21 7.03914 20.7893 7.41421 20.4142C7.78929 20.0391 8 19.5304 8 19V16C8 15.4696 7.78929 14.9609 7.41421 14.5858C7.03914 14.2107 6.53043 14 6 14H3V19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const image = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21ZM5 21L16 10L21 15M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -756,13 +751,8 @@ const inbox = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
-const image = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21ZM5 21L16 10L21 15M10 8.5C10 9.32843 9.32843 10 8.5 10C7.67157 10 7 9.32843 7 8.5C7 7.67157 7.67157 7 8.5 7C9.32843 7 10 7.67157 10 8.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const info = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const hexagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -771,13 +761,23 @@ const instagram = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const layout = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 9H21M9 21V9M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const info = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const lifeBuoy = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.93 4.93L9.17 9.17M14.83 14.83L19.07 19.07M19.07 4.93L14.83 9.17L18.36 5.64M4.93 19.07L9.17 14.83M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const helpCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40913C11.0108 7.05016 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52152 14.2151 8.06353C14.6713 8.60553 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13M12 17H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const italic = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 4H10M14 20H5M15 4L9 20" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const layout = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 9H21M9 21V9M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -786,13 +786,23 @@ const link = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
+const link2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 17H6C5.34339 17 4.69321 16.8707 4.08658 16.6194C3.47995 16.3681 2.92876 15.9998 2.46447 15.5355C1.52678 14.5979 1 13.3261 1 12C1 10.6739 1.52678 9.40215 2.46447 8.46447C3.40215 7.52678 4.67392 7 6 7H9M8 12H16M15 7H18C18.6566 7 19.3068 7.12933 19.9134 7.3806C20.52 7.63188 21.0712 8.00017 21.5355 8.46447C21.9998 8.92876 22.3681 9.47996 22.6194 10.0866C22.8707 10.6932 23 11.3434 23 12C23 12.6566 22.8707 13.3068 22.6194 13.9134C22.3681 14.52 21.9998 15.0712 21.5355 15.5355C21.0712 15.9998 20.52 16.3681 19.9134 16.6194C19.3068 16.8707 18.6566 17 18 17H15V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const key = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.5 7.5L19 4M21 2L19 4L21 2ZM11.39 11.61C11.9064 12.1195 12.3168 12.726 12.5978 13.3948C12.8787 14.0635 13.0246 14.7813 13.0271 15.5066C13.0295 16.232 12.8884 16.9507 12.6119 17.6213C12.3355 18.2919 11.9291 18.9012 11.4162 19.4141C10.9033 19.9271 10.294 20.3334 9.62333 20.6099C8.95271 20.8864 8.23403 21.0275 7.50866 21.025C6.7833 21.0226 6.06557 20.8767 5.39682 20.5958C4.72807 20.3148 4.1215 19.9043 3.61203 19.388C2.61016 18.3507 2.05579 16.9614 2.06832 15.5193C2.08085 14.0772 2.65928 12.6977 3.67903 11.678C4.69877 10.6583 6.07824 10.0798 7.52032 10.0673C8.96241 10.0548 10.3517 10.6091 11.389 11.611L11.39 11.61ZM11.39 11.61L15.5 7.5L11.39 11.61ZM15.5 7.5L18.5 10.5L22 7L19 4L15.5 7.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const italic = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 4H10M14 20H5M15 4L9 20" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const lifeBuoy = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93 4.93L9.17 9.17M14.83 14.83L19.07 19.07M19.07 4.93L14.83 9.17L18.36 5.64M4.93 19.07L9.17 14.83M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const list = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 6H21M8 12H21M8 18H21M3 6H3.01M3 12H3.01M3 18H3.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -803,43 +813,23 @@ const linkedin = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const loader = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const list = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 6H21M8 12H21M8 18H21M3 6H3.01M3 12H3.01M3 18H3.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const link2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 17H6C5.34339 17 4.69321 16.8707 4.08658 16.6194C3.47995 16.3681 2.92876 15.9998 2.46447 15.5355C1.52678 14.5979 1 13.3261 1 12C1 10.6739 1.52678 9.40215 2.46447 8.46447C3.40215 7.52678 4.67392 7 6 7H9M8 12H16M15 7H18C18.6566 7 19.3068 7.12933 19.9134 7.3806C20.52 7.63188 21.0712 8.00017 21.5355 8.46447C21.9998 8.92876 22.3681 9.47996 22.6194 10.0866C22.8707 10.6932 23 11.3434 23 12C23 12.6566 22.8707 13.3068 22.6194 13.9134C22.3681 14.52 21.9998 15.0712 21.5355 15.5355C21.0712 15.9998 20.52 16.3681 19.9134 16.6194C19.3068 16.8707 18.6566 17 18 17H15V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const logout = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9M16 17L21 12M21 12L16 7M21 12H9" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const mail = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const lock = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11M5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13C3 11.8954 3.89543 11 5 11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const map = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 18L1 22V6L8 2M8 18L16 22M8 18V2M16 22L23 18V2L16 6M16 22V6M16 6L8 2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const login = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15M10 17L15 12M15 12L10 7M15 12H3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const login = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15M10 17L15 12M15 12L10 7M15 12H3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const loader = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const logout = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9M16 17L21 12M21 12L16 7M21 12H9" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -849,18 +839,13 @@ const mapPin = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const meh = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 15H16M9 9H9.01M15 9H15.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const map = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 18L1 22V6L8 2M8 18L16 22M8 18V2M16 22L23 18V2L16 6M16 22V6M16 6L8 2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const maximize2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 3H21M21 3V9M21 3L14 10M9 21H3M3 21V15M3 21L10 14" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const menu2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 12H17M3 6H21M3 18H21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const mail = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6M22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6M22 6L12 13L2 6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -869,8 +854,18 @@ const maximize = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
+const maximize2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 3H21M21 3V9M21 3L14 10M9 21H3M3 21V15M3 21L10 14" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const menu = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 12H21M3 6H21M3 18H21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const meh = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 15H16M9 9H9.01M15 9H15.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -881,6 +876,11 @@ const messageCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="
 
 const messageSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const mic = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19M12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10M12 19V23M8 23H16M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -896,28 +896,18 @@ const micOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
+const menu2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12H17M3 6H21M3 18H21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const minimize = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 3V6C8 6.53043 7.78929 7.03914 7.41421 7.41421C7.03914 7.78929 6.53043 8 6 8H3M21 8H18C17.4696 8 16.9609 7.78929 16.5858 7.41421C16.2107 7.03914 16 6.53043 16 6V3M16 21V18C16 17.4696 16.2107 16.9609 16.5858 16.5858C16.9609 16.2107 17.4696 16 18 16H21M3 16H6C6.53043 16 7.03914 16.2107 7.41421 16.5858C7.78929 16.9609 8 17.4696 8 18V21" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const mic = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19M12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10M12 19V23M8 23H16M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const minimize2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 14H10M10 14V20M10 14L3 21M20 10H14M14 10V4M14 10L21 3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const minusCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const monitor = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 21H16M12 17V21M4 3H20C21.1046 3 22 3.89543 22 5V15C22 16.1046 21.1046 17 20 17H4C2.89543 17 2 16.1046 2 15V5C2 3.89543 2.89543 3 4 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -931,10 +921,13 @@ const minusSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 </svg>
 `;
 
-const moreHorizontal = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const minimize2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 14H10M10 14V20M10 14L3 21M20 10H14M14 10V4M14 10L21 3" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const monitor = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 21H16M12 17V21M4 3H20C21.1046 3 22 3.89543 22 5V15C22 16.1046 21.1046 17 20 17H4C2.89543 17 2 16.1046 2 15V5C2 3.89543 2.89543 3 4 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -943,8 +936,10 @@ const moon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
-const mousePointer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 13L19 19M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const moreHorizontal = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -955,13 +950,8 @@ const moreVertical = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="n
 </svg>
 `;
 
-const navigation = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 11L22 2L13 21L11 13L3 11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const octagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const mousePointer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 13L19 19M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -970,13 +960,38 @@ const navigation2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 </svg>
 `;
 
-const paperclip = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21.44 11.05L12.25 20.24C11.1242 21.3659 9.5972 21.9984 8.00502 21.9984C6.41283 21.9984 4.88586 21.3659 3.76002 20.24C2.63417 19.1142 2.00168 17.5872 2.00168 15.995C2.00168 14.4029 2.63417 12.8759 3.76002 11.75L12.95 2.56004C13.7006 1.80948 14.7186 1.38782 15.78 1.38782C16.8415 1.38782 17.8595 1.80948 18.61 2.56004C19.3606 3.3106 19.7822 4.32859 19.7822 5.39004C19.7822 6.4515 19.3606 7.46948 18.61 8.22004L9.41002 17.41C9.03473 17.7853 8.52574 17.9962 7.99502 17.9962C7.46429 17.9962 6.9553 17.7853 6.58002 17.41C6.20473 17.0348 5.9939 16.5258 5.9939 15.995C5.9939 15.4643 6.20473 14.9553 6.58002 14.58L15.07 6.10004" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const music = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18V5L21 3V16M9 18C9 19.6569 7.65685 21 6 21C4.34315 21 3 19.6569 3 18C3 16.3431 4.34315 15 6 15C7.65685 15 9 16.3431 9 18ZM21 16C21 17.6569 19.6569 19 18 19C16.3431 19 15 17.6569 15 16C15 14.3431 16.3431 13 18 13C19.6569 13 21 14.3431 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const move = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 9L2 12M2 12L5 15M2 12H22M9 5L12 2M12 2L15 5M12 2V22M15 19L12 22M12 22L9 19M19 9L22 12M22 12L19 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const octagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const navigation = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 11L22 2L13 21L11 13L3 11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const penTool = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 2L16.5 5.5L18 13L13 18L5.5 16.5L2 2ZM2 2L9.586 9.586M12 19L19 12L22 15L15 22L12 19ZM13 11C13 12.1046 12.1046 13 11 13C9.89543 13 9 12.1046 9 11C9 9.89543 9.89543 9 11 9C12.1046 9 13 9.89543 13 11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
 const packages = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16.5 9.40002L7.5 4.21002M3.27 6.96002L12 12.01L20.73 6.96002M12 22.08V12M21 16V8.00002C20.9996 7.6493 20.9071 7.30483 20.7315 7.00119C20.556 6.69754 20.3037 6.44539 20 6.27002L13 2.27002C12.696 2.09449 12.3511 2.00208 12 2.00208C11.6489 2.00208 11.304 2.09449 11 2.27002L4 6.27002C3.69626 6.44539 3.44398 6.69754 3.26846 7.00119C3.09294 7.30483 3.00036 7.6493 3 8.00002V16C3.00036 16.3508 3.09294 16.6952 3.26846 16.9989C3.44398 17.3025 3.69626 17.5547 4 17.73L11 21.73C11.304 21.9056 11.6489 21.998 12 21.998C12.3511 21.998 12.696 21.9056 13 21.73L20 17.73C20.3037 17.5547 20.556 17.3025 20.7315 16.9989C20.9071 16.6952 20.9996 16.3508 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const paperclip = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.44 11.05L12.25 20.24C11.1242 21.3659 9.5972 21.9984 8.00502 21.9984C6.41283 21.9984 4.88586 21.3659 3.76002 20.24C2.63417 19.1142 2.00168 17.5872 2.00168 15.995C2.00168 14.4029 2.63417 12.8759 3.76002 11.75L12.95 2.56004C13.7006 1.80948 14.7186 1.38782 15.78 1.38782C16.8415 1.38782 17.8595 1.80948 18.61 2.56004C19.3606 3.3106 19.7822 4.32859 19.7822 5.39004C19.7822 6.4515 19.3606 7.46948 18.61 8.22004L9.41002 17.41C9.03473 17.7853 8.52574 17.9962 7.99502 17.9962C7.46429 17.9962 6.9553 17.7853 6.58002 17.41C6.20473 17.0348 5.9939 16.5258 5.9939 15.995C5.9939 15.4643 6.20473 14.9553 6.58002 14.58L15.07 6.10004" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -991,8 +1006,8 @@ const pauseCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 </svg>
 `;
 
-const penTool = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 2L16.5 5.5L18 13L13 18L5.5 16.5L2 2ZM2 2L9.586 9.586M12 19L19 12L22 15L15 22L12 19ZM13 11C13 12.1046 12.1046 13 11 13C9.89543 13 9 12.1046 9 11C9 9.89543 9.89543 9 11 9C12.1046 9 13 9.89543 13 11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const percent = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 5L5 19M9 6.5C9 7.88071 7.88071 9 6.5 9C5.11929 9 4 7.88071 4 6.5C4 5.11929 5.11929 4 6.5 4C7.88071 4 9 5.11929 9 6.5ZM20 17.5C20 18.8807 18.8807 20 17.5 20C16.1193 20 15 18.8807 15 17.5C15 16.1193 16.1193 15 17.5 15C18.8807 15 20 16.1193 20 17.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1001,33 +1016,13 @@ const phoneCall = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
-const phone = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4741 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4018C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.945 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3146 6.72533 15.2661 5.18999 12.85C3.49997 10.2412 2.44824 7.27097 2.11999 4.17997C2.095 3.90344 2.12787 3.62474 2.21649 3.3616C2.30512 3.09846 2.44756 2.85666 2.63476 2.6516C2.82196 2.44653 3.0498 2.28268 3.30379 2.1705C3.55777 2.05831 3.83233 2.00024 4.10999 1.99997H7.10999C7.5953 1.9952 8.06579 2.16705 8.43376 2.48351C8.80173 2.79996 9.04207 3.23942 9.10999 3.71997C9.23662 4.68004 9.47144 5.6227 9.80999 6.52997C9.94454 6.8879 9.97366 7.27689 9.8939 7.65086C9.81415 8.02482 9.62886 8.36809 9.35999 8.63998L8.08999 9.90997C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0554 17.47 14.19C18.3773 14.5285 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const percent = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 5L5 19M9 6.5C9 7.88071 7.88071 9 6.5 9C5.11929 9 4 7.88071 4 6.5C4 5.11929 5.11929 4 6.5 4C7.88071 4 9 5.11929 9 6.5ZM20 17.5C20 18.8807 18.8807 20 17.5 20C16.1193 20 15 18.8807 15 17.5C15 16.1193 16.1193 15 17.5 15C18.8807 15 20 16.1193 20 17.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const phoneForwarded = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 1L23 5M23 5L19 9M23 5H15M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const phoneIncoming = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 2V8M16 8H22M16 8L23 1M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const phoneMissed = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 1L17 7M17 1L23 7M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const phoneOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.19 12.81C3.50586 10.213 2.45436 7.25717 2.12 4.18C2.09501 3.90347 2.12787 3.62476 2.2165 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55778 2.05833 3.83234 2.00026 4.11 2H7.11C7.59531 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04208 3.23945 9.11 3.72C9.23662 4.68007 9.47145 5.62273 9.81 6.53C9.94454 6.88792 9.97366 7.27691 9.89391 7.65088C9.81415 8.02485 9.62886 8.36811 9.36 8.64L8.09 9.91M23 1L1 23M10.68 13.31C11.6949 14.3257 12.8418 15.2003 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9752 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7606 14.9579 21.2 15.1983 21.5165 15.5662C21.8329 15.9342 22.0048 16.4047 22 16.89V19.89C22.0011 20.1685 21.9441 20.4442 21.8325 20.6993C21.7209 20.9545 21.5573 21.1836 21.3521 21.3719C21.1469 21.5601 20.9046 21.7035 20.6407 21.7927C20.3769 21.8819 20.0974 21.9151 19.82 21.89C16.7428 21.5556 13.787 20.5041 11.19 18.82C9.98527 18.0551 8.86853 17.1596 7.86 16.15L10.68 13.31Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const phoneOutgoing = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 7V1M23 1H17M23 1L16 8M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1036,8 +1031,18 @@ const pieChart = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const phoneOutgoing = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 7V1M23 1H17M23 1L16 8M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const phoneOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.19 12.81C3.50586 10.213 2.45436 7.25717 2.12 4.18C2.09501 3.90347 2.12787 3.62476 2.2165 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55778 2.05833 3.83234 2.00026 4.11 2H7.11C7.59531 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04208 3.23945 9.11 3.72C9.23662 4.68007 9.47145 5.62273 9.81 6.53C9.94454 6.88792 9.97366 7.27691 9.89391 7.65088C9.81415 8.02485 9.62886 8.36811 9.36 8.64L8.09 9.91M23 1L1 23M10.68 13.31C11.6949 14.3257 12.8418 15.2003 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9752 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7606 14.9579 21.2 15.1983 21.5165 15.5662C21.8329 15.9342 22.0048 16.4047 22 16.89V19.89C22.0011 20.1685 21.9441 20.4442 21.8325 20.6993C21.7209 20.9545 21.5573 21.1836 21.3521 21.3719C21.1469 21.5601 20.9046 21.7035 20.6407 21.7927C20.3769 21.8819 20.0974 21.9151 19.82 21.89C16.7428 21.5556 13.787 20.5041 11.19 18.82C9.98527 18.0551 8.86853 17.1596 7.86 16.15L10.68 13.31Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const phone = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4741 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4018C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.945 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3146 6.72533 15.2661 5.18999 12.85C3.49997 10.2412 2.44824 7.27097 2.11999 4.17997C2.095 3.90344 2.12787 3.62474 2.21649 3.3616C2.30512 3.09846 2.44756 2.85666 2.63476 2.6516C2.82196 2.44653 3.0498 2.28268 3.30379 2.1705C3.55777 2.05831 3.83233 2.00024 4.10999 1.99997H7.10999C7.5953 1.9952 8.06579 2.16705 8.43376 2.48351C8.80173 2.79996 9.04207 3.23942 9.10999 3.71997C9.23662 4.68004 9.47144 5.6227 9.80999 6.52997C9.94454 6.8879 9.97366 7.27689 9.8939 7.65086C9.81415 8.02482 9.62886 8.36809 9.35999 8.63998L8.08999 9.90997C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0554 17.47 14.19C18.3773 14.5285 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const phoneMissed = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 1L17 7M17 1L23 7M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1057,13 +1062,13 @@ const plus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
-const plusSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8V16M8 12H16M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const plusCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const plusCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const plusSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 8V16M8 12H16M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1077,13 +1082,13 @@ const power = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
-const printer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 9V2H18V9M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18M6 14H18V22H6V14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const phoneForwarded = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 1L23 5M23 5L19 9M23 5H15M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const refreshClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 3.99995V9.99995M23 9.99995H17M23 9.99995L18.36 5.63995C17.2853 4.56467 15.9556 3.77916 14.4952 3.35673C13.0348 2.93429 11.4911 2.8887 10.0083 3.22421C8.52547 3.55972 7.1518 4.26539 6.01547 5.27537C4.87913 6.28536 4.01717 7.56674 3.51 8.99995M1 20V14M1 14H7M1 14L5.64 18.36C6.71475 19.4352 8.04437 20.2207 9.50481 20.6432C10.9652 21.0656 12.5089 21.1112 13.9917 20.7757C15.4745 20.4402 16.8482 19.7345 17.9845 18.7245C19.1209 17.7145 19.9828 16.4332 20.49 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const printer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9V2H18V9M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18M6 14H18V22H6V14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1092,13 +1097,18 @@ const radio = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
-const repeat = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 1L21 5M21 5L17 9M21 5H7C5.93913 5 4.92172 5.42143 4.17157 6.17157C3.42143 6.92172 3 7.93913 3 9V11M7 23L3 19M3 19L7 15M3 19H17C18.0609 19 19.0783 18.5786 19.8284 17.8284C20.5786 17.0783 21 16.0609 21 15V13" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const refreshCounterClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3.99995V9.99995M1 9.99995H7M1 9.99995L5.64 5.63995C6.71475 4.56467 8.04437 3.77916 9.50481 3.35673C10.9652 2.93429 12.5089 2.8887 13.9917 3.22421C15.4745 3.55972 16.8482 4.26539 17.9845 5.27537C19.1209 6.28536 19.9828 7.56674 20.49 8.99995M23 20V14M23 14H17M23 14L18.36 18.36C17.2853 19.4352 15.9556 20.2207 14.4952 20.6432C13.0348 21.0656 11.4911 21.1112 10.0083 20.7757C8.52547 20.4402 7.1518 19.7345 6.01547 18.7245C4.87913 17.7145 4.01717 16.4332 3.51 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const refreshCounterClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 3.99995V9.99995M1 9.99995H7M1 9.99995L5.64 5.63995C6.71475 4.56467 8.04437 3.77916 9.50481 3.35673C10.9652 2.93429 12.5089 2.8887 13.9917 3.22421C15.4745 3.55972 16.8482 4.26539 17.9845 5.27537C19.1209 6.28536 19.9828 7.56674 20.49 8.99995M23 20V14M23 14H17M23 14L18.36 18.36C17.2853 19.4352 15.9556 20.2207 14.4952 20.6432C13.0348 21.0656 11.4911 21.1112 10.0083 20.7757C8.52547 20.4402 7.1518 19.7345 6.01547 18.7245C4.87913 17.7145 4.01717 16.4332 3.51 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const refreshClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 3.99995V9.99995M23 9.99995H17M23 9.99995L18.36 5.63995C17.2853 4.56467 15.9556 3.77916 14.4952 3.35673C13.0348 2.93429 11.4911 2.8887 10.0083 3.22421C8.52547 3.55972 7.1518 4.26539 6.01547 5.27537C4.87913 6.28536 4.01717 7.56674 3.51 8.99995M1 20V14M1 14H7M1 14L5.64 18.36C6.71475 19.4352 8.04437 20.2207 9.50481 20.6432C10.9652 21.0656 12.5089 21.1112 13.9917 20.7757C15.4745 20.4402 16.8482 19.7345 17.9845 18.7245C19.1209 17.7145 19.9828 16.4332 20.49 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const repeat = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1L21 5M21 5L17 9M21 5H7C5.93913 5 4.92172 5.42143 4.17157 6.17157C3.42143 6.92172 3 7.93913 3 9V11M7 23L3 19M3 19L7 15M3 19H17C18.0609 19 19.0783 18.5786 19.8284 17.8284C20.5786 17.0783 21 16.0609 21 15V13" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1113,8 +1123,8 @@ const rocket = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const rotateClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 4.00001V10M23 10H17M23 10L18.37 5.64001C16.9906 4.25975 15.2 3.3652 13.268 3.09116C11.3359 2.81711 9.36717 3.17843 7.65836 4.12065C5.94954 5.06288 4.59325 6.53496 3.79386 8.31508C2.99448 10.0952 2.79531 12.0869 3.22637 13.9901C3.65743 15.8932 4.69536 17.6047 6.18376 18.8667C7.67216 20.1286 9.53038 20.8726 11.4784 20.9866C13.4265 21.1006 15.3588 20.5783 16.9842 19.4985C18.6096 18.4187 19.84 16.8399 20.49 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const rotateCounterClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3.99995V9.99995M1 9.99995H7M1 9.99995L5.64 5.63995C7.02091 4.26137 8.81245 3.36892 10.7447 3.09707C12.6769 2.82521 14.6451 3.18868 16.3528 4.13271C18.0605 5.07674 19.4152 6.55019 20.2126 8.33105C21.0101 10.1119 21.2072 12.1037 20.7742 14.0063C20.3413 15.9089 19.3017 17.6193 17.8121 18.8797C16.3226 20.1401 14.4637 20.8823 12.5157 20.9944C10.5677 21.1065 8.63598 20.5825 7.01166 19.5013C5.38734 18.4201 4.15839 16.8403 3.51 14.9999" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1125,11 +1135,6 @@ const rss = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmln
 
 const save = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 21V13H7V21M7 3V8H15M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16L21 8V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const rotateCounterClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 3.99995V9.99995M1 9.99995H7M1 9.99995L5.64 5.63995C7.02091 4.26137 8.81245 3.36892 10.7447 3.09707C12.6769 2.82521 14.6451 3.18868 16.3528 4.13271C18.0605 5.07674 19.4152 6.55019 20.2126 8.33105C21.0101 10.1119 21.2072 12.1037 20.7742 14.0063C20.3413 15.9089 19.3017 17.6193 17.8121 18.8797C16.3226 20.1401 14.4637 20.8823 12.5157 20.9944C10.5677 21.1065 8.63598 20.5825 7.01166 19.5013C5.38734 18.4201 4.15839 16.8403 3.51 14.9999" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1153,8 +1158,8 @@ const send = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
-const move = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 9L2 12M2 12L5 15M2 12H22M9 5L12 2M12 2L15 5M12 2V22M15 19L12 22M12 22L9 19M19 9L22 12M22 12L19 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const share = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1164,23 +1169,13 @@ const settings = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const music = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 18V5L21 3V16M9 18C9 19.6569 7.65685 21 6 21C4.34315 21 3 19.6569 3 18C3 16.3431 4.34315 15 6 15C7.65685 15 9 16.3431 9 18ZM21 16C21 17.6569 19.6569 19 18 19C16.3431 19 15 17.6569 15 16C15 14.3431 16.3431 13 18 13C19.6569 13 21 14.3431 21 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const share = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12M16 6L12 2M12 2L8 6M12 2V15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const shield = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
 const share2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.59 13.51L15.42 17.49M15.41 6.51L8.59 10.49M21 5C21 6.65685 19.6569 8 18 8C16.3431 8 15 6.65685 15 5C15 3.34315 16.3431 2 18 2C19.6569 2 21 3.34315 21 5ZM9 12C9 13.6569 7.65685 15 6 15C4.34315 15 3 13.6569 3 12C3 10.3431 4.34315 9 6 9C7.65685 9 9 10.3431 9 12ZM21 19C21 20.6569 19.6569 22 18 22C16.3431 22 15 20.6569 15 19C15 17.3431 16.3431 16 18 16C19.6569 16 21 17.3431 21 19Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const shieldOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.69 14C19.8911 13.3522 19.9955 12.6783 20 12V5L12 2L8.84 3.18M4.73 4.73L4 5V12C4 18 12 22 12 22C14.117 20.8829 16.0197 19.4001 17.62 17.62M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1194,6 +1189,16 @@ const shoppingCart = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="n
 </svg>
 `;
 
+const shieldOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.69 14C19.8911 13.3522 19.9955 12.6783 20 12V5L12 2L8.84 3.18M4.73 4.73L4 5V12C4 18 12 22 12 22C14.117 20.8829 16.0197 19.4001 17.62 17.62M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const rotateClockwise = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 4.00001V10M23 10H17M23 10L18.37 5.64001C16.9906 4.25975 15.2 3.3652 13.268 3.09116C11.3359 2.81711 9.36717 3.17843 7.65836 4.12065C5.94954 5.06288 4.59325 6.53496 3.79386 8.31508C2.99448 10.0952 2.79531 12.0869 3.22637 13.9901C3.65743 15.8932 4.69536 17.6047 6.18376 18.8667C7.67216 20.1286 9.53038 20.8726 11.4784 20.9866C13.4265 21.1006 15.3588 20.5783 16.9842 19.4985C18.6096 18.4187 19.84 16.8399 20.49 15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const shuffle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 3H21M21 3V8M21 3L4 20M21 16V21M21 21H16M21 21L15 15M4 4L9 9" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -1204,8 +1209,13 @@ const sidebar = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
 </svg>
 `;
 
-const shield = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const skipBack = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 19V5M19 20L9 12L19 4V20Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const skipForward = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 5V19M5 4L15 12L5 20V4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1221,38 +1231,13 @@ const slack = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xm
 </svg>
 `;
 
-const slash = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.93 4.93L19.07 19.07M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const skipForward = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 5V19M5 4L15 12L5 20V4Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const skipBack = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 19V5M19 20L9 12L19 4V20Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const sliders = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 21V14M4 10V3M12 21V12M12 8V3M20 21V16M20 12V3M1 14H7M9 8H15M17 16H23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const slashDivider = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="7.51631" y1="22.1711" x2="16.8139" y2="2.2323" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const smile = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M9 9H9.01M15 9H15.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const square = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const slash = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.93 4.93L19.07 19.07M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1261,8 +1246,18 @@ const smartphone = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
+const sliders = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 21V14M4 10V3M12 21V12M12 8V3M20 21V16M20 12V3M1 14H7M9 8H15M17 16H23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const speaker = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 6H12.01M6 2H18C19.1046 2 20 2.89543 20 4V20C20 21.1046 19.1046 22 18 22H6C4.89543 22 4 21.1046 4 20V4C4 2.89543 4.89543 2 6 2ZM16 14C16 16.2091 14.2091 18 12 18C9.79086 18 8 16.2091 8 14C8 11.7909 9.79086 10 12 10C14.2091 10 16 11.7909 16 14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const smile = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M9 9H9.01M15 9H15.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1273,6 +1268,11 @@ const star = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 
 const sun = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const square = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1302,27 +1302,22 @@ const tag = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmln
 </svg>
 `;
 
-const thermometer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)">
-<path d="M14 14.76V3.5C14 2.83696 13.7366 2.20107 13.2678 1.73223C12.7989 1.26339 12.163 1 11.5 1C10.837 1 10.2011 1.26339 9.73223 1.73223C9.26339 2.20107 9 2.83696 9 3.5V14.76C8.19728 15.2963 7.58832 16.0766 7.26307 16.9856C6.93782 17.8946 6.91352 18.8841 7.19376 19.8079C7.47399 20.7317 8.04391 21.541 8.81934 22.1161C9.59476 22.6912 10.5346 23.0017 11.5 23.0017C12.4654 23.0017 13.4052 22.6912 14.1807 22.1161C14.9561 21.541 15.526 20.7317 15.8062 19.8079C16.0865 18.8841 16.0622 17.8946 15.7369 16.9856C15.4117 16.0766 14.8027 15.2963 14 14.76Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
+const target = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const successTick = svg`<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="4" width="48" height="48" rx="24" fill="#EDF8F4"/>
+<path d="M38 27.0801V28.0001C37.9988 30.1565 37.3005 32.2548 36.0093 33.9819C34.7182 35.7091 32.9033 36.9726 30.8354 37.584C28.7674 38.1954 26.5573 38.122 24.5345 37.3747C22.5117 36.6274 20.7847 35.2462 19.611 33.4372C18.4373 31.6281 17.8798 29.4882 18.0217 27.3364C18.1636 25.1847 18.9972 23.1364 20.3983 21.4972C21.7994 19.8579 23.6928 18.7155 25.7962 18.2403C27.8996 17.765 30.1003 17.9824 32.07 18.8601M38 20.0001L28 30.0101L25 27.0101" stroke="#038153" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4" y="4" width="48" height="48" rx="24" stroke="#5EAE91" stroke-width="8"/>
 </svg>
 `;
 
 const terminal = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 17L10 11L4 5M12 19H20" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const target = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1336,8 +1331,15 @@ const thumbsDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
-const thumbsUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const thermometer = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M14 14.76V3.5C14 2.83696 13.7366 2.20107 13.2678 1.73223C12.7989 1.26339 12.163 1 11.5 1C10.837 1 10.2011 1.26339 9.73223 1.73223C9.26339 2.20107 9 2.83696 9 3.5V14.76C8.19728 15.2963 7.58832 16.0766 7.26307 16.9856C6.93782 17.8946 6.91352 18.8841 7.19376 19.8079C7.47399 20.7317 8.04391 21.541 8.81934 22.1161C9.59476 22.6912 10.5346 23.0017 11.5 23.0017C12.4654 23.0017 13.4052 22.6912 14.1807 22.1161C14.9561 21.541 15.526 20.7317 15.8062 19.8079C16.0865 18.8841 16.0622 17.8946 15.7369 16.9856C15.4117 16.0766 14.8027 15.2963 14 14.76Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
 </svg>
 `;
 
@@ -1347,14 +1349,19 @@ const toggleLeft = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="non
 </svg>
 `;
 
+const toggleRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 5H8C4.13401 5 1 8.13401 1 12C1 15.866 4.13401 19 8 19H16C19.866 19 23 15.866 23 12C23 8.13401 19.866 5 16 5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 15C17.6569 15 19 13.6569 19 12C19 10.3431 17.6569 9 16 9C14.3431 9 13 10.3431 13 12C13 13.6569 14.3431 15 16 15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const tool = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M14.7 6.29998C14.5168 6.48691 14.4142 6.73823 14.4142 6.99998C14.4142 7.26173 14.5168 7.51305 14.7 7.69998L16.3 9.29998C16.4869 9.48321 16.7383 9.58584 17 9.58584C17.2618 9.58584 17.5131 9.48321 17.7 9.29998L21.47 5.52998C21.9728 6.64117 22.1251 7.87921 21.9065 9.07913C21.6878 10.279 21.1087 11.3838 20.2463 12.2463C19.3839 13.1087 18.2791 13.6878 17.0792 13.9064C15.8792 14.1251 14.6412 13.9728 13.53 13.47L6.62001 20.38C6.22218 20.7778 5.68262 21.0013 5.12001 21.0013C4.5574 21.0013 4.01783 20.7778 3.62001 20.38C3.22218 19.9822 2.99869 19.4426 2.99869 18.88C2.99869 18.3174 3.22218 17.7778 3.62001 17.38L10.53 10.47C10.0272 9.35879 9.87492 8.12075 10.0936 6.92083C10.3122 5.72092 10.8913 4.61614 11.7537 3.7537C12.6162 2.89127 13.721 2.31215 14.9209 2.09352C16.1208 1.8749 17.3588 2.02714 18.47 2.52998L14.71 6.28998L14.7 6.29998Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const toggleRight = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 5H8C4.13401 5 1 8.13401 1 12C1 15.866 4.13401 19 8 19H16C19.866 19 23 15.866 23 12C23 8.13401 19.866 5 16 5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M16 15C17.6569 15 19 13.6569 19 12C19 10.3431 17.6569 9 16 9C14.3431 9 13 10.3431 13 12C13 13.6569 14.3431 15 16 15Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const trash = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1365,33 +1372,8 @@ const trello = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" x
 </svg>
 `;
 
-const trash2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const trendingDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 18L13.5 8.5L8.5 13.5L1 6M23 18H17M23 18V12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const trendingUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 6L13.5 15.5L8.5 10.5L1 18M23 6H17M23 6V12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const trash = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const tv = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 2L12 7L7 2M4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9C2 7.89543 2.89543 7 4 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const truck = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 16V3H1V16H16ZM16 16H23V11L20 8H16V16ZM8 18.5C8 19.8807 6.88071 21 5.5 21C4.11929 21 3 19.8807 3 18.5C3 17.1193 4.11929 16 5.5 16C6.88071 16 8 17.1193 8 18.5ZM21 18.5C21 19.8807 19.8807 21 18.5 21C17.1193 21 16 19.8807 16 18.5C16 17.1193 17.1193 16 18.5 16C19.8807 16 21 17.1193 21 18.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const thumbsUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V13C2 12.4696 2.21071 11.9609 2.58579 11.5858C2.96086 11.2107 3.46957 11 4 11H7M14 9V5C14 4.20435 13.6839 3.44129 13.1213 2.87868C12.5587 2.31607 11.7956 2 11 2L7 11V22H18.28C18.7623 22.0055 19.2304 21.8364 19.5979 21.524C19.9654 21.2116 20.2077 20.7769 20.28 20.3L21.66 11.3C21.7035 11.0134 21.6842 10.7207 21.6033 10.4423C21.5225 10.1638 21.3821 9.90629 21.1919 9.68751C21.0016 9.46873 20.7661 9.29393 20.5016 9.17522C20.2371 9.0565 19.9499 8.99672 19.66 9H14Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1400,8 +1382,28 @@ const triangle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 </svg>
 `;
 
-const twitch = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 11V7M21 2H3V18H8V22L12 18H17L21 14V2ZM11 11V7V11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const trendingUp = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 6L13.5 15.5L8.5 10.5L1 18M23 6H17M23 6V12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const trash2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const truck = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 16V3H1V16H16ZM16 16H23V11L20 8H16V16ZM8 18.5C8 19.8807 6.88071 21 5.5 21C4.11929 21 3 19.8807 3 18.5C3 17.1193 4.11929 16 5.5 16C6.88071 16 8 17.1193 8 18.5ZM21 18.5C21 19.8807 19.8807 21 18.5 21C17.1193 21 16 19.8807 16 18.5C16 17.1193 17.1193 16 18.5 16C19.8807 16 21 17.1193 21 18.5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const tv = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 2L12 7L7 2M4 7H20C21.1046 7 22 7.89543 22 9V20C22 21.1046 21.1046 22 20 22H4C2.89543 22 2 21.1046 2 20V9C2 7.89543 2.89543 7 4 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const trendingDown = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 18L13.5 8.5L8.5 13.5L1 6M23 18H17M23 18V12" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1410,13 +1412,23 @@ const twoLayers = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none
 </svg>
 `;
 
+const umbrella = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 19C18 19.7956 17.6839 20.5587 17.1213 21.1213C16.5587 21.6839 15.7956 22 15 22C14.2044 22 13.4413 21.6839 12.8787 21.1213C12.3161 20.5587 12 19.7956 12 19V12M23 12C22.7388 9.26357 21.467 6.72275 19.433 4.87366C17.399 3.02458 14.7489 2 12 2C9.25114 2 6.60096 3.02458 4.56697 4.87366C2.53297 6.72275 1.2612 9.26357 1 12H23Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const twitch = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 11V7M21 2H3V18H8V22L12 18H17L21 14V2ZM11 11V7V11Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const twitter = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const umbrella = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 19C18 19.7956 17.6839 20.5587 17.1213 21.1213C16.5587 21.6839 15.7956 22 15 22C14.2044 22 13.4413 21.6839 12.8787 21.1213C12.3161 20.5587 12 19.7956 12 19V12M23 12C22.7388 9.26357 21.467 6.72275 19.433 4.87366C17.399 3.02458 14.7489 2 12 2C9.25114 2 6.60096 3.02458 4.56697 4.87366C2.53297 6.72275 1.2612 9.26357 1 12H23Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const upload = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M17 8L12 3M12 3L7 8M12 3V15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1435,8 +1447,39 @@ const type = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
-const upload = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M17 8L12 3M12 3L7 8M12 3V15" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const userMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 11H17M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const user = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const userPlus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M20 8V14M23 11H17M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const userX = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M18 8L23 13M23 8L18 13M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const users = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const video = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23 7L16 12L23 17V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const voiceMail = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 16C7.98528 16 10 13.9853 10 11.5C10 9.01472 7.98528 7 5.5 7C3.01472 7 1 9.01472 1 11.5C1 13.9853 3.01472 16 5.5 16ZM5.5 16H18.5M18.5 16C20.9853 16 23 13.9853 23 11.5C23 9.01472 20.9853 7 18.5 7C16.0147 7 14 9.01472 14 11.5C14 13.9853 16.0147 16 18.5 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1452,57 +1495,6 @@ const uploadCloud = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="no
 </svg>
 `;
 
-const user = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const userMinus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 11H17M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const userCheck = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const userPlus = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M20 8V14M23 11H17M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const users = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const userX = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M18 8L23 13M23 8L18 13M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const voiceMail = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.5 16C7.98528 16 10 13.9853 10 11.5C10 9.01472 7.98528 7 5.5 7C3.01472 7 1 9.01472 1 11.5C1 13.9853 3.01472 16 5.5 16ZM5.5 16H18.5M18.5 16C20.9853 16 23 13.9853 23 11.5C23 9.01472 20.9853 7 18.5 7C16.0147 7 14 9.01472 14 11.5C14 13.9853 16.0147 16 18.5 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const video = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M23 7L16 12L23 17V7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const videoOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10.66 5H14C14.5304 5 15.0391 5.21071 15.4142 5.58579C15.7893 5.96086 16 6.46957 16 7V10.34L17 11.34L23 7V17M1 1L23 23M16 16V17C16 17.5304 15.7893 18.0391 15.4142 18.4142C15.0391 18.7893 14.5304 19 14 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V7C1 6.46957 1.21071 5.96086 1.58579 5.58579C1.96086 5.21071 2.46957 5 3 5H5L16 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
-const volume = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-`;
-
 const volume1 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53M11 5L6 9H2V15H6L11 19V5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -1513,8 +1505,18 @@ const volume2 = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
 </svg>
 `;
 
+const volume = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const volumeX = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M23 9L17 15M17 9L23 15M11 5L6 9H2V15H6L11 19V5Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
+const userCheck = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1528,18 +1530,23 @@ const wifi = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xml
 </svg>
 `;
 
+const videoOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.66 5H14C14.5304 5 15.0391 5.21071 15.4142 5.58579C15.7893 5.96086 16 6.46957 16 7V10.34L17 11.34L23 7V17M1 1L23 23M16 16V17C16 17.5304 15.7893 18.0391 15.4142 18.4142C15.0391 18.7893 14.5304 19 14 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V7C1 6.46957 1.21071 5.96086 1.58579 5.58579C1.96086 5.21071 2.46957 5 3 5H5L16 16Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`;
+
 const wifiOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L23 23M16.72 11.06C17.5391 11.4598 18.305 11.9603 19 12.55M5 12.55C6.48208 11.3108 8.26587 10.4862 10.17 10.16M10.71 5.05C12.8524 4.87737 15.0076 5.13816 17.047 5.81682C19.0865 6.49548 20.9682 7.57808 22.58 9M1.42 9C2.80717 7.77385 4.3977 6.79923 6.12 6.12M8.53 16.11C9.5452 15.3887 10.7597 15.0013 12.005 15.0013C13.2503 15.0013 14.4648 15.3887 15.48 16.11M12 20H12.01" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const wind = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.59 4.58998C9.82231 4.3563 10.1088 4.18363 10.4239 4.08732C10.739 3.99102 11.073 3.97407 11.3963 4.03797C11.7195 4.10188 12.022 4.24466 12.2768 4.45363C12.5315 4.66259 12.7307 4.93127 12.8566 5.23578C12.9825 5.54028 13.0313 5.87117 12.9985 6.19905C12.9657 6.52692 12.8524 6.84161 12.6687 7.11514C12.4849 7.38868 12.2365 7.61258 11.9454 7.76695C11.6542 7.92132 11.3295 8.00137 11 7.99998H2M12.59 19.41C12.8223 19.6437 13.1088 19.8163 13.4239 19.9126C13.739 20.0089 14.073 20.0259 14.3963 19.962C14.7195 19.8981 15.022 19.7553 15.2768 19.5463C15.5315 19.3374 15.7307 19.0687 15.8566 18.7642C15.9825 18.4597 16.0313 18.1288 15.9985 17.8009C15.9657 17.473 15.8524 17.1584 15.6687 16.8848C15.4849 16.6113 15.2365 16.3874 14.9454 16.233C14.6542 16.0786 14.3295 15.9986 14 16H2M17.73 7.72998C18.0208 7.43987 18.3787 7.2259 18.7719 7.10699C19.1652 6.98809 19.5816 6.96792 19.9845 7.04827C20.3874 7.12861 20.7642 7.307 21.0817 7.56765C21.3993 7.8283 21.6477 8.16318 21.805 8.54267C21.9623 8.92217 22.0236 9.33458 21.9836 9.74343C21.9436 10.1523 21.8035 10.545 21.5756 10.8868C21.3477 11.2286 21.0391 11.509 20.6771 11.7031C20.3151 11.8973 19.9108 11.9992 19.5 12H2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const x = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 6L6 18M6 6L18 18" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const x = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18 6L6 18M6 6L18 18" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const xCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1549,13 +1556,13 @@ const youTube = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
 </svg>
 `;
 
-const xCircle = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const xOctagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9L9 15M9 9L15 15M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const xOctagon = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15 9L9 15M9 9L15 15M7.86 2H16.14L22 7.86V16.14L16.14 22H7.86L2 16.14V7.86L7.86 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const wind = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.59 4.58998C9.82231 4.3563 10.1088 4.18363 10.4239 4.08732C10.739 3.99102 11.073 3.97407 11.3963 4.03797C11.7195 4.10188 12.022 4.24466 12.2768 4.45363C12.5315 4.66259 12.7307 4.93127 12.8566 5.23578C12.9825 5.54028 13.0313 5.87117 12.9985 6.19905C12.9657 6.52692 12.8524 6.84161 12.6687 7.11514C12.4849 7.38868 12.2365 7.61258 11.9454 7.76695C11.6542 7.92132 11.3295 8.00137 11 7.99998H2M12.59 19.41C12.8223 19.6437 13.1088 19.8163 13.4239 19.9126C13.739 20.0089 14.073 20.0259 14.3963 19.962C14.7195 19.8981 15.022 19.7553 15.2768 19.5463C15.5315 19.3374 15.7307 19.0687 15.8566 18.7642C15.9825 18.4597 16.0313 18.1288 15.9985 17.8009C15.9657 17.473 15.8524 17.1584 15.6687 16.8848C15.4849 16.6113 15.2365 16.3874 14.9454 16.233C14.6542 16.0786 14.3295 15.9986 14 16H2M17.73 7.72998C18.0208 7.43987 18.3787 7.2259 18.7719 7.10699C19.1652 6.98809 19.5816 6.96792 19.9845 7.04827C20.3874 7.12861 20.7642 7.307 21.0817 7.56765C21.3993 7.8283 21.6477 8.16318 21.805 8.54267C21.9623 8.92217 22.0236 9.33458 21.9836 9.74343C21.9436 10.1523 21.8035 10.545 21.5756 10.8868C21.3477 11.2286 21.0391 11.509 20.6771 11.7031C20.3151 11.8973 19.9108 11.9992 19.5 12H2" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1564,13 +1571,13 @@ const xSquare = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
 </svg>
 `;
 
-const zap = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const zapOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.41 6.75L13 2L10.57 4.92M18.57 12.91L21 10H15.66M8 8L3 14H12L11 22L16 16M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
-const zapOff = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.41 6.75L13 2L10.57 4.92M18.57 12.91L21 10H15.66M8 8L3 14H12L11 22L16 16M1 1L23 23" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+const zap = svg`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="#68737D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 
@@ -1821,6 +1828,7 @@ export const icons: any = {
   square,
   star,
   stopCircle,
+  successTick,
   sun,
   sunrise,
   sunset,

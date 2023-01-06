@@ -17,7 +17,7 @@ export default class Progress extends LitElement {
   static styles = [styles];
 
   /** @attr options */
-  @property()
+  @property({ type: Array<ProgressOption> })
   options!: ProgressOption[];
 
   render() {

@@ -1,0 +1,17 @@
+.toggle {
+  @apply flex relative;
+
+  & .hidden-checkbox {
+    @apply cursor-pointer opacity-0 z-10 w-9 h-5;
+  }
+  & .toggle-checkbox {
+    @apply absolute top-0 left-0 w-9 h-5 rounded-xl bg-backgroundNeutral-neutralLight hover:bg-backgroundNeutral-neutralMedium cursor-pointer;
+  }
+
+  & .toggle-checkbox::after {
+    @apply block content-[''] w-4 h-4 m-0.5 bg-white rounded-full shadow-sm transition duration-1000;
+  }
+  & .toggle-checkbox-active {
+    @apply bg-backgroundButtonPrimary-buttonPrimaryActive hover:bg-backgroundButtonPrimary-buttonPrimaryActive after:ml-4;
+  }
+}

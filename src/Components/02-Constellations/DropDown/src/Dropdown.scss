@@ -1,0 +1,12 @@
+.dropdown {
+  @apply relative;
+
+  & ::slotted(*) {
+    @apply absolute rounded-lg max-h-0 block overflow-hidden transition-[max-height] duration-300 ease-linear;
+  }
+  &.dropdown-open {
+    & ::slotted(*) {
+      @apply mt-2 max-h-screen;
+    }
+  }
+}

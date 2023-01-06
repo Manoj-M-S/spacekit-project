@@ -43,7 +43,7 @@ export default class Checkbox extends LitElement {
   renderCheckLine() {
     return html`<svg
       class="svg"
-      viewBox="0 0 10 ${this.size === 'sm' ? '9.5' : '7.5'}"
+      viewBox="0 0 10 ${this.size === 'sm' ? '10.5' : '8.5'}"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -72,7 +72,7 @@ export default class Checkbox extends LitElement {
           @change=${this.onChangeHandler}
         />
         <span class="checkbox">${this.renderCheckLine()} </span>
-        <span class="label-text">${this.text}</span>
+        ${this.text ? html`<span class="label-text">${this.text}</span>` : null}
       </label>
     `;
   }
