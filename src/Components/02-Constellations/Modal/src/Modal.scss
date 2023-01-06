@@ -1,0 +1,54 @@
+.modal {
+  @apply w-full;
+  & .modal-container {
+    @apply flex flex-col items-center pt-5 pb-4 px-4 md:p-6 gap-6 md:gap-8 bg-white rounded-xl shadow-sm w-[343px] md:w-[400px];
+  }
+  & .content {
+    @apply flex flex-col items-start gap-4 md:gap-5;
+  }
+  & .text-content {
+    @apply flex flex-col items-start gap-2;
+  }
+  & .title {
+    @apply text-lg font-medium text-text-heading;
+  }
+  & .supportive-text {
+    @apply text-sm font-normal text-text-body;
+  }
+  & .action-buttons {
+    @apply flex flex-col md:flex-row items-start gap-3 w-full;
+    & .full {
+      @apply w-full block justify-center;
+    }
+  }
+  & .content-center {
+    @apply text-center items-center;
+  }
+  & .horizontal-container {
+    @apply flex flex-col md:flex-row px-4 pt-5 pb-4 items-center md:items-start rounded-xl bg-white shadow-sm w-max gap-6 md:p-6;
+  }
+  & .checkbox-class {
+    @apply hidden md:flex;
+  }
+  & .horizontal-content {
+    @apply flex flex-col items-start gap-4 md:gap-8 w-full;
+  }
+  & .horizontal-text-container {
+    @apply flex flex-col text-center md:text-left md:items-start gap-2 w-[311px] md:w-max;
+  }
+  & .horizontal-title {
+    @apply text-lg font-medium text-text-heading;
+  }
+  & .horizontal-supportive-text {
+    @apply text-sm font-normal text-text-body;
+  }
+  & .horizontal-actions {
+    @apply flex flex-col md:flex-row justify-between items-center gap-3 w-full;
+  }
+  & .horizontal-btn-container {
+    @apply flex flex-col md:flex-row items-start gap-3 w-full md:w-max;
+  }
+  & .icon-class {
+    @apply stroke-text-success;
+  }
+}

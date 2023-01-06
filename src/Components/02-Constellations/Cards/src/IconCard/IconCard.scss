@@ -1,0 +1,59 @@
+* {
+  @apply m-0 p-0;
+}
+
+.icon-card {
+  @apply w-fit;
+  & .icon-card-inner-container {
+    @apply flex flex-col max-w-85.75 lg:max-w-96 relative;
+  }
+
+  &:hover {
+    & .icon-card-heading-text {
+      @apply text-text-primaryDark;
+    }
+  }
+
+  &.icon-card-alignment-center {
+    & .icon-card-inner-container {
+      @apply items-center text-center;
+    }
+  }
+
+  &.icon-card-container {
+    & .icon-card-inner-container {
+      @apply py-8 px-6 bg-backgroundNeutral-neutralLight rounded-2xl mt-6;
+
+      & .icon-card-icon {
+        @apply absolute -top-3;
+      }
+      & .icon-card-icon {
+        @apply mb-0;
+      }
+    }
+    &.icon-card-alignment-left {
+      & .icon-card-inner-container {
+        @apply mt-0;
+        & .icon-card-icon {
+          @apply relative;
+        }
+      }
+    }
+  }
+
+  & .icon-card-icon {
+    @apply stroke-2 stroke-backgroundButtonPrimary-buttonPrimaryDefault mb-3 lg:mb-4;
+  }
+
+  & .icon-card-heading-text {
+    @apply text-18 leading-7 lg:text-20 lg:leading-8 font-medium;
+  }
+
+  & .icon-card-support-text {
+    @apply text-16 leading-6 text-text-body mt-1 lg:mt-2;
+  }
+
+  & .icon-card-cta {
+    @apply text-16 leading-6 font-medium mt-4 lg:mt-5;
+  }
+}

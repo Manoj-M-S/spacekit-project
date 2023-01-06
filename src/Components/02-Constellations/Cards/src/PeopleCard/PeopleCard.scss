@@ -1,0 +1,174 @@
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.people-card {
+  @apply max-w-85.75 box-border rounded-xl overflow-hidden;
+
+  &.people-card-size-sm {
+    @apply lg:max-w-70;
+  }
+
+  &.people-card-size-md {
+    @apply lg:max-w-96;
+  }
+
+  & .people-card-text-container {
+	
+    & .people-card-description {
+      @apply text-text-body text-16 leading-6;
+    }
+
+    & .people-card-name {
+      @apply text-text-heading text-18 leading-7 font-bold;
+    }
+
+    & .people-card-destination {
+      @apply text-text-body text-16 leading-6;
+    }
+  }
+
+  &.people-card-type-testimonyAvatar {
+    @apply p-6 bg-backgroundPrimary-primaryExtraLight;
+
+    & .people-card-name {
+      @apply mt-6;
+    }
+
+    & .people-card-description {
+      @apply mt-6;
+    }
+  }
+
+  &.people-card-type-testimonyImage {
+    @apply bg-white;
+
+    & .people-card-image {
+      @apply block w-full object-cover;
+    }
+
+    & .people-card-text-container {
+      @apply p-6 border border-solid border-stroke-borderLight;
+
+      & .people-card-name {
+        @apply mt-4;
+      }
+
+      & .people-card-description {
+        @apply mt-4;
+      }
+    }
+  }
+
+  &.people-card-type-peopleAvatar {
+    & .people-card-text-container {
+
+      & .people-card-name {
+        @apply font-medium mt-4 lg:mt-5;
+      }
+
+      & .people-card-destination {
+        @apply text-text-primaryDark text-16 leading-5;
+      }
+    }
+  }
+
+  &.people-card-type-peopleAvatarBio {
+
+    & .people-card-text-container {
+      & .people-card-name {
+        @apply font-medium mt-4 lg:mt-5;
+      }
+
+      & .people-card-destination {
+        @apply text-text-primaryDark text-16 leading-5;
+      }
+
+      & .people-card-description {
+        @apply mt-2;
+      }
+
+      & .people-card-social-icon-container {
+        @apply flex list-none mt-4;
+
+        & .people-card-social-icons {
+          @apply mr-4 last:mr-0 w-5 h-5;
+        }
+      }
+    }
+  }
+
+  &.people-card-type-peopleImage {
+    @apply rounded-none;
+
+    &.people-card-size-sm {
+      @apply max-w-70;
+
+      & .people-card-image {
+        @apply w-full object-cover h-auto max-h-70 block;
+      }
+    }
+
+    &.people-card-size-md {
+      @apply max-w-85.75 lg:max-w-96;
+
+      & .people-card-image {
+        @apply w-full object-cover h-auto max-h-85.75 lg:max-h-96 block;
+      }
+    }
+
+    & .people-card-text-container {
+      @apply mt-6;
+
+      & .people-card-name {
+        @apply font-medium;
+      }
+
+      & .people-card-destination {
+        @apply mt-1 text-text-primaryDark;
+      }
+    }
+  }
+
+  &.people-card-type-peopleImageBio {
+    @apply rounded-none;
+
+    &.people-card-size-sm {
+
+      @apply max-w-70;
+      & .people-card-image {
+        @apply w-full object-cover h-auto max-h-70 block;
+      }
+    }
+
+    &.people-card-size-md {
+      @apply max-w-85.75 lg:max-w-96;
+
+      & .people-card-image {
+        @apply w-full object-cover h-auto max-h-85.75 lg:max-h-96 block;
+      }
+    }
+
+    & .people-card-text-container {
+      @apply mt-6;
+      & .people-card-name {
+        @apply font-medium;
+      }
+     
+	  & .people-card-destination {
+        @apply mt-1 text-text-primaryDark;
+      }
+      
+	  & .people-card-description {
+        @apply mt-4;
+      }
+
+      & .people-card-social-icon-container {
+        @apply flex list-none mt-6;
+        & .people-card-social-icons {
+          @apply mr-4 last:mr-0 w-5 h-5;
+        }
+      }
+    }
+  }
+}

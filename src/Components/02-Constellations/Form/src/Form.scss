@@ -1,0 +1,42 @@
+.form-container {
+  @apply flex flex-col items-start gap-10 w-[343px] md:w-[592px];
+  &.bg-container {
+    @apply px-4 py-6 md:px-6 md:py-10 bg-backgroundNeutral-neutralLight;
+  }
+  & .container-width {
+    @apply w-full;
+  }
+  & .heading {
+    @apply flex flex-col items-start gap-2;
+  }
+  & .title {
+    @apply text-36 leading-44 font-bold text-text-heading;
+  }
+  & .sub-text {
+    @apply flex flex-row text-20 leading-8 font-normal text-text-body;
+  }
+  & .email-text-sm {
+    @apply block md:hidden text-20 leading-8 font-medium text-text-primaryDark;
+  }
+  & .email-text-lg {
+    @apply hidden md:block text-20 leading-8 font-medium text-text-primaryDark;
+  }
+  & .form {
+    @apply w-full flex flex-col items-start gap-6;
+  }
+  & .fieldset {
+    @apply w-full flex flex-col md:flex-row gap-6 md:gap-5 border-0 p-0;
+  }
+  & .submit-button {
+    @apply w-full md:w-max justify-center;
+  }
+  & .selection-checkbox {
+    @apply flex flex-wrap gap-y-4;
+  }
+  & .sp-checkbox {
+    @apply flex basis-[50%];
+  }
+  & .selection-heading {
+    @apply text-sm font-medium text-text-heading;
+  }
+}
