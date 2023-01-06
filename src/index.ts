@@ -15,3 +15,4 @@ export * from './Components/02-Constellations/Progress';
 export * from './Components/02-Constellations/Accordion';
 export * from './Components/02-Constellations/Cards';
 export * from './Components/02-Constellations/Pagination';
+export * from './Components/02-Constellations/Slider';
