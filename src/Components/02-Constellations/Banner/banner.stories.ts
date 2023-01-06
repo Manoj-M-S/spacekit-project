@@ -3,7 +3,7 @@ import { html } from 'lit';
 import './src/NotificationBanner';
 
 export default {
-  title: 'Constellations/Banner',
+  title: 'Constellations/NotificationBanner',
   component: 'space-notification',
   argTypes: {
     background: {
