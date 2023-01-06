@@ -300,6 +300,11 @@ module.exports = {
         50: '12.5rem',
         80: '20rem',
       },
+      minWidth: {
+        60: '15rem',
+      },
+      strokeWidth: {
+        0.375:'0.09375rem'
       height: {
         50: '12.5rem',
         64.5: '16.125rem',

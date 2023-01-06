@@ -1,8 +1,11 @@
+:host {
+  @apply inline-flex;
+}
 .label {
   @apply inline-flex items-start;
 
   & .checkbox {
-    @apply min-w-[1rem] w-4 h-4 border border-solid inline-block rounded border-stroke-borderDefault bg-white;
+    @apply min-w-[1rem] box-border w-4 h-4 border border-solid inline-block rounded border-stroke-borderDefault bg-white;
 
     &:hover {
       @apply border-stroke-focused bg-backgroundPrimary-primaryExtraLight;
@@ -38,7 +41,6 @@
         }
       }
     }
-
     &:disabled {
       & ~ .checkbox {
         @apply border-stroke-borderLight bg-white;
