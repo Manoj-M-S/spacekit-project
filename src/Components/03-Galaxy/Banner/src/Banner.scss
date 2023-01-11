@@ -1,0 +1,80 @@
+.banner {
+  @apply flex flex-col lg:flex-row items-start lg:items-center gap-8;
+  & .banner-container {
+    @apply flex flex-col lg:flex-row lg:justify-between lg:gap-10 lg:w-full items-start gap-8 bg-backgroundPrimary-primaryExtraLight rounded-xl;
+    &.center {
+      @apply flex-col;
+    }
+    &.banner-tillMargin {
+      @apply py-10 px-5 lg:py-16 lg:px-10;
+    }
+    &.banner-full {
+      @apply py-16 px-4 lg:py-24 lg:px-28;
+    }
+  }
+  & .head-text {
+    @apply flex flex-col items-start gap-4 w-full;
+    &.head-text-center {
+      @apply items-center justify-center;
+    }
+  }
+  & .heading {
+    @apply text-30 leading-40 font-bold text-text-primaryDark;
+  }
+  & .sub-heading {
+    @apply text-base font-normal text-text-heading;
+    &.sub-heading-center {
+      @apply text-center;
+    }
+  }
+  & .action-container {
+    @apply flex flex-col items-start lg:flex-row lg:items-end lg:justify-end gap-3 w-full;
+    &.action-container-center {
+      @apply items-center justify-center;
+    }
+    &.cta-email {
+      @apply flex items-start;
+    }
+  }
+  & .button-class {
+    @apply w-full lg:w-max justify-center;
+  }
+}
+
+.cta-banner-image {
+  @apply py-10 lg:py-16 px-4 lg:px-28 flex flex-col lg:flex-row items-start gap-12 lg:gap-18 bg-backgroundPrimary-primaryExtraLight;
+  & .cta-container {
+    @apply flex flex-col items-start gap-8 lg:gap-16 w-full;
+  }
+  & .head-text {
+    @apply flex flex-col items-start gap-4 w-full lg:gap-6;
+  }
+  & .heading {
+    @apply text-30 lg:text-36 leading-40 lg:leading-44 font-bold text-text-primaryDark;
+  }
+  & .sub-heading {
+    @apply text-base font-normal text-text-heading;
+  }
+  & .banner-image-sm {
+    @apply block w-full  lg:hidden;
+  }
+  & .image-action-container {
+    @apply w-full flex flex-col md:flex-row items-start gap-4;
+  }
+  & .button-class {
+    @apply w-full md:w-max justify-center;
+  }
+  & .cta-img {
+    @apply hidden lg:block  w-full;
+  }
+  & .banner-image-lg {
+    @apply w-full;
+  }
+}
+.input-class {
+  @apply w-full md:w-max justify-center;
+}
+
+.primary-link-class {
+  @apply rounded-lg py-2.5 px-5 border bg-backgroundButtonPrimary-buttonPrimaryActive text-white;
+}
