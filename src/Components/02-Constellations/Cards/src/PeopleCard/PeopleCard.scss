@@ -14,7 +14,6 @@
   }
 
   & .people-card-text-container {
-	
     & .people-card-description {
       @apply text-text-body text-16 leading-6;
     }
@@ -62,7 +61,6 @@
 
   &.people-card-type-peopleAvatar {
     & .people-card-text-container {
-
       & .people-card-name {
         @apply font-medium mt-4 lg:mt-5;
       }
@@ -74,7 +72,6 @@
   }
 
   &.people-card-type-peopleAvatarBio {
-
     & .people-card-text-container {
       & .people-card-name {
         @apply font-medium mt-4 lg:mt-5;
@@ -134,7 +131,6 @@
     @apply rounded-none;
 
     &.people-card-size-sm {
-
       @apply max-w-70;
       & .people-card-image {
         @apply w-full object-cover h-auto max-h-70 block;
@@ -154,12 +150,12 @@
       & .people-card-name {
         @apply font-medium;
       }
-     
-	  & .people-card-destination {
+
+      & .people-card-destination {
         @apply mt-1 text-text-primaryDark;
       }
-      
-	  & .people-card-description {
+
+      & .people-card-description {
         @apply mt-4;
       }
 
