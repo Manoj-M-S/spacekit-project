@@ -1,4 +1,8 @@
 .btn {
+  width: inherit;
+  height: inherit;
+  justify-content: inherit;
+
   @apply cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center;
 
   & .btn-icon {
