@@ -1,0 +1,15 @@
+.dark {
+  @apply w-auto overflow-auto m-0 rounded-md bg-backgroundNeutral-neutralExtraDark lg:w-7/12 text-white;
+}
+
+.color {
+  @apply w-auto overflow-auto rounded-md bg-backgroundPrimary-primaryExtraLight lg:w-7/12;
+}
+
+.light {
+  @apply w-auto overflow-auto rounded-md bg-backgroundNeutral-neutralLight lg:w-7/12;
+}
+
+.Code {
+  @apply whitespace-pre-wrap break-words text-base font-serif leading-6 ml-2;
+}
