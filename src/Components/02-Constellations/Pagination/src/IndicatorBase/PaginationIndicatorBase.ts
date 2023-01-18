@@ -65,6 +65,12 @@ export default class PaginationIndicatorBase extends LitElement {
 
   onPageChangeHandle = (pageNumber: number) => () => {
     this.currentPageNumber = pageNumber;
+
+    const detail = { pageNumber };
+
+    const customEvent = new CustomEvent('onPageChange', { detail });
+
+    this.dispatchEvent(customEvent);
   };
 
   render() {
