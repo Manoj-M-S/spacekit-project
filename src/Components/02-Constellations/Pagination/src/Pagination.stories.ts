@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import './NumberBase/PaginationNumberBase';
+import './IndicatorBase/PaginationIndicatorBase';
 import { Meta } from '@storybook/web-components';
 
 export default {
@@ -20,7 +21,27 @@ const paginationNumberBase = ({ type, total, pageSize, color, shape }: any) => {
   `;
 };
 
+const paginationIndicatorBase = ({
+  style,
+  total,
+  pageSize,
+  colour,
+  currentPageNumber,
+}: any) => {
+  return html`
+    <space-pagination-indicator
+      style=${style}
+      total=${total}
+      colour=${colour}
+      current-page=${currentPageNumber}
+      page-size=${pageSize}
+    >
+    </space-pagination-indicator>
+  `;
+};
+
 export const PaginationNumberBase = paginationNumberBase.bind({});
+export const PaginationIndicatorBase = paginationIndicatorBase.bind({});
 
 PaginationNumberBase.args = {
   total: 100,
@@ -41,6 +62,25 @@ PaginationNumberBase.argTypes = {
   },
   shape: {
     options: ['square', 'circle'],
+    control: { type: 'radio' },
+  },
+};
+
+PaginationIndicatorBase.args = {
+  total: 50,
+  pageSize: 10,
+  style: 'dot',
+  currentPageNumber: 1,
+  colour: 'primaryLight',
+};
+
+PaginationIndicatorBase.argTypes = {
+  style: {
+    options: ['dot', 'line', 'dash', 'fraction'],
+    control: { type: 'radio' },
+  },
+  colour: {
+    options: ['primaryLight', 'primaryDark', 'greyLight', 'greyDark'],
     control: { type: 'radio' },
   },
 };
