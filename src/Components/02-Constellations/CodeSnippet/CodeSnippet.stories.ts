@@ -24,11 +24,6 @@ const Template = ({ code, theme }: Args) => {
     <space-code-snippet theme=${theme} .code=${code}></space-code-snippet>
   `;
 };
-// export const CodeSnippet = ({ code, theme }: Args) => {
-//   return html`
-//     <space-code-snippet theme=${theme} .code=${code}></space-code-snippet>
-//   `;
-// };
 
 export const Default = Template.bind({});
 
