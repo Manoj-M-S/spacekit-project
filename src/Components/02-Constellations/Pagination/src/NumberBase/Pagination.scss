@@ -1,0 +1,107 @@
+* {
+  @apply m-0 p-0 leading-none list-none;
+}
+
+.pagination-number {
+  @apply flex justify-between items-center;
+
+  & .pagination-number-minimal-text {
+    @apply text-14 leading-5 text-text-body;
+
+    & .pagination-minimal-number-text {
+      @apply text-textButtonSecondary-buttonSecondaryDefault;
+    }
+  }
+
+  & .pagination-minimal-text-center {
+    @apply md:hidden;
+  }
+
+  & .pagination-number-list {
+    @apply hidden md:flex md:gap-0.5;
+
+    & .pagination-number-list-item {
+      @apply w-10 h-10 flex items-center justify-center cursor-pointer hover:bg-backgroundButtonPrimary-buttonPrimaryDisabled;
+
+      & .pagination-page-number {
+        @apply text-14 leading-5 font-medium text-text-body;
+      }
+    }
+  }
+
+  &.pagination-number-color-dark {
+    & .pagination-current-page {
+      @apply bg-backgroundButtonPrimary-buttonPrimaryDefault hover:bg-backgroundButtonPrimary-buttonPrimaryDefault;
+
+      & .pagination-page-number {
+        @apply text-white;
+      }
+    }
+  }
+
+  &.pagination-number-color-light {
+    & .pagination-current-page {
+      @apply bg-backgroundButtonPrimary-buttonPrimaryDisabled;
+
+      & .pagination-page-number {
+        @apply text-text-primaryDark;
+      }
+    }
+  }
+
+  &.pagination-number-shape-circle {
+    & .pagination-number-list-item {
+      @apply rounded-full;
+    }
+  }
+
+  &.pagination-number-shape-square {
+    & .pagination-number-list-item {
+      @apply rounded-lg;
+    }
+  }
+
+  & .pagination-number-nav-button {
+    @apply rounded-lg shadow-xs border-solid border-strokeButton-buttonSecondaryGreyDefault bg-white p-2 md:px-3.5 md:py-2 flex items-center gap-2 text-textButtonSecondary-buttonSecondaryDefault text-14 leading-5 font-medium cursor-pointer;
+
+    & .pagination-number-nav-icon {
+      @apply stroke-text-body w-5 h-5 stroke-0.4175 block;
+    }
+
+    & .pagination-btn-text {
+      @apply hidden md:block text-14 leading-5 font-medium text-textButtonSecondary-buttonSecondaryDefault;
+    }
+  }
+
+  &.pagination-number-type-minimal {
+    @apply md:justify-start md:gap-x-3;
+
+    & .pagination-number-list {
+      @apply hidden;
+    }
+
+    & .pagination-minimal-text-left {
+      @apply hidden md:block md:mr-auto;
+
+      & .pagination-number-minimal-text {
+        @apply block;
+      }
+    }
+
+    & .pagination-minimal-text-center {
+      @apply md:hidden;
+    }
+
+    & .pagination-number-nav-icon {
+      @apply md:hidden;
+    }
+
+    & .pagination-number-nav-button {
+      @apply border-stroke-borderLight;
+
+      & .pagination-btn-text {
+        @apply hidden md:inline-block text-text-body;
+      }
+    }
+  }
+}
