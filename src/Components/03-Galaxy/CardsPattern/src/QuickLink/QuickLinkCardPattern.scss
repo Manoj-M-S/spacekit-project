@@ -1,0 +1,20 @@
+@import 'swiper/swiper-bundle.css';
+
+.quicklink-card-pattern {
+  &.quicklink-card-pattern-type-simple {
+    & .quicklink-card-pattern-list {
+      @apply flex flex-col lg:flex-row flex-nowrap w-max gap-8 list-none;
+    }
+    & .swiper-slide {
+      @apply !w-max;
+    }
+  }
+
+  &.quicklink-card-pattern-type-carousel {
+    @apply w-full list-none;
+
+    & .quicklink-card-pattern-button-container {
+      @apply flex justify-end gap-4 mt-10 mr-8;
+    }
+  }
+}
