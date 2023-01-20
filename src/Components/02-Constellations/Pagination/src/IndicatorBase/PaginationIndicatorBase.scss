@@ -1,0 +1,181 @@
+* {
+  @apply m-0 p-0 leading-none list-none;
+}
+
+.pagination-indicator {
+  & .pagination-indicator-list {
+    @apply flex;
+
+    & .pagination-indicator-list-item {
+      @apply hover:cursor-pointer transition-colors duration-200 ease-linear;
+    }
+  }
+
+  & .pagination-indicator-dash-text,
+  & .pagination-indicator-number-text {
+    @apply text-16 leading-6 font-medium;
+  }
+
+  &-style {
+    &-dot {
+      & .pagination-indicator-list {
+        @apply gap-3;
+
+        & .pagination-indicator-list-item {
+          @apply w-2 h-2 rounded-full shrink-0 bg-warning-400;
+        }
+      }
+    }
+
+    &-line {
+      & .pagination-indicator-list {
+        @apply gap-2;
+
+        & .pagination-indicator-list-item {
+          @apply w-10 h-1.5 rounded-[3px] shrink-0 bg-warning-400;
+        }
+      }
+    }
+
+    &-dash {
+      & .pagination-indicator-list {
+        @apply gap-2;
+
+        & .pagination-indicator-list-item {
+          @apply flex items-center gap-2;
+
+          &.pagination-indicator-last-page-number {
+            @apply flex-row-reverse;
+          }
+
+          & .pagination-indicator-dash {
+            @apply w-20 border-2 border-solid inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  &-colour {
+    &-primaryLight {
+      & .pagination-indicator-list {
+        & .pagination-indicator-list-item {
+          @apply bg-backgroundPrimary-primaryLight;
+
+          & .pagination-indicator-dash-text {
+            @apply bg-white text-text-primaryMedium;
+          }
+
+          &.pagination-indicator-current-page-number {
+            @apply bg-backgroundPrimary-primaryDark;
+
+            &.pagination-indicator-style-dash {
+              @apply bg-transparent text-text-primaryDark;
+
+              & .pagination-indicator-dash-text {
+                @apply text-text-primaryDark;
+              }
+            }
+          }
+        }
+      }
+
+      & .pagination-indicator-current-page-text {
+        @apply text-text-primaryDark;
+      }
+
+      & .pagination-indicator-last-page-text {
+        @apply text-text-primaryMedium;
+      }
+    }
+    &-primaryDark {
+      & .pagination-indicator-list {
+        & .pagination-indicator-list-item {
+          @apply bg-backgroundPrimary-primaryMedium;
+
+          & .pagination-indicator-dash-text {
+            @apply bg-white text-text-primaryMedium;
+          }
+
+          &.pagination-indicator-current-page-number {
+            @apply bg-white;
+
+            &.pagination-indicator-style-dash {
+              @apply bg-transparent text-white;
+
+              & .pagination-indicator-dash-text {
+                @apply bg-transparent text-white;
+              }
+            }
+          }
+        }
+      }
+
+      & .pagination-indicator-current-page-text {
+        @apply text-white;
+      }
+
+      & .pagination-indicator-last-page-text {
+        @apply text-text-primaryMedium;
+      }
+    }
+    &-greyLight {
+      & .pagination-indicator-list {
+        & .pagination-indicator-list-item {
+          @apply bg-backgroundNeutral-neutralMedium;
+
+          & .pagination-indicator-dash-text {
+            @apply bg-white text-text-neutralMedium;
+          }
+
+          &.pagination-indicator-current-page-number {
+            @apply bg-backgroundNeutral-neutralExtraDark text-text-heading;
+
+            &.pagination-indicator-style-dash {
+              @apply bg-transparent;
+
+              & .pagination-indicator-dash-text {
+                @apply text-text-heading;
+              }
+            }
+          }
+        }
+      }
+
+      & .pagination-indicator-current-page-text {
+        @apply text-text-heading;
+      }
+
+      & .pagination-indicator-last-page-text {
+        @apply text-text-neutralMedium;
+      }
+    }
+    &-greyDark {
+      & .pagination-indicator-list {
+        & .pagination-indicator-list-item {
+          @apply bg-backgroundNeutral-neutralDark text-text-neutralMedium;
+
+          & .pagination-indicator-dash-text {
+            @apply bg-white;
+          }
+
+          &.pagination-indicator-current-page-number {
+            @apply bg-transparent text-white;
+
+            & .pagination-indicator-dash-text {
+              @apply bg-transparent;
+            }
+          }
+        }
+      }
+
+      & .pagination-indicator-current-page-text {
+        @apply text-white;
+      }
+
+      & .pagination-indicator-last-page-text {
+        @apply text-text-neutralMedium;
+      }
+    }
+  }
+}
