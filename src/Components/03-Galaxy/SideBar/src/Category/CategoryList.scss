@@ -1,0 +1,9 @@
+.category-list {
+  @apply flex flex-col items-start gap-1;
+  &.variant-underline {
+    @apply flex flex-col items-start gap-2;
+  }
+  &.variant-filled {
+    @apply flex flex-col items-start gap-5 pt-3 pr-3 pb-4;
+  }
+}

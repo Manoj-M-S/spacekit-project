@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import './src/SideBar';
+import './src/Category/CatelgoryList';
 
 export default {
   title: 'Galaxy/Sidebar',
@@ -34,9 +35,17 @@ const Template = ({
   `;
 };
 
+const categoryList = ({ options, baseStyle }: any) => {
+  return html`
+    <space-category-list .options=${options} base-style=${baseStyle}>
+    </space-category-list>
+  `;
+};
+
 export const Default = Template.bind({});
 export const Underline = Template.bind({});
 export const Filled = Template.bind({});
+export const CategoryList = categoryList.bind({});
 
 Default.args = {
   label: 'About the topic',
@@ -55,6 +64,62 @@ Default.args = {
     {
       listName: 'Link List Item',
       listHref: '#',
+    },
+  ],
+};
+
+CategoryList.args = {
+  baseStyle: 'filled',
+  options: [
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: true,
+      options: [
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+      ],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: false,
+      options: [],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: true,
+      options: [
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+      ],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: false,
+      options: [],
     },
   ],
 };

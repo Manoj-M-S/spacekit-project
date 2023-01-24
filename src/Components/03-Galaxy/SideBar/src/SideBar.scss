@@ -1,10 +1,10 @@
 .category-base {
-  @apply flex flex-col items-start;
+  @apply w-70 flex flex-col items-start;
   &.style-underline {
-    @apply w-max pb-2 border-0 border-b border-solid border-stroke-dividerLight;
+    @apply w-70 pb-2 border-0 border-b border-solid border-stroke-dividerLight;
   }
   &.style-filled {
-    @apply w-max bg-backgroundNeutral-neutralLight rounded-lg;
+    @apply w-70 bg-backgroundNeutral-neutralLight rounded-lg;
   }
   & .button-heading {
     @apply py-3 px-4 w-70 text-black bg-transparent border-0 flex gap-8 hover:text-text-primaryDark justify-between items-start text-base font-normal cursor-pointer;
@@ -20,12 +20,12 @@
     @apply w-70 flex flex-row items-center py-3 px-4 hover:text-text-primaryDark text-base font-normal text-black no-underline;
   }
   & .base-list {
-    @apply flex flex-col list-none m-0 p-0 pb-4;
+    @apply flex flex-col list-none m-0 p-0 pb-4 w-full;
   }
   & .item {
     @apply text-sm font-medium text-textButtonLink-buttonLinkDefault no-underline;
   }
   & .base-item {
-    @apply w-64 pl-8 pr-4 py-2;
+    @apply w-64 pl-6.5 pr-4 py-2;
   }
 }
