@@ -15,6 +15,7 @@ export * from './Components/02-Constellations/DropDown';
 export * from './Components/01-stars/DropdownListBase';
 export * from './Components/01-stars/InputDropDownListBase';
 export * from './Components/02-Constellations/InputDropDown';
+export * from './Components/02-Constellations/Breadcrumb';
 export * from './Components/02-Constellations/Progress';
 export * from './Components/02-Constellations/Accordion';
 export * from './Components/02-Constellations/Cards';
