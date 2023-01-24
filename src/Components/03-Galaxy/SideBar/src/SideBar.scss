@@ -1,0 +1,31 @@
+.category-base {
+  @apply flex flex-col items-start;
+  &.style-underline {
+    @apply w-max pb-2 border-0 border-b border-solid border-stroke-dividerLight;
+  }
+  &.style-filled {
+    @apply w-max bg-backgroundNeutral-neutralLight rounded-lg;
+  }
+  & .button-heading {
+    @apply py-3 px-4 w-70 text-black bg-transparent border-0 flex gap-8 hover:text-text-primaryDark justify-between items-start text-base font-normal cursor-pointer;
+    &.expanded {
+      @apply text-text-heading font-bold;
+    }
+
+    & .accordion-icon {
+      @apply stroke-stroke-icon h-6 w-6;
+    }
+  }
+  & .sidebar-base {
+    @apply w-70 flex flex-row items-center py-3 px-4 hover:text-text-primaryDark text-base font-normal text-black no-underline;
+  }
+  & .base-list {
+    @apply flex flex-col list-none m-0 p-0 pb-4;
+  }
+  & .item {
+    @apply text-sm font-medium text-textButtonLink-buttonLinkDefault no-underline;
+  }
+  & .base-item {
+    @apply w-64 pl-8 pr-4 py-2;
+  }
+}
