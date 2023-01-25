@@ -3,7 +3,7 @@
 }
 
 .navigation-base {
-  @apply no-underline flex items-center;
+  @apply no-underline flex items-center w-max;
 
   &.navigation-base-size-sm {
     & .navigation-base-text {

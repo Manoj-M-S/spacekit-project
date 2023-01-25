@@ -22,3 +22,4 @@ export * from './Components/02-Constellations/Cards';
 export * from './Components/02-Constellations/Pagination';
 export * from './Components/02-Constellations/Slider';
 export * from './Components/02-Constellations/CodeSnippet';
+export * from './Components/02-Constellations/Navigation';
