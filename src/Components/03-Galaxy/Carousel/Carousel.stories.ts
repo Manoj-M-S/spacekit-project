@@ -2,6 +2,7 @@ import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
 import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
+import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
 
 export default {
   title: 'Galaxy/Carousel',
@@ -22,6 +23,12 @@ const imageWithTitleAndDescription = ({ options }: any) => {
   `;
 };
 
+const imageWithTitleAndCTA = ({ options }: any) => {
+  return html`
+    <space-image-title-cta .options=${options}> </space-image-title-cta>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -29,6 +36,8 @@ export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
 export const ImageWithTitleAndDescription = imageWithTitleAndDescription.bind(
   {}
 );
+
+export const ImageWithTitleAndCTA = imageWithTitleAndCTA.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -71,5 +80,25 @@ ImageWithTitleAndDescription.args = {
     { ...imageWithTitleAndDescriptionOptions },
     { ...imageWithTitleAndDescriptionOptions },
     { ...imageWithTitleAndDescriptionOptions },
+  ],
+};
+
+const imageWithTitleAndCTAOption = {
+  alt: 'WORK WITH US',
+  src: 'https://s3-alpha-sig.figma.com/img/e938/b1bb/6b7cfe0177b086e6d95550aa9d6cfcae?Expires=1675641600&Signature=PB6Ejqf-QmFVxb3iUAK4Lz-vRc5NVZXLsQNGX6uMa7jvwDPnXNZcpju9DtnG63ocsYBW9CESAbv176aYa8oDEtLT-w56OoxP793oYk0p4Q7Lgd2M8VHgPbLxjKGFTUgq~vkXkklqJvcILw4TLJGCLQiAgLr~3c-8BX0YJBpGE62I7QxVZfuHsHOfVRNck6yxA-qdO1KqOOkXqqRSd3bqr8N~SKtLHZ~sAXIdv3VHByRhp5-DhSLSL0ipwBJZpV6Zzuxh26pQwJgQ-B7u1ixsuhWzdnWzDkUSklewsefRIBTQOXKJdBi2eWns9RVREw1VQm~OILa6VSitj7U8eX5eOw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  heading: 'WORK WITH US',
+  ctaText: 'See Career Opportunities',
+  description:
+    'amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices ',
+};
+
+ImageWithTitleAndCTA.args = {
+  options: [
+    { ...imageWithTitleAndCTAOption },
+    { ...imageWithTitleAndCTAOption },
+    { ...imageWithTitleAndCTAOption },
+    { ...imageWithTitleAndCTAOption },
+    { ...imageWithTitleAndCTAOption },
+    { ...imageWithTitleAndCTAOption },
   ],
 };
