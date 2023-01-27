@@ -1,8 +1,9 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
+import './src/Images&VideosSlideshow/Images&VideosSlideshow';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
 import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
-import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
+import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
 import './src/TextOnly/TextOnly';
 
 export default {
@@ -30,6 +31,13 @@ const imageWithTitleAndCTA = ({ options }: any) => {
   `;
 };
 
+const imagesAndVideoWithDescription = ({ options }: any) => {
+  return html`
+    <space-images-video-description .options=${options}>
+    </space-images-video-description>
+  `;
+};
+
 const textOnly = ({ options }: any) => {
   return html` <space-text-only .options=${options}> </space-text-only> `;
 };
@@ -45,6 +53,10 @@ export const ImageWithTitleAndDescription = imageWithTitleAndDescription.bind(
 export const ImageWithTitleAndCTA = imageWithTitleAndCTA.bind({});
 
 export const TextOnly = textOnly.bind({});
+
+export const ImagesAndVideoWithDescription = imagesAndVideoWithDescription.bind(
+  {}
+);
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -123,5 +135,26 @@ TextOnly.args = {
     { ...textOnlyOptions },
     { ...textOnlyOptions },
     { ...textOnlyOptions },
+  ],
+};
+
+const imagesAndVideoWithDescriptionOptions = {
+  heading: 'A fully integrated digital agency',
+  linkText: 'Explore More',
+  linkHref: '#',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscinelit ut aliquam, purus sit amet luctus venenatis, lectus magna',
+  src: 'https://s3-alpha-sig.figma.com/img/1ccd/3401/d8124a72b6e722aae638feb9d8e7e4c6?Expires=1675641600&Signature=gtS2jLy5En5a8rmfcov75hZfTfJlNNNrLDtCYLudFKPn1tGGRJkia7GX6mmeTueuRexjriNlsnHu74Gh0QJuFuEdgHBUnd3QfNhvUVg~gx78yfwJ3K5P9PlKyQGfgiAWBSi6I1Hb~U6i12M4DoKcrK2ewZB9Tgf3n433errM60hqh~3VAAVn-H8JtoiYVWlCaEr3KgQH~fo79Y8aXVvgLl7K7vToDonzdrP5uzvM9V2LzgIjY1M4RrIEo9LN4Tkm6VOybvXpZ7dVtKmpVW0sldrEj-FEZo0G-I9EIMO-Tc~pCH4SPDPM8EAj5OMzx1UGUGwrldgpamwDCeD1-Y0ZZA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'A fully integrated digital agency',
+};
+
+ImagesAndVideoWithDescription.args = {
+  options: [
+    { ...imagesAndVideoWithDescriptionOptions },
+    { ...imagesAndVideoWithDescriptionOptions },
+    { ...imagesAndVideoWithDescriptionOptions },
+    { ...imagesAndVideoWithDescriptionOptions },
+    { ...imagesAndVideoWithDescriptionOptions },
+    { ...imagesAndVideoWithDescriptionOptions },
   ],
 };
