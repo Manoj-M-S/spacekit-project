@@ -35,9 +35,21 @@ const Template = ({
   `;
 };
 
-const categoryList = ({ options, baseStyle }: any) => {
+const categoryList = ({
+  options,
+  baseStyle,
+  sidebar,
+  sidebarHeading,
+  background,
+}: any) => {
   return html`
-    <space-category-list .options=${options} base-style=${baseStyle}>
+    <space-category-list
+      .options=${options}
+      base-style=${baseStyle}
+      ?sidebar=${sidebar}
+      sidebar-heading=${sidebarHeading}
+      ?background=${background}
+    >
     </space-category-list>
   `;
 };
@@ -46,6 +58,7 @@ export const Default = Template.bind({});
 export const Underline = Template.bind({});
 export const Filled = Template.bind({});
 export const CategoryList = categoryList.bind({});
+export const Sidebar = categoryList.bind({});
 
 Default.args = {
   label: 'About the topic',
@@ -132,4 +145,63 @@ Underline.args = {
 Filled.args = {
   ...Default.args,
   baseStyle: 'filled',
+};
+
+Sidebar.args = {
+  ...Default.agrs,
+  sidebar: false,
+  sidebarHeading: 'About Us',
+  background: false,
+  options: [
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: true,
+      options: [
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+      ],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: false,
+      options: [],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: true,
+      options: [
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+        {
+          listName: 'Link List Item',
+          listHref: '#',
+        },
+      ],
+    },
+    {
+      label: 'About The Topic',
+      listHref: '#',
+      showDropdown: false,
+      options: [],
+    },
+  ],
 };
