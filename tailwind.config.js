@@ -289,6 +289,7 @@ module.exports = {
       margin: {
         1.5: '0.375rem',
         2.5: '0.625rem',
+        45: '11.25rem',
       },
       padding: {
         0.5: '0.125rem',
@@ -321,6 +322,7 @@ module.exports = {
         96: '24rem',
         148: '37rem',
         200: '50rem',
+        252: '63rem',
       },
       maxHeight: {
         47: '11.75rem',

@@ -1,8 +1,9 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
-import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
 import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
+import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
+import './src/TextOnly/TextOnly';
 
 export default {
   title: 'Galaxy/Carousel',
@@ -29,6 +30,10 @@ const imageWithTitleAndCTA = ({ options }: any) => {
   `;
 };
 
+const textOnly = ({ options }: any) => {
+  return html` <space-text-only .options=${options}> </space-text-only> `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -38,6 +43,8 @@ export const ImageWithTitleAndDescription = imageWithTitleAndDescription.bind(
 );
 
 export const ImageWithTitleAndCTA = imageWithTitleAndCTA.bind({});
+
+export const TextOnly = textOnly.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -100,5 +107,21 @@ ImageWithTitleAndCTA.args = {
     { ...imageWithTitleAndCTAOption },
     { ...imageWithTitleAndCTAOption },
     { ...imageWithTitleAndCTAOption },
+  ],
+};
+
+const textOnlyOptions = {
+  heading: 'We are a global creative collective',
+  description: 'We shape the future of brands through craft & curosity',
+};
+
+TextOnly.args = {
+  options: [
+    { ...textOnlyOptions },
+    { ...textOnlyOptions },
+    { ...textOnlyOptions },
+    { ...textOnlyOptions },
+    { ...textOnlyOptions },
+    { ...textOnlyOptions },
   ],
 };
