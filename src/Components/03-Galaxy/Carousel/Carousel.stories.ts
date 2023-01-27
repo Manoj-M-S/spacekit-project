@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
+import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
 
 export default {
   title: 'Galaxy/Carousel',
@@ -14,7 +15,18 @@ const imageWithAssymmeticTextLayout = ({ options }: any) => {
   `;
 };
 
+const imageWithTitleAndDescription = ({ options }: any) => {
+  return html`
+    <space-image-title-description .options=${options}>
+    </space-image-title-description>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
+  {}
+);
+
+export const ImageWithTitleAndDescription = imageWithTitleAndDescription.bind(
   {}
 );
 
@@ -36,5 +48,28 @@ ImageWithAssymmeticTextLayout.args = {
     { ...imageWithAssymmeticTextLayoutOptions },
     { ...imageWithAssymmeticTextLayoutOptions },
     { ...imageWithAssymmeticTextLayoutOptions },
+  ],
+};
+
+const imageWithTitleAndDescriptionOptions = {
+  alt: 'Beautiful Collections of Book Mockups',
+  src: 'https://s3-alpha-sig.figma.com/img/3634/edf7/8027d38234ea7bfc85ac532f1e673545?Expires=1675641600&Signature=cu9b5FRuASrkOONX~EiJwGjzsqeeHd6VtzOlsW6ASSvR~bw3cXlEU9vbMyqnQ2tfvMEyrPKDIVA937X9-MXeCIi2DRly75chHLKC-yY6APFKvxMu3zR8UG4Ow60~5uqqMvFukRy-KhFS7ebQbnzhG~YxxUFkJzILT-b-uCsGXFvNQ4SiMVtVGsWkC~Ted-fk3zTMexVOMxb~2Lega-HKklgk0MN6cgE5AW7rhsh-N6vpBPZ-Hl8n90D5h0w5A7a8hr5pCRs8cp6stXP--Vhfth7rCmjOiSzl8TQoj9JncCGiryz~y0IpNSf3BF9NfT6AqMS0W94S28d~OWTKFVbGrQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  heading: 'Beautiful Collections of Book Mockups',
+  descriptionOne:
+    'amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices ',
+  descriptionTwo:
+    'amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices ',
+  descriptionHeadingOne: 'about',
+  descriptionHeadingTwo: 'features',
+};
+
+ImageWithTitleAndDescription.args = {
+  options: [
+    { ...imageWithTitleAndDescriptionOptions },
+    { ...imageWithTitleAndDescriptionOptions },
+    { ...imageWithTitleAndDescriptionOptions },
+    { ...imageWithTitleAndDescriptionOptions },
+    { ...imageWithTitleAndDescriptionOptions },
+    { ...imageWithTitleAndDescriptionOptions },
   ],
 };
