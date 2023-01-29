@@ -1,0 +1,50 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 list-none leading-none;
+}
+
+.container {
+  @apply flex flex-col lg:flex-row w-full lg:max-w-360 py-10 lg:py-0 lg:max-h-180 m-0 relative bg-text-primaryMedium;
+
+  & .text-container {
+    @apply lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2  lg:z-10 lg:max-w-148 flex flex-col items-center;
+
+    & .heading {
+      @apply tracking-closed text-48 leading-60 lg:text-72 lg:leading-76 font-normal text-white text-center;
+    }
+
+    & .cta {
+      @apply block mt-10;
+    }
+  }
+
+  & .container-one {
+    @apply mt-12 lg:mt-0 px-4 lg:px-0 lg:py-20 lg:pl-28 lg:max-w-1/2 flex-1 relative;
+
+    & .swiper {
+      @apply w-full h-full lg:max-w-96 m-0;
+    }
+
+    & .image {
+      @apply block object-cover w-full h-full max-h-115 lg:max-w-96 lg:max-h-127;
+    }
+
+    & .pagination {
+      @apply hidden lg:block absolute bottom-0 z-10;
+    }
+  }
+
+  & .container-two {
+    @apply hidden lg:block flex-1 lg:max-w-1/2;
+
+    & .image {
+      @apply block w-full h-full object-cover;
+    }
+  }
+  & .pagination {
+    &.small {
+      @apply block left-1/2 -translate-x-1/2 absolute z-10 bottom-20 lg:hidden;
+    }
+  }
+}

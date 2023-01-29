@@ -1,11 +1,12 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
+import './src/ImageFullWidthCentreAligned/ImageFullWidthCentreAligned';
 import './src/Images&VideosSlideshow/Images&VideosSlideshow';
+import './src/ImagesAndColourBlockedBackground/ImagesAndColourBlockedBackground';
+import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
 import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
-import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
 import './src/TextOnly/TextOnly';
-import './src/ImageFullWidthCentreAligned/ImageFullWidthCentreAligned';
 
 export default {
   title: 'Galaxy/Carousel',
@@ -50,6 +51,25 @@ const imageFullWidthCentreAligned = ({ options }: any) => {
   `;
 };
 
+const imagesAndColourBlockedBackground = ({
+  src,
+  alt,
+  options,
+  heading,
+  ctaText,
+}: any) => {
+  return html`
+    <space-images-colour-blocked-background
+      src=${src}
+      alt=${alt}
+      heading=${heading}
+      cta-text=${ctaText}
+      .options=${options}
+    >
+    </space-images-colour-blocked-background>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -67,6 +87,9 @@ export const ImagesAndVideoWithDescription = imagesAndVideoWithDescription.bind(
 );
 
 export const ImageFullWidthCentreAligned = imageFullWidthCentreAligned.bind({});
+
+export const ImagesAndColourBlockedBackground =
+  imagesAndColourBlockedBackground.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -187,5 +210,25 @@ ImageFullWidthCentreAligned.args = {
     { ...imageFullWidthCentreAlignedOptions },
     { ...imageFullWidthCentreAlignedOptions },
     { ...imageFullWidthCentreAlignedOptions },
+  ],
+};
+
+const imagesAndColourBlockedBackgroundOptions = {
+  src: 'https://s3-alpha-sig.figma.com/img/bc4f/5b77/40f69c6ab47375d4159760d758881dc0?Expires=1675641600&Signature=m5JiAEmZfywyCKAddUZ3uOiY8HYAfJ9V~m~uI-mftNaZunLP2E6Ppn5ENNWYvnoKys3IcJsU3~BnC0HKEmdWniXkypGrSfFm2HqK0ZO8UFxsj3ZB2r2wwyHB3i1jofOSDXZYu20L7MfrjEyjPNfNfp3TV5USIbP8xlKVeayPND~nNw8S5gXaDmTUPsl49JB-L1uypMQl3ASeuluuggN5WvXIu~dFBItBM4wDv3KEvG5PsK8Y4ILuO60~ob6CN5b9QeHXkx4U8LH9crpVtEPGLR99HOktg0kWVkQSxNSVrWzP8StBmPEfKVahrVNpdCNFrAojt~YMEiGsjL36PzTXJw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'Caring for your body and spirit',
+};
+
+ImagesAndColourBlockedBackground.args = {
+  ctaText: 'See our Products',
+  heading: 'Caring for your body and spirit',
+  src: 'https://s3-alpha-sig.figma.com/img/4364/16b0/6ab4a1f0605b04866ee2187fe3c5169c?Expires=1675641600&Signature=WCg2LzmST5T713V~-9LJ-Gfmj47WqdyFhSO5Xjckq~2R0n7LI48~ivotlpi6qO3BMCBuGDqLwTh-WpgVSf4tKmN0koj2pqPjLp4D16UHI2jCKYFZb9iN1dqY3mJpsBiv24eFr6NN8gt2~oda4s-u-Qcyp5Pg5ZoZy~Lx~CQrR1wuCpoBkpGeu45ettHX0-wyqODXeYtt8e7-GnOb2pjaYdNTlxwPCLk-HhVfiXSyowf04o0qlDJfRoRk926NbUVZopF2U-H3Z4duGby~DFBUOnRTjsOLHZD6EguOuXNHDjdJgISrN8JLdTK1Z6QNJpCTC1e2Uw43Z2zt~mJ-p08GeQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'Caring for your body and spirit',
+  options: [
+    { ...imagesAndColourBlockedBackgroundOptions },
+    { ...imagesAndColourBlockedBackgroundOptions },
+    { ...imagesAndColourBlockedBackgroundOptions },
+    { ...imagesAndColourBlockedBackgroundOptions },
+    { ...imagesAndColourBlockedBackgroundOptions },
+    { ...imagesAndColourBlockedBackgroundOptions },
   ],
 };

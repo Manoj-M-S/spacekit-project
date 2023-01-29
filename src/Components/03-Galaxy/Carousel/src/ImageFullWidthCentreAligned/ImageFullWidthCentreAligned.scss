@@ -5,14 +5,14 @@
 }
 
 .container {
-  @apply w-full lg:max-w-[1440px];
+  @apply w-full lg:max-w-360;
 
   & .wrapper-container {
     & .inner-container {
-      @apply flex  justify-center lg:flex-row w-full  h-[732px] lg:max-h-[632px];
+      @apply flex justify-center lg:flex-row w-full h-183 lg:max-h-158;
 
       & .text-container {
-        @apply lg:max-w-[800px] pt-20 lg:pt-[120px] px-4 lg:px-0;
+        @apply lg:max-w-200 pt-20 lg:pt-30 px-4 lg:px-0;
 
         & .heading {
           @apply text-center text-48 leading-60 tracking-closed text-white lg:text-60 lg:leading-72 font-medium;
