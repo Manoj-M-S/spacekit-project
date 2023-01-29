@@ -70,6 +70,27 @@ const imagesAndColourBlockedBackground = ({
   `;
 };
 
+const imagesAndVideosSlideshow = ({
+  src,
+  alt,
+  options,
+  heading,
+  ctaText,
+  description,
+}: any) => {
+  return html`
+    <space-images-videos-slideshow
+      src=${src}
+      alt=${alt}
+      heading=${heading}
+      .options=${options}
+      cta-text=${ctaText}
+      description=${description}
+    >
+    </space-images-videos-slideshow>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -90,6 +111,8 @@ export const ImageFullWidthCentreAligned = imageFullWidthCentreAligned.bind({});
 
 export const ImagesAndColourBlockedBackground =
   imagesAndColourBlockedBackground.bind({});
+
+export const ImagesAndVideosSlideshow = imagesAndVideosSlideshow.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -230,5 +253,39 @@ ImagesAndColourBlockedBackground.args = {
     { ...imagesAndColourBlockedBackgroundOptions },
     { ...imagesAndColourBlockedBackgroundOptions },
     { ...imagesAndColourBlockedBackgroundOptions },
+  ],
+};
+
+ImagesAndVideosSlideshow.args = {
+  src: 'https://s3-alpha-sig.figma.com/img/37a1/cc5c/879f1be1c93b400d6a32f0da78fbb447?Expires=1675641600&Signature=Mu2wraKVxqs4Cq-sULSrzUlgeOJvjpqKqNuDsxCbSHQYeb3VA139O7ksIjHYaZ1ostklCv-TqIMETn-ZGZOr76VvBdjg13LcUI69fV0c2Be6f4LjWysgXed5On1izDjXy~iCOS8-upxRkvIWerXWoS6GO9O1G3xnA5sjMn-X2kvOBj7Zlpr04BYKggNT5jN713ybNtWuXr3pAovcI9waa5qKxR~7Kh-DJW2UnXEceHyX8TMtUe1wHe0KBC4hrpVcwuXE9QKU~AQQdjjpG1Xq9qfO8yKnNOVO0nCpmoK6OkQAyPjv9TBRpC52XHftcAXqJ1WGWA75NYlXzoJeY8f1KA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  ctaText: 'Watch Film',
+  alt: 'Uncompromised luxury in the heart of Jackson Hole',
+  heading: 'Uncompromised luxury in the heart of Jackson Hole',
+  description: 'Twenty newly constructed residences for sale.',
+  options: [
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
+    {
+      src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+      alt: 'Uncompromised luxury in the heart of Jackson Hole',
+    },
   ],
 };
