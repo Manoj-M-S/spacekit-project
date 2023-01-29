@@ -2,6 +2,48 @@
   @apply m-0 p-0 leading-none list-none;
 }
 
+@define-mixin indicator-styles {
+  &.pagination-indicator-colour-primaryLight {
+    & .pagination-indicator-list-item {
+      @apply bg-backgroundPrimary-primaryLight;
+
+      &.pagination-indicator-current-page-number {
+        @apply bg-backgroundPrimary-primaryDark;
+      }
+    }
+  }
+
+  &.pagination-indicator-colour-primaryDark {
+    & .pagination-indicator-list-item {
+      @apply bg-backgroundPrimary-primaryMedium;
+
+      &.pagination-indicator-current-page-number {
+        @apply bg-white;
+      }
+    }
+  }
+
+  &.pagination-indicator-colour-greyLight {
+    & .pagination-indicator-list-item {
+      @apply bg-backgroundNeutral-neutralMedium;
+
+      &.pagination-indicator-current-page-number {
+        @apply bg-backgroundNeutral-neutralExtraDark;
+      }
+    }
+  }
+
+  &.pagination-indicator-colour-greyDark {
+    & .pagination-indicator-list-item {
+      @apply bg-backgroundNeutral-neutralDark;
+
+      &.pagination-indicator-current-page-number {
+        @apply bg-white;
+      }
+    }
+  }
+}
+
 .pagination-indicator {
   & .pagination-indicator-list {
     @apply flex;
@@ -22,9 +64,11 @@
         @apply gap-3;
 
         & .pagination-indicator-list-item {
-          @apply w-2 h-2 rounded-full shrink-0 bg-warning-400;
+          @apply w-2 h-2 rounded-full shrink-0;
         }
       }
+
+      @mixin indicator-styles;
     }
 
     &-line {
@@ -32,9 +76,11 @@
         @apply gap-2;
 
         & .pagination-indicator-list-item {
-          @apply w-10 h-1.5 rounded-[3px] shrink-0 bg-warning-400;
+          @apply w-10 h-1.5 rounded-[3px] shrink-0;
         }
       }
+
+      @mixin indicator-styles;
     }
 
     &-dash {
@@ -60,17 +106,15 @@
     &-primaryLight {
       & .pagination-indicator-list {
         & .pagination-indicator-list-item {
-          @apply bg-backgroundPrimary-primaryLight;
-
           & .pagination-indicator-dash-text {
-            @apply bg-white text-text-primaryMedium;
+            @apply text-text-primaryMedium;
           }
 
           &.pagination-indicator-current-page-number {
             @apply bg-backgroundPrimary-primaryDark;
 
             &.pagination-indicator-style-dash {
-              @apply bg-transparent text-text-primaryDark;
+              @apply text-text-primaryDark;
 
               & .pagination-indicator-dash-text {
                 @apply text-text-primaryDark;
@@ -91,20 +135,18 @@
     &-primaryDark {
       & .pagination-indicator-list {
         & .pagination-indicator-list-item {
-          @apply bg-backgroundPrimary-primaryMedium;
-
           & .pagination-indicator-dash-text {
-            @apply bg-white text-text-primaryMedium;
+            @apply text-text-primaryMedium;
           }
 
           &.pagination-indicator-current-page-number {
             @apply bg-white;
 
             &.pagination-indicator-style-dash {
-              @apply bg-transparent text-white;
+              @apply text-white;
 
               & .pagination-indicator-dash-text {
-                @apply bg-transparent text-white;
+                @apply text-white;
               }
             }
           }
@@ -122,18 +164,14 @@
     &-greyLight {
       & .pagination-indicator-list {
         & .pagination-indicator-list-item {
-          @apply bg-backgroundNeutral-neutralMedium;
-
           & .pagination-indicator-dash-text {
-            @apply bg-white text-text-neutralMedium;
+            @apply text-text-neutralMedium;
           }
 
           &.pagination-indicator-current-page-number {
             @apply bg-backgroundNeutral-neutralExtraDark text-text-heading;
 
             &.pagination-indicator-style-dash {
-              @apply bg-transparent;
-
               & .pagination-indicator-dash-text {
                 @apply text-text-heading;
               }
@@ -153,18 +191,10 @@
     &-greyDark {
       & .pagination-indicator-list {
         & .pagination-indicator-list-item {
-          @apply bg-backgroundNeutral-neutralDark text-text-neutralMedium;
-
-          & .pagination-indicator-dash-text {
-            @apply bg-white;
-          }
+          @apply text-text-neutralMedium;
 
           &.pagination-indicator-current-page-number {
-            @apply bg-transparent text-white;
-
-            & .pagination-indicator-dash-text {
-              @apply bg-transparent;
-            }
+            @apply text-white;
           }
         }
       }

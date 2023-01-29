@@ -5,6 +5,7 @@ import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
 import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
 import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
 import './src/TextOnly/TextOnly';
+import './src/ImageFullWidthCentreAligned/ImageFullWidthCentreAligned';
 
 export default {
   title: 'Galaxy/Carousel',
@@ -42,6 +43,13 @@ const textOnly = ({ options }: any) => {
   return html` <space-text-only .options=${options}> </space-text-only> `;
 };
 
+const imageFullWidthCentreAligned = ({ options }: any) => {
+  return html`
+    <space-image-fullwidth-centre .options=${options}>
+    </space-image-fullwidth-centre>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -57,6 +65,8 @@ export const TextOnly = textOnly.bind({});
 export const ImagesAndVideoWithDescription = imagesAndVideoWithDescription.bind(
   {}
 );
+
+export const ImageFullWidthCentreAligned = imageFullWidthCentreAligned.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -156,5 +166,26 @@ ImagesAndVideoWithDescription.args = {
     { ...imagesAndVideoWithDescriptionOptions },
     { ...imagesAndVideoWithDescriptionOptions },
     { ...imagesAndVideoWithDescriptionOptions },
+  ],
+};
+
+const imageFullWidthCentreAlignedOptions = {
+  src: 'https://s3-alpha-sig.figma.com/img/35fa/525f/b695a1daba2f26ce4c525a34bce79a6e?Expires=1675641600&Signature=psQQSIgXuR6EUb4fv2mQvzbV0K2EWX2nUinH2~iVZt-UAyif3gk34Y4xpqRQAF1F-Fb383C9q~0RVk7DBfNpm5lk9phR82jyijyWcBWMRve05j1hKlpFgPaPTJdeYi-uPBrswusE4STCuCLYZaidCfS8BxwLu7Z3S3pHYoHkWUjpcSflLcto6eI3I5BbRUFVsGj1c11aLgfKZyWN3NETAXql-mGMZVxeSQfRXNgrwMqibuISs8OVUWxVnsxfonS4wbnYYgylyrQ7DPlmzHL5g2Ha4H4nKQ7MlwlGE0zWRgdqdJY0X6nnJMmZoZNh-3HI1bvCe6XGywq-HBlvFfZguw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'Become Part of a Greater Story',
+  heading: 'Become Part of a Greater Story',
+  ctaTextOne: 'Learn More',
+  ctaTextTwo: 'Get Started',
+  description:
+    'Connect with us to learn how we can improve your digital presence with our expertise and experience throught hundreds of digital experiences.',
+};
+
+ImageFullWidthCentreAligned.args = {
+  options: [
+    { ...imageFullWidthCentreAlignedOptions },
+    { ...imageFullWidthCentreAlignedOptions },
+    { ...imageFullWidthCentreAlignedOptions },
+    { ...imageFullWidthCentreAlignedOptions },
+    { ...imageFullWidthCentreAlignedOptions },
+    { ...imageFullWidthCentreAlignedOptions },
   ],
 };
