@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/web-components';
 import { html } from 'lit';
 import './src/ImageFullWidthCentreAligned/ImageFullWidthCentreAligned';
+import './src/ImageFullWidthLeftAligned/ImageFullWidthLeftAligned';
 import './src/Images&VideosSlideshow/Images&VideosSlideshow';
 import './src/ImagesAndColourBlockedBackground/ImagesAndColourBlockedBackground';
 import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
@@ -91,6 +92,13 @@ const imagesAndVideosSlideshow = ({
   `;
 };
 
+const imageFullWidthLeftAligned = ({ options }: any) => {
+  return html`
+    <space-image-fullwidth-left-aligned .options=${options}>
+    </space-image-fullwidth-left-aligned>
+  `;
+};
+
 export const ImageWithAssymmeticTextLayout = imageWithAssymmeticTextLayout.bind(
   {}
 );
@@ -113,6 +121,8 @@ export const ImagesAndColourBlockedBackground =
   imagesAndColourBlockedBackground.bind({});
 
 export const ImagesAndVideosSlideshow = imagesAndVideosSlideshow.bind({});
+
+export const ImageFullWidthLeftAligned = imageFullWidthLeftAligned.bind({});
 
 const imageWithAssymmeticTextLayoutOptions = {
   subHeading: 'SCORE',
@@ -287,5 +297,26 @@ ImagesAndVideosSlideshow.args = {
       src: 'https://s3-alpha-sig.figma.com/img/22de/eb3d/57dbe8191f90a63cf5f8fb9aceb2c364?Expires=1675641600&Signature=mtOD8Dn8tqGHL3s7SM-7hlkicKhk~FpktmgKxjJZ-RoM6e9Xyc5ZVN9KdrxXPiI-3FbX4~KiQFg9XEcn582fgdabGXKSmOXfcmu2r1Ltm90M4dkIsBskTMjv~MIiAPAYyUG1p0Dj9m6lXgcmS0zzZ9gXCEmRAlijbeH0XTHo9XAjGVUrW5UZ7CFsJTj30hbdydd3X2KcEL692mv-HupUHKE2e8ygVs89-VDRimZXL-m5D6lkbELVihIR4TsQOgqR71Sp6FdnsWk0aF7015bZeyBhJwliJ30vTToAuOu1wgW1A5e2vocSOLvECNPXj5mykB8c-wcucY~-v3TASREwIQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
       alt: 'Uncompromised luxury in the heart of Jackson Hole',
     },
+  ],
+};
+
+const imageFullWidthLeftAlignedOptions = {
+  src: 'https://s3-alpha-sig.figma.com/img/daf1/b37b/13c77f6db130c21b7a8c85cb9dd4db89?Expires=1676246400&Signature=U6UDVArLA01FE-cyvMKfoZ0laUE9bgPhGJa2Swg16i9OoHu29j~Z6hrikWzwU4OyndGzb-lHOorqONBnmd-5FKkJnb5EZX0gFz104zP-EoXnwcBOWp9iEkFTHLd3fFSJl6PEieT6GOdHYEjAeTRXF3Z040AC8rOj3~wYKWSVOU1-uZy0PY8MFwA8QbYl5Zot8ghqlhKak-2LNnxv0tWf57bre-YDAhXGOT8OMB02-kHaL6CHo6hY0toXJQ~J8rmpvpZ9oSSMe1b0LPKzqlUZK2fwFpZkU0e8BD4~5-WbO7RVChqui4n7Osz1YDv2nHbM6fustfS6-du6oR3jYMQKcQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
+  alt: 'DISCOVER OUR NEW RANGE OF FRIHULT LUMENS',
+  heading: 'DISCOVER OUR NEW RANGE OF FRIHULT LUMENS',
+  ctaTextOne: 'Learn More',
+  ctaTextTwo: 'Get Started',
+  description:
+    'Connect with us to learn how we can improve your digital presence with our expertise and experience throught hundreds of digital experiences.',
+};
+
+ImageFullWidthLeftAligned.args = {
+  options: [
+    { ...imageFullWidthLeftAlignedOptions },
+    { ...imageFullWidthLeftAlignedOptions },
+    { ...imageFullWidthLeftAlignedOptions },
+    { ...imageFullWidthLeftAlignedOptions },
+    { ...imageFullWidthLeftAlignedOptions },
+    { ...imageFullWidthLeftAlignedOptions },
   ],
 };

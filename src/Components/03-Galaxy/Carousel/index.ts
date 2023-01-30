@@ -1,4 +1,5 @@
 export * from './src/ImageFullWidthCentreAligned/ImageFullWidthCentreAligned';
+export * from './src/ImageFullWidthLeftAligned/ImageFullWidthLeftAligned';
 export * from './src/Images&VideosSlideshow/Images&VideosSlideshow';
 export * from './src/ImagesAndColourBlockedBackground/ImagesAndColourBlockedBackground';
 export * from './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
