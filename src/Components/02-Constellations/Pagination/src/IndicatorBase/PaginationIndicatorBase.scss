@@ -111,8 +111,6 @@
           }
 
           &.pagination-indicator-current-page-number {
-            @apply bg-backgroundPrimary-primaryDark;
-
             &.pagination-indicator-style-dash {
               @apply text-text-primaryDark;
 
@@ -140,8 +138,6 @@
           }
 
           &.pagination-indicator-current-page-number {
-            @apply bg-white;
-
             &.pagination-indicator-style-dash {
               @apply text-white;
 
@@ -169,7 +165,7 @@
           }
 
           &.pagination-indicator-current-page-number {
-            @apply bg-backgroundNeutral-neutralExtraDark text-text-heading;
+            @apply text-text-heading;
 
             &.pagination-indicator-style-dash {
               & .pagination-indicator-dash-text {
