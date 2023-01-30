@@ -7,6 +7,7 @@ import './src/ImagesAndColourBlockedBackground/ImagesAndColourBlockedBackground'
 import './src/ImagesAndVideoWithDescription/ImagesAndVideoWithDescription';
 import './src/ImageWithAssymmeticTextLayout/ImageWithAssymmeticTextLayout';
 import './src/ImageWithTitleAndCTA/ImageWithTitleAndCTA';
+import './src/ImageWithTitleAndDescription/ImageWithTitleAndDescription';
 import './src/TextOnly/TextOnly';
 
 export default {
