@@ -1,0 +1,20 @@
+@import 'swiper/swiper-bundle.css';
+
+.media-card-pattern {
+  &.media-card-pattern-type-simple {
+    & .media-card-pattern-list {
+      @apply flex flex-col lg:flex-row w-max gap-8 list-none;
+    }
+    & .swiper-slide {
+      @apply !w-max;
+    }
+  }
+
+  &.media-card-pattern-type-carousel {
+    @apply w-full list-none;
+
+    & .media-card-pattern-button-container {
+      @apply flex justify-end gap-4 mt-10 mr-8;
+    }
+  }
+}

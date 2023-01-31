@@ -1,0 +1,268 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+ul,
+ol,
+li {
+  @apply list-none;
+}
+
+@define-mixin list-item {
+  .team-section-list-item {
+    & .team-section-list-name {
+      @apply text-18 leading-7 font-medium text-text-heading;
+    }
+
+    & .team-section-list-role {
+      @apply text-16 leading-6 font-medium text-text-primaryDark;
+    }
+
+    & .team-section-list-description {
+      @apply text-16 leading-6 text-text-body;
+    }
+
+    & .team-section-social-list {
+      @apply flex gap-4 items-center;
+
+      & .team-section-social-icon-item {
+        @apply w-5 h-5;
+      }
+    }
+  }
+}
+
+.team-section {
+  @apply py-16 lg:py-20 px-4 lg:px-28;
+
+  &-theme-default {
+    @apply bg-white;
+  }
+
+  &-theme-greyLight {
+    @apply bg-backgroundNeutral-neutralLight;
+  }
+
+  & .team-section-heading-container {
+    & .team-section-sub-heading {
+      @apply text-text-primaryDark text-14 leading-5 font-semibold lg:text-16 lg:leading-6 lg:font-bold;
+    }
+
+    & .team-section-heading {
+      @apply mt-3 text-text-heading text-30 leading-10 lg:text-36 lg:leading-44 font-bold lg:tracking-closed;
+    }
+
+    & .team-section-description {
+      @apply mt-4 lg:mt-5 text-text-body text-18 leading-7 lg:text-20 lg:leading-8 lg:max-w-3xl;
+    }
+  }
+
+  & .team-section-list-image {
+    @apply w-full h-auto lg:max-w-70 object-cover aspect-square;
+  }
+
+  &.team-section-type-simple_01 {
+    @apply flex flex-col items-center text-center;
+
+    & .team-section-list-container {
+      @apply w-full;
+
+      & .team-section-list {
+        @apply w-full grid grid-flow-row lg:grid-cols-4 gap-10 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-16;
+
+        @mixin list-item;
+
+        & .team-section-list-item {
+          & .team-section-list-name {
+            @apply mt-4 lg:mt-5;
+          }
+
+          @apply flex flex-col items-center w-full lg:max-w-70;
+        }
+      }
+    }
+  }
+
+  &.team-section-type-simple_02 {
+    & .team-section-list {
+      @apply w-full grid grid-flow-row lg:grid-cols-4 gap-10 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-16;
+
+      @mixin list-item;
+
+      & .team-section-list-item {
+        @apply flex flex-col w-full lg:max-w-70;
+
+        & .team-section-list-name {
+          @apply mt-4 lg:mt-5;
+        }
+
+        & .team-section-list-description {
+          @apply mt-2;
+        }
+
+        & .team-section-social-list {
+          @apply mt-4;
+        }
+      }
+    }
+  }
+
+  &.team-section-type-simple_03 {
+    @apply lg:flex lg:gap-24;
+
+    .team-section-cta-container {
+      @apply flex flex-col-reverse lg:flex-row gap-3 mt-8 lg:mt-10;
+      & .team-section-cta-btn {
+        @apply w-full flex justify-center lg:w-auto;
+      }
+    }
+
+    & .team-section-list {
+      @apply w-full grid grid-flow-row lg:grid-cols-3 gap-10 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-0;
+
+      @mixin list-item;
+
+      & .team-section-list-item {
+        @apply flex gap-4 lg:flex-col w-full lg:max-w-70;
+
+        & .team-section-list-name {
+          @apply mt-0;
+        }
+
+        & .team-section-list-description {
+          @apply mt-2;
+        }
+
+        & .team-section-social-list {
+          @apply mt-4;
+        }
+      }
+    }
+  }
+
+  &.team-section-type-imageCard_01 {
+    & .team-section-heading-container {
+      @apply text-center flex flex-col items-center;
+    }
+
+    & .team-section-cta-container {
+      @apply flex flex-col-reverse lg:flex-row gap-3 mt-8 lg:mt-10 w-full lg:w-auto;
+
+      & .team-section-cta-btn {
+        @apply flex justify-center  w-full lg:w-auto;
+      }
+    }
+
+    & .team-section-list {
+      @apply w-full grid grid-flow-row lg:grid-cols-4 gap-10 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-16;
+
+      @mixin list-item;
+
+      & .team-section-list-item {
+        @apply w-full lg:max-w-70;
+
+        & .team-section-list-item-heading-container {
+          @apply mt-6;
+
+          & .team-section-list-role {
+            @apply mt-1;
+          }
+
+          & .team-section-list-description {
+            @apply mt-4;
+          }
+
+          & .team-section-social-list {
+            @apply mt-6 gap-5;
+          }
+        }
+      }
+    }
+  }
+
+  &.team-section-type-imageCard_02 {
+    & .team-section-heading-container {
+      @apply flex flex-col lg:flex-row justify-between;
+
+      & .team-section-cta-container {
+        @apply flex flex-col-reverse lg:flex-row gap-3 mt-8 lg:mt-10 w-full lg:w-auto lg:items-start;
+
+        & .team-section-cta-btn {
+          @apply flex justify-center w-full lg:w-auto;
+        }
+      }
+    }
+
+    & .team-section-list {
+      @apply w-full grid grid-flow-row lg:grid-cols-4 gap-10 lg:gap-x-8 lg:gap-y-16 mt-12 lg:mt-16;
+
+      @mixin list-item;
+
+      & .team-section-list-item {
+        @apply w-full lg:max-w-70;
+
+        & .team-section-list-item-heading-container {
+          @apply mt-6;
+
+          & .team-section-list-role {
+            @apply mt-1;
+          }
+
+          & .team-section-list-description {
+            @apply mt-4;
+          }
+
+          & .team-section-social-list {
+            @apply mt-6 gap-5;
+          }
+        }
+      }
+    }
+  }
+
+  &.team-section-type-imageCard_04 {
+    & .team-section-heading-container {
+      @apply flex flex-col lg:flex-row justify-between;
+
+      & .team-section-cta-container {
+        @apply flex flex-col-reverse lg:flex-row gap-3 mt-8 lg:mt-10 w-full lg:w-auto lg:items-start;
+
+        & .team-section-cta-btn {
+          @apply flex justify-center w-full lg:w-auto;
+        }
+      }
+    }
+
+    & .team-section-list {
+      @apply mt-12 lg:mt-16;
+
+      @mixin list-item;
+
+      & .team-section-list-item {
+        @apply w-full lg:max-w-70;
+
+        & .team-section-list-item-heading-container {
+          @apply mt-6;
+
+          & .team-section-list-role {
+            @apply mt-1;
+          }
+
+          & .team-section-list-description {
+            @apply mt-4;
+          }
+
+          & .team-section-social-list {
+            @apply mt-6 gap-5;
+          }
+        }
+      }
+    }
+
+    & .team-section-nav-buttons {
+      @apply flex mt-8 gap-8;
+    }
+  }
+}
