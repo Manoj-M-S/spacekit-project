@@ -1,0 +1,17 @@
+@import 'swiper/swiper-bundle.css';
+
+.icon-card-pattern {
+  &.icon-card-pattern-type-simple {
+    & .icon-card-pattern-list {
+      @apply grid grid-flow-row lg:grid-cols-4 lg:grid-flow-col gap-8 list-none;
+    }
+  }
+
+  &.icon-card-pattern-type-carousel {
+    @apply w-full;
+
+    & .icon-card-pattern-button-container {
+      @apply flex justify-end gap-4 mt-10 mr-8;
+    }
+  }
+}
