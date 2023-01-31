@@ -1,0 +1,55 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none list-none;
+}
+
+.container {
+  @apply lg:h-full lg:max-w-360 px-4 lg:px-28 bg-backgroundPrimary-primaryExtraDark py-10 lg:py-20 box-border relative;
+
+  & .image-container {
+    @apply relative;
+
+    & .image {
+      @apply block object-cover h-[344px] lg:h-full w-full;
+    }
+
+    & .text-container {
+      @apply box-border absolute  inset-0 w-full text-center flex flex-col items-center lg:justify-center;
+
+      & .heading {
+        @apply text-white text-36 leading-44 font-bold lg:text-60 lg:leading-72 tracking-closed mt-10;
+      }
+
+      & .cta {
+        @apply mt-4 w-full sm:w-auto flex justify-center px-4 box-border;
+      }
+
+      & .description {
+        @apply text-white text-16 leading-6 mt-2 lg:mt-4;
+      }
+
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  & .images-container {
+    @apply absolute inset-x-0 mt-7 lg:flex;
+
+    & .image {
+      @apply max-w-[120px] lg:max-w-70 lg:max-h-[120px] object-cover w-full;
+    }
+
+    & .navigation-button {
+      @apply absolute z-10 top-1/2 -translate-y-1/2 hidden lg:block;
+
+      &.left {
+        @apply left-10;
+      }
+
+      &.right {
+        @apply right-10;
+      }
+    }
+  }
+}
