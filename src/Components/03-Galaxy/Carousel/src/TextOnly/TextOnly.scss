@@ -1,0 +1,31 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.container {
+  @apply w-full h-full px-4 lg:px-28 py-10 lg:py-20 m-0 box-border bg-backgroundPrimary-primaryExtraLight;
+
+  & .wrapper-container {
+    & .inner-container {
+      @apply flex flex-col lg:flex-row lg:items-center;
+
+      & .heading {
+        @apply text-60 leading-72 lg:text-96 lg:leading-96 font-normal tracking-closed text-text-heading lg:max-w-252;
+      }
+
+      & .description {
+        @apply text-24 leading-8 lg:text-30 lg:leading-10 mt-6 lg:mt-10 font-normal text-text-body;
+      }
+    }
+  }
+
+  & .pagination-container {
+    @apply flex items-center gap-10 justify-end mt-32 lg:mt-45;
+  }
+
+  & .border {
+    @apply border-0 border-b border-solid border-stroke-dividerDark mt-4 lg:mt-6;
+  }
+}

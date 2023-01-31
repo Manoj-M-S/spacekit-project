@@ -1,0 +1,46 @@
+.breadcrumb {
+  @apply flex flex-row items-center gap-2;
+  &.breadcrumb-primaryFill {
+    @apply py-2 px-6 bg-backgroundPrimary-primaryExtraLight w-max;
+  }
+  &.breadcrumb-edgeFill {
+    @apply py-2 px-6 border-solid border-0 border-t border-b border-stroke-dividerLight w-max;
+  }
+  & .breadcrumb-base {
+    @apply flex flex-row items-center gap-2 no-underline text-text-body text-sm font-medium;
+    &.break {
+      @apply border-0 bg-none cursor-pointer;
+    }
+  }
+  & .show-on-mobile {
+    @apply flex md:hidden gap-2;
+  }
+  & .show-on-tablet {
+    @apply hidden md:flex gap-2;
+  }
+  & .home-icon {
+    @apply flex stroke-text-body;
+  }
+  & .partition-icon {
+    @apply flex stroke-text-body w-4 h-4;
+  }
+  & .home {
+    @apply flex flex-row items-center gap-2 text-text-body no-underline;
+  }
+  & .current-page {
+    @apply text-sm font-bold text-textButtonLink-buttonLinkDefault;
+  }
+  & .breadcrumb-break {
+    @apply flex stroke-text-body w-4 h-4;
+  }
+  & .break:hover .hidden-dropdown {
+    @apply block;
+  }
+  & .dropdown-item {
+    @apply py-2.5 px-4 hover:bg-backgroundPrimary-primaryExtraLight;
+  }
+
+  & .hidden-dropdown {
+    @apply w-60 z-10 shadow-md rounded-lg absolute top-1 pl-0 list-none hidden ease-linear;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'swiper/swiper-bundle.css';
+
+.price-card-pattern {
+  &.price-card-pattern-type-simple {
+    & .price-card-pattern-list {
+      @apply flex flex-col lg:flex-row gap-8 list-none;
+    }
+
+    & .swiper-slide {
+      @apply !w-max;
+    }
+  }
+
+  &.price-card-pattern-type-carousel {
+    @apply w-full;
+
+    & .price-card-pattern-button-container {
+      @apply flex justify-end gap-4 mt-10 mr-8;
+    }
+  }
+}

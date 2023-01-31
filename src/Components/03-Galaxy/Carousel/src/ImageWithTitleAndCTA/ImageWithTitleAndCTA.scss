@@ -1,0 +1,63 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.container {
+  @apply w-full h-full px-4 py-10 lg:py-0 lg:pr-0 lg:pl-28 m-0 box-border lg:flex lg:gap-8;
+
+  & .wrapper-container {
+    & .inner-container {
+      @apply flex flex-col lg:flex-row lg:items-center;
+
+      & .text-container {
+        @apply lg:max-w-96;
+
+        & .heading {
+          @apply text-48 leading-60 lg:text-72 lg:leading-76 font-bold tracking-closed text-text-primaryDark;
+        }
+
+        & .description {
+          @apply text-18 leading-7 lg:text-20 lg:leading-8 mt-4 font-bold text-text-body;
+        }
+
+        & .cta {
+          @apply mt-6 lg:mt-10 block;
+        }
+      }
+
+      & .image {
+        @apply block mt-2.5 lg:mt-0 lg:ml-8 w-full max-h-64 lg:max-w-200 lg:max-h-150 object-cover h-auto;
+      }
+    }
+  }
+
+  & .pagination-container {
+    @apply flex lg:flex-col items-center gap-6 justify-center lg:justify-around;
+
+    & .next-button {
+      @apply rotate-90 pl-6 block;
+    }
+
+    & .prev-button {
+      @apply rotate-90 block;
+    }
+
+    &.large {
+      @apply hidden lg:flex;
+
+      & .pagination-dot {
+        @apply rotate-90;
+      }
+    }
+
+    &.small {
+      @apply lg:hidden mt-2.5;
+
+      & .pagination-arrow-container {
+        @apply hidden;
+      }
+    }
+  }
+}

@@ -68,7 +68,11 @@ export default class PaginationIndicatorBase extends LitElement {
 
     const detail = { pageNumber };
 
-    const customEvent = new CustomEvent('onPageChange', { detail });
+    const customEvent = new CustomEvent('onPageChange', {
+      detail,
+      bubbles: true,
+      composed: true,
+    });
 
     this.dispatchEvent(customEvent);
   };
@@ -98,6 +102,7 @@ export default class PaginationIndicatorBase extends LitElement {
                     this.lastPageNumber === pageNumber,
                   [`pagination-indicator-style-${this.paginationStyle}`]:
                     this.paginationStyle,
+                  [`pagination-indicator-colour-${this.colour}`]: this.colour,
                 };
                 return html`<li
                   class=${classMap(pageNumberClass)}
