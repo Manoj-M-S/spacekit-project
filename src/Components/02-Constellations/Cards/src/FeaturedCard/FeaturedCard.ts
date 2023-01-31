@@ -74,7 +74,7 @@ export default class FeaturedCard extends LitElement {
                 button-variant="secondary"
                 iconname=${this.iconName}
                 button-size=${this.size === 'lg' ? 'md' : 'sm'}
-                >${this.label}</space-button
+                >${this.buttonText}</space-button
               >`
             : null}
         </div>
