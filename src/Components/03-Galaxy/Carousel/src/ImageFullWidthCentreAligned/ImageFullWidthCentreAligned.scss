@@ -1,0 +1,62 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.container {
+  @apply w-full lg:max-w-360;
+
+  & .wrapper-container {
+    & .inner-container {
+      @apply flex justify-center lg:flex-row w-full h-183 lg:max-h-158;
+
+      & .text-container {
+        @apply lg:max-w-200 pt-20 lg:pt-30 px-4 lg:px-0;
+
+        & .heading {
+          @apply text-center text-48 leading-60 tracking-closed text-white lg:text-60 lg:leading-72 font-medium;
+        }
+
+        & .description {
+          @apply text-center text-16 leading-6 lg:text-20 lg:leading-8 mt-6  text-white;
+        }
+
+        & .cta-container {
+          @apply flex flex-col lg:flex-row gap-3 lg:gap-4 w-full lg:justify-center  mt-10;
+
+          & .cta-btn {
+            @apply w-full lg:w-auto flex justify-center;
+          }
+        }
+      }
+
+      & .image {
+        @apply absolute inset-0 -z-10 w-full h-full block object-cover;
+      }
+    }
+  }
+
+  & .pagination-container {
+    @apply z-10 absolute bottom-10 lg:bottom-12 flex flex-col items-center justify-center gap-6 w-full;
+
+    & .arrow-container {
+      @apply flex gap-5 mb-10 lg:hidden;
+    }
+
+    & .arrow-small {
+      @apply lg:hidden;
+    }
+  }
+  & .arrow-large {
+    @apply hidden lg:inline-block absolute top-1/3 z-10;
+
+    &.left {
+      @apply left-28;
+    }
+
+    &.right {
+      @apply right-28;
+    }
+  }
+}

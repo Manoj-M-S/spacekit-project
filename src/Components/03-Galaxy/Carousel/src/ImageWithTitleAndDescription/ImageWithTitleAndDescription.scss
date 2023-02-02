@@ -1,0 +1,47 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none;
+}
+
+.container {
+  @apply w-full h-full px-4 py-10 lg:px-28 m-0 box-border;
+
+  & .wrapper-container {
+    & .inner-container {
+      @apply flex flex-col lg:flex-row;
+
+      & .text-container {
+        @apply lg:max-w-96;
+
+        & .heading {
+          @apply text-48 leading-60 tracking-closed text-text-primaryDark lg:text-60 lg:leading-72 font-medium;
+        }
+
+        & .description-container {
+          @apply flex flex-col lg:flex-row gap-4 lg:gap-8 mt-8 lg:mt-12;
+
+          & .description-heading {
+            @apply text-18 leading-7 font-bold text-text-heading;
+          }
+
+          & .description {
+            @apply text-16 leading-6 mt-2 text-text-heading;
+          }
+        }
+      }
+
+      & .image {
+        @apply block mt-8 lg:mt-0 lg:ml-8 w-full max-h-64 lg:max-w-200 lg:max-h-150 object-cover h-auto;
+      }
+    }
+  }
+
+  & .pagination-container {
+    @apply mt-10 flex items-center justify-center lg:justify-between;
+
+    & .pagination-arrow-container {
+      @apply hidden lg:flex gap-3;
+    }
+  }
+}

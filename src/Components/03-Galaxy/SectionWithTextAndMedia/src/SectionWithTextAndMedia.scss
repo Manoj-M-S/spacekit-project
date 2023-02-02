@@ -1,0 +1,44 @@
+.text-and-media {
+  @apply flex flex-col md:flex-row items-center px-4 gap-10 md:gap-8 justify-center;
+  & .media-content {
+    @apply flex flex-col md:flex-row items-center justify-center gap-12 w-full;
+  }
+  & .content-media-right {
+    @apply flex flex-col gap-6 md:order-first order-last md:w-3/4 lg:w-1/2;
+  }
+  & .content-media-left {
+    @apply flex flex-col gap-6 order-last md:w-3/4 lg:w-1/2;
+  }
+  & .title {
+    @apply text-30 md:text-36 leading-10 md:leading-44 font-bold text-text-primaryDark;
+  }
+  & .description {
+    @apply text-base font-normal md:text-20 md:leading-8 text-text-body;
+  }
+  & .media {
+    @apply flex w-full h-85.7 md:w-148 md:h-148 justify-center;
+  }
+  & .media-image {
+    @apply w-full h-full;
+  }
+  & .action {
+    @apply flex flex-col md:flex-row gap-3 items-start pt-6;
+  }
+  & .cta-class {
+    @apply w-full md:w-max justify-center items-center;
+  }
+
+    & .checklist {
+      @apply flex flex-col gap-2 items-start box-border list-none p-0 m-0;
+      & .pricing-card-features-inner-container {
+        @apply flex items-center mb-4 last:mb-0;
+
+        & .pricing-card-features-icon {
+          @apply w-6 h-6 mr-3 flex justify-center items-center bg-backgroundPrimary-primaryLight rounded-full flex-shrink-0;
+        }
+        & .pricing-card-features-text {
+          @apply text-text-body text-16 leading-6 p-0 m-0;
+        }
+      }
+    }
+}

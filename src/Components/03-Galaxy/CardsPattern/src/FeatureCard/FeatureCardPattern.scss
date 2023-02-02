@@ -1,0 +1,20 @@
+@import 'swiper/swiper-bundle.css';
+
+.featured-card-pattern {
+  &.featured-card-pattern-type-simple {
+    & .featured-card-pattern-list {
+      @apply flex flex-col lg:flex-row w-max gap-8 list-none;
+    }
+    & .swiper-slide {
+      @apply !w-max;
+    }
+  }
+
+  &.featured-card-pattern-type-carousel {
+    @apply w-full list-none;
+
+    & .featured-card-pattern-button-container {
+      @apply flex justify-end gap-4 mt-10 mr-8;
+    }
+  }
+}
