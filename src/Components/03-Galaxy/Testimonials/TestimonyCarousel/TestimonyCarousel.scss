@@ -88,4 +88,36 @@
       @apply absolute bottom-10 left-0 flex gap-5 z-1;
     }
   }
+
+  &.testimony-type-withCompanyLogo {
+    @apply lg:max-w-360 w-full px-4 py-16 lg:py-10;
+
+    & .testimony-list-item {
+      @apply flex flex-col items-center;
+
+      & .text-container {
+        @apply lg:max-w-200 text-center;
+
+        & .avatar {
+          @apply mt-8 lg:mt-10 flex justify-center;
+        }
+
+        & .description {
+          @apply mt-8 lg:mt-10 font-medium text-24 leading-8 text-text-heading;
+        }
+
+        & .name {
+          @apply mt-4 lg:mt-2 text-18 leading-7 font-medium text-text-heading;
+        }
+
+        & .desgination {
+          @apply text-16 leading-6 text-text-body;
+        }
+      }
+    }
+
+    & .pagination {
+      @apply flex justify-center mt-8;
+    }
+  }
 }

@@ -7,6 +7,7 @@ import styles from './TestimonyCarousel.scss.lit';
 import '../../../01-stars/Image/src/Image';
 import '../../../02-Constellations/Pagination/src/CarouselArrow/CarouselArrow';
 import '../../../01-stars/Avatar/src/Avatar';
+import '../../../02-Constellations/Pagination/src/IndicatorBase/PaginationIndicatorBase';
 
 export type TestimonialCarousalType =
   | 'largeAvatar'
@@ -57,6 +58,9 @@ export default class TestimonyCarousel extends LitElement {
   @query('.prev-button')
   previousButton!: HTMLElement;
 
+  @state()
+  currentPage = 1;
+
   firstUpdated() {
     this.swiper = new Swiper(this.swiperEl, {
       navigation: {
@@ -64,6 +68,15 @@ export default class TestimonyCarousel extends LitElement {
         prevEl: this.previousButton,
       },
     });
+
+    this.swiper.on('slideChange', swiper => {
+      this.currentPage = swiper.snapIndex + 1;
+    });
+  }
+
+  onPageChange(event: CustomEvent) {
+    const { pageNumber } = event.detail;
+    this.swiper.slideTo(pageNumber - 1);
   }
 
   render() {
@@ -92,6 +105,13 @@ export default class TestimonyCarousel extends LitElement {
                   testimonialCarousal
                 )}"
               >
+                ${this.type === 'withCompanyLogo' && logoAlt && logoSrc
+                  ? html`<space-image
+                      src=${logoSrc}
+                      alt=${logoAlt}
+                      class="logo"
+                    ></space-image>`
+                  : null}
                 ${this.type === 'largeAvatar' && src && alt
                   ? html`<space-image
                       src=${src}
@@ -99,7 +119,9 @@ export default class TestimonyCarousel extends LitElement {
                       class="large-image"
                     ></space-image>`
                   : null}
-                ${this.type !== 'largeAvatar' && src && alt
+                ${!['largeAvatar', 'withCompanyLogo'].includes(this.type) &&
+                src &&
+                alt
                   ? html`<space-avatar
                       size="3xl"
                       src=${src}
@@ -119,6 +141,14 @@ export default class TestimonyCarousel extends LitElement {
                   ${description
                     ? html` <p class="description">${description}</p> `
                     : null}
+                  ${this.type === 'withCompanyLogo' && src && alt
+                    ? html`<space-avatar
+                        size="2xl"
+                        src=${src}
+                        alt=${alt}
+                        class="avatar"
+                      ></space-avatar>`
+                    : null}
                   ${name ? html` <p class="name">${name}</p> ` : null}
                   ${designation
                     ? html` <p class="designation">${designation}</p> `
@@ -128,21 +158,32 @@ export default class TestimonyCarousel extends LitElement {
             `;
           })}
         </ul>
-        <div class="carousal-container">
-          <space-carousel-arrow
-            size="md"
-            color="primaryLight"
-            icon-name="chevronLeft"
-            @click=${() => this.swiper.slidePrev()}
-          ></space-carousel-arrow>
+        ${!['withCompanyLogo'].includes(this.type)
+          ? html`<div class="carousal-container">
+              <space-carousel-arrow
+                size="md"
+                color="primaryLight"
+                icon-name="chevronLeft"
+                @click=${() => this.swiper.slidePrev()}
+              ></space-carousel-arrow>
 
-          <space-carousel-arrow
-            size="md"
-            color="primaryLight"
-            icon-name="chevronRight"
-            @click=${() => this.swiper.slideNext()}
-          ></space-carousel-arrow>
-        </div>
+              <space-carousel-arrow
+                size="md"
+                color="primaryLight"
+                icon-name="chevronRight"
+                @click=${() => this.swiper.slideNext()}
+              ></space-carousel-arrow>
+            </div>`
+          : html`
+              <space-pagination-indicator
+                style="dot"
+                page-size=${1}
+                current-page=${this.currentPage}
+                @onPageChange=${this.onPageChange}
+                total=${this.options.length}
+                class="pagination"
+              ></space-pagination-indicator>
+            `}
       </div>
     `;
   }

@@ -26,6 +26,7 @@ export const TestimonialCard = testimonialCard.bind({});
 export const largeAvatar = testimonialCarousal.bind({});
 export const CenterAligned = testimonialCarousal.bind({});
 export const Simple = testimonialCarousal.bind({});
+export const WithCompanyLogo = testimonialCarousal.bind({});
 
 const testimonialCardOption = {
   name: 'Alicia King',
@@ -137,4 +138,32 @@ Simple.args = {
   ],
 };
 
+WithCompanyLogo.args = {
+  type: 'withCompanyLogo',
+  options: [
+    {
+      src: 'https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dXNlcnxlbnwwfHx8fDE2NzU2NjI3NTA&force=true&w=2400',
+      alt: 'Alexander David',
+      name: 'Alexander David',
+      designation: 'Head of Digital Transformation, Grofers',
+      logoSrc: 'https://i.ibb.co/wMY9d3G/logo.png',
+      logoAlt: 'alt',
+      description:
+        'Working with the SPACE team has been a great experience. What makes it special is the heart & soul the team puts into every project they work on!',
+    },
+    {
+      src: 'https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dXNlcnxlbnwwfHx8fDE2NzU2NjI3NTA&force=true&w=2400',
+      alt: 'Alexander David',
+      name: 'Alexander David',
+      designation: 'Head of Digital Transformation, Grofers',
+      logoSrc: 'https://i.ibb.co/wMY9d3G/logo.png',
+      logoAlt: 'alt',
+      description:
+        'Working with the SPACE team has been a great experience. What makes it special is the heart & soul the team puts into every project they work on!',
+    },
+  ],
+};
+
 Simple.argTypes = { ...largeAvatar.argTypes };
+
+WithCompanyLogo.argTypes = { ...largeAvatar.argTypes };
