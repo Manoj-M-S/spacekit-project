@@ -24,6 +24,7 @@ const testimonialCarousal = ({ type, options }: any) => {
 
 export const TestimonialCard = testimonialCard.bind({});
 export const largeAvatar = testimonialCarousal.bind({});
+export const CenterAligned = testimonialCarousal.bind({});
 
 const testimonialCardOption = {
   name: 'Alicia King',
@@ -88,3 +89,27 @@ largeAvatar.argtypes = {
     options: ['largeAvatar', 'centerAligned', 'simple', 'withCompanyLogo'],
   },
 };
+
+CenterAligned.args = {
+  type: 'centerAligned',
+  options: [
+    {
+      src: 'https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dXNlcnxlbnwwfHx8fDE2NzU2NjI3NTA&force=true&w=2400',
+      alt: 'Alexander David',
+      name: 'Alexander David',
+      designation: 'Head of Digital Transformation, Grofers',
+      description:
+        'The best vendors are the ones who work with you as partners. They work towards your success as their success. We found such a partner in QED42. We are very proud to be working alongside a team of experts who understand all aspects of our products and execute with quality results.',
+    },
+    {
+      src: 'https://unsplash.com/photos/iEEBWgY_6lA/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8dXNlcnxlbnwwfHx8fDE2NzU2NjI3NTA&force=true&w=2400',
+      alt: 'Alexander David',
+      name: 'Alexander David',
+      designation: 'Head of Digital Transformation, Grofers',
+      description:
+        'The best vendors are the ones who work with you as partners. They work towards your success as their success. We found such a partner in QED42. We are very proud to be working alongside a team of experts who understand all aspects of our products and execute with quality results.',
+    },
+  ],
+};
+
+CenterAligned.argTypes = { ...largeAvatar.argTypes };

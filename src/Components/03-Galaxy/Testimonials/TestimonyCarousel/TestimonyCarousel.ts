@@ -6,6 +6,7 @@ import Swiper from 'swiper';
 import styles from './TestimonyCarousel.scss.lit';
 import '../../../01-stars/Image/src/Image';
 import '../../../02-Constellations/Pagination/src/CarouselArrow/CarouselArrow';
+import '../../../01-stars/Avatar/src/Avatar';
 
 export type TestimonialCarousalType =
   | 'largeAvatar'
@@ -98,6 +99,14 @@ export default class TestimonyCarousel extends LitElement {
                       class="large-image"
                     ></space-image>`
                   : null}
+                ${this.type !== 'largeAvatar' && src && alt
+                  ? html`<space-avatar
+                      size="3xl"
+                      src=${src}
+                      alt=${alt}
+                      class="avatar"
+                    ></space-avatar>`
+                  : null}
                 <div class="text-container">
                   ${this.type === 'largeAvatar'
                     ? html`
@@ -111,6 +120,9 @@ export default class TestimonyCarousel extends LitElement {
                     ? html` <p class="description">${description}</p> `
                     : null}
                   ${name ? html` <p class="name">${name}</p> ` : null}
+                  ${designation
+                    ? html` <p class="designation">${designation}</p> `
+                    : null}
                 </div>
               </li>
             `;

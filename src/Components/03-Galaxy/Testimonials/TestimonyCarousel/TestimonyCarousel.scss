@@ -34,4 +34,31 @@
       @apply mt-10 mb-4 pr-4 lg:pr-0 lg:absolute right-[216px] bottom-6 flex justify-end gap-5 z-1;
     }
   }
+
+  &.testimony-type-centerAligned {
+    @apply lg:max-w-360 h-154 lg:h-127  w-full relative;
+
+    & .testimony-list-item {
+      @apply flex flex-col items-center px-4 py-4 lg:py-10;
+
+      & .text-container {
+        @apply lg:max-w-200 text-center;
+
+        & .description {
+          @apply mt-4  text-20 leading-8 text-text-heading;
+        }
+
+        & .name {
+          @apply mt-5 text-18 leading-7 font-bold text-text-heading;
+        }
+
+        & .desgination {
+          @apply text-16 leading-6 text-text-body;
+        }
+      }
+    }
+    & .carousal-container {
+      @apply mt-10  absolute bottom-10 w-full flex justify-center gap-5 z-1;
+    }
+  }
 }
