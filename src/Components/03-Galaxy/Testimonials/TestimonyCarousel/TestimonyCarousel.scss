@@ -1,0 +1,37 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none list-none box-border;
+}
+
+.testimony {
+  &.testimony-type-largeAvatar {
+    @apply lg:max-w-360 relative;
+
+    & .testimony-list-item {
+      @apply flex flex-col lg:flex-row lg:gap-[104px] px-4 lg:py-4 lg:px-28;
+
+      & .large-image {
+        @apply block w-full h-full lg:max-w-96 lg:max-h-96 aspect-square object-cover;
+      }
+
+      & .text-container {
+        @apply lg:max-w-[624px];
+        & .description {
+          @apply mt-4 lg:mt-10 text-18 leading-7 text-text-body;
+        }
+
+        & .name {
+          @apply mt-6 text-16 leading-6 font-bold text-text-heading;
+        }
+
+        & .icon {
+          @apply w-10 h-7 stroke-backgroundPrimary-primaryLight block mt-5;
+        }
+      }
+    }
+    & .carousal-container {
+      @apply mt-10 mb-4 pr-4 lg:pr-0 lg:absolute right-[216px] bottom-6 flex justify-end gap-5 z-1;
+    }
+  }
+}
