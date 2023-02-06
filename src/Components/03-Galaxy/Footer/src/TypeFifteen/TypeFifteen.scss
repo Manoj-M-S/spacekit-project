@@ -1,0 +1,18 @@
+.footer {
+  @apply flex flex-col bg-white py-12 items-start gap-12 overflow-hidden px-4 lg:px-28;
+  &.background-dark {
+    @apply bg-backgroundNeutral-neutralExtraDark;
+  }
+  & .footer-container {
+    @apply flex flex-col md:flex-row md:items-center items-start gap-8 md:justify-between w-full;
+  }
+  & .navigation-class {
+    @apply w-full;
+  }
+  & .footer-text {
+    @apply text-base font-normal text-text-body;
+    &.text-dark {
+      @apply text-text-neutralMedium;
+    }
+  }
+}
