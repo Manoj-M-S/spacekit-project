@@ -32,7 +32,7 @@
   }
 
   & .search {
-    @apply bg-transparent border-0 cursor-pointer;
+    @apply bg-transparent border-0 cursor-pointer hidden lg:block;
 
     & .search-icon {
       @apply lg:mr-4 w-5 h-5 stroke-textButtonTeritary-buttonTeritaryDefault stroke-0.4175;
