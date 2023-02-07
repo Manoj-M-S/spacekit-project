@@ -32,7 +32,7 @@
   }
   & .supportive-text {
     @apply text-base font-normal text-text-body md:text-20 md:leading-8;
-    &.supportive-text {
+    &.supportive-text-dark {
       @apply text-text-neutralLight;
     }
   }
