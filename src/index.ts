@@ -43,3 +43,4 @@ export * from './Components/03-Galaxy/TeamSections';
 export * from './Components/03-Galaxy/SectionWithTextAndMedia';
 export * from './Components/03-Galaxy/SideBar';
 export * from './Components/03-Galaxy/Header';
+export * from './Components/03-Galaxy/Footer';
