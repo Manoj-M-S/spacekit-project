@@ -1,0 +1,45 @@
+* {
+  @apply m-0 p-0 leading-none box-border;
+}
+
+.header {
+  @apply flex justify-between items-center w-full px-4 lg:px-28 h-18 lg:h-20 bg-white shadow-xs relative;
+
+  & .cta-container {
+    &.large {
+      @apply shrink-0 hidden lg:flex gap-3;
+    }
+
+    & .cta-btn {
+      @apply w-full justify-center lg:w-auto;
+    }
+  }
+
+  & .submenu {
+    @apply lg:ml-10 px-4 lg:h-10 w-full flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-8 absolute top-full left-0 lg:static;
+
+    @apply max-h-0 lg:max-h-full overflow-hidden;
+
+    & .cta-container {
+      &.small {
+        @apply w-full flex flex-col-reverse gap-3 py-6 lg:hidden;
+      }
+    }
+
+    &.show-menu {
+      @apply max-h-screen lg:flex overflow-y-auto;
+    }
+  }
+
+  & .search {
+    @apply bg-transparent border-0 cursor-pointer hidden lg:block;
+
+    & .search-icon {
+      @apply lg:mr-4 w-5 h-5 stroke-textButtonTeritary-buttonTeritaryDefault stroke-0.4175;
+    }
+  }
+
+  & .hamburger {
+    @apply stroke-stroke-icon w-6 h-6 lg:hidden;
+  }
+}
