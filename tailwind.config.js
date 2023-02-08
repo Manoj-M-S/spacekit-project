@@ -304,6 +304,9 @@ module.exports = {
         80: '20rem',
         85.7: '21.4375rem',
         93.7: '23.4375rem',
+        'fill': '-webkit-fill-available',
+        200: '50rem',
+        150: '37.5rem',
         148: '37rem',
         70: '17.5rem',
         64: '16rem',
@@ -311,6 +314,9 @@ module.exports = {
       },
       minWidth: {
         60: '15rem',
+      },
+      flex: {
+        0: '0',
       },
       height: {
         50: '12.5rem',

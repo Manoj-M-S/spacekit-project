@@ -1,0 +1,63 @@
+.footer {
+  @apply flex flex-col bg-white py-12 items-center gap-12 px-4 lg:px-28 overflow-hidden;
+  &.background-dark {
+    @apply bg-backgroundNeutral-neutralExtraDark;
+  }
+  & .container {
+    @apply flex flex-col items-start gap-8 w-full;
+    &.content-links {
+      @apply lg:flex-row;
+    }
+  }
+  & .content {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 w-full;
+    &.content-links {
+      @apply lg:flex-row;
+    }
+  }
+  & .navigation-class {
+    @apply w-full lg:w-[130px];
+  }
+  & .divider {
+    @apply border-0 border-b border-solid border-stroke-dividerLight w-full;
+    &.divider-dark {
+      @apply border-stroke-dividerDark;
+    }
+  }
+  & .footer-content {
+    @apply flex flex-col md:flex-row md:justify-between w-full gap-6;
+  }
+  & .footer-text {
+    @apply text-base font-normal text-text-body;
+    &.footer-text-bg {
+      @apply text-base font-normal text-text-neutralMedium;
+    }
+  }
+  & .newsletter {
+    @apply flex flex-col gap-8 md:flex-row md:justify-between w-full;
+  }
+  & .news-content {
+    @apply flex flex-col gap-2;
+    & .title {
+      @apply text-lg font-medium text-text-heading md:text-20 md:leading-5;
+      &.title-dark {
+        @apply text-white;
+      }
+    }
+    & .supportive-text {
+      @apply text-base font-normal text-text-body;
+      &.supportive-text-dark {
+        @apply text-text-neutralLight;
+      }
+    }
+  }
+  & .form {
+    @apply flex flex-col gap-3 md:flex-row md:items-end items-start w-full md:flex-0;
+  }
+  & .input-class {
+    @apply w-full;
+  }
+  & .btn-class {
+    @apply w-full justify-center items-center;
+  }
+}
