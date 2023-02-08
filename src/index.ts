@@ -32,7 +32,9 @@ export * from './Components/02-Constellations/Pagination';
 export * from './Components/02-Constellations/Slider';
 export * from './Components/02-Constellations/Navigation';
 export * from './Components/02-Constellations/SectionHeading';
+export * from './Components/02-Constellations/Stats';
 export * from './Components/02-Constellations/HeaderMenuItem';
+
 
 // ------ GALAXY ------ //
 export * from './Components/03-Galaxy/AccordionPattern';
