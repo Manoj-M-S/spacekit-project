@@ -32,6 +32,10 @@ export * from './Components/02-Constellations/Pagination';
 export * from './Components/02-Constellations/Slider';
 export * from './Components/02-Constellations/Navigation';
 export * from './Components/02-Constellations/SectionHeading';
+export * from './Components/02-Constellations/Stats';
+export * from './Components/02-Constellations/HeaderMenuItem';
+export * from './Components/02-Constellations/LogoGrids';
+
 
 // ------ GALAXY ------ //
 export * from './Components/03-Galaxy/AccordionPattern';
@@ -41,4 +45,6 @@ export * from './Components/03-Galaxy/CardsPattern';
 export * from './Components/03-Galaxy/TeamSections';
 export * from './Components/03-Galaxy/SectionWithTextAndMedia';
 export * from './Components/03-Galaxy/SideBar';
-export * from './Components/02-Constellations/LogoGrids';
+export * from './Components/03-Galaxy/Testimonials';
+export * from './Components/03-Galaxy/Header';
+export * from './Components/03-Galaxy/Footer';

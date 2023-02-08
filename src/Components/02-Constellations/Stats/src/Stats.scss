@@ -1,0 +1,52 @@
+* {
+  @apply p-0 m-0;
+}
+.stat {
+  @apply flex;
+  .stat-content {
+    @apply ml-2;
+  }
+  .stat-border {
+    @apply border-solid border-0 border-l-4 border-x-backgroundButtonPrimary-buttonPrimaryDefault ml-2;
+  }
+  .stat-heading-text {
+    @apply font-spaceGroteskBold text-text-primaryDark m-0;
+  }
+  .stat-subheading {
+    @apply font-serif text-text-body;
+  }
+  .stat-supportive-text {
+    @apply font-serif text-text-body  max-w-148;
+  }
+  .stat-arrow {
+    @apply text-textButtonLink-buttonLinkDefault;
+  }
+  .stat-container {
+    @apply py-8 px-6 bg-backgroundNeutral-neutralLight rounded-2xl mt-6;
+  }
+
+  &.stat-orientation-center {
+    @apply flex;
+    .stat-border {
+      @apply border-solid border-0 border-l-4 border-x-backgroundButtonPrimary-buttonPrimaryDefault ml-2;
+    }
+    .stat-heading-text {
+      @apply text-center;
+    }
+    .icon-card-cta {
+      @apply text-center;
+    }
+    .stat-subheading {
+      @apply font-serif text-text-body text-center;
+    }
+    .stat-supportive-text {
+      @apply font-serif text-text-body text-center;
+    }
+    .stat-arrow {
+      @apply text-textButtonLink-buttonLinkDefault justify-center;
+    }
+    .icon-card-cta {
+      @apply flex justify-center;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.footer {
+  @apply flex flex-col bg-white pt-12 px-4 lg:px-28 items-start gap-12 overflow-hidden;
+  &.background-dark {
+    @apply bg-backgroundNeutral-neutralExtraDark;
+  }
+  & .section-link-container {
+    @apply flex flex-col;
+  }
+  & .section-links {
+    @apply flex flex-col lg:flex-row lg:items-start items-center gap-12 lg:gap-16 w-full;
+  }
+  & .section {
+    @apply flex flex-col items-center pb-12 gap-12 w-fill;
+  }
+  & .section-container {
+    @apply flex flex-col items-start gap-8 sm:w-[343px] lg:w-[420px];
+  }
+  & .supportive-text {
+    @apply text-base font-normal text-text-body;
+    &.text-light {
+      @apply text-text-neutralLight;
+    }
+  }
+  & .navigation-class {
+    @apply lg:w-[130px];
+  }
+  & .divider {
+    @apply border-0 border-b border-solid border-stroke-dividerLight w-full;
+    &.divider-dark {
+      @apply border-stroke-dividerDark;
+    }
+  }
+  & .content {
+    @apply grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 w-full;
+    &.content-links {
+      @apply lg:flex-row;
+    }
+  }
+  & .footer-container {
+    @apply flex flex-col md:flex-row gap-6 md:gap-8 w-full md:justify-between;
+  }
+  & .footer-text {
+    @apply text-base font-normal text-text-body;
+    &.text-dark {
+      @apply text-text-neutralMedium;
+    }
+  }
+  & .social-icons {
+    @apply flex flex-row items-center gap-6;
+  }
+}
+
+.newsletter {
+  @apply flex flex-col gap-8 py-10 lg:py-12 md:flex-row md:justify-between px-4 lg:px-28;
+  &.newsletter-light {
+    @apply bg-text-neutralLight;
+  }
+  &.newsletter-dark {
+    @apply bg-backgroundNeutral-neutralExtraDark;
+  }
+  & .news-content {
+    @apply flex flex-col gap-2;
+    & .title {
+      @apply text-lg font-medium text-text-heading md:text-20 md:leading-5;
+      &.title-dark {
+        @apply text-white;
+      }
+    }
+    & .supportive-text {
+      @apply text-base font-normal text-text-body;
+      &.supportive-text-dark {
+        @apply text-text-neutralLight;
+      }
+    }
+  }
+  & .form {
+    @apply flex flex-col gap-3 md:flex-row items-start w-full md:flex-0;
+  }
+  & .input-class {
+    @apply w-full;
+  }
+  & .btn-class {
+    @apply w-full justify-center items-center;
+  }
+}
