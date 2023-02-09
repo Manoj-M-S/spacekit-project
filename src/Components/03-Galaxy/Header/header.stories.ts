@@ -171,6 +171,55 @@ const threeColSidebar = ({
   `;
 };
 
+const fourColWithFooter = ({
+  logoSrc,
+  logoAlt,
+  ctaTextOne,
+  ctaTextTwo,
+  search,
+  hamburger,
+  options,
+  footerOptions,
+}: any) => {
+  return html`
+    <space-header
+      ?search=${search}
+      logo-src=${logoSrc}
+      logo-alt=${logoAlt}
+      ?hamburger=${hamburger}
+      cta-text-one=${ctaTextOne}
+      cta-text-two=${ctaTextTwo}
+    >
+      <space-header-menu-item
+        slot="subMenu"
+        label="Home"
+      ></space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Resources">
+        <space-fourcolfooter
+          headingFour="Company"
+          headingTwo="Use cases"
+          headingOne="Resources"
+          headingThree="Company"
+          .optionsOne=${options}
+          .optionsTwo=${options}
+          .optionsFour=${options}
+          .optionsThree=${options}
+          .footerOptions=${footerOptions}
+          footer-href="#"
+          footer-text-one="Ready to get started?"
+          footer-text-two="Sign up for free"
+        ></space-fourcolfooter>
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Blog">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="About">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Contact">
+      </space-header-menu-item>
+    </space-header>
+  `;
+};
+
 const branchedHamburger = ({
   logoSrc,
   logoAlt,
@@ -193,6 +242,7 @@ const branchedHamburger = ({
 export const TwoColSidebar = twoColSidebar.bind({});
 export const TwoColSlimFooter = twoColSlimFooter.bind({});
 export const ThreeColSidebar = threeColSidebar.bind({});
+export const FourColWithFooter = fourColWithFooter.bind({});
 export const BranchedHamburger = branchedHamburger.bind({});
 
 BranchedHamburger.args = {
@@ -231,5 +281,32 @@ ThreeColSidebar.args = {
     { ...twoColSidebarOptions },
     { ...twoColSidebarOptions },
     { ...twoColSidebarOptions },
+  ],
+};
+
+FourColWithFooter.args = {
+  ...TwoColSidebar.args,
+  options: [
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+  ],
+  footerOptions: [
+    {
+      iconName: 'dollarSign',
+      text: 'Pricing',
+      href: '#',
+    },
+    {
+      iconName: 'playCircle',
+      text: 'Watch demo',
+      href: '#',
+    },
+    {
+      iconName: 'messageCircle',
+      text: 'Chat to sales',
+      href: '#',
+    },
   ],
 };
