@@ -79,6 +79,45 @@ const twoColSidebar = ({
   `;
 };
 
+const twoColSlimFooter = ({
+  logoSrc,
+  logoAlt,
+  ctaTextOne,
+  ctaTextTwo,
+  search,
+  options,
+  hamburger,
+}: any) => {
+  return html`
+    <space-header
+      ?search=${search}
+      logo-src=${logoSrc}
+      logo-alt=${logoAlt}
+      ?hamburger=${hamburger}
+      cta-text-one=${ctaTextOne}
+      cta-text-two=${ctaTextTwo}
+    >
+      <space-header-menu-item
+        slot="subMenu"
+        label="Home"
+      ></space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Resources">
+        <space-twocolslimfooter
+          footer-text="Looking for a new career? Get in touch"
+          footer-href="#"
+          .options=${options}
+        ></space-twocolslimfooter>
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Blog">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="About">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Contact">
+      </space-header-menu-item>
+    </space-header>
+  `;
+};
+
 const branchedHamburger = ({
   logoSrc,
   logoAlt,
@@ -99,6 +138,7 @@ const branchedHamburger = ({
 };
 
 export const TwoColSidebar = twoColSidebar.bind({});
+export const TwoColSlimFooter = twoColSlimFooter.bind({});
 export const BranchedHamburger = branchedHamburger.bind({});
 
 BranchedHamburger.args = {
@@ -113,6 +153,16 @@ TwoColSidebar.args = {
   logoSrc: 'https://i.ibb.co/k5sYcwt/logo.png',
   ctaTextOne: 'Log in',
   ctaTextTwo: 'Sign up',
+  options: [
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+  ],
+};
+
+TwoColSlimFooter.args = {
+  ...TwoColSidebar.args,
   options: [
     { ...twoColSidebarOptions },
     { ...twoColSidebarOptions },
