@@ -40,6 +40,16 @@
   }
 
   & .hamburger {
-    @apply stroke-stroke-icon w-6 h-6 lg:hidden;
+    @apply stroke-stroke-icon w-6 h-6 bg-transparent border-0 cursor-pointer;
+
+    &:not(.hide-menu) {
+      @apply lg:hidden;
+    }
+  }
+}
+
+.branched-hamburger {
+  &.hide-menu {
+    @apply hidden;
   }
 }

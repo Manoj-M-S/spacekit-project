@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit';
+import { BooleanAttributePart, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import '../../../01-stars/button';
@@ -29,6 +29,10 @@ export default class Header extends LitElement {
   /** @attr cta-text-two */
   @property({ attribute: 'cta-text-two' })
   ctaTextTwo!: string;
+
+  /** @attr hamburger */
+  @property({ type: Boolean })
+  hamburger: boolean = false;
 
   @property()
   showDropDown: boolean = false;
@@ -98,12 +102,27 @@ export default class Header extends LitElement {
             </button>`
           : null}
 
-        <div @click=${this.handleDropDown} class="hamburger">
-          <space-icon class="hamburger-icon" icon-name="menu"></space-icon>
-        </div>
+        <button
+          @click=${this.handleDropDown}
+          class=${classMap({ 'hamburger': true, 'hide-menu': this.hamburger })}
+        >
+          <space-icon
+            class="hamburger-icon"
+            icon-name=${this.showDropDown ? 'x' : 'menu'}
+          ></space-icon>
+        </button>
 
         <div class="cta-container large">${this.renderCta()}</div>
       </header>
+
+      <div
+        class=${classMap({
+          'branched-hamburger': true,
+          'hide-menu': !this.showDropDown,
+        })}
+      >
+        <slot name="branchedHamburger"></slot>
+      </div>
     `;
   }
 }
