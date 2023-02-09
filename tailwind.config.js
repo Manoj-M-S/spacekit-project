@@ -327,8 +327,10 @@ module.exports = {
       maxWidth: {
         '1/2': '50%',
         '70': '17.5rem',
+        '80': '20rem',
         '85.75': '21.4375rem',
         '90': '22.5rem',
+        '93.7': '23.4375rem',
         '96': '24rem',
         '148': '37rem',
         '200': '50rem',
@@ -361,6 +363,9 @@ module.exports = {
       strokeWidth: {
         0.375: '0.09375rem',
         0.4175: '0.104375rem',
+      },
+      screens: {
+        xxl: '1440px',
       },
     },
     fontFamily: {
