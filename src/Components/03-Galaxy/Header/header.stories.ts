@@ -53,7 +53,6 @@ const twoColSidebar = ({
             head-text="How to get started"
             support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             sub-heading="Tutorial"
-            orientation="horizontal"
           >
           </space-media-card>
           <space-media-card
@@ -64,7 +63,6 @@ const twoColSidebar = ({
             head-text="How to get started"
             support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             sub-heading="Tutorial"
-            orientation="horizontal"
           >
           </space-media-card
         ></space-twocolsidebar>
@@ -156,7 +154,6 @@ const threeColSidebar = ({
             head-text="Digital Experience Platforms — Designed for Digital Transformation"
             support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             sub-heading="CASE STUDY"
-            orientation="vertical"
           >
           </space-media-card>
         </space-threecolsidebar>
@@ -220,6 +217,52 @@ const fourColWithFooter = ({
   `;
 };
 
+const twoColLinks = ({
+  logoSrc,
+  logoAlt,
+  ctaTextOne,
+  ctaTextTwo,
+  search,
+  hamburger,
+  options,
+  linkOptions,
+}: any) => {
+  return html`
+    <space-header
+      ?search=${search}
+      logo-src=${logoSrc}
+      logo-alt=${logoAlt}
+      ?hamburger=${hamburger}
+      cta-text-one=${ctaTextOne}
+      cta-text-two=${ctaTextTwo}
+      .linkOptions=${linkOptions}
+    >
+      <space-header-menu-item
+        slot="subMenu"
+        label="Home"
+      ></space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Resources">
+        <space-twocollinks
+          headingFour="Get started"
+          headingTwo="Use cases"
+          headingOne="Resources"
+          headingThree="Company"
+          .optionsOne=${options}
+          .optionsTwo=${options}
+          .optionsThree=${options}
+          .linkOptions=${linkOptions}
+        ></space-twocollinks>
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Blog">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="About">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Contact">
+      </space-header-menu-item>
+    </space-header>
+  `;
+};
+
 const branchedHamburger = ({
   logoSrc,
   logoAlt,
@@ -243,6 +286,7 @@ export const TwoColSidebar = twoColSidebar.bind({});
 export const TwoColSlimFooter = twoColSlimFooter.bind({});
 export const ThreeColSidebar = threeColSidebar.bind({});
 export const FourColWithFooter = fourColWithFooter.bind({});
+export const TwoColLinks = twoColLinks.bind({});
 export const BranchedHamburger = branchedHamburger.bind({});
 
 BranchedHamburger.args = {
@@ -306,6 +350,41 @@ FourColWithFooter.args = {
     {
       iconName: 'messageCircle',
       text: 'Chat to sales',
+      href: '#',
+    },
+  ],
+};
+
+TwoColLinks.args = {
+  ...TwoColSidebar.args,
+  options: [
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+    { ...twoColSidebarOptions },
+  ],
+  linkOptions: [
+    {
+      text: 'Setup 101',
+      href: '#',
+    },
+    {
+      text: 'Adding users',
+      href: '#',
+    },
+    {
+      text: 'Video tutorials',
+      href: '#',
+    },
+    {
+      text: 'Libraries and SDKs',
+      href: '#',
+    },
+    {
+      text: 'Adding plugins',
+      href: '#',
+    },
+    {
+      text: 'Dashboard templates',
       href: '#',
     },
   ],

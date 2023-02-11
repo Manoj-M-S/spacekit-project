@@ -3,3 +3,4 @@ export * from './ThreeColSidebar/ThreeColSidebar';
 export * from './TwoColSlimFooter/TwoColSlimFooter';
 export * from './TwoColWithSideBar/TwoColWithSideBar';
 export * from './FourColWithFooter/FourColWithFooter';
+export * from './TwoColLinks/TwoColLinks';
