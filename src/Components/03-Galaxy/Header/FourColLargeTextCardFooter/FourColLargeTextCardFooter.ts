@@ -1,39 +1,42 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { map } from 'lit/directives/map.js';
-import { TwoColWithSideBarOptions } from '../TwoColWithSideBar/TwoColWithSideBar';
-import styles from './FourColWithFooter.scss.lit';
+import { NavSize, NavState } from '../../../02-Constellations/Menu';
+import styles from './FourColLargeTextCardFooter.scss.lit';
+import '../../../01-stars/Link/src/Link';
 
-export interface FourColWithFooterOptions extends TwoColWithSideBarOptions {}
-
-export interface FooterOptions {
+export interface FourColLargeTextCardFooterOptions {
+  /** title */
+  title: string;
+  /**  description */
+  description: string;
   /** icon name */
   iconName: string;
-  /** text */
-  text: string;
-  /** href */
-  href: string;
+  /** size */
+  size?: NavSize;
+  /** state */
+  state?: NavState;
 }
 
-@customElement('space-fourcolfooter')
-export default class FourColWithFooter extends LitElement {
+@customElement('space-fourcollargetextcardrooter')
+export default class FourColLargeTextCardFooter extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */
   @property()
-  optionsOne: FourColWithFooterOptions[] = [];
+  optionsOne: FourColLargeTextCardFooterOptions[] = [];
 
   /** @attr optionsTwo */
   @property()
-  optionsTwo: FourColWithFooterOptions[] = [];
+  optionsTwo: FourColLargeTextCardFooterOptions[] = [];
 
   /** @attr optionsThree */
   @property()
-  optionsThree: FourColWithFooterOptions[] = [];
+  optionsThree: FourColLargeTextCardFooterOptions[] = [];
 
   /** @attr optionsFour */
   @property()
-  optionsFour: FourColWithFooterOptions[] = [];
+  optionsFour: FourColLargeTextCardFooterOptions[] = [];
 
   /** @attr headingOne */
   @property()
@@ -51,21 +54,13 @@ export default class FourColWithFooter extends LitElement {
   @property()
   headingFour!: string;
 
-  /** @attr footer-text-one */
-  @property({ attribute: 'footer-text-one' })
-  footerTextOne!: string;
-
-  /** @attr footer-text-two */
-  @property({ attribute: 'footer-text-two' })
-  footerTextTwo!: string;
+  /** @attr footer-text */
+  @property({ attribute: 'footer-text' })
+  footerText!: string;
 
   /** @attr footer-href */
   @property({ attribute: 'footer-href' })
   footerHref!: string;
-
-  /** @attr footerOptions */
-  @property()
-  footerOptions: FooterOptions[] = [];
 
   render() {
     return html`
@@ -180,37 +175,20 @@ export default class FourColWithFooter extends LitElement {
         </div>
       </div>
       <div class="footer">
-        <div class="footer-text-container">
-          <p></p>
-          ${this.footerTextOne
-            ? html`<p class="footer-text">${this.footerTextOne}</p>`
-            : null}
-          ${this.footerTextTwo && this.footerHref
-            ? html`<a class="footer-text link" href=${this.footerHref}
-                >${this.footerTextTwo}</a
-              >`
-            : null}
+        <div class="footer-container">
+          <slot name="footer"></slot>
         </div>
-
-        <ul class="footer-list">
-          ${map(
-            this.footerOptions,
-            ({ iconName, text, href }) => html`
-              <li class="footer-list-item">
-                ${href && text
-                  ? html`<a class="link" href=${href}>
-                      ${iconName
-                        ? html`<space-icon
-                            class="icon"
-                            icon-name=${iconName}
-                          ></space-icon>`
-                        : null}${text}</a
-                    >`
-                  : null}
-              </li>
+        ${this.footerText && this.footerHref
+          ? html`
+              <space-link
+                iconaftertext
+                iconname="arrowRight"
+                href=${this.footerHref}
+                class="footer-link"
+                >${this.footerText}</space-link
+              >
             `
-          )}
-        </ul>
+          : null}
       </div>
     `;
   }
@@ -218,6 +196,6 @@ export default class FourColWithFooter extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'space-fourcolfooter': FourColWithFooter;
+    'space-fourcollargetextcardrooter': FourColLargeTextCardFooter;
   }
 }

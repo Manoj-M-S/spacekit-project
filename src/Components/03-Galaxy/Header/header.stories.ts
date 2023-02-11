@@ -263,6 +263,74 @@ const twoColLinks = ({
   `;
 };
 
+const fourColLargeTextWithCardOnFooter = ({
+  logoSrc,
+  logoAlt,
+  ctaTextOne,
+  ctaTextTwo,
+  search,
+  hamburger,
+  options,
+  linkOptions,
+}: any) => {
+  return html`
+    <space-header
+      ?search=${search}
+      logo-src=${logoSrc}
+      logo-alt=${logoAlt}
+      ?hamburger=${hamburger}
+      cta-text-one=${ctaTextOne}
+      cta-text-two=${ctaTextTwo}
+    >
+      <space-header-menu-item
+        slot="subMenu"
+        label="Home"
+      ></space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Resources">
+        <space-fourcollargetextcardrooter
+          headingFour="Get started"
+          headingTwo="Use cases"
+          headingOne="Resources"
+          headingThree="Company"
+          footer-text="All Case Studies"
+          footer-href="#"
+          .optionsOne=${options}
+          .optionsTwo=${options}
+          .optionsThree=${options}
+          .optionsFour=${options}
+        >
+          <space-media-card
+            slot="footer"
+            size="sm"
+            src="https://unsplash.com/photos/iftBhUFfecE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8d2F2ZXN8ZW58MHx8fHwxNjc1OTIyMDA1&force=true&w=1920"
+            alt="media"
+            head-text="Digital Experience Platforms — Designed for Digital Transformation"
+            support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            sub-heading="CASE STUDY"
+          >
+          </space-media-card>
+          <space-media-card
+            slot="footer"
+            size="sm"
+            src="https://unsplash.com/photos/iftBhUFfecE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8d2F2ZXN8ZW58MHx8fHwxNjc1OTIyMDA1&force=true&w=1920"
+            alt="media"
+            head-text="Digital Experience Platforms — Designed for Digital Transformation"
+            support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            sub-heading="CASE STUDY"
+          >
+          </space-media-card>
+        </space-fourcollargetextcardrooter>
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Blog">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="About">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Contact">
+      </space-header-menu-item>
+    </space-header>
+  `;
+};
+
 const branchedHamburger = ({
   logoSrc,
   logoAlt,
@@ -287,6 +355,8 @@ export const TwoColSlimFooter = twoColSlimFooter.bind({});
 export const ThreeColSidebar = threeColSidebar.bind({});
 export const FourColWithFooter = fourColWithFooter.bind({});
 export const TwoColLinks = twoColLinks.bind({});
+export const FourColLargeTextWithCardOnFooter =
+  fourColLargeTextWithCardOnFooter.bind({});
 export const BranchedHamburger = branchedHamburger.bind({});
 
 BranchedHamburger.args = {
@@ -388,4 +458,24 @@ TwoColLinks.args = {
       href: '#',
     },
   ],
+};
+
+FourColLargeTextWithCardOnFooter.args = {
+  ...TwoColSidebar.args,
+  options: [
+    {
+      title: 'Products',
+    },
+    {
+      title: 'Products',
+    },
+    {
+      title: 'Products',
+    },
+    {
+      title: 'Products',
+    },
+  ],
+  footerText: 'All Case Studies',
+  footerLink: '#',
 };
