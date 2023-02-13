@@ -6,3 +6,4 @@ export * from './TwoColLinks/TwoColLinks';
 export * from './TwoColSlimFooter/TwoColSlimFooter';
 export * from './TwoColWithSideBar/TwoColWithSideBar';
 export * from './ThreeColLargeTextSidebar/ThreeColLargeTextSidebar';
+export * from './FourColLargeText/FourColLargeText';
