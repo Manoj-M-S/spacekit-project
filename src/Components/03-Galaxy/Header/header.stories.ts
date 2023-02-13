@@ -331,6 +331,61 @@ const fourColLargeTextWithCardOnFooter = ({
   `;
 };
 
+const threeColLargeTextSidebar = ({
+  logoSrc,
+  logoAlt,
+  ctaTextOne,
+  ctaTextTwo,
+  search,
+  options,
+  hamburger,
+  sideBarHeading,
+}: any) => {
+  return html`
+    <space-header
+      ?search=${search}
+      logo-src=${logoSrc}
+      logo-alt=${logoAlt}
+      ?hamburger=${hamburger}
+      cta-text-one=${ctaTextOne}
+      cta-text-two=${ctaTextTwo}
+    >
+      <space-header-menu-item
+        slot="subMenu"
+        label="Home"
+      ></space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Resources">
+        <space-threecollargetextsidebar
+          headingTwo="Use cases"
+          headingOne="Resources"
+          headingThree="Company"
+          .optionsOne=${options}
+          .optionsTwo=${options}
+          .optionsThree=${options}
+          sideBarHeading=${sideBarHeading}
+          ><space-media-card
+            slot="sidebar"
+            size="md"
+            src="https://unsplash.com/photos/iftBhUFfecE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8d2F2ZXN8ZW58MHx8fHwxNjc1OTIyMDA1&force=true&w=1920"
+            alt="media"
+            head-text="Digital Experience Platforms — Designed for Digital Transformation"
+            support-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            sub-heading="CASE STUDY"
+            orientation="vertical"
+          >
+          </space-media-card>
+        </space-threecollargetextsidebar>
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Blog">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="About">
+      </space-header-menu-item>
+      <space-header-menu-item slot="subMenu" label="Contact">
+      </space-header-menu-item>
+    </space-header>
+  `;
+};
+
 const branchedHamburger = ({
   logoSrc,
   logoAlt,
@@ -357,6 +412,7 @@ export const FourColWithFooter = fourColWithFooter.bind({});
 export const TwoColLinks = twoColLinks.bind({});
 export const FourColLargeTextWithCardOnFooter =
   fourColLargeTextWithCardOnFooter.bind({});
+export const ThreeColLargeTextSidebar = threeColLargeTextSidebar.bind({});
 export const BranchedHamburger = branchedHamburger.bind({});
 
 BranchedHamburger.args = {
@@ -478,4 +534,15 @@ FourColLargeTextWithCardOnFooter.args = {
   ],
   footerText: 'All Case Studies',
   footerLink: '#',
+};
+
+ThreeColLargeTextSidebar.args = {
+  ...ThreeColSidebar.args,
+  sideBarHeading: 'Featured Case Study',
+  options: [
+    { title: 'Products' },
+    { title: 'Products' },
+    { title: 'Products' },
+    { title: 'Products' },
+  ],
 };
