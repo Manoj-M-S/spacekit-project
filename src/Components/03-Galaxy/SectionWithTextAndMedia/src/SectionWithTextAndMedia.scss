@@ -28,17 +28,17 @@
     @apply w-full md:w-max justify-center items-center;
   }
 
-    & .checklist {
-      @apply flex flex-col gap-2 items-start box-border list-none p-0 m-0;
-      & .pricing-card-features-inner-container {
-        @apply flex items-center mb-4 last:mb-0;
+  & .checklist {
+    @apply flex flex-col gap-2 items-start box-border list-none p-0 m-0;
+    & .pricing-card-features-inner-container {
+      @apply flex items-center mb-4 last:mb-0;
 
-        & .pricing-card-features-icon {
-          @apply w-6 h-6 mr-3 flex justify-center items-center bg-backgroundPrimary-primaryLight rounded-full flex-shrink-0;
-        }
-        & .pricing-card-features-text {
-          @apply text-text-body text-16 leading-6 p-0 m-0;
-        }
+      & .pricing-card-features-icon {
+        @apply w-6 h-6 mr-3 flex justify-center items-center bg-backgroundPrimary-primaryLight rounded-full flex-shrink-0;
+      }
+      & .pricing-card-features-text {
+        @apply text-text-body text-16 leading-6 p-0 m-0;
       }
     }
+  }
 }

@@ -60,7 +60,7 @@ export default class Form extends LitElement {
   @property({ type: String, attribute: 'last-name-value' })
   lastNameValue: string = '';
 
-  /** @attr first-name-placeholder */
+  /** @attr last-name-placeholder */
   @property({ type: String, attribute: 'last-name-placeholder' })
   lastNamePlaceholder: string = '';
 

@@ -347,6 +347,7 @@ module.exports = {
         '252': '63rem',
         '304': '76rem',
         '360': '90rem',
+        'fill': '-webkit-fill-available',
       },
       maxHeight: {
         47: '11.75rem',

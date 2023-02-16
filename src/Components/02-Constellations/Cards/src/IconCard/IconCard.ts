@@ -73,6 +73,8 @@ export default class IconCard extends LitElement {
                   >${this.ctaText}</space-link
                 >
               `
+            : this.ctaText
+            ? html`<p class="cta-text">${this.ctaText}</p>`
             : null}
         </div>
       </div>

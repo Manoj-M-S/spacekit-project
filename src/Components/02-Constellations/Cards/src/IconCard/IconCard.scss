@@ -22,14 +22,7 @@
 
   &.icon-card-container {
     & .icon-card-inner-container {
-      @apply py-8 px-6 bg-backgroundNeutral-neutralLight rounded-2xl mt-6;
-
-      & .icon-card-icon {
-        @apply absolute -top-3;
-      }
-      & .icon-card-icon {
-        @apply mb-0;
-      }
+      @apply py-8 px-6 bg-backgroundNeutral-neutralLight rounded-2xl;
     }
     &.icon-card-alignment-left {
       & .icon-card-inner-container {
@@ -55,5 +48,8 @@
 
   & .icon-card-cta {
     @apply text-16 leading-6 font-medium mt-4 lg:mt-5;
+  }
+  & .cta-text {
+    @apply text-base font-medium text-textButtonLink-buttonLinkDefault mt-3 lg:mt-4;
   }
 }
