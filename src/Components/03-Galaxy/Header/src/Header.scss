@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply flex justify-between items-center w-full px-4 lg:px-28 h-18 lg:h-20 bg-white shadow-xs relative;
+  @apply flex justify-between items-center w-full px-4 lg:px-28 h-18 lg:h-20 bg-white shadow-xs relative xxl:container xxl:mx-auto;
 
   & .cta-container {
     &.large {

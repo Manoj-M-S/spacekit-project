@@ -289,6 +289,7 @@ module.exports = {
       margin: {
         1.5: '0.375rem',
         2.5: '0.625rem',
+        30: '7.5rem',
         45: '11.25rem',
       },
       padding: {
@@ -305,7 +306,7 @@ module.exports = {
         80: '20rem',
         85.7: '21.4375rem',
         93.7: '23.4375rem',
-        'fill': '-webkit-fill-available',
+        fill: '-webkit-fill-available',
         200: '50rem',
         150: '37.5rem',
         148: '37rem',
