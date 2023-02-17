@@ -312,6 +312,7 @@ module.exports = {
         70: '17.5rem',
         64: '16rem',
         66.4: '16.6rem',
+        200: '50rem',
       },
       minWidth: {
         60: '15rem',
@@ -366,6 +367,8 @@ module.exports = {
         3.5: '0.875rem',
         4.75: '1.1875rem',
         18: '4.5rem',
+        30: '7.5rem',
+        15: '3.75rem',
       },
       zIndex: {
         1: '1',
