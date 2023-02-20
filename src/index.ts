@@ -35,6 +35,7 @@ export * from './Components/02-Constellations/SectionHeading';
 export * from './Components/02-Constellations/Stats';
 export * from './Components/02-Constellations/HeaderMenuItem';
 export * from './Components/02-Constellations/LogoGrids';
+export * from './Components/02-Constellations/Search';
 
 // ------ GALAXY ------ //
 export * from './Components/03-Galaxy/AccordionPattern';
@@ -47,4 +48,5 @@ export * from './Components/03-Galaxy/SideBar';
 export * from './Components/03-Galaxy/Testimonials';
 export * from './Components/03-Galaxy/Header';
 export * from './Components/03-Galaxy/Footer';
-export * from './Components/03-Galaxy/ContactHeader';
+export * from './Components/03-Galaxy/Contac
+export * from './Components/03-Galaxy/ContactSection';

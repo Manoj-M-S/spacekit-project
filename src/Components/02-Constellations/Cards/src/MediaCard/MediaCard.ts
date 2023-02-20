@@ -54,6 +54,7 @@ export default class MediaCard extends LitElement {
       [`media-card-container`]: this.container,
       [`media-card-position-swap`]: !this.mediaFirst,
       [`media-card-orientation-${this.orientation}`]: this.orientation,
+      [`media-card-orientation`]: !this.orientation,
     };
     return html`
       <div class=${classMap(cardClass)}>

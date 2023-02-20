@@ -1,0 +1,23 @@
+:host {
+  @apply w-full;
+}
+
+* {
+  @apply m-0 p-0 leading-none list-none box-border;
+}
+
+.two-col-sidebar {
+  @apply lg:px-28  flex flex-col lg:flex-row;
+
+  & .heading-text {
+    @apply text-14 leading-5 text-backgroundButtonPrimary-buttonPrimaryActive font-medium mb-3;
+  }
+
+  & .col {
+    @apply mr-8 last:mr-0 py-4 lg:py-8;
+  }
+
+  & .sidebar {
+    @apply px-4 lg:px-6 py-5 lg:py-8 bg-backgroundNeutral-neutralLight;
+  }
+}
