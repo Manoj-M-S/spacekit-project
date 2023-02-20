@@ -14,6 +14,8 @@ const Stats = ({
   orientation,
   subHeading,
   action,
+  linkHref,
+  linkText,
 }: any) => html`
   <space-stats
     ?action=${action}
@@ -23,6 +25,8 @@ const Stats = ({
     heading-text=${headingText}
     support-text=${supportText}
     orientation=${orientation}
+    link-href=${linkHref}
+    link-text=${linkText}
   >
   </space-stats>
 `;
@@ -34,6 +38,8 @@ Default.args = {
   supportText:
     'We understand human needs through empathy to design experiences that improve conversion through practical strategies. We create integrated design-driven digital solutions where form follows function across an entire web product or through individual products and services.',
   subHeading: 'Projects completed',
+  linkText: 'Learn more',
+  linkHref: '',
 };
 
 Default.argTypes = {
