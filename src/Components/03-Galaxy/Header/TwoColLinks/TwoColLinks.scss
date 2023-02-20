@@ -1,0 +1,31 @@
+:host {
+  @apply w-full;
+}
+
+* {
+  @apply m-0 p-0 leading-none list-none box-border;
+}
+
+.two-col-sidebar {
+  @apply flex flex-col lg:flex-row lg:pl-28;
+
+  & .heading-text {
+    @apply text-14 leading-5 text-backgroundButtonPrimary-buttonPrimaryActive font-medium mb-3;
+  }
+
+  & .col {
+    @apply first:mr-8 py-4 lg:py-8 shrink-0;
+  }
+
+  & .column-links {
+    @apply bg-backgroundNeutral-neutralLight py-8 px-6 hidden lg:block w-full;
+
+    & .list-items {
+      @apply last:mb-0 mb-3;
+
+      & .link {
+        @apply text-16 leading-6 font-medium no-underline text-text-body;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.contact-header-simple-link01 {
+  @apply flex flex-col gap-8 md:gap-12 px-4 lg:px-28 py-10 lg:py-20;
+  & .title {
+    @apply text-sm font-bold md:text-base text-backgroundButtonPrimary-buttonPrimaryDefault;
+  }
+  & .sub-title {
+    @apply text-36 leading-44 font-bold text-text-heading md:text-48 md:leading-60;
+  }
+  & .support-text {
+    @apply text-18 leading-7 font-normal text-text-body md:text-20 md:leading-8;
+  }
+  & .icon-pattern {
+    @apply flex flex-col md:flex-row gap-10 md:gap-8;
+  }
+  & .content {
+    @apply flex flex-col gap-2;
+    &.content-center {
+      @apply items-center;
+    }
+  }
+}

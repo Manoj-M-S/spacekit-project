@@ -1,9 +1,9 @@
 * {
-  @apply m-0 p-0 leading-none box-border;
+  @apply m-0 p-0 leading-none list-none box-border;
 }
 
 .header {
-  @apply flex justify-between items-center w-full px-4 lg:px-28 h-18 lg:h-20 bg-white shadow-xs relative;
+  @apply flex justify-between items-center w-full px-4 lg:px-28 h-18 lg:h-20 bg-white shadow-xs relative xxl:container xxl:mx-auto;
 
   & .cta-container {
     &.large {
@@ -40,6 +40,24 @@
   }
 
   & .hamburger {
-    @apply stroke-stroke-icon w-6 h-6 lg:hidden;
+    @apply stroke-stroke-icon w-6 h-6 bg-transparent border-0 cursor-pointer;
+
+    &:not(.hide-menu) {
+      @apply lg:hidden;
+    }
+  }
+
+  & .footer-links {
+    @apply grid grid-cols-2 gap-3 lg:hidden py-6 border-0 border-t-2 border-solid border-stroke-dividerLight;
+
+    & .link {
+      @apply text-16 leading-6 font-medium no-underline text-text-body;
+    }
+  }
+}
+
+.branched-hamburger {
+  &.hide-menu {
+    @apply hidden;
   }
 }

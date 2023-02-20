@@ -1,0 +1,6 @@
+.contact-section {
+  @apply flex flex-col gap-12 md:gap-16 px-4 lg:px-28;
+  & .icon-card-pattern {
+    @apply flex flex-col md:flex-row items-center justify-center gap-8;
+  }
+}
