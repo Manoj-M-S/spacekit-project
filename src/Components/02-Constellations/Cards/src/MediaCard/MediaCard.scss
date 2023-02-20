@@ -1,3 +1,7 @@
+:host {
+  @apply block;
+}
+
 p,
 h1,
 h5 {
@@ -57,6 +61,30 @@ h5 {
     }
   }
 
+  &.media-card-orientation {
+    @apply flex-col lg:flex-row;
+
+    & .media-card-image {
+      @apply lg:mr-6;
+    }
+
+    &.media-card-position-swap {
+      & .media-card-image {
+        @apply mb-0 mt-6 lg:mr-0 lg:ml-6;
+      }
+    }
+
+    &:not(.media-card-position-swap) {
+      & .media-card-text-container {
+        @apply mt-5;
+      }
+    }
+
+    & .media-card-text-container {
+      @apply lg:max-w-148;
+    }
+  }
+
   & .media-card-subheading-text {
     @apply text-14 text-backgroundButtonPrimary-buttonPrimaryDefault leading-5 font-bold tracking-[0.1em] uppercase;
   }
@@ -73,6 +101,16 @@ h5 {
     @apply max-w-70;
     &.media-card-orientation-horizontal {
       @apply max-w-max;
+
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-70 flex-shrink;
+      }
+    }
+
+    &.media-card-orientation {
+      @apply max-w-max;
+
       & .media-card-image,
       & .media-card-text-container {
         @apply max-w-70 flex-shrink;
@@ -83,6 +121,16 @@ h5 {
     @apply max-w-96;
     &.media-card-orientation-horizontal {
       @apply max-w-max;
+
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-96 flex-shrink;
+      }
+    }
+
+    &.media-card-orientation {
+      @apply max-w-max;
+
       & .media-card-image,
       & .media-card-text-container {
         @apply max-w-96 flex-shrink;
@@ -101,6 +149,16 @@ h5 {
 
     &.media-card-orientation-horizontal {
       @apply max-w-max;
+
+      & .media-card-image,
+      & .media-card-text-container {
+        @apply max-w-148 flex-shrink;
+      }
+    }
+
+    &.media-card-orientation {
+      @apply max-w-max;
+
       & .media-card-image,
       & .media-card-text-container {
         @apply max-w-148 flex-shrink;

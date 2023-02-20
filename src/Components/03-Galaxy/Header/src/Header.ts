@@ -1,9 +1,11 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
+import { map } from 'lit/directives/map.js';
 import '../../../01-stars/button';
 import '../../../01-stars/Icon';
 import '../../../01-stars/Image/src/Image';
+import { LinkOptions } from '../TwoColLinks/TwoColLinks';
 import styles from './Header.scss.lit';
 
 @customElement('space-header')
@@ -30,8 +32,16 @@ export default class Header extends LitElement {
   @property({ attribute: 'cta-text-two' })
   ctaTextTwo!: string;
 
+  /** @attr hamburger */
+  @property({ type: Boolean })
+  hamburger: boolean = false;
+
   @property()
   showDropDown: boolean = false;
+
+  /** @attr linkOptions */
+  @property()
+  linkOptions: LinkOptions[] = [];
 
   handleDropDown() {
     this.showDropDown = !this.showDropDown;
@@ -87,6 +97,22 @@ export default class Header extends LitElement {
         >
           <slot name="subMenu"></slot>
 
+          ${this.linkOptions.length
+            ? html`
+                <ul class="footer-links">
+                  ${map(
+                    this.linkOptions,
+                    ({ text, href }) => html`
+                      <li class="list-items">
+                        ${href && text
+                          ? html`<a class="link" href=${href}>${text}</a>`
+                          : null}
+                      </li>
+                    `
+                  )}
+                </ul>
+              `
+            : null}
           <div class="cta-container small" ?hidden=${!this.showDropDown}>
             ${this.renderCta()}
           </div>
@@ -98,12 +124,27 @@ export default class Header extends LitElement {
             </button>`
           : null}
 
-        <div @click=${this.handleDropDown} class="hamburger">
-          <space-icon class="hamburger-icon" icon-name="menu"></space-icon>
-        </div>
+        <button
+          @click=${this.handleDropDown}
+          class=${classMap({ 'hamburger': true, 'hide-menu': this.hamburger })}
+        >
+          <space-icon
+            class="hamburger-icon"
+            icon-name=${this.showDropDown ? 'x' : 'menu'}
+          ></space-icon>
+        </button>
 
         <div class="cta-container large">${this.renderCta()}</div>
       </header>
+
+      <div
+        class=${classMap({
+          'branched-hamburger': true,
+          'hide-menu': !this.showDropDown,
+        })}
+      >
+        <slot name="branchedHamburger"></slot>
+      </div>
     `;
   }
 }
