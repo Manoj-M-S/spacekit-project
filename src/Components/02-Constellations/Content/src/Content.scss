@@ -1,0 +1,31 @@
+* {
+  @apply m-0 p-0 leading-none list-none;
+}
+
+.container {
+  @apply w-full lg:max-w-sm;
+
+  & .heading-text {
+    @apply text-text-heading font-bold text-30 lg:text-48 lg:leading-60 lg:tracking-closed leading-10;
+  }
+
+  & .description-text {
+    @apply text-text-body mt-4 lg:mt-2 text-18 leading-7;
+  }
+
+  & .list {
+    @apply mt-8 lg:mt-16 pl-4;
+
+    & .list-items {
+      @apply flex gap-4 first:mt-0 mt-4 lg:mt-5;
+
+      & .list-item-text {
+        @apply text-text-body text-18 leading-7;
+      }
+
+      & .icon {
+        @apply w-7 h-7 bg-backgroundPrimary-primaryLight block rounded-full shrink-0 stroke-primary-600;
+      }
+    }
+  }
+}
