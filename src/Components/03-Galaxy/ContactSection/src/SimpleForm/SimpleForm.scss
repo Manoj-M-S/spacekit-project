@@ -1,0 +1,15 @@
+.simple-form {
+  @apply flex flex-col gap-12 lg:flex-row;
+  & .container {
+    @apply flex w-full;
+    &.bg {
+      @apply bg-backgroundNeutral-neutralLight;
+    }
+  }
+  & .icon-container {
+    @apply flex flex-col gap-8 py-20 pl-4 lg:pl-28 lg:pr-10;
+  }
+  & .form-class {
+    @apply flex w-full lg:py-10 justify-center items-center pr-4 lg:pr-28;
+  }
+}
