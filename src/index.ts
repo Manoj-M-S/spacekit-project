@@ -48,4 +48,5 @@ export * from './Components/03-Galaxy/SideBar';
 export * from './Components/03-Galaxy/Testimonials';
 export * from './Components/03-Galaxy/Header';
 export * from './Components/03-Galaxy/Footer';
+export * from './Components/03-Galaxy/Contac
 export * from './Components/03-Galaxy/ContactSection';
