@@ -1,0 +1,45 @@
+* {
+  @apply p-0 m-0 list-none;
+}
+
+.main {
+  @apply xxl:container xxl:mx-auto;
+
+  & .section {
+    @apply px-4 lg:px-28 mt-20 lg:mt-26;
+
+    &.logo-grid-section {
+      @apply p-0;
+
+      & .logo-grid {
+        &.small {
+          @apply lg:hidden;
+        }
+
+        &.large {
+          @apply hidden lg:flex;
+        }
+      }
+    }
+  }
+
+  & .accordion-container {
+    @apply flex flex-col items-center;
+
+    & .accordion {
+      @apply mt-16 block lg:max-w-4xl;
+    }
+  }
+
+  & .testimony-carousal {
+    @apply mt-10;
+  }
+
+  & .media-card-list {
+    @apply mt-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12;
+  }
+}
+
+.footer {
+  @apply mt-20 lg:mt-26 block;
+}
