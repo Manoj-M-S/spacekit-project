@@ -1,0 +1,21 @@
+.hero-banner-style7 {
+  @apply flex flex-col md:flex-row items-start gap-4 md:gap-8 px-4 lg:px-28 py-10 md:py-24 bg-backgroundPrimary-primaryExtraLight;
+  & .content {
+    @apply flex flex-col md:flex-row gap-4 md:gap-8;
+    & .title {
+      @apply text-48 leading-60 font-bold text-text-heading md:text-72 md:leading-76;
+    }
+  }
+  & .info {
+    @apply flex flex-col gap-4 md:gap-6 md:pt-40;
+    & .support-text {
+      @apply text-2xl font-bold text-text-body;
+    }
+    & .description {
+      @apply text-base font-normal text-text-body;
+    }
+    & .btn-class {
+      @apply w-full justify-center md:w-auto mt-4 md:mt-4;
+    }
+  }
+}

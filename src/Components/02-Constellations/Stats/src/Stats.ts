@@ -3,6 +3,7 @@ import { property, customElement } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import styles from './Stats.scss.lit';
 import '../../../01-stars/Icon';
+import '../../../01-stars/Link/src/Link';
 
 export type Statsview = 'center' | 'default';
 @customElement('space-stats')
@@ -27,6 +28,12 @@ export default class Stats extends LitElement {
   @property({ type: Boolean })
   container!: boolean;
 
+  @property({ type: String, attribute: 'link-text' })
+  linkText!: string;
+
+  @property({ type: String, attribute: 'link-href' })
+  linkHref!: string;
+
   render() {
     const statClass = {
       stat: true,
@@ -46,10 +53,10 @@ export default class Stats extends LitElement {
                   ? html`
                       <space-link
                         class="icon-card-cta"
-                        href=${'/'}
+                        href=${this.linkHref}
                         iconaftertext
                         iconname="arrowRight"
-                        >${'Learn More'}</space-link
+                        >${this.linkText}</space-link
                       >
                     `
                   : null}
