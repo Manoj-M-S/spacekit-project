@@ -50,3 +50,4 @@ export * from './Components/03-Galaxy/Header';
 export * from './Components/03-Galaxy/Footer';
 
 // ------ LANDING PAGES ------ //
+export * from './Components/04-Pages/LandingPages';

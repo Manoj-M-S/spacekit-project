@@ -1,18 +1,17 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { map } from 'lit/directives/map.js';
-import '../../../02-Constellations/Cards/src/IconCard/IconCard';
-import '../../../02-Constellations/HeaderMenuItem/HeaderMenuItem';
-import '../../../02-Constellations/LogoGrids/src/LogoGrids';
-import '../../../02-Constellations/SectionHeading/src/SectionHeading';
-import '../../../02-Constellations/Stats/src/Stats';
-import '../../../03-Galaxy/AccordionPattern/src/AccordionPattern';
-import '../../../03-Galaxy/Banner/src/Banner';
-import '../../../03-Galaxy/Footer/src/TypeTen/TypeTen';
-import '../../../03-Galaxy/Header/src/Header';
-import '../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
+import '../../../../02-Constellations/Cards/src/IconCard/IconCard';
+import '../../../../02-Constellations/Content/src/Content';
+import '../../../../02-Constellations/HeaderMenuItem/HeaderMenuItem';
+import '../../../../02-Constellations/LogoGrids/src/LogoGrids';
+import '../../../../02-Constellations/SectionHeading/src/SectionHeading';
+import '../../../../02-Constellations/Stats/src/Stats';
+import '../../../../03-Galaxy/AccordionPattern/src/AccordionPattern';
+import '../../../../03-Galaxy/Banner/src/Banner';
+import '../../../../03-Galaxy/Footer/src/TypeTen/TypeTen';
+import '../../../../03-Galaxy/Header/src/Header';
+import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
 import styles from './Sample-02.scss.lit';
-import '../../../02-Constellations/Content/src/Content';
 
 @customElement('space-sample-02')
 export default class Sample extends LitElement {
