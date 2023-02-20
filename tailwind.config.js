@@ -289,6 +289,7 @@ module.exports = {
       margin: {
         1.5: '0.375rem',
         2.5: '0.625rem',
+        22: '5.5rem',
         30: '7.5rem',
         45: '11.25rem',
       },
@@ -298,6 +299,7 @@ module.exports = {
         4.5: '1.125rem',
         10.5: '2.625rem',
         15: '3.75rem',
+        22: '5.5rem',
         30: '7.5rem',
         6.5: '1.625rem',
       },
@@ -374,6 +376,9 @@ module.exports = {
       strokeWidth: {
         0.375: '0.09375rem',
         0.4175: '0.104375rem',
+      },
+      screens: {
+        xxl: '1440px',
       },
     },
     fontFamily: {
