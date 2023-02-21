@@ -9,7 +9,7 @@ export type QuickLinkCardColorType = 'light' | 'dark';
 export type QuickLinkCardSize = 'sm' | 'md' | 'lg';
 
 @customElement('space-quicklink-card')
-export default class QuickLinkCard extends LitElement {
+export class QuickLinkCard extends LitElement {
   static styles = [styles];
 
   /** @attr color */

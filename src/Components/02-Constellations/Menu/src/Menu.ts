@@ -5,7 +5,7 @@ import styles from './Menu.scss.lit';
 import '../../../01-stars/Icon/src/Icon';
 
 @customElement('space-menu')
-export default class Menu extends LitElement {
+export class Menu extends LitElement {
   static styles = [styles];
 
   /** @attr menu-name */

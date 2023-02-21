@@ -4,7 +4,7 @@ import { classMap } from 'lit/directives/class-map.js';
 import styles from './Map.scss.lit';
 
 @customElement('space-map')
-export default class Map extends LitElement {
+export class Map extends LitElement {
   static styles = [styles];
 
   /** @attr map-source */

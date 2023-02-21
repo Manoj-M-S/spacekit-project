@@ -8,7 +8,7 @@ export type MediaCardOrientation = 'vertical' | 'horizontal';
 export type MediaCardPosition = 'default' | 'swap';
 
 @customElement('space-media-card')
-export default class MediaCard extends LitElement {
+export class MediaCard extends LitElement {
   static styles = [styles];
 
   /** @attr src */

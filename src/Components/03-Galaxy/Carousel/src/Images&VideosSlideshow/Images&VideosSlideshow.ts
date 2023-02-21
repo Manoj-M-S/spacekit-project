@@ -13,7 +13,7 @@ export interface ImagesVideosSlideshowOptions {
 }
 
 @customElement('space-images-videos-slideshow')
-export default class ImagesVideosSlideshow extends LitElement {
+export class ImagesVideosSlideshow extends LitElement {
   static styles = [styles];
 
   @property()

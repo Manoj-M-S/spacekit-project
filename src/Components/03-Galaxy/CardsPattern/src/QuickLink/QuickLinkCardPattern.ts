@@ -12,7 +12,7 @@ import { CardPatternType } from '../IconCard/IconCardPattern';
 import styles from './QuickLinkCardPattern.scss.lit';
 
 @customElement('space-quicklink-pattern')
-export default class QuickLinkCardPattern extends LitElement {
+export class QuickLinkCardPattern extends LitElement {
   static styles = [styles];
 
   /** @attr type */

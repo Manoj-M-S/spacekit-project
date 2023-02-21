@@ -24,7 +24,7 @@ interface SocialLinkOptions {
 }
 
 @customElement('space-footer-type-eight')
-export default class TypeEight extends LitElement {
+export class TypeEight extends LitElement {
   static styles = [styles];
 
   /** @attr supportive-text */

@@ -16,7 +16,7 @@ export interface FooterOptions {
 }
 
 @customElement('space-fourcolfooter')
-export default class FourColWithFooter extends LitElement {
+export class FourColWithFooter extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

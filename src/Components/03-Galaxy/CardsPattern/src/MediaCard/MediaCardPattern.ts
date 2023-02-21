@@ -12,7 +12,7 @@ import styles from './MediaCardPattern.scss.lit';
 import '../../../../02-Constellations/Cards/src/MediaCard/MediaCard';
 
 @customElement('space-mediacard-pattern')
-export default class MediaCardPattern extends LitElement {
+export class MediaCardPattern extends LitElement {
   static styles = [styles];
   /** @attr type */
   @property()

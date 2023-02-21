@@ -19,7 +19,7 @@ interface FooterLinkOptions {
 }
 
 @customElement('space-footer-type-nine')
-export default class TypeNine extends LitElement {
+export class TypeNine extends LitElement {
   static styles = [styles];
 
   /** @attr supportive-text */

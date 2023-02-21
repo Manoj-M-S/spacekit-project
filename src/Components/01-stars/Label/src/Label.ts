@@ -9,7 +9,7 @@ export const labelSize = ['sm', 'md', 'lg'] as const;
 export type LabelSize = typeof labelSize[number];
 
 @customElement('space-label')
-export default class Label extends LitElement {
+export class Label extends LitElement {
   static styles = [styles];
 
   /** @attr label */

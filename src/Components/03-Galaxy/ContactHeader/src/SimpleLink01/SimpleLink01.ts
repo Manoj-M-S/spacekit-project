@@ -17,7 +17,7 @@ interface IconCardOption {
 }
 
 @customElement('space-contact-header-simplelink')
-export default class SimpleLink01 extends LitElement {
+export class SimpleLink01 extends LitElement {
   static styles = [styles];
 
   /** @attr container */

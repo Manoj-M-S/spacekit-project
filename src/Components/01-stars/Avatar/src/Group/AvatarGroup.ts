@@ -11,7 +11,7 @@ export const avatarGroupSize = ['xs', 'sm', 'md'] as const;
 export type AvatarGroupSize = typeof avatarGroupSize[number];
 
 @customElement('space-avatar-group')
-export default class AvatarGroup extends LitElement {
+export class AvatarGroup extends LitElement {
   static styles = [styles];
 
   /** @attr size */

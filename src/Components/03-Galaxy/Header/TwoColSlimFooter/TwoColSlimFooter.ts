@@ -18,7 +18,7 @@ export interface TwoColSlimFooterOptions {
 }
 
 @customElement('space-twocolslimfooter')
-export default class TwoColSlimFooter extends LitElement {
+export class TwoColSlimFooter extends LitElement {
   static styles = [styles];
 
   /** @attr options */

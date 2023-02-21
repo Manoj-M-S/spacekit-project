@@ -49,5 +49,5 @@ export * from './Components/03-Galaxy/Testimonials';
 export * from './Components/03-Galaxy/Header';
 export * from './Components/03-Galaxy/Footer';
 export * from './Components/03-Galaxy/HeroBanner';
-export * from './Components/03-Galaxy/Contac
+export * from './Components/03-Galaxy/ContactHeader';
 export * from './Components/03-Galaxy/ContactSection';

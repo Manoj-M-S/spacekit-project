@@ -17,7 +17,7 @@ export interface LogoGridOption {
 }
 
 @customElement('space-logo-grids')
-export default class LogoGrids extends LitElement {
+export class LogoGrids extends LitElement {
   static styles = [styles];
 
   /** @attr options */

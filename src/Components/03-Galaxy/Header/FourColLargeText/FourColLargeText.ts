@@ -7,7 +7,7 @@ import styles from './FourColLargeText.scss.lit';
 export interface FourColLargeTextOptions extends TwoColWithSideBarOptions {}
 
 @customElement('space-fourcollargetext')
-export default class ThreeColSidebar extends LitElement {
+export class ThreeColSidebar extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

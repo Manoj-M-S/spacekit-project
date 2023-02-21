@@ -22,7 +22,7 @@ export type PeopleCardSize = 'sm' | 'md';
 export type PeopleCardSocialType = { href: string; iconName: string };
 
 @customElement('space-people-card')
-export default class PeopleCard extends LitElement {
+export class PeopleCard extends LitElement {
   static styles = [styles];
 
   /** @attr type */

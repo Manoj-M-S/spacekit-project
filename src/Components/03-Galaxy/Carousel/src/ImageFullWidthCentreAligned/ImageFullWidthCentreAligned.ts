@@ -18,7 +18,7 @@ export interface ImageFullWidthCentreAlignedOption {
 }
 
 @customElement('space-image-fullwidth-centre')
-export default class ImageFullWidthCentreAligned extends LitElement {
+export class ImageFullWidthCentreAligned extends LitElement {
   static styles = [styles];
 
   options: Array<ImageFullWidthCentreAlignedOption> = [];

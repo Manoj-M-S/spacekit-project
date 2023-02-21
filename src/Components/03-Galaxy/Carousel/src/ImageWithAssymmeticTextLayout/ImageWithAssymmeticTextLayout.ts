@@ -21,7 +21,7 @@ export interface ImageWithAssymmeticTextLayoutOptions {
 
 Swiper.use([Navigation]);
 @customElement('space-image-assymmetic-textlayout')
-export default class ImageWithAssymmeticTextLayout extends LitElement {
+export class ImageWithAssymmeticTextLayout extends LitElement {
   static styles = [styles];
 
   options: Array<ImageWithAssymmeticTextLayoutOptions> = [];

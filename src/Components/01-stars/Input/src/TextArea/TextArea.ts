@@ -5,7 +5,7 @@ import { ifDefined } from 'lit/directives/if-defined.js';
 import styles from './TextArea.scss.lit';
 
 @customElement('space-textarea')
-export default class TextArea extends LitElement {
+export class TextArea extends LitElement {
   static styles = [styles];
 
   /** @attr disabled */

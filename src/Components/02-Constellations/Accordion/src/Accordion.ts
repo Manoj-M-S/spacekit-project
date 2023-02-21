@@ -7,7 +7,7 @@ import styles from './Accordion.scss.lit';
 export type AccordionIconSide = 'left' | 'right';
 
 @customElement('space-accordion')
-export default class Accordion extends LitElement {
+export class Accordion extends LitElement {
   static styles = [styles];
 
   /** @attr divider */

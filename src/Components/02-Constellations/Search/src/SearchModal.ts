@@ -14,7 +14,7 @@ export interface SearchModalTabOption {
 }
 
 @customElement('space-search-modal')
-export default class Search extends LitElement {
+export class Search extends LitElement {
   static styles = [styles];
 
   /** @attr tabOptions */

@@ -8,7 +8,7 @@ import '../../../02-Constellations/Form/src/Form';
 type ImageVariant = 'left' | 'right';
 
 @customElement('space-contact-header')
-export default class ContactHeader extends LitElement {
+export class ContactHeader extends LitElement {
   static styles = [styles];
 
   /** @attr center */

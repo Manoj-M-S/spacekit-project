@@ -19,7 +19,7 @@ interface SocialLinkOptions {
 }
 
 @customElement('space-footer-type-sixteen')
-export default class TypeSixteen extends LitElement {
+export class TypeSixteen extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

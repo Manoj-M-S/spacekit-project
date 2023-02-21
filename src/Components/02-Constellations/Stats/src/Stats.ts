@@ -7,7 +7,7 @@ import '../../../01-stars/Link/src/Link';
 
 export type Statsview = 'center' | 'default';
 @customElement('space-stats')
-export default class Stats extends LitElement {
+export class Stats extends LitElement {
   static styles = [styles];
 
   @property({ type: Boolean })

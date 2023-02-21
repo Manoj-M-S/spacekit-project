@@ -4,7 +4,7 @@ import styles from './Style3.scss.lit';
 import '../../../../01-stars/Image/src/Image';
 
 @customElement('space-herobanner-style3')
-export default class Style3 extends LitElement {
+export class Style3 extends LitElement {
   static styles = [styles];
 
   /** @attr title */

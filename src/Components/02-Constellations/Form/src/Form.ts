@@ -9,7 +9,7 @@ import '../../../01-stars/Input/src/TextArea/TextArea';
 import '../../../01-stars/Checkbox/src/Checkbox';
 
 @customElement('space-form')
-export default class Form extends LitElement {
+export class Form extends LitElement {
   static styles = [styles];
 
   /** @attr heading-text */

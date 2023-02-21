@@ -7,7 +7,7 @@ import { AvatarSize } from '../../../01-stars/Avatar/src/Avatar';
 
 export type DropDownType = 'button' | 'avatar';
 @customElement('space-dropdown')
-export default class Dropdown extends LitElement {
+export class Dropdown extends LitElement {
   static styles = [styles];
 
   /** @attr type */

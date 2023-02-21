@@ -16,7 +16,7 @@ interface StatsOption {
 }
 
 @customElement('space-herobanner-style1')
-export default class Style1 extends LitElement {
+export class Style1 extends LitElement {
   static styles = [styles];
 
   /** @attr title */

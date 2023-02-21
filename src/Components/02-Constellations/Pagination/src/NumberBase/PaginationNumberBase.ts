@@ -16,7 +16,7 @@ const rangeSelector = (start: number, end: number): Array<number> => {
 };
 
 @customElement('space-pagination-number')
-export default class PaginationNumberBase extends LitElement {
+export class PaginationNumberBase extends LitElement {
   static styles = [styles];
 
   /** @attr shape */

@@ -19,7 +19,7 @@ export interface FourColLargeTextCardFooterOptions {
 }
 
 @customElement('space-fourcollargetextcardrooter')
-export default class FourColLargeTextCardFooter extends LitElement {
+export class FourColLargeTextCardFooter extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

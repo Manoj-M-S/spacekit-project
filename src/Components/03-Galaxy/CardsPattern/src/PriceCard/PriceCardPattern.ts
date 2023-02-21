@@ -15,7 +15,7 @@ import '../../../../02-Constellations/Cards/src/PricingCard/PricingCard';
 Swiper.use([Navigation]);
 
 @customElement('space-pricecard-pattern')
-export default class PriceCardPattern extends LitElement {
+export class PriceCardPattern extends LitElement {
   static styles = [styles];
 
   /** @attr type */

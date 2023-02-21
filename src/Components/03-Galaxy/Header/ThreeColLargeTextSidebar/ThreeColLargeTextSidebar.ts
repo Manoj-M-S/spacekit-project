@@ -8,7 +8,7 @@ export interface ThreeColLargeTextSidebarOptions
   extends TwoColWithSideBarOptions {}
 
 @customElement('space-threecollargetextsidebar')
-export default class ThreeColSidebar extends LitElement {
+export class ThreeColSidebar extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

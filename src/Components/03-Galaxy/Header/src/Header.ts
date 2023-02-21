@@ -9,7 +9,7 @@ import { LinkOptions } from '../TwoColLinks/TwoColLinks';
 import styles from './Header.scss.lit';
 
 @customElement('space-header')
-export default class Header extends LitElement {
+export class Header extends LitElement {
   static styles = [styles];
 
   /** @attr logo-src */

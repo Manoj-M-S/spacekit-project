@@ -9,7 +9,7 @@ export type Background = 'primaryDark' | 'neutralMedium' | 'neutralExtraDark';
 export type Size = 'small' | 'large';
 
 @customElement('space-notification')
-export default class NotificationBanner extends LitElement {
+export class NotificationBanner extends LitElement {
   static styles = [styles];
 
   /** @attr show-icon */

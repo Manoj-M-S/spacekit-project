@@ -6,7 +6,7 @@ import styles from './Checkbox.scss.lit';
 export type CheckBoxSize = 'sm' | 'md';
 
 @customElement('space-checkbox')
-export default class Checkbox extends LitElement {
+export class Checkbox extends LitElement {
   static styles = [styles];
 
   /** @attr size */

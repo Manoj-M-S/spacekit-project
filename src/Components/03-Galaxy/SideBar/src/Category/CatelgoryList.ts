@@ -13,7 +13,7 @@ export interface CategoryListOptions {
 }
 
 @customElement('space-category-list')
-export default class CategoryList extends LitElement {
+export class CategoryList extends LitElement {
   static styles = [styles];
 
   /** @attr base-style */
