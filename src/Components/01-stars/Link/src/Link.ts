@@ -23,7 +23,7 @@ export type LinkRelType =
   | 'tag';
 
 @customElement('space-link')
-export default class Link extends LitElement {
+export class Link extends LitElement {
   static styles = [styles];
 
   /** @attr disabled */

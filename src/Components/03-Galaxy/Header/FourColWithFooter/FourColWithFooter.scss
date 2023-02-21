@@ -7,7 +7,7 @@
 }
 
 .four-col {
-  @apply lg:px-28  flex flex-col lg:flex-row;
+  @apply lg:px-28  flex flex-col lg:flex-row bg-white;
 
   & .heading-text {
     @apply text-14 leading-5 text-backgroundButtonPrimary-buttonPrimaryActive font-medium mb-3;

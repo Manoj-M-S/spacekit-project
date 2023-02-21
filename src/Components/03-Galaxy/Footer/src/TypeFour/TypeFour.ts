@@ -17,7 +17,7 @@ interface LinkOptions {
 }
 
 @customElement('space-footer-type-four')
-export default class TypeFour extends LitElement {
+export class TypeFour extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

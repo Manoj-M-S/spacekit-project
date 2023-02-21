@@ -22,7 +22,7 @@ export interface NavigationOption {
 }
 
 @customElement('space-navigation')
-export default class Navigation extends LitElement {
+export class Navigation extends LitElement {
   static styles = [styles];
 
   /** @attr options */

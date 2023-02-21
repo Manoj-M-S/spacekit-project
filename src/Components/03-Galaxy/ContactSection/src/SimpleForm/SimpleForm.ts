@@ -20,7 +20,7 @@ interface IconCardOption {
 }
 
 @customElement('space-simple-icon-form')
-export default class IconForm extends LitElement {
+export class IconForm extends LitElement {
   static styles = [styles];
 
   /** @attr options */

@@ -12,7 +12,7 @@ import { CardPatternType } from '../IconCard/IconCardPattern';
 import styles from './FeatureCardPattern.scss.lit';
 
 @customElement('space-featuredcard-pattern')
-export default class FeatureCard extends LitElement {
+export class FeatureCard extends LitElement {
   static styles = [styles];
 
   /** @attr type */

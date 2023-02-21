@@ -12,7 +12,7 @@ export type BannerWidth = 'full' | 'tillMargin';
 export type CTAImageType = 'noImage' | 'normal';
 
 @customElement('space-banner')
-export default class Banner extends LitElement {
+export class Banner extends LitElement {
   static styles = [styles];
 
   /** @attr show-sub-heading */

@@ -28,7 +28,7 @@ interface FooterLinkOptions {
 }
 
 @customElement('space-footer-type-twelve')
-export default class TypeTwelve extends LitElement {
+export class TypeTwelve extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

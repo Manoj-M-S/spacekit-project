@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import styles from './Image.css.lit';
 
 @customElement('space-image')
-export default class Image extends LitElement {
+export class Image extends LitElement {
   static styles = [styles];
 
   /** @attr src */

@@ -7,7 +7,7 @@ import styles from './ThreeColSidebar.scss.lit';
 export interface ThreeColSidebarOptions extends TwoColWithSideBarOptions {}
 
 @customElement('space-threecolsidebar')
-export default class ThreeColSidebar extends LitElement {
+export class ThreeColSidebar extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

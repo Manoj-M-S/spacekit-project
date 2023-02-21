@@ -9,7 +9,7 @@ import '../../../01-stars/Checkbox/src/Checkbox';
 export type ModalAlignment = 'left' | 'center';
 
 @customElement('space-modal')
-export default class Modal extends LitElement {
+export class Modal extends LitElement {
   static styles = [styles];
 
   /** @attr featured-icon */

@@ -21,7 +21,7 @@ interface IconCardOption {
 }
 
 @customElement('space-icon-and-map-01')
-export default class IconAndMap01 extends LitElement {
+export class IconAndMap01 extends LitElement {
   static styles = [styles];
 
   /** @attr options */

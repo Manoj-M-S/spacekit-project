@@ -24,7 +24,7 @@ export interface TwoColWithSideBarOptions {
 }
 
 @customElement('space-twocolsidebar')
-export default class TwoColWithSideBar extends LitElement {
+export class TwoColWithSideBar extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

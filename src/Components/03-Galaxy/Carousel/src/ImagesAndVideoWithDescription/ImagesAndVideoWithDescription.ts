@@ -22,7 +22,7 @@ export interface ImagesAndVideoWithDescriptionOptions {
 }
 
 @customElement('space-images-video-description')
-export default class ImagesAndVideoWithDescription extends LitElement {
+export class ImagesAndVideoWithDescription extends LitElement {
   static styles = [styles];
   options: Array<ImagesAndVideoWithDescriptionOptions> = [];
 

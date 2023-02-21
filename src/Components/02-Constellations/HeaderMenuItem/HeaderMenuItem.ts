@@ -11,7 +11,7 @@ import styles from './HeaderMenuItem.scss.lit';
 import '../Accordion/src/Accordion';
 
 @customElement('space-header-menu-item')
-export default class HeaderMenuItem extends LitElement {
+export class HeaderMenuItem extends LitElement {
   static styles = [styles];
 
   @queryAssignedElements()

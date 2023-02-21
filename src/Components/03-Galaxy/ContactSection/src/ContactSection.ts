@@ -20,7 +20,7 @@ export interface IconCardOption {
 }
 
 @customElement('space-contact-section')
-export default class ContactSection extends LitElement {
+export class ContactSection extends LitElement {
   static styles = [styles];
 
   /** @attr options */

@@ -14,7 +14,7 @@ interface NavigationOptions {
 }
 
 @customElement('space-footer-type-fourteen')
-export default class TypeFourteen extends LitElement {
+export class TypeFourteen extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

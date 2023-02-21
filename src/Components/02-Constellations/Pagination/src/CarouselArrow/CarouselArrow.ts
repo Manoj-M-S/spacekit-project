@@ -12,7 +12,7 @@ export type CarouselArrowColorType =
   | 'greyDark';
 
 @customElement('space-carousel-arrow')
-export default class CarouselArrow extends LitElement {
+export class CarouselArrow extends LitElement {
   static styles = [styles];
 
   /** @attr icon-name */

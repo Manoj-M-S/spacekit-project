@@ -1,5 +1,5 @@
 .footer {
-  @apply flex flex-col bg-white py-12 items-center gap-12 px-4 lg:px-28 overflow-hidden;
+  @apply flex flex-col bg-white py-12 items-center gap-12 px-4 lg:px-28 overflow-hidden xxl:container xxl:mx-auto box-border;
   &.background-dark {
     @apply bg-backgroundNeutral-neutralExtraDark;
   }

@@ -17,7 +17,7 @@ export interface InputDropDownListType {
 }
 
 @customElement('space-input-dropdownlist-base')
-export default class InputDropDownListBase extends LitElement {
+export class InputDropDownListBase extends LitElement {
   static styles = [styles];
 
   /** @attr options */

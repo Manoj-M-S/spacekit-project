@@ -15,7 +15,7 @@ export interface LinkOptions {
 }
 
 @customElement('space-twocollinks')
-export default class TwoColLinks extends LitElement {
+export class TwoColLinks extends LitElement {
   static styles = [styles];
 
   /** @attr optionsOne */

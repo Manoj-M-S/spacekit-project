@@ -14,13 +14,13 @@ export interface NavigationOptions {
   navigationHref: string;
 }
 
-export interface LinkOptions {
+export interface FooterLinkOptions {
   heading: string;
   options: NavigationOptions[];
 }
 
 @customElement('space-footer-type-one')
-export default class Footer extends LitElement {
+export class Footer extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */
@@ -40,7 +40,7 @@ export default class Footer extends LitElement {
   background: boolean = false;
 
   @property()
-  linkOptions!: LinkOptions[];
+  linkOptions!: FooterLinkOptions[];
 
   renderLinkColor() {
     const linktColor = this.background

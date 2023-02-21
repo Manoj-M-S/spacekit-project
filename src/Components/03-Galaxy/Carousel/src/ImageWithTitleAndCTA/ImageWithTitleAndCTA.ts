@@ -20,7 +20,7 @@ export interface ImageWithTitleAndCTAOptions {
 Swiper.use([Navigation]);
 
 @customElement('space-image-title-cta')
-export default class ImageWithTitleAndCTA extends LitElement {
+export class ImageWithTitleAndCTA extends LitElement {
   static styles = [styles];
   options: Array<ImageWithTitleAndCTAOptions> = [];
 

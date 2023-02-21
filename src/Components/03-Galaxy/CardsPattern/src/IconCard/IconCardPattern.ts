@@ -14,7 +14,7 @@ export type CardPatternType = 'simple' | 'carousel';
 Swiper.use([Navigation]);
 
 @customElement('space-iconcard-pattern')
-export default class IconCardPattern extends LitElement {
+export class IconCardPattern extends LitElement {
   static styles = [styles];
 
   /** @attr type */

@@ -7,7 +7,7 @@ import { InputDropDownListType } from '../../../01-stars/InputDropDownListBase';
 import styles from './InputDropDown.scss.lit';
 
 @customElement('space-input-dropdown')
-export default class InputDropDown extends LitElement {
+export class InputDropDown extends LitElement {
   static styles = [styles];
 
   /** @attr avatar-src */

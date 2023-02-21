@@ -6,7 +6,7 @@ import '../../../../01-stars/button/src/Button';
 import '../../../../01-stars/Image/src/Image';
 
 @customElement('space-herobanner-style9')
-export default class Style9 extends LitElement {
+export class Style9 extends LitElement {
   static styles = [styles];
 
   /** @attr title */

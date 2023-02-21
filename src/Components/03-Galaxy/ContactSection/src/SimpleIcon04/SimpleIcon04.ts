@@ -14,7 +14,7 @@ export interface AddressCardOption {
 }
 
 @customElement('space-contact-section-type4')
-export default class SimpleIcon04 extends LitElement {
+export class SimpleIcon04 extends LitElement {
   static styles = [styles];
 
   @property()

@@ -5,7 +5,7 @@ import styles from './Toggle.scss.lit';
 import '../../Icon/src/Icon';
 
 @customElement('space-toggle')
-export default class Toggle extends LitElement {
+export class Toggle extends LitElement {
   static styles = [styles];
 
   /** @attr checked */

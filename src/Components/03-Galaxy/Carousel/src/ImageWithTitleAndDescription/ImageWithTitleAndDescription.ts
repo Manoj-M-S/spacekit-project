@@ -19,7 +19,7 @@ export interface ImageWithTitleAndDescriptionOptions {
 }
 
 @customElement('space-image-title-description')
-export default class ImageWithTitleAndDescription extends LitElement {
+export class ImageWithTitleAndDescription extends LitElement {
   static styles = [styles];
 
   options: Array<ImageWithTitleAndDescriptionOptions> = [];

@@ -9,7 +9,7 @@ export const avatarLabelSize = ['sm', 'md', 'lg', 'xl'] as const;
 export type AvatarLabelSize = typeof avatarLabelSize[number];
 
 @customElement('space-avatar-label')
-export default class AvatarWithLabel extends LitElement {
+export class AvatarWithLabel extends LitElement {
   static styles = [styles];
 
   /** @attr src */

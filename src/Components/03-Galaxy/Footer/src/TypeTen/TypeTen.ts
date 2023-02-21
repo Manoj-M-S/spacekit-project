@@ -19,7 +19,7 @@ interface SocialLinkOptions {
 }
 
 @customElement('space-footer-type-ten')
-export default class TypeTen extends LitElement {
+export class TypeTen extends LitElement {
   static styles = [styles];
 
   /** @attr supportive-text */

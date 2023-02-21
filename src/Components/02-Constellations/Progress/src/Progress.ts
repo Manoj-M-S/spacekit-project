@@ -13,7 +13,7 @@ export interface ProgressOption {
 }
 
 @customElement('space-progress')
-export default class Progress extends LitElement {
+export class Progress extends LitElement {
   static styles = [styles];
 
   /** @attr options */
