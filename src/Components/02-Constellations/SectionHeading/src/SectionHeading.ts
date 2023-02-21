@@ -7,7 +7,7 @@ export type SectionHeadingSize = 'default';
 export type SectionHeadingView = 'center' | 'split' | 'default';
 
 @customElement('space-section-heading')
-export default class SectionHeading extends LitElement {
+export class SectionHeading extends LitElement {
   static styles = [styles];
 
   /** @attr size */

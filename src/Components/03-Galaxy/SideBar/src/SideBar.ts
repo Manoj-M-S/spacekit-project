@@ -13,7 +13,7 @@ export interface ListOptions {
 }
 
 @customElement('space-sidebar')
-export default class Sidebar extends LitElement {
+export class Sidebar extends LitElement {
   static styles = [styles];
 
   /** @attr base-style */

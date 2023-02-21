@@ -39,7 +39,7 @@ export type TeamSectionVariationType = typeof teamSectionVariationType[number];
 Swiper.use([Navigation]);
 
 @customElement('space-team-sections')
-export default class TeamSections extends LitElement {
+export class TeamSections extends LitElement {
   static styles = [styles];
 
   /** @attr theme */

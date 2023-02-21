@@ -1,5 +1,5 @@
 .nav-menu-item {
-  @apply flex flex-row items-center py-3 px-4 gap-4 w-93.7 md:w-80;
+  @apply flex flex-row items-center py-3 px-4 gap-4 max-w-93.7 md:max-w-80;
   & .nav-data {
     @apply flex flex-col items-start gap-1;
   }

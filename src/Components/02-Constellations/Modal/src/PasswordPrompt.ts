@@ -8,7 +8,7 @@ import './Modal';
 import '../../../01-stars/Input/src/Input';
 
 @customElement('password-prompt-modal')
-export default class PasswordPrompt extends LitElement {
+export class PasswordPrompt extends LitElement {
   static styles = [styles];
 
   /** @attr featured-icon */

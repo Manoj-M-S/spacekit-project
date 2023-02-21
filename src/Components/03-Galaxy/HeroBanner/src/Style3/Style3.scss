@@ -1,0 +1,21 @@
+.hero-banner-style3 {
+  @apply flex flex-col items-start gap-10 md:gap-15 px-4 lg:px-28 md:py-24;
+  & .content {
+    @apply flex flex-col gap-4 md:gap-6;
+    & .title {
+      @apply text-48 leading-60 font-bold text-text-heading md:text-72 md:leading-76;
+    }
+    & .support-text {
+      @apply text-2xl font-bold md:text-30 md:leading-40 text-text-body;
+    }
+  }
+  & .info {
+    @apply flex flex-col md:flex-row gap-10 md:gap-20;
+    & .description {
+      @apply text-base font-normal md:text-20 md:leading-8 text-text-body w-full;
+    }
+    & .image {
+      @apply w-full;
+    }
+  }
+}

@@ -21,7 +21,7 @@ export const inputTypes = [
 export type InputTypes = typeof inputTypes[number] | any;
 
 @customElement('space-input')
-export default class Input extends LitElement {
+export class Input extends LitElement {
   static styles = [styles];
 
   /** @attr label */

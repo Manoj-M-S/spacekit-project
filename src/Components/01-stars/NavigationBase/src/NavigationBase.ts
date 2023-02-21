@@ -8,7 +8,7 @@ export type NavigationBaseSizeType = 'sm' | 'lg';
 export type NavigationBaseColourType = 'lightGrey' | 'darkGrey' | 'primaryDark';
 
 @customElement('space-navigation-base')
-export default class NavigationBase extends LitElement {
+export class NavigationBase extends LitElement {
   static styles = [styles];
 
   /** @attr size */

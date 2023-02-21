@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": "true",
   "license": "MIT",
-  "main": "dist/spacekit.min.cjs.js",
-  "module": "dist/spacekit.min.esm.js",
-  "typings": "dist/packages/index.d.ts",
+  "module": "dist/spacekit.min.cjs.js",
+  "main": "dist/spacekit.min.esm.js",
+  "typings": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],

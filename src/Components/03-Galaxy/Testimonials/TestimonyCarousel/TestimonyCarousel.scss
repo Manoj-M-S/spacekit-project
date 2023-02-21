@@ -1,0 +1,123 @@
+@import 'swiper/swiper-bundle.css';
+
+* {
+  @apply m-0 p-0 leading-none list-none box-border;
+}
+
+.testimony {
+  &.testimony-type-largeAvatar {
+    @apply lg:max-w-360 relative;
+
+    & .testimony-list-item {
+      @apply flex flex-col lg:flex-row lg:gap-[104px] px-4 lg:py-4 lg:px-28;
+
+      & .large-image {
+        @apply block w-full h-full lg:max-w-96 lg:max-h-96 aspect-square object-cover;
+      }
+
+      & .text-container {
+        @apply lg:max-w-[624px];
+        & .description {
+          @apply mt-4 lg:mt-10 text-18 leading-7 text-text-body;
+        }
+
+        & .name {
+          @apply mt-6 text-16 leading-6 font-bold text-text-heading;
+        }
+
+        & .icon {
+          @apply w-10 h-7 stroke-backgroundPrimary-primaryLight block mt-5;
+        }
+      }
+    }
+    & .carousal-container {
+      @apply mt-10 mb-4 pr-4 lg:pr-0 lg:absolute right-[216px] bottom-6 flex justify-end gap-5 z-1;
+    }
+  }
+
+  &.testimony-type-centerAligned {
+    @apply lg:max-w-360 h-154 lg:h-127  w-full relative;
+
+    & .testimony-list-item {
+      @apply flex flex-col items-center px-4 py-4 lg:py-10;
+
+      & .text-container {
+        @apply lg:max-w-200 text-center;
+
+        & .description {
+          @apply mt-4  text-20 leading-8 text-text-heading;
+        }
+
+        & .name {
+          @apply mt-5 text-18 leading-7 font-bold text-text-heading;
+        }
+
+        & .desgination {
+          @apply text-16 leading-6 text-text-body;
+        }
+      }
+    }
+    & .carousal-container {
+      @apply mt-10  absolute bottom-10 w-full flex justify-center gap-5 z-1;
+    }
+  }
+
+  &.testimony-type-simple {
+    @apply lg:max-w-148  h-148 lg:h-[500px] m-0;
+
+    & .testimony-list-item {
+      @apply flex flex-col items-start;
+
+      & .text-container {
+        @apply lg:max-w-200 text-start;
+
+        & .description {
+          @apply mt-5 text-20 leading-8 text-text-heading;
+        }
+
+        & .name {
+          @apply mt-5 text-18 leading-7 font-bold text-text-heading;
+        }
+
+        & .desgination {
+          @apply text-16 leading-6 text-text-body;
+        }
+      }
+    }
+    & .carousal-container {
+      @apply absolute bottom-10 left-0 flex gap-5 z-1;
+    }
+  }
+
+  &.testimony-type-withCompanyLogo {
+    @apply lg:max-w-360 w-full px-4 py-16 lg:py-10;
+
+    & .testimony-list-item {
+      @apply flex flex-col items-center;
+
+      & .text-container {
+        @apply lg:max-w-200 text-center;
+
+        & .avatar {
+          @apply mt-8 lg:mt-10 flex justify-center;
+        }
+
+        & .description {
+          @apply mt-8 lg:mt-10 font-medium text-24 leading-8 text-text-heading;
+        }
+
+        & .name {
+          @apply mt-4 lg:mt-2 text-18 leading-7 font-medium text-text-heading;
+        }
+
+        & .desgination {
+          @apply text-16 leading-6 text-text-body;
+        }
+      }
+    }
+
+    & .pagination {
+      @apply flex justify-center mt-8;
+    }
+  }
+}

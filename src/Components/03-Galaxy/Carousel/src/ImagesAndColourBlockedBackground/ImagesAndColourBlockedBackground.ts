@@ -12,7 +12,7 @@ export interface ImagesAndColourBlockedBackgroundOptions {
   alt: string;
 }
 @customElement('space-images-colour-blocked-background')
-export default class ImagesAndColourBlockedBackground extends LitElement {
+export class ImagesAndColourBlockedBackground extends LitElement {
   static styles = [styles];
 
   /** @attr options */

@@ -18,7 +18,7 @@ export type DropDownListBaseType = {
 };
 
 @customElement('space-dropdown-list-base')
-export default class DropDownListBase extends LitElement {
+export class DropDownListBase extends LitElement {
   static styles = [styles];
 
   /** @attr show-header */

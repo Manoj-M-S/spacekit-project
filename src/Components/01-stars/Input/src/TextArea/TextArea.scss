@@ -14,7 +14,7 @@
   }
 
   & .text-area {
-    @apply w-full h-32 border border-solid border-stroke-borderDefault bg-white shadow-xs px-3.5 py-2.5 text-text-body outline-none rounded-lg text-16 leading-6;
+    @apply w-full max-w-fill h-32 border border-solid border-stroke-borderDefault bg-white shadow-xs px-3.5 py-2.5 text-text-body outline-none rounded-lg text-16 leading-6;
     &::placeholder {
       @apply text-16 leading-6 tracking-closed;
     }

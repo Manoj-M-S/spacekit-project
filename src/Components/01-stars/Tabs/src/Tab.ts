@@ -28,7 +28,7 @@ export interface TabOptions {
 }
 
 @customElement('space-tab')
-export default class Tab extends LitElement {
+export class Tab extends LitElement {
   static styles = [styles];
 
   /** @attr variant */

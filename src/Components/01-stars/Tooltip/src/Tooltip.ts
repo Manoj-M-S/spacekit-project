@@ -5,7 +5,7 @@ import styles from './Tooltip.scss.lit';
 import '../../Icon/src/Icon';
 
 @customElement('space-tooltip')
-export default class Tooltip extends LitElement {
+export class Tooltip extends LitElement {
   static styles = [styles];
 
   /** @attr tooltip-text */

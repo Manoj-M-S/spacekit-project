@@ -9,7 +9,7 @@ import type {
 import styles from './NavigationList.scss.lit';
 
 @customElement('space-navigation-list')
-export default class NavigationList extends LitElement {
+export class NavigationList extends LitElement {
   static styles = [styles];
 
   /** @attr options */

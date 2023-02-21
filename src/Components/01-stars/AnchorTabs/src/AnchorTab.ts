@@ -4,7 +4,7 @@ import '../../Tabs/src/Tab';
 import { TabOptions, TabOrientation } from '../../Tabs/src/Tab';
 
 @customElement('space-anchortab')
-export default class AnchorTab extends LitElement {
+export class AnchorTab extends LitElement {
   /** @attr options */
   @property()
   options!: TabOptions[];

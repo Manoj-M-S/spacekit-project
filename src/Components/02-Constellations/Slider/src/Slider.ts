@@ -13,7 +13,7 @@ import styles from './Slider.scss.lit';
 
 Swiper.use([Scrollbar, Navigation]);
 @customElement('space-slider')
-export default class Slider extends LitElement {
+export class Slider extends LitElement {
   static styles = [styles];
 
   @query('.swiper')

@@ -15,7 +15,7 @@ export type Type = 'slash' | 'chevron';
 export type BreadCrumbVariant = 'noFill' | 'primaryFill' | 'edgeFill';
 
 @customElement('space-breadcrumb')
-export default class Breadcrumb extends LitElement {
+export class Breadcrumb extends LitElement {
   static styles = [styles];
 
   /** @attr home-page-text */

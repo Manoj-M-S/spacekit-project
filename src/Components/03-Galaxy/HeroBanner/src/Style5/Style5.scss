@@ -1,0 +1,27 @@
+.hero-banner-style5 {
+  @apply flex flex-col md:flex-row gap-10 md:gap-8 px-4 lg:px-28 py-10 md:py-16 lg:py-24 items-center;
+  &.r-padding {
+    @apply px-4 lg:pl-28 xl:container;
+  }
+  .content {
+    @apply flex flex-col gap-8 md:gap-12 w-full;
+    & .text-container {
+      @apply flex flex-col gap-2 md:gap-6;
+      & .title {
+        @apply text-36 leading-44 font-bold md:text-72 md:leading-76 text-text-heading;
+      }
+      & .support-text {
+        @apply text-lg font-normal md:text-24 md:leading-8 text-text-body;
+      }
+    }
+    & .action {
+      @apply flex flex-col gap-3 md:flex-row w-full;
+      & .btn-class {
+        @apply w-full md:w-auto justify-center;
+      }
+    }
+  }
+  & .image {
+    @apply w-full;
+  }
+}
