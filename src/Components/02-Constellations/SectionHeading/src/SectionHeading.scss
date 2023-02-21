@@ -33,13 +33,13 @@ h5 {
         @apply font-serif text-center text-14 text-text-primaryDark;
       }
       & .section-heading-heading-text {
-        @apply text-center font-spaceGroteskBold text-24 text-text-heading leading-8 font-bold mt-2;
+        @apply text-center font-spaceGroteskBold  text-text-heading leading-8 font-bold mt-2;
       }
       &.section-heading {
         @apply mx-auto text-text-heading;
       }
       & .section-heading-text-container {
-        @apply font-serif max-w-148 flex-shrink;
+        @apply font-serif max-w-148  flex-shrink;
       }
     }
     &.section-heading-orientation-split {
