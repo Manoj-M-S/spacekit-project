@@ -1,11 +1,11 @@
-import { createComponent } from "@lit-labs/react"
-import React from "react"
-import { Stats } from "spacekit"
+import { createComponent } from '@lit-labs/react';
+import React from 'react';
+import { Stats } from 'spacekit';
 
 const SpaceStats = createComponent({
-    react: React,
-    elementClass: Stats,
-    tagName: "space-stats",
-})
+  react: React,
+  elementClass: Stats,
+  tagName: 'space-stats',
+});
 
-export default SpaceStats
+export default SpaceStats;
