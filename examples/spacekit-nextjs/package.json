@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "spacekit": "../",
+    "spacekit": "../../",
     "@lit-labs/react": "^1.1.1",
     "@next/font": "13.1.6",
     "@types/node": "18.14.0",
