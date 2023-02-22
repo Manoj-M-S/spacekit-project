@@ -67,6 +67,7 @@ export class TestimonyCarousel extends LitElement {
         nextEl: this.nextButton,
         prevEl: this.previousButton,
       },
+      spaceBetween: 32,
     });
 
     this.swiper.on('slideChange', swiper => {

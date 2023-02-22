@@ -14,10 +14,11 @@ const Stats = ({
   orientation,
   subHeading,
   action,
-  linkHref,
-  linkText,
+  isBorder,
+  ctaHref,
 }: any) => html`
   <space-stats
+    cta-href=${ctaHref}
     ?action=${action}
     sub-heading=${subHeading}
     size="default"
@@ -25,8 +26,7 @@ const Stats = ({
     heading-text=${headingText}
     support-text=${supportText}
     orientation=${orientation}
-    link-href=${linkHref}
-    link-text=${linkText}
+    ?isBorder=${isBorder}
   >
   </space-stats>
 `;
@@ -38,8 +38,7 @@ Default.args = {
   supportText:
     'We understand human needs through empathy to design experiences that improve conversion through practical strategies. We create integrated design-driven digital solutions where form follows function across an entire web product or through individual products and services.',
   subHeading: 'Projects completed',
-  linkText: 'Learn more',
-  linkHref: '',
+  ctaHref: 'https://qed42.com',
 };
 
 Default.argTypes = {
@@ -48,7 +47,14 @@ Default.argTypes = {
     options: ['center', 'default'],
     control: { type: 'radio' },
   },
-
+  isBorder: {
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
+  container: {
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
   action: {
     defaultValue: false,
     control: { type: 'boolean' },

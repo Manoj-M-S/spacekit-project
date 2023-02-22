@@ -24,7 +24,7 @@
   }
 
   & .sub-menu-slot {
-    @apply absolute inset-0 top-full w-full h-full;
+    @apply absolute inset-0 top-full w-full h-full bg-white;
 
     &.hide-slot {
       @apply hidden;

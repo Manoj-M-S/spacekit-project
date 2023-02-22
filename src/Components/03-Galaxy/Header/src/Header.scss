@@ -27,7 +27,7 @@
     }
 
     &.show-menu {
-      @apply max-h-screen lg:flex overflow-y-auto;
+      @apply max-h-screen lg:flex overflow-y-auto bg-white z-10;
     }
   }
 
