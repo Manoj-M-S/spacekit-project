@@ -33,6 +33,12 @@
       }
     }
   }
+  & .icon-container {
+    @apply bg-backgroundPrimary-primaryMedium py-3 px-4 w-max rounded-xl mb-8;
+    & .icon-card-icon-container {
+      @apply stroke-2 stroke-white mb-3 lg:mb-4;
+    }
+  }
 
   & .icon-card-icon {
     @apply stroke-2 stroke-backgroundButtonPrimary-buttonPrimaryDefault mb-3 lg:mb-4;

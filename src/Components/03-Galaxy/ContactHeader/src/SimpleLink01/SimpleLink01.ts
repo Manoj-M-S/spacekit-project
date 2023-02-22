@@ -85,6 +85,7 @@ export class SimpleLink01 extends LitElement {
               ctaHref,
             }) => html` <space-icon-card
               icon-name=${iconName}
+              ?icon-container=${true}
               ?container=${this.container}
               head-text=${headText}
               cta-href=${ctaHref}

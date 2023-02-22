@@ -48,10 +48,12 @@ const iconCard = ({
   container,
   alignment,
   supportText,
+  iconContainer,
 }) =>
   html`
     <space-icon-card
       cta-href=${ctaHref}
+      ?icon-container=${iconContainer}
       cta-text=${ctaText}
       head-text=${headText}
       icon-name=${iconName}
@@ -225,6 +227,7 @@ IconCard.args = {
   headText: 'Deliver instant answers',
   ctaHref: '#',
   ctaText: 'Learn More',
+  iconContainer: false,
   supportText:
     'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
 };
