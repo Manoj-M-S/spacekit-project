@@ -38,6 +38,14 @@
   & .media-card-list {
     @apply mt-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-12;
   }
+
+  & .video-overlay {
+    @apply lg:max-w-200 lg:max-h-[448px] w-full h-full max-h-48 flex mx-auto mt-10 lg:mt-8;
+  }
+
+  & .icon-card-list {
+    @apply flex flex-col lg:flex-row gap-8 justify-center mt-10;
+  }
 }
 
 .footer {

@@ -5,6 +5,16 @@
 .main {
   @apply xxl:container xxl:mx-auto;
 
+  & .herobanner {
+    &.small {
+      @apply lg:hidden;
+    }
+
+    &.large {
+      @apply hidden lg:block;
+    }
+  }
+
   & .section {
     @apply px-4 lg:px-28 mt-20 lg:mt-30;
 

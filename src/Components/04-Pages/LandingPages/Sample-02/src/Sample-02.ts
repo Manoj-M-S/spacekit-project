@@ -12,6 +12,7 @@ import '../../../../03-Galaxy/Footer/src/TypeTen/TypeTen';
 import '../../../../03-Galaxy/Header/src/Header';
 import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
 import styles from './Sample-02.scss.lit';
+import '../../../../03-Galaxy/HeroBanner/src/Style8/Style8';
 
 @customElement('space-sample-02')
 export default class Sample extends LitElement {
@@ -75,6 +76,17 @@ export default class Sample extends LitElement {
       </space-header>
 
       <main class="main">
+        <space-herobanner-style8
+          title="Beautiful analytics to grow smarter"
+          supportive-text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+          primary-image-alt="image"
+          primary-image-src="https://i.ibb.co/nRKkkfB/image-4.png"
+          secondary-image-src="https://i.ibb.co/RynbdtQ/image-5.png"
+          secondary-image-alt="image"
+          primary-btn-text="Try for Free"
+          secondary-btn-text="Book a Demo"
+        >
+        </space-herobanner-style8>
         <section class="section logo-grid-section">
           <space-logo-grids
             .options=${Array(12).fill({

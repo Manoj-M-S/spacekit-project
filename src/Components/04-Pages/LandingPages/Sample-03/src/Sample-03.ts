@@ -12,6 +12,8 @@ import '../../../../03-Galaxy/Footer/src/TypeFour/TypeFour';
 import '../../../../03-Galaxy/Header/src/Header';
 import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
 import styles from './Sample-03.scss.lit';
+import '../../../../03-Galaxy/HeroBanner/src/Style2/Style2';
+import { map } from 'lit/directives/map.js';
 
 @customElement('space-sample-03')
 export class Sample03 extends LitElement {
@@ -50,6 +52,46 @@ export class Sample03 extends LitElement {
     },
   ];
 
+  @property()
+  mediaCardOptions = [
+    {
+      iconName: 'zap',
+      headText: 'Deliver instant answers',
+      ctaHref: '#',
+      ctaText: 'Learn More',
+      alignment: 'center' as const,
+      supportText:
+        'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
+    },
+    {
+      iconName: 'zap',
+      headText: 'Deliver instant answers',
+      ctaHref: '#',
+      ctaText: 'Learn More',
+      alignment: 'center' as const,
+      supportText:
+        'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
+    },
+    {
+      iconName: 'zap',
+      headText: 'Deliver instant answers',
+      ctaHref: '#',
+      ctaText: 'Learn More',
+      alignment: 'center' as const,
+      supportText:
+        'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
+    },
+    {
+      iconName: 'zap',
+      headText: 'Deliver instant answers',
+      ctaHref: '#',
+      ctaText: 'Learn More',
+      alignment: 'center' as const,
+      supportText:
+        'An all-in-one customer service platform that helps you balance everything your customers need to be happy.',
+    },
+  ];
+
   render() {
     return html`<space-header
         logo-src="https://i.ibb.co/k5sYcwt/logo.png"
@@ -75,6 +117,33 @@ export class Sample03 extends LitElement {
       </space-header>
 
       <main class="main">
+        <space-herobanner-style2
+          title="SPACE is the Complete Team Collaboration Solution"
+          supportive-text="From automation of people processes to creating an engaged and driven culture."
+          btn-text="Get started"
+          input-placeholder="charles@space.com"
+          .statsOption=${[
+            {
+              heading: '400+',
+              subHeading: 'Projects Completed',
+              linkText: 'Learn more',
+              linkHref: '#',
+            },
+            {
+              heading: '400+',
+              subHeading: 'Projects Completed',
+              linkText: 'Learn more',
+              linkHref: '#',
+            },
+            {
+              heading: '400+',
+              subHeading: 'Projects Completed',
+              linkText: 'Learn more',
+              linkHref: '#',
+            },
+          ]}
+        >
+        </space-herobanner-style2>
         <section class="section logo-grid-section">
           <space-logo-grids
             class="logo-grid small"
@@ -168,6 +237,47 @@ export class Sample03 extends LitElement {
           </space-testimony-carousel>
         </section>
 
+        <section class="section">
+          <space-section-heading
+            size="default"
+            head-text="A Fully integrated digital agency"
+            support-text="We understand human needs through empathy to design experiences that improve conversion through practical strategies. We create integrated design-driven digital solutions where form follows function across an entire web product or through individual products and services."
+            sub-heading="Launch faster"
+            orientation="center"
+          >
+          </space-section-heading>
+          <video
+            controls
+            class="video-overlay"
+            src=""
+            poster="https://unsplash.com/photos/WUehAgqO5hE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTR8fGN5Y2xlfGVufDB8fHx8MTY3NzEyNTc0MQ&force=true&w=1920"
+          ></video>
+
+          <ul class="icon-card-list">
+            ${map(
+              this.mediaCardOptions,
+              ({
+                iconName,
+                headText,
+                ctaText,
+                ctaHref,
+                alignment,
+                supportText,
+              }) => html`
+                <space-icon-card
+                  cta-href=${ctaHref}
+                  cta-text=${ctaText}
+                  head-text=${headText}
+                  icon-name=${iconName}
+                  alignment=${alignment}
+                  support-text=${supportText}
+                >
+                </space-icon-card>
+              `
+            )}
+          </ul>
+        </section>
+
         <section class="section accordion-container">
           <space-section-heading
             size="default"
@@ -230,7 +340,6 @@ export class Sample03 extends LitElement {
         footer-text="© 2021 SPACE. All rights reserved."
         logo-src="https://i.ibb.co/m8QfWzK/logo.png"
         logo-alt="logo"
-        supportive-text="Design amazing digital experiences that create more happy in the world."
         ios-logo-src="https://imgtr.ee/images/2023/02/01/MGUFD.png"
         android-logo-src="https://imgtr.ee/images/2023/02/01/MG96s.png"
         .linkOptions=${[

@@ -1,17 +1,19 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { map } from 'lit/directives/map.js';
 import '../../../../02-Constellations/Cards/src/IconCard/IconCard';
 import '../../../../02-Constellations/HeaderMenuItem/HeaderMenuItem';
 import '../../../../02-Constellations/LogoGrids/src/LogoGrids';
 import '../../../../02-Constellations/SectionHeading/src/SectionHeading';
-import '../../../../03-Galaxy/Header/src/Header';
-import styles from './Sample-01.scss.lit';
-import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
-import { map } from 'lit/directives/map.js';
 import '../../../../02-Constellations/Stats/src/Stats';
-import '../../../../03-Galaxy/Banner/src/Banner';
 import '../../../../03-Galaxy/AccordionPattern/src/AccordionPattern';
+import '../../../../03-Galaxy/Banner/src/Banner';
 import '../../../../03-Galaxy/Footer/src/TypeSix/TypeSix';
+import '../../../../03-Galaxy/Header/src/Header';
+import '../../../../03-Galaxy/HeroBanner/src/Style5/Style5';
+import '../../../../03-Galaxy/HeroBanner/src/Style6/Style6';
+import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
+import styles from './Sample-01.scss.lit';
 
 @customElement('space-sample-01')
 export default class Sample extends LitElement {
@@ -75,6 +77,24 @@ export default class Sample extends LitElement {
       </space-header>
 
       <main class="main">
+        <space-herobanner-style6
+          class="herobanner large"
+          title="Beautiful analytics to grow smarter"
+          supportive-text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+          image-alt="image"
+          image-src="https://i.ibb.co/ChDbcNW/image-3.png"
+        >
+        </space-herobanner-style6>
+        <space-herobanner-style5
+          class="herobanner small"
+          title="Beautiful analytics to grow smarter"
+          supportive-text="Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups."
+          image-alt="image"
+          primary-btn-text="Signup"
+          secondary-btn-text="Demo"
+          image-src="https://i.ibb.co/YRTGY6b/image-2.png"
+        >
+        </space-herobanner-style5>
         <section class="section logo-grid-section">
           <space-logo-grids
             .options=${Array(12).fill({
