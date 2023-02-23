@@ -3,7 +3,7 @@ import './src/Sample-03';
 import { Meta } from '@storybook/web-components';
 
 export default {
-  title: 'LandingPages/Sample-03',
+  title: 'Pages/LandingPages/Sample-03',
   component: 'space-sample-03',
 } as Meta;
 
