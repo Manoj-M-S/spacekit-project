@@ -10,7 +10,6 @@ import '../../../../03-Galaxy/Testimonials/TestimonyCarousel/TestimonyCarousel';
 import { map } from 'lit/directives/map.js';
 import '../../../../02-Constellations/Stats/src/Stats';
 import '../../../../03-Galaxy/Banner/src/Banner';
-import '../../../../03-Galaxy/AccordionPattern/src/AccordionPattern';
 import '../../../../03-Galaxy/Footer/src/TypeTwo/TypeTwo';
 import '../../../../03-Galaxy/TeamSections/src/TeamSections';
 
@@ -125,7 +124,7 @@ export default class About extends LitElement {
             })}
           ></space-logo-grids>
         </section>
-        <section>
+        <section class="section">
           <space-team-sections
             type="simple_01"
             heading="Meet our team"
@@ -139,7 +138,7 @@ export default class About extends LitElement {
             })}
           ></space-team-sections>
         </section>
-        <section class="section section-bg section-nomargin">
+        <section class="section section-bg ">
           <div class="container">
             <space-section-heading
               size="default"

@@ -7,11 +7,8 @@
 
   & .section {
     @apply px-4 lg:px-28 mt-20;
-    &.section-bg {
-      @apply bg-backgroundNeutral-neutralLight;
-    }
     & .container {
-      @apply py-24;
+      @apply border-0 border-t border-solid border-stroke-dividerLight pt-10;
     }
     &.logo-grid-section {
       @apply p-0;
@@ -23,18 +20,6 @@
 
     & .icon-card-list-item {
       @apply flex-shrink;
-    }
-  }
-
-  & .stats-container {
-    @apply flex items-center flex-col-reverse lg:flex-row gap-12 lg:gap-[136px] mt-20 lg:mt-16 py-4 lg:py-6;
-
-    & .stats-list {
-      @apply grid grid-cols-1 md:grid-cols-2 list-none gap-x-4 gap-y-8 lg:gap-x-8 lg:gap-y-16;
-    }
-
-    & .stats-image {
-      @apply w-full max-h-64 lg:max-h-[564px] lg:max-w-[592px] lg:aspect-square object-cover;
     }
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .icon-card {
-  @apply w-fit;
+  @apply w-full;
   & .icon-card-inner-container {
     @apply flex flex-col max-w-85.75 lg:max-w-96 relative;
   }

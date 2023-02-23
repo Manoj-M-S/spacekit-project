@@ -48,6 +48,10 @@ export class SimpleLink01 extends LitElement {
   @property({ type: String, attribute: 'map-source' })
   mapSource: string = '';
 
+  /** @attr icon-container */
+  @property({ type: Boolean, attribute: 'icon-container' })
+  iconContainer!: boolean;
+
   render() {
     const contentClass = {
       content: true,
@@ -74,7 +78,12 @@ export class SimpleLink01 extends LitElement {
             </div>`
           : null}
 
-        <div class="icon-pattern">
+        <div
+          class=${classMap({
+            'icon-pattern': true,
+            [`pattern-${this.allignment}`]: this.allignment,
+          })}
+        >
           ${map(
             this.options,
             ({
@@ -84,8 +93,9 @@ export class SimpleLink01 extends LitElement {
               supportText,
               ctaHref,
             }) => html` <space-icon-card
+              class="icon-card-icon"
               icon-name=${iconName}
-              ?icon-container=${true}
+              ?icon-container=${this.iconContainer}
               ?container=${this.container}
               head-text=${headText}
               cta-href=${ctaHref}

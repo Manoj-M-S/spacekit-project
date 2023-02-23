@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import './src/About';
+import './src/Type2';
 import { Meta } from '@storybook/web-components';
 
 export default {
@@ -7,10 +8,13 @@ export default {
   component: 'space-about-page',
 } as Meta;
 
-const Template = ({}: any) => {
+const type1 = ({}: any) => {
   return html` <space-about-page> </space-about-page> `;
 };
 
-export const Default = Template.bind({});
+const type2 = ({}: any) => {
+  return html` <space-about-page-type2> </space-about-page-type2> `;
+};
 
-Default.args = {};
+export const Type1 = type1.bind({});
+export const Type2 = type2.bind({});
