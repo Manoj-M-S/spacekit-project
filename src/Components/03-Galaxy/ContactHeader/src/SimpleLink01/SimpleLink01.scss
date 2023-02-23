@@ -1,5 +1,5 @@
 .contact-header-simple-link01 {
-  @apply flex flex-col gap-8 md:gap-12 px-4 lg:px-28 py-10 lg:py-20;
+  @apply flex flex-col gap-8 md:gap-12;
   & .title {
     @apply text-sm font-bold md:text-base text-backgroundButtonPrimary-buttonPrimaryDefault;
   }
@@ -10,12 +10,21 @@
     @apply text-18 leading-7 font-normal text-text-body md:text-20 md:leading-8;
   }
   & .icon-pattern {
-    @apply flex flex-col md:flex-row gap-10 md:gap-8;
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-10 md:gap-8;
+    &.pattern-left {
+      @apply place-items-center md:place-items-start;
+    }
+    &.pattern-center {
+      @apply place-items-center md:place-items-start;
+    }
   }
   & .content {
     @apply flex flex-col gap-2;
     &.content-center {
       @apply items-center;
     }
+  }
+  & .icon-card-icon {
+    @apply w-full;
   }
 }

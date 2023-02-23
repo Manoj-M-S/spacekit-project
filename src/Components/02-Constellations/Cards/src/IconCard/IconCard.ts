@@ -30,6 +30,10 @@ export class IconCard extends LitElement {
   @property({ type: String, attribute: 'head-text' })
   headingText!: string;
 
+  /** @attr icon-container */
+  @property({ type: Boolean, attribute: 'icon-container' })
+  iconContainer!: boolean;
+
   /** @attr alignment */
   @property()
   alignment!: IconCardAlignment;
@@ -48,12 +52,19 @@ export class IconCard extends LitElement {
       <div class=${classMap(iconCardClass)}>
         <div class="icon-card-inner-container">
           ${this.iconName
-            ? html`
-                <space-icon
+            ? this.iconContainer
+              ? html`
+                  <div class="icon-container">
+                    <space-icon
+                      class="icon-card-icon-container"
+                      icon-name=${this.iconName}
+                    ></space-icon>
+                  </div>
+                `
+              : html`<space-icon
                   class="icon-card-icon"
                   icon-name=${this.iconName}
-                ></space-icon>
-              `
+                ></space-icon>`
             : null}
           ${this.headingText
             ? html`

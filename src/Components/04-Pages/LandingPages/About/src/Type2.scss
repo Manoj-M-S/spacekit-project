@@ -1,0 +1,29 @@
+* {
+  @apply p-0 m-0;
+}
+
+.main {
+  @apply xxl:container xxl:mx-auto;
+
+  & .section {
+    @apply px-4 lg:px-28 mt-20;
+    & .container {
+      @apply border-0 border-t border-solid border-stroke-dividerLight pt-10;
+    }
+    &.logo-grid-section {
+      @apply p-0;
+    }
+  }
+
+  & .icon-card-list {
+    @apply grid justify-center lg:justify-between gap-8 lg:gap-x-8 lg:gap-y-16 lg:grid-cols-[repeat(4,1fr)] mt-12 lg:mt-16 list-none;
+
+    & .icon-card-list-item {
+      @apply flex-shrink;
+    }
+  }
+}
+
+.footer {
+  @apply mt-20 lg:mt-20 block mx-auto xxl:container;
+}

@@ -35,8 +35,6 @@ li {
 }
 
 .team-section {
-  @apply py-16 lg:py-20 px-4 lg:px-28;
-
   &-theme-default {
     @apply bg-white;
   }
