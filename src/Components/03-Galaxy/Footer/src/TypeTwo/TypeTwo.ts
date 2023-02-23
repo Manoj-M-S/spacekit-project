@@ -24,7 +24,7 @@ interface SocialLinkOptions {
 }
 
 @customElement('space-footer-type-two')
-export default class FooterTypeTwo extends LitElement {
+export class FooterTypeTwo extends LitElement {
   static styles = [styles];
 
   /** @attr supportive-text */

@@ -15,7 +15,7 @@ export type PriceOptionsType = {
 };
 
 @customElement('space-pricing-card')
-export default class PricingCard extends LitElement {
+export class PricingCard extends LitElement {
   static styles = [styles];
 
   /** @attr card-type */

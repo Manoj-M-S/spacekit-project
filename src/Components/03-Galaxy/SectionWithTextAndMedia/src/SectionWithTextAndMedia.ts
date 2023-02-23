@@ -15,7 +15,7 @@ export type ChecklistOptions = {
 };
 
 @customElement('space-section-text-media')
-export default class SectionWithTextAndMedia extends LitElement {
+export class SectionWithTextAndMedia extends LitElement {
   static styles = [styles];
 
   /** @attr image-src */

@@ -19,7 +19,7 @@ export type PaginationIndicatorBaseColor =
 const formatNumber = (value: number) => (value < 10 ? `0${value}` : value);
 
 @customElement('space-pagination-indicator')
-export default class PaginationIndicatorBase extends LitElement {
+export class PaginationIndicatorBase extends LitElement {
   static styles = [styles];
 
   /** @attr style */

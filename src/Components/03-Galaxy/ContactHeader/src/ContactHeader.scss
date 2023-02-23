@@ -1,0 +1,30 @@
+.contact-header {
+  @apply flex flex-col gap-10 md:gap-12 px-4 lg:px-28;
+  & .content {
+    @apply flex flex-col gap-2 w-full items-center;
+    & .title {
+      @apply text-sm font-semibold md:text-base md:font-bold text-backgroundButtonPrimary-buttonPrimaryDefault;
+    }
+    & .sub-title {
+      @apply text-36 leading-44 font-bold text-text-heading md:text-48 md:leading-60;
+    }
+    & .support-text {
+      @apply text-lg font-normal text-text-body md:text-20 md:leading-8;
+    }
+  }
+  & .contact-form-container {
+    @apply flex w-full flex-row lg:gap-8;
+    &.contact-center {
+      @apply justify-center items-center;
+    }
+    & .contact-image {
+      @apply hidden lg:flex w-max;
+      &.image-right {
+        @apply order-last;
+      }
+    }
+    & .space-form-class {
+      @apply w-full max-w-[592px] order-last;
+    }
+  }
+}

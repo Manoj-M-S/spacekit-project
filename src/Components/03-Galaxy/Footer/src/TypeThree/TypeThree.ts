@@ -24,7 +24,7 @@ interface FooterLinkOptions {
 }
 
 @customElement('space-footer-type-three')
-export default class FooterTypeThree extends LitElement {
+export class FooterTypeThree extends LitElement {
   static styles = [styles];
 
   /** @attr supportive-text */

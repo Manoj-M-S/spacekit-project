@@ -1,0 +1,30 @@
+:host {
+  @apply w-full;
+}
+
+* {
+  @apply m-0 p-0 leading-none list-none box-border;
+}
+
+.four-col {
+  @apply lg:px-28  flex flex-col lg:flex-row lg:justify-between;
+
+  & .heading-text {
+    @apply text-24 leading-8 lg:text-30 lg:leading-10 text-text-heading font-bold mb-6;
+  }
+
+  & .col {
+    @apply mr-8 last:mr-0 py-6 lg:py-8;
+  }
+}
+
+.footer {
+  @apply py-8 lg:py-7 lg:px-28 bg-backgroundNeutral-neutralLight text-center;
+
+  & .footer-container {
+    @apply flex lg:flex-row flex-col lg:justify-between lg:gap-8;
+  }
+  & .footer-link {
+    @apply flex justify-center mt-6 lg:mt-8;
+  }
+}

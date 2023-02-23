@@ -33,7 +33,7 @@ interface LocationOptions {
 }
 
 @customElement('space-footer-type-six')
-export default class TypeSix extends LitElement {
+export class TypeSix extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

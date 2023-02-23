@@ -1,11 +1,11 @@
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
-import Checkbox, { CheckBoxSize } from '../../Checkbox/src/Checkbox';
+import { Checkbox, CheckBoxSize } from '../../Checkbox/src/Checkbox';
 import radioStyles from './Radio.scss.lit';
 
 @customElement('space-radio')
-export default class Radio extends LitElement {
+export class Radio extends LitElement {
   static styles = [Checkbox.styles, radioStyles];
 
   /** @attr size */

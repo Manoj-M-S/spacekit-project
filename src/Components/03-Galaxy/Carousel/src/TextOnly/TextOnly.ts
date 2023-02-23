@@ -14,7 +14,7 @@ export interface TextOnlyOptions {
 Swiper.use([Navigation]);
 
 @customElement('space-text-only')
-export default class TextOnly extends LitElement {
+export class TextOnly extends LitElement {
   static styles = [styles];
 
   options: Array<TextOnlyOptions> = [];

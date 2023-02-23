@@ -11,7 +11,7 @@ import '../../../02-Constellations/Pagination/src/CarouselArrow/CarouselArrow';
 export type TestimonialCardType = 'simple' | 'carousal';
 
 @customElement('space-testimonial-card')
-export default class TestimonyCards extends LitElement {
+export class TestimonyCards extends LitElement {
   static styles = [styles];
 
   /** @attr size */

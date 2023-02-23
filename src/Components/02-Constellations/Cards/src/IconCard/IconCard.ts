@@ -7,7 +7,7 @@ import '../../../../01-stars/Link/src/Link';
 export type IconCardAlignment = 'left' | 'center';
 
 @customElement('space-icon-card')
-export default class IconCard extends LitElement {
+export class IconCard extends LitElement {
   static styles = [styles];
 
   /** @attr icon-name */
@@ -73,6 +73,8 @@ export default class IconCard extends LitElement {
                   >${this.ctaText}</space-link
                 >
               `
+            : this.ctaText
+            ? html`<p class="cta-text">${this.ctaText}</p>`
             : null}
         </div>
       </div>

@@ -19,7 +19,7 @@ interface FooterLinkOptions {
 }
 
 @customElement('space-footer-type-thirteen')
-export default class TypeThirteen extends LitElement {
+export class TypeThirteen extends LitElement {
   static styles = [styles];
 
   /** @attr footer-text */

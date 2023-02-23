@@ -1,0 +1,21 @@
+.hero-banner-style6 {
+  @apply flex flex-col md:flex-row gap-10 md:gap-8 px-4 lg:px-28 pt-16 pb-10 md:py-20 items-center bg-backgroundPrimary-primaryExtraDark;
+  .content {
+    @apply flex flex-col md:flex-row gap-8 md:gap-12 w-full;
+    & .border {
+      @apply w-full md:w-0 border-l border-stroke-focused;
+    }
+    & .text-container {
+      @apply flex flex-col gap-2 md:gap-6;
+      & .title {
+        @apply text-36 leading-44 font-bold md:text-60 md:leading-72 text-white;
+      }
+      & .support-text {
+        @apply text-lg font-normal md:text-20 md:leading-8 text-white;
+      }
+    }
+  }
+  & .image {
+    @apply w-full md:w-auto;
+  }
+}

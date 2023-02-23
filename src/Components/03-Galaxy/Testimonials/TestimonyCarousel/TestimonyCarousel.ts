@@ -35,7 +35,7 @@ export interface TestimonialCarousalOptionsType {
 }
 
 @customElement('space-testimony-carousel')
-export default class TestimonyCarousel extends LitElement {
+export class TestimonyCarousel extends LitElement {
   static styles = [styles];
 
   /** @attr options */
@@ -67,6 +67,7 @@ export default class TestimonyCarousel extends LitElement {
         nextEl: this.nextButton,
         prevEl: this.previousButton,
       },
+      spaceBetween: 32,
     });
 
     this.swiper.on('slideChange', swiper => {

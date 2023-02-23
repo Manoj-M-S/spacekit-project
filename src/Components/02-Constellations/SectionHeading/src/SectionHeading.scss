@@ -7,52 +7,33 @@ h5 {
   @apply flex;
 
   & .section-heading-subheading-text {
-    @apply font-serif text-14 text-text-primaryDark  font-bold;
+    @apply font-serif text-16 leading-6 text-text-primaryDark  font-bold;
   }
   & .section-heading-heading-text {
-    @apply font-spaceGroteskBold text-24 text-text-heading leading-8 font-bold mt-2;
+    @apply font-spaceGroteskBold text-30 leading-10 lg:text-36 lg:leading-44 lg:tracking-closed text-text-heading font-bold mt-2;
   }
 
   & .section-heading-support-text {
-    @apply font-serif text-16 text-text-body mt-1;
+    @apply font-serif text-18 leading-7 lg:text-20 lg:leading-8 text-text-body mt-1;
   }
 
   &.section-heading-size-default {
     @apply max-w-148;
-    & .section-heading-heading-text {
-      @apply font-spaceGroteskBold text-30 leading-10;
-    }
-
-    & .section-heading-support-text {
-      @apply font-serif mt-2 text-text-body;
-    }
 
     &.section-heading-orientation-center {
-      @apply max-w-max text-center;
-      & .section-heading-subheading-text {
-        @apply font-serif  text-14 text-text-primaryDark;
-      }
-      & .section-heading-heading-text {
-        @apply font-spaceGroteskBold text-24 text-text-heading leading-8 font-bold mt-2;
-      }
+      @apply text-center;
+
       &.section-heading {
-        @apply mx-auto text-text-heading;
+        @apply mx-auto;
       }
       & .section-heading-text-container {
-        @apply font-serif max-w-148 flex-shrink;
+        @apply font-serif max-w-200  flex-shrink;
       }
     }
     &.section-heading-orientation-split {
       @apply max-w-max;
-      & .section-heading-subheading-text {
-        @apply font-serif flex text-14 text-text-primaryDark;
-      }
-
-      & .section-heading-support-text {
-        @apply block text-16 text-text-body;
-      }
       & .section-heading-main {
-        @apply m-0 p-0 md:grid grid-cols-2;
+        @apply m-0 p-0 md:grid grid-cols-2 gap-4 md:gap-8;
       }
     }
   }

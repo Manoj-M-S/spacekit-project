@@ -8,7 +8,7 @@ export type FeaturedCardSize = QuickLinkCardSize;
 export type FeaturedCardOrientation = 'vertical' | 'horizontal';
 
 @customElement('space-featured-card')
-export default class FeaturedCard extends LitElement {
+export class FeaturedCard extends LitElement {
   static styles = [styles];
 
   /** @attr size */

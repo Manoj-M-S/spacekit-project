@@ -8,7 +8,7 @@ export type NavSize = 'small' | 'large';
 export type NavState = 'default' | 'hover' | 'active';
 
 @customElement('space-nav-menu-item')
-export default class NavMenuItem extends LitElement {
+export class NavMenuItem extends LitElement {
   static styles = [styles];
 
   /** @attr title */

@@ -18,7 +18,7 @@ export interface ImageFullWidthLeftAlignedOptions {
 }
 
 @customElement('space-image-fullwidth-left-aligned')
-export default class ImageFullWidthLeftAligned extends LitElement {
+export class ImageFullWidthLeftAligned extends LitElement {
   static styles = [styles];
 
   @property()

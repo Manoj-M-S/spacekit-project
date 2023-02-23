@@ -21,7 +21,7 @@ const normalizeInitials = (initials: string) =>
   initials.slice(0, 2).toUpperCase();
 
 @customElement('space-avatar')
-export default class Avatar extends LitElement {
+export class Avatar extends LitElement {
   static styles = [styles];
 
   /** @attr src */

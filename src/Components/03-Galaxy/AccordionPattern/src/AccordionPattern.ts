@@ -13,7 +13,7 @@ export interface AccordionOption {
 }
 
 @customElement('space-accordion-pattern')
-export default class AccordionPattern extends LitElement {
+export class AccordionPattern extends LitElement {
   static styles = [styles];
 
   /** @attr options */

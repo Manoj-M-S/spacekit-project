@@ -7,7 +7,7 @@ export type ProgressStage = 'current' | 'completed';
 export type ProgressOrientation = 'horizontal' | 'vertical';
 
 @customElement('space-progress-base')
-export default class ProgressBase extends LitElement {
+export class ProgressBase extends LitElement {
   static styles = [styles];
 
   /** @attr orientation */

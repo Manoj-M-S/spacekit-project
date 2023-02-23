@@ -1,5 +1,5 @@
 * {
-  @apply m-0 p-0 leading-none box-border;
+  @apply m-0 p-0 leading-none list-none box-border;
 }
 
 .header {
@@ -27,7 +27,7 @@
     }
 
     &.show-menu {
-      @apply max-h-screen lg:flex overflow-y-auto;
+      @apply max-h-screen lg:flex overflow-y-auto bg-white z-10;
     }
   }
 
@@ -40,6 +40,24 @@
   }
 
   & .hamburger {
-    @apply stroke-stroke-icon w-6 h-6 lg:hidden;
+    @apply stroke-stroke-icon w-6 h-6 bg-transparent border-0 cursor-pointer;
+
+    &:not(.hide-menu) {
+      @apply lg:hidden;
+    }
+  }
+
+  & .footer-links {
+    @apply grid grid-cols-2 gap-3 lg:hidden py-6 border-0 border-t-2 border-solid border-stroke-dividerLight;
+
+    & .link {
+      @apply text-16 leading-6 font-medium no-underline text-text-body;
+    }
+  }
+}
+
+.branched-hamburger {
+  &.hide-menu {
+    @apply hidden;
   }
 }
