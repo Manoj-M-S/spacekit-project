@@ -10,6 +10,7 @@ import {
 } from '../../../../02-Constellations/Cards/src/QuickLinkCard/QuickLinkCard';
 import { CardPatternType } from '../IconCard/IconCardPattern';
 import styles from './QuickLinkCardPattern.scss.lit';
+import '../../../../02-Constellations/Pagination';
 
 @customElement('space-quicklink-pattern')
 export class QuickLinkCardPattern extends LitElement {
@@ -58,6 +59,7 @@ export class QuickLinkCardPattern extends LitElement {
       breakpoints: {
         320: {
           slidesPerView: 1,
+          centeredSlides: true,
         },
         640: {
           slidesPerView: 2,
@@ -116,7 +118,7 @@ export class QuickLinkCardPattern extends LitElement {
       const { src, alt, ctaText, ctaIconName, headingText, supportText } = item;
 
       return html`
-        <li class="swiper-slide">
+        <li class="swiper-slide quicklink-card-list-item">
           <space-quicklink-card
             src=${src}
             alt=${alt}

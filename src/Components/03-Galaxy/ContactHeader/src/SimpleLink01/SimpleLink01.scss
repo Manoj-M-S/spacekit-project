@@ -10,7 +10,7 @@
     @apply text-18 leading-7 font-normal text-text-body md:text-20 md:leading-8;
   }
   & .icon-pattern {
-    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-10 md:gap-8;
+    @apply grid grid-cols-1 md:grid-cols-3 place-content-center gap-10 md:gap-8;
     &.pattern-left {
       @apply place-items-center md:place-items-start;
     }

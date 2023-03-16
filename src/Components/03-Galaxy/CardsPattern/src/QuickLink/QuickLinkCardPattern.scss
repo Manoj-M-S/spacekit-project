@@ -14,7 +14,13 @@
     @apply w-full list-none;
 
     & .quicklink-card-pattern-button-container {
-      @apply flex justify-end gap-4 mt-10 mr-8;
+      @apply flex justify-end gap-4 pt-10 pr-8;
+    }
+
+    & .swiper-slide {
+      &.quicklink-card-list-item {
+        @apply justify-center flex sm:block;
+      }
     }
   }
 }
