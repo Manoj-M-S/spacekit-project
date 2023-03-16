@@ -1,5 +1,5 @@
 .section {
-  @apply flex flex-col items-start py-16 px-4 gap-8;
+  @apply flex flex-col items-start gap-8;
   &.allignment-center {
     @apply items-center;
   }
