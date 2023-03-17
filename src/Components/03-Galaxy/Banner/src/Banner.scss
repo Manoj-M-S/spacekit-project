@@ -1,7 +1,10 @@
 .banner {
   @apply flex flex-col lg:flex-row items-start lg:items-center gap-8;
   & .banner-container {
-    @apply flex flex-col lg:flex-row lg:justify-between lg:gap-10 lg:w-full items-start gap-8 bg-backgroundPrimary-primaryExtraLight rounded-xl;
+    @apply flex flex-col w-fill lg:flex-row lg:justify-between lg:gap-10 lg:w-full items-start gap-8 bg-white rounded-xl;
+    &.bg {
+      @apply bg-backgroundPrimary-primaryExtraLight;
+    }
     &.center {
       @apply flex-col;
     }
@@ -28,7 +31,7 @@
     }
   }
   & .action-container {
-    @apply flex flex-col items-start lg:flex-row lg:items-end lg:justify-end gap-3 w-full;
+    @apply flex flex-col items-start md:flex-row lg:items-end lg:justify-end gap-3 w-full;
     &.action-container-center {
       @apply items-center justify-center;
     }
@@ -37,7 +40,7 @@
     }
   }
   & .button-class {
-    @apply w-full lg:w-max justify-center;
+    @apply w-full lg:w-max justify-center md:w-auto;
   }
 }
 

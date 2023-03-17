@@ -35,6 +35,10 @@ export class Banner extends LitElement {
   @property({ type: Boolean, attribute: 'center' })
   center: boolean = false;
 
+  /** @attr background */
+  @property({ type: Boolean, attribute: 'background' })
+  background: boolean = false;
+
   /** @attr banner-width */
   @property({ type: String, attribute: 'banner-width' })
   bannerWidth: BannerWidth = 'full';
@@ -110,6 +114,7 @@ export class Banner extends LitElement {
   render() {
     const bannerClass = {
       'banner-container': true,
+      'bg': this.background,
       'center': this.center,
       [`banner-${this.bannerWidth}`]: true,
     };
