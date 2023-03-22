@@ -53,6 +53,8 @@ export * from './Components/03-Galaxy/HeroBanner';
 export * from './Components/03-Galaxy/ContactHeader';
 export * from './Components/03-Galaxy/ContactSection';
 export * from './Components/03-Galaxy/404Section';
+export * from './Components/03-Galaxy/Login';
+export * from './Components/03-Galaxy/Signup';
 
 // ------ LANDING PAGES ------ //
 export * from './Components/04-Pages/LandingPages';

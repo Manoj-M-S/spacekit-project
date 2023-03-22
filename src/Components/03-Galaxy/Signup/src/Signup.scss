@@ -1,0 +1,77 @@
+.login {
+  @apply flex flex-col gap-8 items-center py-12;
+  &.split-image {
+    @apply lg:flex lg:flex-row lg:justify-evenly py-12 lg:py-0;
+  }
+  & .content {
+    @apply flex flex-col gap-8 items-center max-w-[343px] lg:max-w-[360px] justify-center w-full;
+    & .header {
+      @apply flex flex-col items-center gap-6 w-full;
+      &.header-split {
+        @apply items-start;
+      }
+      & .text-container {
+        @apply flex flex-col gap-2 items-center;
+        &.text-container-split {
+          @apply items-start;
+        }
+        & .heading {
+          @apply text-2xl font-bold text-text-heading;
+        }
+        & .sub-text {
+          @apply text-base font-normal text-text-body;
+        }
+      }
+    }
+    & .form-container {
+      @apply flex flex-col gap-6 items-center w-full;
+      & .input-class {
+        @apply w-full;
+      }
+      & .btn-class {
+        @apply w-full justify-center;
+      }
+      & .conten-divide {
+        @apply w-full text-center -mt-1;
+      }
+    }
+    & .footer {
+      @apply flex flex-row justify-center items-center gap-1;
+      & .footer-text {
+        @apply text-sm font-normal text-text-body;
+      }
+    }
+  }
+  & .img-class {
+    @apply hidden lg:flex;
+  }
+  & .google-btn {
+    @apply cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center w-full justify-center;
+    &.google-secondary {
+      @apply text-text-heading text-base font-medium border-stroke-borderDefault py-2.5 px-4 bg-white;
+    }
+    & .btn-icon {
+      @apply mr-2 leading-0 w-5 h-5 stroke-2;
+    }
+  }
+
+  & .facebook-btn {
+    @apply -mt-3 cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center w-full justify-center;
+    &.facebook-primary {
+      @apply text-white text-base font-medium border-[#1877F2] py-2.5 px-4 bg-[#1877F2];
+    }
+    & .btn-icon {
+      @apply mr-2 leading-0 w-5 h-5 stroke-2;
+    }
+  }
+
+  & .apple-btn {
+    @apply -mt-3 cursor-pointer rounded-lg py-2 px-3.5 border border-solid text-14 leading-5 font-medium flex items-center w-full justify-center;
+    &.apple-primary {
+      @apply text-white text-base font-medium border-black py-2.5 px-4 bg-black;
+    }
+    & .btn-icon {
+      @apply mr-2 leading-0 w-5 h-5 stroke-2;
+    }
+  }
+}
