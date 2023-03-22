@@ -1,26 +1,24 @@
 import { html } from 'lit';
 import './src/Faq';
+import './src/FaqType2';
 import { Meta } from '@storybook/web-components';
 
 export default {
   title: 'LandingPages/FAQ',
   component: 'space-faq-page',
-  argTypes: {
-    imageAllignent: {
-      control: { type: 'radio' },
-      options: ['left', 'right'],
-    },
-  },
 } as Meta;
 
-const Template = ({ imageAllignent }: any) => {
-  return html`
-    <space-faq-page imageAllignent=${imageAllignent}> </space-faq-page>
-  `;
+const type1 = ({}: any) => {
+  return html` <space-faq-page> </space-faq-page> `;
 };
 
-export const Default = Template.bind({});
+const type2 = ({}: any) => {
+  return html` <space-faq-type2> </space-faq-type2> `;
+};
 
-Default.args = {
+export const Type1 = type1.bind({});
+export const Type2 = type2.bind({});
+
+Type1.args = {
   imageAllignent: 'left',
 };
