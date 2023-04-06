@@ -1,11 +1,11 @@
 {
-  "name": "spacekit",
-  "version": "0.0.0",
-  "private": "true",
+  "name": "@space-designsystem/spacekit",
+  "version": "0.0.1",
   "license": "MIT",
   "module": "dist/spacekit.min.cjs.js",
   "main": "dist/spacekit.min.esm.js",
   "typings": "dist/src/index.d.ts",
+  "author": "saki007ster",
   "files": [
     "dist"
   ],

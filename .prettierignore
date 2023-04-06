@@ -19,3 +19,4 @@ outline.theme.css
 **/vars-*.css
 *.d.ts
 *.lit.ts
+examples/
