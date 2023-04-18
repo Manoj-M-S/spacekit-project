@@ -20,32 +20,44 @@ export default class Content extends LitElement {
   @property()
   options: string[] = [];
 
-  render() {
+  renderShortContent() {
+    return html` <section class="container">
+      ${this.heading
+        ? html` <h1 class="heading-text">${this.heading}</h1> `
+        : null}
+      ${this.description
+        ? html` <p class="description-text">${this.description}</p> `
+        : null}
+      ${this.options.length
+        ? html`
+            <ul class="list">
+              ${map(
+                this.options,
+                option => html`
+                  <li class="list-items">
+                    <space-icon icon-name="check" class="icon"></space-icon>
+                    <p class="list-item-text">${option}</p>
+                  </li>
+                `
+              )}
+            </ul>
+          `
+        : null}
+    </section>`;
+  }
+
+  renderLargeContent() {
     return html`
-      <section class="container">
-        ${this.heading
-          ? html` <h1 class="heading-text">${this.heading}</h1> `
-          : null}
-        ${this.description
-          ? html` <p class="description-text">${this.description}</p> `
-          : null}
-        ${this.options.length
-          ? html`
-              <ul class="list">
-                ${map(
-                  this.options,
-                  option => html`
-                    <li class="list-items">
-                      <space-icon icon-name="check" class="icon"></space-icon>
-                      <p class="list-item-text">${option}</p>
-                    </li>
-                  `
-                )}
-              </ul>
-            `
-          : null}
-      </section>
+      <div class="content">
+        ${this.description.replace(/<\/?[^>]+(>|$)/g, '')}
+      </div>
     `;
+  }
+
+  render() {
+    return !this.heading && !this.description && !this.options
+      ? this.renderShortContent()
+      : this.renderLargeContent();
   }
 }
 
